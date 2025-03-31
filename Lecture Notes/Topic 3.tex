@@ -1,0 +1,317 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Topic 3 Course Notes: Predicates and Arguments Part 1\\
+Syntactic and Semantic Arguments}
+\hfill{}\textbf{Skills:}~\ref{syn_sem_roles},
+\ref{sem_roles}
+
+
+\section{Semantic predicates and arguments}
+\hfill{}\textbf{Skill:}~\ref{syn_sem_roles}
+
+If we think of the meaning of sentences, it seems that they generally express some \keyword{event}, or \keyword{state}:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Mary is laughing.}
+        \ex[]{An old oak stood in the garden.}
+        \ex[]{Matilda is reading the paper.}
+        \ex[]{Joseph understands Navajo.}
+        \ex[]{Beatrice lent me a sweater.}
+    \end{xlist}
+    } \label{events_and_participants}
+\end{exe}
+In these sentences, there is an element that describes what kind of event or state we are dealing with, and there are elements that describe which things are involved as participants in the event or state.
+The element that picks out a type of event or state is termed a \keyword{predicate}, while the participants in the event/state are called the \keyword{arguments} of the predicate.
+From the sentences above, we can infer that these descriptions of events and states are often expressed by a verb, in (\ref{events_and_participants}) by forms of \emph{laugh, stand, read, understand}, and \emph{lend}. 
+However, predicates can also be expressed by other lexical categories: in \emph{John is ill}, for example, the adjective \emph{ill} describes which state we are dealing with (many languages don't even have the equivalent of \emph{is} in such sentences).
+%If we have time, we'll come back to examples with \emph{be} later in the course.
+
+To a rough approximation, from the meaning of the predicate, we can infer how many arguments are involved in the event or state, as illustrated by (\ref{valency}).
+Incidentally, note that an argument can be a plural entity: \emph{The women laughed}, \emph{The girls read the books}, \emph{John and Bill conferred}.
+Such plural entities still count as one argument of the event/state.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{laugh, weep, fall, walk, ascend,  \dots{}\hfill{} event with one argument}
+        \label{event_one_argument}
+        \ex[]{stand, glow, stink, blossom, \dots{}\hfill{}state with one argument}
+        \label{state_one_argument}
+        \ex[]{read, kiss, kick, build, \dots{}\hfill{} event with two arguments}
+        \label{event_two_argument}
+        \ex[]{know, love, despise, fear, \dots{}\hfill{} state with two arguments}
+        \label{state_two_argument}
+        \ex[]{sell, give, send, lend, \dots{} \hfill{} event with three arguments}
+        \label{event_three_argument}
+    \end{xlist}
+    }\label{valency}
+\end{exe}
+So, again thinking of the semantics, we can distinguish \keyword{one-place predicates} as in (\ref{event_one_argument}) and (\ref{state_one_argument}), \keyword{two-place predicates} as in (\ref{event_two_argument}) and (\ref{state_two_argument}), and \keyword{three-place predicates} as in (\ref{event_three_argument}).
+
+\hfill{}\textbf{Skill:}~\ref{sem_roles}
+
+We can classify the arguments a predicate takes in terms of the general type of \keyword{role} that the individuals denoted by the arguments play in the event.
+Thus, we can at distinguish at least the following types of participants (there are more; how many more is a very vexed question, but one that we can safely leave aside for now---see the section in Chapter 3 of S\&K):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{\textsc{agent}: the `doer' of the action, the causer of the event.\\
+        \emph{Susan} threw the javelin; \emph{Steve} read the magazine.}
+        \ex[]{\textsc{theme}: the thing undergoing the action, thing in motion, the `causee'\\
+        Susan threw \emph{the javelin}; Steve read \emph{the magazine}}
+        \ex[]{\textsc{goal}:	the thing towards which the action is directed \\
+        He sold \emph{me} a copy; She gave \emph{her brother} a present.}
+    \end{xlist}
+    }
+\end{exe}
+These 'types' are called \keyword{participant roles} or \keyword{thematic roles} ($\theta$-roles, `theta-roles', for short).
+
+The number of semantic arguments that a predicate combines with is sometimes called its \keyword{valence}. In this set of notes, we will consider how semantic arguments (or participant roles, or thematic roles) are represented in the syntax: we might expect that every semantic role gets \keyword{mapped} to or expressed by a syntactic constituent, or vice versa, but that isn't always the case.
+
+\section{Syntactic arguments}
+\hfill{}\textbf{Skill:}~\ref{syn_sem_roles}
+
+Returning to the syntax: a traditional categorization of verbs has to do with the \emph{syntactic} elements that they combine with.
+Some occur just with a \keyword{subject} (so-called \keyword{intransitive} verbs); others combine with both a subject and a \keyword{direct object} (so-called \keyword{transitive} verbs), and others go together with a subject, a direct object, and an \keyword{indirect object} (\keyword{ditransitive} verbs)\fn{You'll find that there is some confusion in the terminology here.
+In some cases people use the term `ditransitive' to refer to verbs that occur in either or both of the constructions in (\ref{do_or_ditrans}); in other cases people reserve `ditransitive' for the case where one of the arguments is a PP, and refer to the pattern in (\ref{double_object}), with two noun phrases following the verb, as a `double object' construction.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Nora told/explained the story to the children.}
+        \label{ditransitive}
+        \ex[]{Dora told/*explained the children the story.}
+        \label{double_object}
+    \end{xlist}
+    }
+    \label{do_or_ditrans}
+\end{exe}}  
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{June laughed.}
+        \ex[*]{June laughed Harry/the book.}
+        \ex[*]{June laughed Harry a funny book.}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[*]{April destroyed.}
+        \ex[]{April destroyed the book.}
+        \ex[*]{April destroyed Harry the book.}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[*]{May gave.}
+        \ex[??]{May gave a book.}
+        \ex[\#]{May gave Harry.}
+        \ex[]{May gave Harry the book.}
+    \end{xlist}
+    }\label{give_arguments}
+\end{exe}
+%It was proposed above that this information is stored in the lexicon as part of the \emph{syntactic} information associated with each verb, in the form of the elementary trees illustrated above. 
+%But an obvious question here is: if have already stored the information about the verb's \emph{semantic} valence, do we need to keep track independently of its \emph{syntactic} valence?  
+%That is, if we know that a predicate takes two semantic arguments, does it automatically follow that its elementary tree will look like \Next?
+Above, it was proposed above predicates have a certain \emph{semantic} valence. 
+But an obvious question here is: if we already store information about the verb's \emph{semantic} valence, do we need to keep track independently of a separate \emph{syntactic} valence?  
+That is, if we know that a predicate takes two semantic arguments, does it automatically follow that it also takes two syntactic arguments?
+It turns out that the relationship between the semantics and the syntax is more complicated than this. 
+
+    \subsection{Identifying the subject}
+Even after identifying the predicate---the main verb in the sentence, or the main adjective in a \keyword{copular} clause like \emph{John is ill} above---we still need to identify the subject. Often this is fairly intuitive, like in the examples above. But what are the subjects in the following examples?
+
+\ea \label{ex:agreement}
+    \ea The keys to the door are on the table.
+    \ex Root vegetables mash well.
+    \ex The haggis was given an address by Robert.
+    \ex Music pleases Chris.
+    \z
+\z
+
+The simplest test we can use to find the subject in English is agreement with the main verb (or auxiliary). To do this, we can change the number of the NP constituent we're examining from singular to plural (or from plural to singular) and see if the agreement changes, or change the number on the agreement and see if the sentence is still acceptable. This test shows us the following boldfaced subjects. Did any of these diverge from your intuitions? It's clear that not all are agents, as we discuss next.
+
+\ea
+    \ea \textbf{The keys to the door} are/(*is) on the table.
+    \ex \textbf{The key to the door} (*are)/is on the table.
+    \ex \textbf{Root vegetables} mash/(*mashes) well.
+    \ex \textbf{A turnip} (*mash)/mashes well.
+    \ex \textbf{The haggises} were/(*was) given an address by Robert.
+    \ex \textbf{The haggis} (*were)/was given an address by Robert.
+    \ex \textbf{Instruments} please/(*pleases) Chris.
+    \ex \textbf{Music} (*please)/pleases Chris.
+    \z
+\z
+
+
+\section{Semantic arguments with no corresponding syntactic argument}
+\hfill{}\textbf{Skill:}~\ref{syn_sem_roles}
+
+Consider again the cases in (\ref{give_arguments}).
+Whenever an act of giving takes place, there must be a giver, something that is given, and a recipient. 
+But as we can see, it is at least marginally possible for \emph{give} to appear with just two syntactic arguments (the subject and the direct object, expressing the theme; it is not possible to omit the theme but keep the goal).
+
+The same phenomenon can be seen with many other verbs. For example, many (but not all) semantically two-place predicates can appear syntactically with or without the direct object that expresses the theme:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Leon was eating Brussels sprouts.}
+        \ex[]{Leon was eating.}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Betsy was reading an article.}
+        \ex[]{Betsy was reading.}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Michelle is devouring Brussels sprouts.}
+        \ex[*]{Michelle is devouring.}
+    \end{xlist}
+    }
+\end{exe}
+
+It is quite generally true that of the participants who must be present in the real world for an event to take place, only a subset will be expressed as syntactic arguments of a corresponding verb.
+For example, an event of betting requires at least:
+\begin{itemize}
+\item a person proposing the bet;
+\item (Typically) a person who can accept the bet;
+\item a state of affairs which determines the outcome of the bet;
+\item (Typically) some money, or something else at stake.
+\end{itemize}
+Of course, there must also be a time and place at which the bet is made, and so on. 
+So semantically this is at least a two-place predicate, but it could be as much as a four-place predicate (again, discounting time and place).
+It seems that only one of the semantic arguments has to appear as a syntactic argument:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \sn[A:]{I don't think we will finish on time.}
+        \sn[B:]{Are you willing to bet?}
+    \end{xlist}
+    }
+\end{exe}
+
+Similarly, in order for someone to \emph{dine}, there must be food.  But while \emph{eat} in English can appear with or without an object,  \emph{dine} cannot have an object:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[*]{Leon was dining a wonderful meal.}
+        \ex[]{Leon was dining.}
+    \end{xlist}
+    }
+\end{exe}
+
+Of course it's possible to express the other semantic arguments:  some \emph{can} appear as syntactic arguments, and as we'll see in Topic 4, others have to be expressed in a different way, as \keyword{modifiers}.
+But the point is that the syntactic arguments that have to appear don't correspond exactly to the semantic arguments. 
+
+\subsection{Mapping between semantic and syntactic arguments}
+\hfill{}\textbf{Skill:}~\ref{syn_sem_roles}
+
+A final point for now about the relationship between semantic and syntactic arguments.
+Clearly part of what a speaker knows is not just \textbf{how many} of a predicate's semantic arguments are/can be expressed by syntactic arguments, but \textbf{which} semantic argument is expressed by \textbf{which} syntactic argument.
+Consider for example the examples in (\ref{argument_orderingA}) \& (\ref{argument_orderingB}):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Kevin Bridges admires Doja Cat.}
+        \ex[]{Doja Cat admires Kevin Bridges.}
+    \end{xlist}
+    }
+    \label{argument_orderingA}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The bear sold the wolf the fox.}
+        \ex[]{The wolf sold the fox the bear.}
+        \ex[]{The wolf sold the fox to the bear.}
+    \end{xlist}
+    }
+    \label{argument_orderingB}
+\end{exe}
+
+There appears to be some systematicity to the mapping.
+The following is typical:
+\begin{exe}
+    \ex[]{Agent  $\Leftrightarrow$ Subject \\
+        Theme $\Leftrightarrow$ Object \\
+        Goal $\Leftrightarrow$ Indirect Object}
+\end{exe}
+        
+But this glosses over a lot of interesting variation.
+As just a few examples, consider the following, as well as the ones in~(\ref{ex:agreement}) earlier:        
+
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{I enjoy figurative art.}
+        \ex[]{Figurative art pleases me.}
+    \end{xlist}
+    }
+    \label{enjoy_please}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Conan opened the door.}
+        \ex[]{The door opened.}
+        \ex[]{This key will open the door.}
+    \end{xlist}
+    }
+    \label{open}
+\end{exe}
+
+Whether or not there is in fact a one-to-one mapping between $\theta$-roles and syntactic argument positions is a question of lively debate.
+Right now it might seem (on the basis of examples like (\ref{enjoy_please}) and (\ref{open})) that there couldn't possibly be a single such mapping, but if we have time to return to this question later in the semester, we'll see that the answer depends on a more in-depth understanding of what syntactic structures are like.
+
+\section{The special status of subjects}
+\hfill{}\textbf{Skill:}~\ref{syn_sem_roles}
+
+It is striking that while many verbs have no object, we don't seem to have verbs (in English at least) that have no subject:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Betty opened the door.}
+        \ex[]{The door opened.}
+        \ex[*]{Opened the door.}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{I broke the glass.}
+        \ex[]{The glass broke.}
+        \ex[*]{Broke the glass.}
+    \end{xlist}
+    }
+\end{exe}
+Not only that:  while we have seen cases of semantic arguments that don't always have syntactic counterparts (remember \emph{I'm renting}, for example, or \emph{Are you willing to bet?}), there is also one notable case of a \textbf{syntactic argument} that doesn't seem to have any semantic counterpart.
+This is what is known as an \keyword{expletive} or \keyword{pleonastic} or (less commonly) `dummy.' We can see that this expletive argument doesn't actually refer to anything by trying to make it the target of a question:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{\textbf{It} is obvious that he is late.}
+        \ex[\#]{What is obvious that he is late?}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{\textbf{It} seems that everyone here is following.}
+        \ex[\#]{What seems that everyone here is following?}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{There is nothing here.}
+        \ex[\#]{Where is nothing here?}
+    \end{xlist}
+    }
+    \begin{xlist}
+        \ex[]{There \textbf{there} is nothing.}
+        \ex[\#]{Where there is nothing?}
+    \end{xlist}
+\end{exe}
+An important generalization about these expletives is that they appear to be limited to \textbf{subject} position.
+So here again we have evidence that there is something special about subjects (as opposed to e.g. direct or indirect objects).
+At least in some languages---English is one of these---there seems to be a requirement that \textbf{every clause has to have a subject}.  
+
+
+\end{document}

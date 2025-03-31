@@ -1,0 +1,117 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\pagestyle{empty}
+\maketitle
+\subtitle{Tutorial Week 6: Topics 4, 5 \& 6}
+
+\paragraph{Explanation on accumulating Syntax Skills:} Let me stress that the point of the syntax block is to learn how to think like a syntactician, learn about English, and try to have fun. But marks are involved, and here's how we mark Syntax Skills: generally speaking, it's enough to show them once. This means that if we have questions Q1A and Q2B in a given tutorial sheet (for example), both of which target skill 6b, then getting one of them right is enough. That said, it's best to attempt all questions.
+
+Some tutorial questions are primarily \textbf{for discussion}. This means that they can count towards your skill tally if you answer them as part of your submission, but don't worry if you don't get them right -- their goal is to allow for extended discussion in the tutorial itself and some will go beyond the discussion in class.
+
+(Please remember that we're developing this approach to tutorials and marking together, so your feedback is welcome -- keep it specific and try to give it directly to Itamar.)
+
+\section*{Question 1}
+\hfill{} \ref{c_selection} $\Box$, \ref{adjunct_complement} $\Box$, \ref{sem_roles} $\Box$
+
+\paragraph{Q1A} For each of the examples in~(\ref{ungrammatical1}), explain why the sentence is not grammatical using the framework developed so far in the course.
+Though you may find it useful, it is not necessary to give corrected versions. The first one has been done for you -- longer answers are not necessary, and you don't have to identify the individual skills yourselves either, as long as you engage with the concepts properly.
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[*]{We think his address\\
+            \textcolor{red}{This sentence is ungrammatical because even though we correctly have a Theme argument for the verb \emph{think} (skill \ref{sem_roles}), we don't have the correct selection for a CP (skill \ref{c_selection}), e.g.~\emph{We think that his address is wrong}.}
+        }
+        % \ex[*]{John gave Bill}
+        % \label{ungrammatical_gave}
+        \ex[*]{Susan laughed the joke}
+        % \ex[*]{Bill liked}
+        % \label{intransitive_like}
+        % \ex[*]{Bill liked Anna the book}
+        % \label{ditransitive_like}
+        \ex[*]{Bill liked on Tuesday}
+        \label{intransitive_like_adjunct}
+    \end{xlist}
+    }
+    \label{ungrammatical1}
+\end{exe}
+
+\paragraph{For discussion} Here are a few more examples, similar to those Q1A, which you might want to attempt.
+\ea
+        \ea[*]{John gave Bill}
+        \label{ungrammatical_gave}
+        \ex[*]{Bill liked}
+        \label{intransitive_like}
+        \ex[*]{Bill liked Anna the book}
+        \label{ditransitive_like}
+        \z
+        \label{ungrammatical2}
+\z
+
+\paragraph{Q1B} In contrast to (\ref{ungrammatical_gave}), (\ref{grammatical_gave}) is judged as grammatical.
+For each of the constituents \sqb{\emph{quickly}}, \sqb{\emph{Bill}}, \sqb{\emph{the book}}, \sqb{\emph{in the street}}, and \sqb{\emph{on Tuesday}}, say if it is a complement of the verb or an adjunct. Use diagnostics to support your argument. The first one has been done for you. Get at least two out of the four right to obtain Syntax Skill \ref{adjunct_complement}.
+\begin{exe}
+    \ex{John gave Bill the book quickly in the street on Tuesday}
+    \label{grammatical_gave}
+\end{exe}
+
+\textcolor{red}{\textbf{Quickly} is an adjunct, since it allows \emph{do-so} substitution: \emph{John gave Bill the book quickly in the street on Tuesday, and Paul did so slowly (at work on Wednesday}. To give another example, \emph{quickly} cannot appear before the argument \emph{Bill}: *\emph{John gave quickly Bill the book.}}
+
+\paragraph{For discussion:} Based on the data in (\ref{ungrammatical1})--(\ref{grammatical_gave}) above, and supplementing with any grammatical counterparts you feel necessary, what can we say about the relationship between c-selection/complementation and semantic roles?
+
+\paragraph{For discussion:} For (\ref{grammatical_put}), are the strings, \emph{the book} and \emph{on the table}, complements or adjuncts? 
+Do you need to reformulate your answer to the previous question in order to accommodate (\ref{grammatical_put})?
+\begin{exe}
+    \ex{John won't put the book on the table}
+    \label{grammatical_put}
+\end{exe}
+
+\section*{Question 2}
+\hfill{} \ref{projection} $\Box$, \ref{functional_heads} $\Box$, \ref{VPinternal_subjects} $\Box$
+
+\paragraph{Q2A} The tree in (\ref{spicy_food}) fails to account for one or more acceptability judgments which would typically be held by speakers of English.
+Think about the way the tree in (\ref{spicy_food}) represents constituency.
+What claims does it make about the constituents in the sentence \emph{the guests may like spicy food}? Identify one incorrect claim, and use at least one constituency test to exemplify it.
+
+If you applied different constituency tests, how do the results of these diverge from those claims?
+% If you are not sure about the data, find a language consultant (either among your peers or consult one of the course tutors).
+
+Remember that the point of this question is thinking about constituency. It asks a specific question about what is empirically wrong with the tree, not whether it matches our theory.
+% Think carefully beforehand about what questions you want to ask them in order to identify the right constituency structure.
+\begin{exe}
+    \ex{
+    \begin{forest}
+for tree={s=2mm, l-=5mm},
+	[IP 
+ [NP[the guests, roof]] [VP 
+ [V [V\\may] [V\\like]] [NP [very spicy food, roof]] ]
+ ]
+    \end{forest}
+    }
+    \label{spicy_food}
+\end{exe}
+
+\paragraph{Q2B} Draw an elementary tree for \emph{like}. Which positions in the tree do the roles of \emph{agent} and \emph{theme} merge into? For now, do not worry about the internal structure of the arguments, add \emph{the guests} and \emph{very spicy food} to the tree for \emph{like} and label them as NPs.
+
+Now draw the elementary tree for \emph{may} (recall that we are assuming that modals like \emph{may} and auxiliaries like \emph{be} all occupy the category I).
+Which type of phrase(s) does \emph{may} take as a complement?
+
+Finally, combine the elementary trees to derive a tree for the sentence \emph{the guests may like very spicy food} consistent with the framework developed so far.
+
+\paragraph{For discussion:} How is the idiom \emph{the cat may be out of the bag} (which means roughly `the secret has been revealed') relevant to determining the structure projected by \emph{may}? 
+
+\section*{Question 3}
+\hfill{} \ref{functional_heads} $\Box$, \ref{V_adjunction} $\Box$
+
+\paragraph{Q3}Returning to the sentences given in (\ref{grammatical_gave}) and (\ref{grammatical_put}), repeated below, draw trees to represent them. One tree would be enough for both Syntax Skills (if you get them both right).
+\begin{exe}
+    \exr{grammatical_gave}{John gave Bill the book quickly in the street on Tuesday.}
+    \exr{grammatical_put}{John will not put the book on the table.}
+\end{exe}
+
+\paragraph{For discussion:} What changes would you need to make to your tree to accommodate the changes shown in (\ref{cp_put})?
+\begin{exe}
+    \ex{}{It seems that John won't put the book on the table}
+    \label{cp_put}
+\end{exe}
+\end{document}

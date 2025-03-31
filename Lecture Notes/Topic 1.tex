@@ -1,0 +1,357 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Topic 1 Course Notes: What is Syntax?}
+\hfill{}\textbf{Skills:}~\ref{whatissyntaxB}%, \ref{whatissyntaxC}
+
+\section{What is the LEL2A syntax block about?}
+
+This part of LEL2A is about syntactic theory and how it helps us understand the syntax (and sometimes semantics) of English.
+Syntactic theory aims at defining the kinds of system that determine how people using a particular language know how to put words together into larger sequences that have meaning, and to distinguish the possible word orders in that language from the impossible ones. 
+Such a system is a \keyword{syntax}\fn{In these notes when keywords are introduced for the first time they will generally be given in \textsc{small caps}.
+In reviewing the text, you should make sure that you have understood the meanings of these terms (for example, could you explain them to someone else?)}.
+But what kind of knowledge is it to `know the syntax of English' or to `know the syntax of Korean'? 
+
+%A \keyword{prescriptivist} grammarian will answer that such a person knows how to properly apply certain rules that are considered to reflect `good grammar.'
+%In the case of English, this kind of `rule' includes examples like `don’t split your infinitives' e.g.\ `Don’t write \emph{how to properly apply}', but write instead \emph{how properly to apply}; or `don’t end a sentence with a preposition'; or `use \emph{whom} rather than \emph{who} as the object of a verb or preposition'.
+
+%\begin{exe}
+%    \ex[]{
+%    \begin{xlist}
+%        \ex[\xmark]{to boldly go where no man has gone before.}
+%        \label{CHEx1a}
+%        \ex[\cmark]{to go boldly where no man has gone before}
+%        \label{CHEx1b}
+%    \end{xlist}
+%    }
+%    \label{CHEx1}
+%    \ex[]{
+%    \begin{xlist}
+%        \ex[\xmark]{This is the kind of bank which you cannot rely on.}
+%        \label{CHEx2a}
+%        \ex[\cmark]{This is the kind of bank on which you cannot rely.}
+%        \label{CHEx2b}
+%    \end{xlist}
+%    }
+%    \label{CHEx2}
+%    \ex[]{
+%    \begin{xlist}
+%        \ex[\xmark]{Who did you see?}
+%        \label{CHEx3a}
+%        \ex[\cmark]{Whom did you see?}
+%        \label{CHEx3b}
+%    \end{xlist}
+%    }
+%    \label{CHEx1}
+%\end{exe}
+
+%Such rules---which are often called \keyword{prescriptive rules} as they `prescribe' what is acceptable language---are mostly learned consciously, and require explicit instruction via grammar books and/or school teachers, \textbf{even for native speakers of the language}. This is very different from how language acquisition usually works: children acquire the language around them without any such specific instruction.
+
+%But there is a very different understanding of the `rules of a language' that is fundamental to linguistics.  Think of the related concept of `law'.  We use the same term, `law', in phrases like  `the laws of a country' and `the laws of physics/nature'. But we mean rather different things. On the one hand, we are all perfectly aware that certain people in a society are given the authority to create laws (rules!)\ that members of that society are required to follow, and that if anyone does not follow them, they may be punished. In the UK, as in any country, there are thousands of laws, of different degrees of seriousness: in general citizens may not use violence against other humans, may not commit robbery, may not drive over 70 miles per hour, etc.\ etc. At the same time, the mere fact that these laws exist tells you that the behaviour that is being prohibited takes place: there is no point in setting up a law to outlaw behaviour that doesn’t occur. And anyone who has been near a road knows that the laws about the speed of cars are violated all the time.  
+
+%Instructions to speakers of a language as to how they `should' speak are of this same general type. The society endorses certain `norms' or `rules' for linguistic behaviour, and while speakers frequently do `break' these laws (violate the rules in their speech) this is considered to be reprehensible, somehow `wrong', and something that should be `corrected' (if not necessarily actually punished!). In some societies, although not really in the UK or the USA, there are recognised authorities who codify these rules.
+
+%These prescriptive rules typically do not in fact tell you what is or is not possible in a language. In fact, just as for other societal laws, when you find a `prescriptive' rule telling a native speaker of a language that they `shouldn’t' use a certain structure, that is very good evidence that that structure \textit{is possible}, or even common, in the language (recall, societies invent laws to legislate against behaviour that \textit{actually occurs}). Usually such prescriptive rules reflect the fact that, in cases where speakers of English can use two different forms to express the same thing, there is a strong tendency to think one of these must be `better' than the other (of course, the same holds for other languages, for which all sorts of different prescriptive rules have been proposed as well). Consequently, grammarians, writers and/or language policy makers come up with various arguments to proclaim one of these forms to be the correct one. This sometimes reflects a belief that one of the forms existed in the language for a longer time than the other, and there is an unspoken assumption that the `original' state of the language is superior.  It may also reflect an implicit bias in favour of `classical' languages (Latin and Greek), or very commonly reflects a bias in favour of one regional or class dialect over another, and so on.
+
+%So we have just seen that there is one way to understand the concept of `laws' and `rules' as sets of (more or less enforceable) requirements as to how members of a society should behave, in particular specifying that certain actually occurring behaviour is wrong, and should be `outlawed'.
+
+%On the other hand, `laws of nature' we understand very differently. No human or group of humans `creates' such laws. Even laws that have an individual’s name attached to them, like Newton’s law of universal gravitation, were not created by that individual, but rather discovered through observation and experimentation.  Such laws are observed regularities in the way (some aspect of) the universe behaves.  The law of universal gravitation is a statement of how bodies behave, not how they \emph{should} behave.
+
+%\begin{center}
+%\includegraphics[width=0.5\linewidth]{Apples.png}\\
+%\footnotesize{Courtesy of the artist, Dan Piraro}
+%\end{center}
+
+%\keyword{Descriptivist} linguists (including descriptive grammarians) are interested in just such regularities in a specific aspect of the universe: the linguistic knowledge, and linguistic behaviour, of groups of humans. 
+\keyword{Descriptivist} linguists (including descriptive grammarians) are interested in regularities relating to the linguistic knowledge and linguistic behaviour of groups of humans. 
+Of course, such behaviour is highly complex, and affected by a whole number of different factors, 
+%(including, just to make things more complicated, possible knowledge of the kind of `prescriptive' rules that we were talking about before).
+Nevertheless, this is our challenge as scientists of human language.
+Such a linguist is interested in observing regularities in the linguistic behaviour of a specific individual or group and trying to induce the system that produces them.
+%\footnote{\emph{Induce} is used here in the sense `to infer by reasoning from particular facts to general principles' (see OED online; definition 6).  For a brief but useful overview of deductive and inductive reasoning, see \url{http://www.socialresearchmethods.net/kb/dedind.php}\,.}
+One way of doing this is to investigate a \keyword{corpus} of speech that has actually been produced, and indeed we have learned---and continue to learn---a lot from such corpus studies.
+But it is also very important to investigate what \emph{doesn’t} occur: things that are impossible, and so by definition won't be found in a corpus.
+There are also other aspects of linguistic behaviour beyond just the production of speech, writing or signing.
+So for example, a descriptivist grammarian could approach the question `what do people know when they know the syntax of English?' by pointing out that people who have learned English as a first language can tell for any \keyword{string} (sequence) of words, such as those in (\ref{CHEx4}--\ref{CHEx10}), whether it is a \emph{possible} English sentence or not, without having had explicit instruction for this, or being conscious of, or able to describe, the rule system that they use to decide on this. 
+
+In (\ref{CHEx4}--\ref{CHEx10}), an \keyword{asterisk} or \keyword{star} in front of a sentence indicates that the sentence is not a \keyword{well-formed} one.
+In particular, notice that we will generally use the asterisk to indicate that there is something \emph{syntactically} wrong with the sentence (rather than, say, pragmatically, semantically, or socially).
+This is standard notation in linguistics, which we will follow throughout the syntax block.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Anna read a book.}
+        \ex[]{Which book did Anna read?}
+        \ex[]{Anna read a book and the newspaper.}
+        \ex[*]{Which book did Anna read and the newspaper?}
+    \end{xlist}
+    }
+    \label{CHEx4}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Barbara said that she saw Carlo yesterday.}
+        \ex[]{Barbara said that Carlo saw her yesterday.}
+        \ex[]{Who did Barbara say that she saw yesterday?}
+        \ex[*]{Who did Barbara say that saw her yesterday?}
+    \end{xlist}
+    }
+    \label{CHEx5}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Duncan does not like those novels.}
+        \ex[]{Those novels, Duncan does not like.}
+        \ex[]{Duncan does not like those novels by Evans.}
+        \ex[*]{Those novels, Duncan does not like by Evans.}
+    \end{xlist}
+    }
+    \label{CHEx6}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Fiona likes reading novels.}
+        \ex[]{Reading newspapers upsets Fiona.}
+        \ex[]{What does Fiona like reading?}
+        \ex[*]{What does reading upset Fiona?}
+    \end{xlist}
+    }
+    \label{CHEx7}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Gemma is eager to leave.}
+        \ex[]{Gemma is easy to please.}
+        \ex[]{What is Gemma eager to do?}
+        \ex[*]{What is Gemma easy to do?}
+    \end{xlist}
+    }
+    \label{CHEx8}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Hugh wants to nominate himself/him. (himself = Hugh, him $\neq$ Hugh)}
+        \ex[]{Hugh wants Iain to nominate himself/him. (himself $\neq$ Hugh, him = Hugh)}
+    \end{xlist}
+    }
+    \label{CHEx9}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{etc. etc.}
+    \end{xlist}
+    }
+    \label{CHEx10}
+\end{exe}
+It is unlikely that a child learns how to distinguish all the possible from all the impossible sentences just by explicit instruction, because:
+\begin{enumerate}
+	\item how many children will ever be explicitly instructed about data such as those in (\ref{CHEx4}--\ref{CHEx9})? Yet native speakers of English agree on their relative acceptability. (It is even questionable whether all children will encounter sentences like these at all before being able to determine that they are possible or not).
+	\item all children show a similar developmental path in first-language acquisition, irrespective of the explicit instruction they might get (in fact, there is some evidence that suggests they ignore explicit instruction).
+\end{enumerate}
+
+Note also that it is not possible to give a child a list of all possible sentences in a language, since the number of possible sentences is literally infinite (see below).
+Apparently, every healthy child spontaneously devises a set of rules/principles with which they can distinguish the possible sentences in the language they hear around them from the impossible ones, and they can apply these principles continuously without having to make a conscious effort.
+This is a faculty with which all humans are endowed.
+It seems that there is a \keyword{critical period} for this faculty to be active (although the details are still debated): after a certain age, this spontaneous language-learning ability diminishes, so that learning a language after this age is not always equally successful and does require a conscious effort. 
+
+While the question of \emph{how} a child acquires these rules/principles (and whether this learning mechanism is specific to language or not) is an important and contentious one, it is not the topic of this block.
+We will investigate instead the properties of the fully developed syntactic rule system.
+%Note that for most if not all varieties of Present-Day English, this rule system will deem the sentences in \ref{CHEx1a}, \ref{CHEx2a}, and \ref{CHEx3a} possible sentences of English, just like the ones in \ref{CHEx1b}, \ref{CHEx2b}, and \ref{CHEx3b} (in fact, some prescriptively correct sentences like \ref{CHEx3b} may be descriptively ungrammatical for many English speakers).
+Henceforth, when we talk about \keyword{grammatical} or \keyword{ungrammatical} sentences, we will mean sentences which the vast majority of native users of a language would intuitively agree are (or are not) part of the language, regardless of what they are explicitly taught or told. Because this course is about English, we will focus on English, but the same principles would apply to any language.
+
+%NB: Although we will mainly be looking at English examples in this course since that is the one language that I know you are all familiar with, the human language faculty is of course such that children can acquire any other language with equal ease when this language is part of their environment. The syntax of other languages can differ in all sorts of interesting ways from that of English, but some of the fundamentals, such as the fact that sentences seem to be made of constituents rather than being just strings of words, hold more universally.  In this course a lot of the exemplification will be from English, and unfortunately we will only have limited time to go into variation between languages, although we will do se whenever we can. We'll try always to be clear when we are making claims that are limited to a particular language, and when the idea is that the claim is true of \emph{all}  languages; if ever you are in doubt what is intended, be sure to ask.
+
+\section{More than just strings}
+The first thing to realize when we start looking at the kind of principles that distinguish possible word orders from impossible ones is that sentences are not just \keyword{linear} (or, rather, \keyword{temporal}) \keyword{strings} of words.
+They have an internal \keyword{structure}.
+Children acquiring a language already appear to be aware of this, since (it has been claimed) they only ever seem to use \keyword{structure-sensitive} rules in trying to account for the language data they encounter around them---even though these rules might not yet be the same rules of the target adult language.
+Children do make mistakes (meaning they produce sentences that are not possible sentences in the adult language), but not random ones.
+
+The following example is a classic one in the literature---you’ll see it also presented in Santorini and Kroch’s text in Chapter 1.
+It concerns the way so-called \keyword{yes/no-questions} or \keyword{polar questions} are formed in English.
+Suppose a child hears (\ref{speak_polar_int}) and (\ref{read_polar_int}), and realizes they are the yes/no-question counterparts to declarative (\ref{speak_dec}) and (\ref{read_dec}), respectively.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The woman can speak Gaelic.}
+        \label{speak_dec}
+        \ex[]{Can the woman speak Gaelic?}
+        \label{speak_polar_int}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The woman can read the book that you gave her.}
+        \label{read_dec}
+        \ex[]{Can the woman read the book that you gave her?}
+        \label{read_polar_int}
+    \end{xlist}
+    }
+\end{exe}
+What kind of rule would the child come up with? If sentences are just strings of words, an entirely plausible hypothesis for the child to entertain is that these data indicate that yes/no-questions in English are formed thus:
+
+\begin{exe}
+    \ex[]{\textbf{Rule 1:}\\
+    Find the first auxiliary verb in the clause and put this up front.}
+\end{exe}
+This would work just fine for the examples above, and for many others that you can think of (try it with other auxiliaries!).
+But it isn't in fact the rule that adult speakers have in their heads.
+We know this because if it was, examples like (\ref{RC_speak_polar_int_ungrammatical}) would be acceptable.
+But they aren't!
+Instead the question corresponding to (\ref{RC_speak_dec}) is (\ref{RC_speak_polar_int}). 
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The woman who can speak Gaelic will help us.}
+        \label{RC_speak_dec}
+        \ex[*]{Can the woman who speak Gaelic will help us?}
+        \label{RC_speak_polar_int_ungrammatical}
+        \ex[]{Will the woman who can speak Gaelic help us?}
+        \label{RC_speak_polar_int}
+    \end{xlist}
+    }
+\end{exe}
+When we consider in addition that the actual grammatical question is (\ref{RC_speak_polar_int}), this suggests that the correct rule for adult English is:
+\begin{exe}
+    \ex[]{\textbf{Yes/no question formation in English}\\
+    Find the first auxiliary verb after a particular group of words belonging together, namely the \keyword{subject} of the sentence, and put this up front. }
+\end{exe}
+
+The example shows that the rule of yes/no-question formation does not simply count words in a string (``find the \emph{first} auxiliary verb''), but is sensitive to the fact that a sentence is divided into groups of words that belong closer together than others.
+Such a group of words that cling together is called a \keyword{constituent} of the sentence (more on how to distinguish constituents in Topic 2).
+%S\&K cite work by Crain and Nakayama that shows that, while children do make errors in producing yes/no-questions, they only ever make errors that are consistent with a view of sentences as composed of constituents, including a subject constituent. That is, they do not make errors that would be on a par with \ref{RC_speak_polar_int_ungrammatical}.
+
+\section{Hierarchical Structure}
+\hfill{}\textbf{Skill:}~\ref{whatissyntaxB}
+
+\textbf{Constituents can themselves contain smaller constituents}.
+The subject in (\ref{RC_speak_dec}) (\emph{the woman who can speak Gaelic}), for example, contains a \keyword{relative clause} (namely \emph{who can speak Gaelic}), which in turn contains constituents, such as its \keyword{direct object} \emph{Gaelic}.
+Such containment relationships (that is, the \keyword{constituency} of a sentence) can be expressed by a \keyword{tree structure}:
+\ea
+    \begin{forest}
+        [The woman who can speak Gaelic will help us
+        [The woman who can speak Gaelic [the] [woman who can speak Gaelic [woman] [who can speak Gaelic [\dots{}] [\dots{}]] ] ] [will help us [will] [help us [help] [us]]] ]
+        ]
+    \end{forest}
+\z
+
+Or more abstractly:
+
+\begin{exe}
+    \ex{
+    \begin{forest}
+        [Sentence
+        [Constituent [Constituent] [Constituent] ] [Constituent [Constituent] [Constituent] ] ]
+    \end{forest}
+    }
+    \label{heirarchy}
+\end{exe}
+(\ref{heirarchy}) expresses the claim that there is a sentence that consists of two constituents, each of which happens to consist of two smaller constituents.
+For example, a simple sentence like \emph{The girl read a book} will have the more refined tree structure in (\ref{tree_girl_read_book}) (more on this in Topics 2--3):
+\begin{exe}
+    \ex{
+    \begin{forest}
+        [Sentence
+        [Noun~phrase [Determiner [the]] [Noun [girl]] ] [Verb~phrase [Verb [read]] [Determiner [the]] [Noun [book]] ] ]
+    \end{forest}
+    }
+    \label{tree_girl_read_book}
+\end{exe}
+
+\section{Recursion}
+\hfill{}\textbf{Skill:}~\ref{whatissyntaxB}
+
+A fundamental property of \keyword{natural} (non-artificial) languages is that they allow their syntactic structures to have a property called \keyword{recursion}.
+This is related to what we noted just now: constituents can contain smaller constituents. Recursion in syntax is the situation in which a constituent can contain a smaller constituent \emph{of the same type as the bigger constituent}.
+It is this property that is responsible for the fact that, as mentioned earlier, the number of possible sentences in a language is infinite.
+For example, a sentence can contain a smaller sentence as one of its constituents.
+In (\ref{recursive_embeddingA}) we see that the verb \emph{know} can take a noun phrase like \emph{this story} as its object.
+But in (\ref{recursive_embeddingB}) we see that it can also take a complete sentence (introduced by the \keyword{function word} \emph{that}) as its object.
+The result is that we have a sentence that is \keyword{embedded} in a larger sentence.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Jennifer knows \lbrack{}this story\rbrack{}.}
+        \label{recursive_embeddingA}
+        \ex[]{Jennifer knows \lbrack{}that Mary believes these rumours\rbrack{}.}
+        \label{recursive_embeddingB}
+    \end{xlist}
+    }
+\end{exe}
+Within the smaller sentence the same thing is possible, and so on, \emph{ad infinitum}.
+
+\begin{exe}
+    \ex[]{Jennifer knows \lbrack{}that Mary believes \lbrack{}that Harry has said \lbrack{}that the paper reported \lbrack{}that \dots{}}
+\end{exe}
+There is no principled limit to recursion. Of course, for practical reasons any sentence will come to an end in actual conversations, but \emph{grammatically/syntactically speaking}, there is nothing wrong with arbitrarily long recursive structures.
+
+Recursion is possible for other sorts of constituents than full sentences as well. 
+For example, a word group built around a noun, a \keyword{noun phrase} or NP, can contain within it a word group built around a preposition, a \keyword{preposition phrase} or PP:
+\begin{exe}
+    \ex[]{\lbrack{}\textsubscript{NP} the cherry \lbrack{}\textsubscript{PP} on the cake\rbrack{}\rbrack{}}
+\end{exe}
+But as this example also shows, the PP \emph{on the cake} in turn contains another NP, namely \emph{the cake}.
+Nothing stops this NP from containing a PP again, just like the bigger NP in which it occurs:
+\begin{exe}
+    \ex[]{\lbrack{}\textsubscript{NP} the cherry \lbrack{}\textsubscript{PP} on the cake \lbrack{}\textsubscript{PP} on the plate\rbrack{}\rbrack{}\rbrack{}}
+    \label{cherry_on_cake}
+\end{exe}
+
+The schematic tree representation of (\ref{cherry_on_cake}) looks as follows (see if you can match up the \keyword{syntactic heads} D, N and P with the actual \keyword{lexical items}, i.e.~words of English, from the example):
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [NP
+        [D] [N] [PP
+        [P][NP
+        [D][N]]]
+        ]
+    \end{forest}
+    }
+\end{exe}
+We see that a noun phrase can contain another noun phrase, and a preposition phrase another preposition phrase.
+Again, there is no principled limit to this:
+\begin{exe}
+    \ex[]{the cherry on the cake on the plate in the container on the table \ldots}
+\end{exe}
+
+\section{Ambiguity}
+Many words in English (and other languages) are \keyword{ambiguous}: they can mean distinct things, depending perhaps on the context. One classic example is \emph{bank}: it's generally well-accepted that these are two distinct words in contemporary English that just happen to sound the same (they're homonyms). We call this kind of ambiguity \keyword{lexical ambiguity}.
+
+\ea
+    \ea The banks are on Forrest Road.
+    \ex The beautiful banks of Loch Lomond.
+    \z
+\z
+
+We can see this by trying a sentence like the following, which is odd (let's use the diacritic ``\#'' instead of a star, to indicate that the weirdness here is semantic, rather than syntactic):
+\ea[\#]{I went to the beautiful heather-covered banks of Loch Lomond and my nan went to those of Forrest Road.}
+\z
+
+The existence of hierarchical structure and recursion means that we might also encounter \keyword{structural ambiguity}. We can see this in examples like the following, which have at least two possible readings:
+\ea I hit the clown with a banana.
+\z
+
+The question here is what does the constituent \emph{with a banana} modify, or refer to. Is it the verb \emph{hit}, whereby the poor clown was minding their own business before I bopped them on the head using my banana? Or does it refer to \emph{the clown}, who was holding a banana and about to enjoy a potassium-filled snack, before I assaulted them? In fact, it could be either one: the ambiguity here is structural because one constituent could be modifying either of two other ones. You can attempt to draw these possibilities as tree structures, or perhaps see if you can find additional readings for the example.
+
+As a final note: structural ambiguity can be found not only in syntax. Think back to morphology: what is the hierarchical structure (constituent structure!) of \emph{unlockable}?
+
+%\hrulefill\\
+%\noindent
+
+%\section*{A note on drawing trees}
+%The tree representation for showing constituent structure is going to be used throughout this course, and you'll find that it will be handy to find ways of putting trees into your own documents (although most syntacticians often start with a piece of paper and a pencil when they are working out what the structure of any particular case actually is). There are various possible resources to draw syntactic trees. 
+
+%\begin{itemize}
+%\item One that is simple and easy to access is the online ``Syntax Tree Generator'' at \url{http://mshang.ca/syntree/} although there are other resources for drawing syntactic trees that you may find; you are welcome to use whatever you find most convenient.  To use the Syntax Tree Generator (as also another similar resource, phpSyntaxTree (\url{http://www.tycho.iel.unicamp.br/phpsyntaxtree/}) and various other systems), you have to enter the structure in `labelled bracket notation', where every constituent is contained in a pair of square brackets, and the label of each constituent comes immediately after the left bracket. You can then save the tree as an image.
+
+%\begin{minipage}{\the\linewidth}
+%\ex. \a. [NP [D the] [N traffic]]
+%\b. \Tree [.NP D\\the N\\traffic ]
+
+%\item I use \LaTeX\ to produce these documents.  \LaTeX\ is a complete typesetting system, with integrated tools for producing trees (as well as IPA symbols, semantic representations, etc.).  It's a steeper learning curve at the start, but can pay dividends later.  If anyone knows \LaTeX, or wants more info, you can find information about using LaTeX as a linguist in the PPLS Learning Resources \url{https://uoe.sharepoint.com/sites/PPLSLearningResources/SitePages/Developing-your-skills.aspx}.  There is a package called "forest" which is probably now the most commonly used LaTeX package for drawing trees. Again the input is essentially labelled bracket notation (but there are many more options than with a simple system like the Syntax Tree Generator).
+
+%\item Finally, some people use  a java program called "Treeform" which is available for download at \url{https://sourceforge.net/projects/treeform/}. This will run on a variety of platforms. I didn't have much luck with trying to run previous versions of this on my mac, but this latest version seems to run reliably. Here the interface is quite different, you are essentially drawing the tree out of snippets of structure, rather than giving it a string with brackets.
+
+%\end{itemize}
+
+%There are certainly other options out there but these are at least a place to start.
+
+
+
+\end{document}

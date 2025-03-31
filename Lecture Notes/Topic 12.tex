@@ -1,0 +1,785 @@
+\documentclass{article}
+\input{header}
+%\usepackage{microtype}
+%\usepackage{nowidow}
+
+\begin{document}
+\maketitle
+
+
+\subtitle{Topic 12: \emph{Wh}-movement}
+\hfill{}\textbf{Skills:}~\ref{wh_movement},
+\ref{i_to_c_movement}
+
+\section{Questions}
+\hfill{}\textbf{Skill:}~\ref{wh_movement}
+
+\subsection{Types of interrogative clauses in English}
+
+% The \keyword{speech act} of
+Asking a question can be performed using various syntactic means in English:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Are you going?}
+        \ex[]{You're going?}
+        \ex[]{\lbrack{}Shoulders raised, hands raised, palms inwards, eyebrows raised\rbrack{}}
+    \end{xlist}
+    }
+\end{exe}
+But the syntactic clause type that is conventionally associated with asking a question is the \keyword{interrogative}. 
+
+Interrogatives in \keyword{root clauses}, which can be used to ask a question, can be divided into two main types: those which can (at least in principle) be answered \emph{yes} or \emph{no}, and those which request some other information:
+
+\begin{itemize}
+\item Matrix \keyword{polar} or \keyword{yes/no} interrogatives:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Will they leave?}
+        \ex[]{Are you coming?}
+        \ex[]{Has she arrived?}
+    \end{xlist}
+    }
+\end{exe}
+\item Matrix \keyword{\emph{wh}}-interrogatives:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Who cares?}
+        \ex[]{What did you say?}
+        \ex[]{How many angels can dance on the head of a pin?}
+        \ex[]{Which courses will you apply for?}
+        \ex[]{When will they leave?}
+        \ex[]{Why is she coming?}
+        \ex[]{How could you say that?}
+    \end{xlist}
+    }
+\end{exe}
+\end{itemize}
+In this type, the nature of the answer is indicated by a constituent in the question that either consists of a \keyword{\emph{wh}-word} (e.g. \emph{who}, \emph{what}, \emph{why}, \emph{how}, \emph{when}),\footnote{Yes, indeed, \emph{how} doesn't begin with \emph{wh}.
+Actually, on the basis of the pronunciation rather than the orthography, it belongs with \emph{who}.
+But the term `\emph{wh}-word' is just a useful way to refer to this group of words, which syntactically and semantically, if not phonologically, form a natural class.} or a phrase that includes a \emph{wh}-word (\emph{\textbf{which} courses}, \emph{\textbf{how} many angels}). 
+
+Interrogatives can also occur in \keyword{embedded} contexts, as the complement of a subset of verbs, adjectives, nouns, and prepositions.
+\begin{itemize}
+\item Embedded polar interrogatives:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{I don't know \emph{if they will leave}.}
+        \ex[]{She asked \emph{whether you are coming}.}
+        \ex[]{They wonder \emph{if she has arrived}.}
+        \ex[]{I am unsure \emph{if they will leave}.}
+        \ex[]{And here comes in the question \emph{whether it is better to be loved rather than feared}.}
+        \ex[]{If you have to think about \emph{whether you love someone or not} \ldots}
+    \end{xlist}
+    }
+\end{exe}
+\item Embedded \emph{wh}-interrogatives:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{I don't know \emph{who cares}.}
+        \ex[]{She doesn't care \emph{what you say}.}
+        \ex[]{They wondered \emph{how many angels can dance on the head of a pin}.}
+        \ex[]{I am curious \emph{which courses you will apply for}.}
+        \ex[]{I am unsure \emph{when they will leave}.}
+        \ex[]{The question of \emph{why she is coming} is a good one.}
+        \ex[]{Learn about \emph{how you can surprise yourself}.}
+    \end{xlist}
+    }
+\end{exe}
+\end{itemize}
+
+We will get a taste of what phenomena are involved and what a formal analysis might look like by focusing on \emph{wh}-questions. We will, however, need to make some additional assumptions that rely on polar questions. The issues we might investigate further are listed next; of these, we will focus on the first, providing additional reading for the rest.
+
+\begin{itemize}
+\item \textbf{The position of the \emph{wh}-phrase in questions.}
+\item The position of the the auxiliary in questions.
+\item Syntactic differences between root and embedded interrogatives.
+\item Constraints on the phenomenon.
+\end{itemize}
+
+\section{\emph{Wh}-movement in questions}
+\hfill{}\textbf{Skill:}~\ref{wh_movement}
+
+The following sentence contains an example of structural ambiguity. It has two possible answers, which ultimately lead to two distinct underlying structures. Our theory already contains almost all of the pieces we need in order to understand what's going on.
+\ea Q: Why do you think the door to the seminar room is closed? \label{ex:wh-ambig}
+    \ea A1: Because there's an event there.
+    \ex A2: Because I heard it slam shut.
+    \z
+\z
+
+\subsection{The basic issue}
+
+\subsubsection[Selection and Theta-role assignment]{Selection and $\theta{}$-role assignment}
+
+In English, both root and embedded \emph{wh}-interrogatives begin with a \emph{wh}-phrase (minimally, a \emph{wh}-word).
+This order is frequently  contrary to the usual word order of English, which is a classical SVO language.
+Root clauses are (even) more complex than this, so for now let's look at embedded interrogatives. We see that there's a gap, or some displacement, which is characteristic of other instances of \keyword{movement} we've seen before:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{\gll
+        I wonder \textbf{who} {} {} came.\\
+        I think {} that \textbf{John} came.\\}\label{ex.iwonder_A}
+        \ex[]{\gll
+        I wonder \textbf{what} {} the children are destroying {} now.\\
+        I believe {} that the children are destroying {\textbf{the} \textbf{piano}} now.\\}\label{ex.iwonder_B}
+        \ex[]{\gll
+        I am curious {\textbf{which} \textbf{courses}} {} you are applying for.\\
+        I am surprised {} that you are applying {for \textbf{these} \textbf{courses}}.\\}\label{ex.iwonder_C}
+    \end{xlist}
+    }\label{ex.iwonder}
+\end{exe}
+
+The verb in the embedded clause in (\ref{ex.iwonder_B}),  \emph{destroy}, normally requires a following object.
+In the declarative complement it gets it: \emph{the piano}.
+But in the corresponding interrogative, the \emph{wh}-phrase \emph{what}  does not follow \emph{destroying}, but rather occurs at the very beginning of the embedded clause.
+Similarly in (\ref{ex.iwonder_C}), \emph{these courses} appears following the preposition \emph{for}, but in the corresponding interrogative, \emph{for} is `stranded' at the end of the clause, and \emph{which courses} again appears at the beginning of the embedded clause.
+Only in \ref{ex.iwonder_A} is there no difference in the order---when the non-\emph{wh} subject would in any case be initial in the embedded clause.
+We can't immediately tell whether \emph{who} is in the regular subject position, or the same clause-initial position as \emph{what} in (\ref{ex.iwonder_B}) and \emph{which courses} in (\ref{ex.iwonder_C}).
+As is often the case, it will turn out that the simplest course of action is to assume that the \emph{wh}-phrases in all three cases are showing the same behaviour:
+
+For the purposes of selection and $\theta{}$-role assignment, \emph{wh}-phrases here appear to be `displaced', not in the expected position, given what we know about selection and $\theta{}$-role assignment.
+
+\subsubsection{Agreement}
+
+The same is true for agreement:
+\begin{exe}
+    \ex[]{\gll
+    I believe {} he has/*have said {twenty women} *has/have left.\\
+    I wonder {how many women} he has/*have said {} *has/have left.\\}
+\end{exe}
+
+For the purposes of agreement, \emph{wh}-phrases in these interrogatives also appear to be `displaced.'
+% That is, they are not in the expected position, given what we know about how agreement works.
+
+
+\subsubsection{Distance}
+
+Another indication that we're dealing with what we've called movement is that embedded questions depend on structure, not linear order. In other words, it's not the case that the object (and some other categories) can either follow the verb or precede the subject:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+       \ex[]{I wonder [\textbf{who} he admires].}
+       \ex[]{I wonder [\textbf{who} he said [he admires]].}
+       \ex[]{I wonder [\textbf{who} they will report [he said [he admires]]].}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{I wonder [\textbf{how many workers} *\emph{is/are} on strike].}
+        \ex[]{I wonder [\textbf{how many workers} the government thinks [*\emph{is/are} on strike]].}
+        \ex[]{I wonder [\textbf{how many workers} they will report [the government thinks [*\emph{is/are} on strike]]].}
+    \end{xlist}
+    }
+\end{exe}
+
+The distance between the position where the \emph{wh}-phrase `ought' to be in order to satisfy the requirements of selection, $\theta$-role assignment, and agreement, and the position in which it actually occurs in the string, can be arbitrarily large.
+
+% This is a central point about this phenomenon, it is also true of a number of other cases of movement, including the kind found in English `topicalization' or `fronting'.
+This kind of movement, where the distance between the original position and the final `landing site' of a linguistic element (also described as the distance between the \textbf{gap} and the \textbf{filler}) can span a syntactically unlimited number of clauses, is often referred to as \keyword{unbounded} movement.
+
+\subsection{The basic solution}
+
+In order to account for the fact that the \emph{wh}-phrase behaves for many purposes as though it occupies a position that is different from the one in which it occurs in the string, we again invoke the process of \keyword{movement}.
+\begin{exe}
+    \ex[]{\begin{tabbing}   I  wonder  \= who \= he \= admires <\= who \kill 
+                                                    \>       \>      \>  admires           \>who \\
+                                                    \>       \>  he \> admires         \>who  \\
+                                                    \> who he admires $\langle$\sout{who}$\rangle$\\
+                                   I wonder who he admires $\langle$\sout{who}$\rangle$
+\end{tabbing}}
+\end{exe}
+We have come across movement before already: we have proposed that the subject of a sentence enters the syntax in the specifier position of the VP, and then moves to the specifier position in the IP.
+And we've also proposed that in a raising sentence with a verb like \emph{seem}, an argument of the lower, infinitival clause moves to the specifier position in the IP of the higher, finite clause.
+% As you know, in some versions of generative syntactic theory, a moved constituent left behind a special kind of silent constituent, a copy or `trace,' indicated in a tree with a $\langle$\sout{strikethrough}$\rangle$ or a $t$.
+% As yet we have not provided a theory of why it is normally only the highest copy in the structure that is pronounced.%\footnote{You'll see different notations in the literature, some people using the `t' notation, others using the angle brackets. In some cases this reflects a rejection of, or commitment to the `copy theory' of movement; in other cases the writer may just pick one or the other for convenience.}
+
+Now, \textbf{where exactly does the \emph{wh}-phrase move to}?
+The hypothesis is that interrogative clauses are C[omplementizer]P[hrase]s that are often headed by a phonetically null C[omplementizer]. Let's see how we get there. First let's draw our basic interrogative embedded clause.
+\ea
+    \ea I think that he admires Billie. \label{admire_charles_A}
+    \ex{
+    \small\begin{forest}
+            [
+            \iibar{C}
+            [\phantom{X} ]
+            [\ibar{C}
+            [\obar{C}\\that][\iibar{I}
+            [\iibar{D} [he, roof, name=copy]][\ibar{I}
+            [\obar{I}\\\lbrack{}\textsc{pres}\rbrack{}][\iibar{V}
+            [$\langle{}$\sout{\iibar{D}}$\rangle{}$ [$\langle$\sout{he}$\rangle$, roof, name=trace]][\ibar{V}
+            [\obar{V}\\admires][\iibar{D} [Billie, roof]]]]]]]
+            ]
+            \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \end{forest}
+    }\label{admire_charles_B}
+    \z
+\z
+
+In a question, we have the \emph{wh}-word instead of the object:
+
+\ea
+    \ea{I wonder who he admires.}\label{wonder_who_A}
+    \ex{
+    \small\begin{forest}
+            [
+            \iibar{C}
+            [\phantom{} ]
+            [\ibar{C}
+            [\obar{C}\\$\emptyset{}$][\iibar{I}
+            [\iibar{D} [he, roof, name=copy]][\ibar{I}
+            [\obar{I}\\\lbrack{}\textsc{pres}\rbrack{}][\iibar{V}
+            [$\langle{}$\sout{\iibar{D}}$\rangle{}$ [$\langle$\sout{he}$\rangle$, roof, name=trace]][\ibar{V}
+            [\obar{V}\\admires][\iibar{D} [\textbf{who}, roof]]]]]]]
+            ]
+            \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \end{forest}
+    }\label{wonder_who_B}
+    \z
+\z
+
+Where does the \emph{wh}-phrase move to? The specifier positions of our embedded VP and IP are both already taken up by the embedded subject, and we've assumed so far that only one phrase can take up one position in the tree. Our assumptions to allow for the specifier position at the CP level, so we're going to propose that the position to which \emph{who} moves is in fact \textbf{the specifier position of CP} - this also gives us the right word order.
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{I wonder \lbrack{}\textsubscript{CP} who he admires\rbrack{}.}
+        \ex{
+        \small\begin{forest}
+            [
+            \iibar{C}
+            [\iibar{D} [who, roof, name=whcopy]][\ibar{C}
+            [\obar{C}\\$\emptyset{}$][\iibar{I}
+            [\iibar{D} [he, roof, name=copy]][\ibar{I}
+            [\obar{I}\\\lbrack{}\textsc{pres}\rbrack{}][\iibar{V}
+            [$\langle{}$\sout{\iibar{D}}$\rangle{}$ [$\langle$\sout{he}$\rangle$, roof, name=trace]][\ibar{V}
+            [\obar{V}\\admires][$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{who}$\rangle$, roof, name=whtrace]]]]]]]
+            ]
+            \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+            \draw[->,dotted] (whtrace) to[out=south west,in=south] (whcopy);
+        \end{forest}
+        }
+    \end{xlist}
+    }
+\end{exe}
+\vspace{-4em}
+We're assuming that the head \obar{C} is there but silent. As you'll read in the S\&K, there is indirect evidence for this null complementizer in earlier stages of English, and in other languages.
+We'd also be able to find more motivation for this when we consider root interrogatives, combined with polar questions. But for now, to summarize:  a \emph{wh}-phrase moves to become the specifier of a (phonetically null) complementizer. And this puts us in a position to explain the structural ambiguity in~(\ref{ex:wh-ambig}).
+
+\subsection{Back to the interpretation of adjuncts}
+
+So far we've only considered closely \emph{wh}-movement as it affects \keyword{arguments}.
+Because arguments are selected by particular heads, we have very direct evidence for where the \emph{wh}-phrase originated.   
+
+What about adjuncts?  It certainly appears that these can be questioned:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{They arrived on Tuesday. When did they leave?}
+        \ex[]{She laughed because she understood.  Why did you laugh?}
+        \ex[]{I ate lunch at Nile Valley.  Where did you eat lunch?}
+    \end{xlist}
+    }
+\end{exe}
+
+Let's first remind ourselves of syntactic ambiguity. Which of the following is/are ambiguous, and why?
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{She said that she would leave on Tuesday.}
+        \ex[]{She said on Tuesday that she would leave.}
+    \end{xlist}
+    }
+\end{exe}
+
+In the first example, the PP could be modifying either the embedded or matrix clause:
+\begin{exe}
+    \ex[]{\label{ex:ambig-high}
+    \small\begin{forest}
+        [
+        \iibar{I}
+        [\iibar{D} [she, roof, name=copy1]][\ibar{I} 
+        [\obar{I}\\\lbrack{}\textsc{past}\rbrack{}]
+        [\iibar{V}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{she}$\rangle$, roof, name=trace1]][\ibar{V}
+        [\ibar{V}
+        [\obar{V}\\said][\iibar{C} [\phantom{X} ]
+        [\ibar{C}
+        [\obar{C}\\that][\iibar{I}
+        [\iibar{D} [she, roof, name=copy]][\ibar{I}
+        [\obar{I}\\would][\iibar{V}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{she}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\leave]]]]]]]][\iibar{P} [on Tuesday, roof]]]]]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \draw[->,dotted] (trace1) to[out=south west,in=south] (copy1);
+    \end{forest}
+    }
+    \ex[]{\label{ex:ambig-low}
+    \small\begin{forest}
+        [
+        \iibar{I}
+        [\iibar{D} [she, roof, name=copy1]][\ibar{I}
+        [\obar{I}\\\lbrack{}\textsc{past}\rbrack{}]
+        [\iibar{V}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{she}$\rangle$, roof, name=trace1]][\ibar{V}
+        [\obar{V}\\said][\iibar{C} [\phantom{X} ]
+        [\ibar{C}
+        [\obar{C}\\that][\iibar{I}
+        [\iibar{D} [she, roof, name=copy]][\ibar{I}
+        [\obar{I}\\would][\iibar{V}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{she}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\leave][\iibar{P} [on Tuesday, roof]]]]]]]]]]
+        ]]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \draw[->,dotted] (trace1) to[out=south west,in=south] (copy1);
+    \end{forest}
+    }
+\end{exe}
+
+In the second, it can only be modifying the matrix clause.
+% \ex[]{ He said that he did it because he wanted to annoy me.}
+Now, how about questions? Which of the following is/are ambiguous, and why?
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{When did she say that she would leave?}
+        \ex[]{Why did he say that he did it?}
+    \end{xlist}
+    }
+\end{exe}
+
+In these cases, there is no possible ambiguity about the position in which we see/hear the \emph{wh}-word: it has to be part of the \textsc{root} clause, because the word order rules out the possibility that it is within the lower clause.
+So why is it that these questions still show the same ambiguity that we saw in the declaratives?
+
+We easily explain this if we assume that in these interrogatives also, the \emph{wh}-phrases have moved to the positions that we see/hear them in from some position lower in the structure.
+As we know from the declaratives, there are at least two possible positions in each case---adjunct to the matrix VP as in~(\ref{ex:ambig-high}), or adjunct to the lower VP as in~(\ref{ex:ambig-low}). So if we assume that what these phrases can be interpreted as modifying is determined by their ``pre-movement'' position---the ``launching'' site for the movement---we can give exactly the same explanation for the ambiguity that we were able to give for the declaratives.
+
+Here's the tree for the high adverbial reading: when did the saying happen. We need to do one additional thing, which is to account for how \emph{did} shows up. We'll assume that it starts off in \obar{I} and moves to \obar{C}. There's additional discussion of how we end up there below if you're interested. Don't worry if you end up putting it somewhere else for the purposes of this Topic: remember what we're trying to focus on is the big picture (hierarchical structure, constituency, syntactic ambiguity), using our formal trees as a tool. So the details of this \keyword{I-to-C movement} can wait for your next syntax course.
+
+\ea{\label{ex:ambig-high-q}
+    \small\begin{forest}
+        [\iibar{C}
+            [\iibar{P} [when, roof, name=highpp]]
+            [\ibar{C}
+                [\obar{C} [did, name=highC]]
+                [\iibar{I}
+                    [\iibar{D} [she, roof, name=copy1]][\ibar{I} 
+                    [\obar{I} [\sout{did}, name=highI] ]
+                    [\iibar{V}
+                    [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{she}$\rangle$, roof, name=trace1]][\ibar{V}
+                    [\ibar{V}
+                    [\obar{V}\\say][\iibar{C} [\phantom{X} ]
+                    [\ibar{C}
+                    [\obar{C}\\that][\iibar{I}
+                    [\iibar{D} [she, roof, name=copy]][\ibar{I}
+                    [\obar{I}\\would][\iibar{V}
+                    [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{she}$\rangle$, roof, name=trace]][\ibar{V}
+                    [\obar{V}\\leave]]]]]]]][\iibar{P} [\textbf{when}, roof, name=lowpp]]]]]
+                ]
+            ]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \draw[->,dotted] (trace1) to[out=south west,in=south] (copy1);
+        \draw[->,dotted] (lowpp) to[out=south west,in=south west] (highpp);
+        \draw[->,dotted] (highI) to[out=south west,in=south west] (highC);
+    \end{forest}
+    }
+\z
+
+Next we have the tree for the low adverbial reading: when the leaving would happen. There's one more technical complication. We could move the PP all the way up from the embedded clause to the matrix CP. But there's good reason to believe that it actually moves to the embedded specifier of CP first, and from there to the matrix CP. Again, we won't be able to go into that idea in depth in LEL2A, so don't worry if you'd rather just portray one long movement crossing all the clauses in between.
+\ea{\label{ex:ambig-low-q}
+    \small
+    \begin{forest}
+        [\iibar{C}
+            [\iibar{P} [when, roof, name=highpp]]
+            [\ibar{C}
+                [\obar{C} [did, name=highC]]
+                [\iibar{I}
+                [\iibar{D} [she, roof, name=copy1]][\ibar{I}
+                [\obar{I} [\sout{did}, name=highI] ]
+                [\iibar{V}
+                [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{she}$\rangle$, roof, name=trace1]][\ibar{V}
+                [\obar{V}\\said][\iibar{C} [\iibar{P} [\sout{when}, roof, name=lowCP] ]
+                [\ibar{C}
+                [\obar{C}\\that][\iibar{I}
+                [\iibar{D} [she, roof, name=copy]][\ibar{I}
+                [\obar{I}\\would][\iibar{V}
+                [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{she}$\rangle$, roof, name=trace]][\ibar{V}
+                [\obar{V}\\leave][\iibar{P} [\textbf{when}, roof, name=lowpp]]]]]]]]]]
+                ]]
+            ]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \draw[->,dotted] (trace1) to[out=south west,in=south] (copy1);
+        \draw[->,dotted] (lowpp) to[out=south west,in=south] (lowCP);
+        \draw[->,dotted] (lowCP) to[out=south west,in=south west] (highpp);
+        \draw[->,dotted] (highI) to[out=south,in=south] (highC);
+    \end{forest}
+    }
+\z
+
+And there we have it:
+\begin{itemize}
+    \item The moved \emph{wh}-phrase starts off in its original position.
+    \item It moves to the specifier of CP.
+    \item The original selectional restrictions, interpretation, and so on are preserved - like in other cases of movement we've seen.
+    \item Some added assumptions that help us but are less crucial right now:
+        \begin{itemize}
+            \item The auxiliary \emph{do} starts of in \obar{I} and moves to \obar{C}.
+            \item The \emph{wh}-phrase moves to each specifier of CP along the way, if there are multiple embedded clauses.
+        \end{itemize}
+\end{itemize}
+
+\section{Extensions (optional)}
+
+% \hfill{}\textbf{Skill:}~\ref{i_to_c_movement}
+
+\subsection{Back to the difference between matrix and embedded \emph{wh}-inter\-rog\-a\-tives}
+
+The striking difference between embedded and matrix \emph{wh}-interrogatives is that in the latter only, an auxiliary always appears between the \emph{wh}-phrase and the subject of the sentence (unless this is itself the \emph{wh}-phrase).
+This phenomenon is known as \keyword{subject--auxiliary inversion}:
+\begin{exe}
+\ex{
+\begin{xlist}
+\ex{\begin{tabbing}   I  wonder  \= Which alternative \= will \= she \= will \= choose  \kill 
+                                          I wonder    \>which alternative \>      \>  she \> will \> choose $\langle$\sout{which alternative}$\rangle$. \\
+                                           Root:                \> Which alternative \> will  \> she \>      \>  choose $\langle$\sout{which alternative}$\rangle$?
+              \end{tabbing}} 
+       \ex{\begin{tabbing}   I  wonder  \= Why \= have \= they \= have \= chosen  \kill 
+                                          I wonder    \> why \>      \>  they  \> have \> chosen that $\langle$\sout{why}$\rangle$. \\
+                                           Root:                \> Why \> have  \> they \>      \>  chosen that $\langle$\sout{why}$\rangle$?
+              \end{tabbing}}
+       \ex{\begin{tabbing}   I  wonder  \= Where   \= is  \= he   \= is \= \kill 
+                                          I wonder    \> where \>      \>  he  \> is  $\langle$\>\sout{where}$\rangle$. \\
+                                           Root:                \> Where \> is  \> he \>      \>  $\langle$\sout{where}$\rangle$?
+              \end{tabbing}}
+\end{xlist}}
+\end{exe}
+If there is no auxiliary with semantic value, the semantically vacuous auxiliary \emph{do} appears.
+This phenomenon of \keyword{\emph{do}-support}, which we have already seen in negated declaratives, is a remarkable characteristic of modern English, and the history of its emergence in English is a much-researched topic:
+\begin{exe}
+    \ex[]{\begin{tabbing}   I  wonder  \= Which alternative \= does \= she \= likes \=   \kill 
+                                          I wonder    \>which alternative \>        \>  she \> likes \> $\langle$\sout{which alternative}$\rangle$ best. \\
+                                            Root:       \> Which alternative \> does  \> she \> like \>  $\langle$\sout{which alternative}$\rangle$ best?
+              \end{tabbing} }
+\end{exe}       
+For embedded interrogatives, we hypothesized that the \emph{wh}-phrase that occurs at the beginning of the interrogative clause is in the specifier of a CP headed by a null complementizer.
+Unless we are forced to do otherwise, the most economical analysis would be that the same is true in matrix interrogatives.
+This means that we must assume that \emph{matrix interrogatives are not just IPs, but CPs}, again headed by a null complementizer:
+\begin{exe}
+    \ex[]{\lbrack{}\textsubscript{CP} \lbrack{}Which alternative\rbrack{} will $\emptyset$ \lbrack{}\textsubscript{IP} she choose $\langle$\sout{which alternative}$\rangle$\rbrack{}\rbrack{}?}
+\end{exe}
+We still have to figure out where exactly the auxiliary is.  
+
+There is one position for a head between the specifier position of CP (where the \emph{wh}-phrase \emph{which alternative} is) and the specifier of IP (where the subject of the sentence, \emph{she}, is): the head position of the CP itself.
+So we actually now have the basis for a good analysis.
+An element in I can move to adjoin to C, when C is the next highest head.\footnote{Note that this requires that any auxiliary that participates in subject--auxiliary inversion has already moved to I, e.g. \emph{have} in \emph{Why \textbf{have} you $\langle$\sout{have}$\rangle$ done that?}.
+If you want to know more about the positioning of auxiliaries in English (and verbs more generally), this is the topic of Chapter 6 in the Santorini \& Kroch text.}
+
+\begin{exe}
+    \ex{\small
+    \begin{forest}
+        [
+        \iibar{C}
+        [\iibar{D} [which alternative, roof, name=whcopy]][\ibar{C}
+        [\obar{C} [\obar{I}\\will, name=copyI][\obar{C}\\$\emptyset{}$]][\iibar{I}
+        [\iibar{D} [she, roof, name=copy]][\ibar{I}
+        [$\langle$\sout{\obar{I}$\rangle$}\\$\langle$\sout{will}$\rangle$, name=traceI][\iibar{V}
+        [$\langle$\sout{\iibar{D}$\rangle$} [$\langle$\sout{she}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\choose][$\langle$\sout{\iibar{D}$\rangle$} [$\langle$\sout{which alternative}$\rangle$, roof, name=whtrace]]]]]]]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \draw[->,dotted] (traceI) to[out=south west,in=south] (copyI);
+        \draw[->,dotted] (whtrace) to[out=south west,in=south] (whcopy);
+    \end{forest}
+    }
+\end{exe}
+\vspace{-5em}
+So, descriptively,  the difference between embedded and root \emph{wh}-interrogatives in English is that in embedded \emph{wh}-interrogatives there is \textbf{one} movement, of a \emph{wh}-phrase, to the Spec,CP position;  in root \emph{wh}-interrogatives there are \textbf{two} movements: the same movement of the \emph{wh}-phrase, and  the movement of a finite I element (a \keyword{head}, rather than a phrase) to the C position. 
+
+This pattern is not unique to English.
+For example, we find pretty much exactly the same pattern (\emph{wh}-movement in both root and embedded interrogatives, I-to-C movement only in root interrogatives) in all the Germanic languages. Here is an example from Swedish, one of the Scandinavian languages:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{\gll Jag vet [\textsubscript{CP\textsubscript{\Decl{}}} att hon har sett brevet]\\
+        I know {} that she has seen letter\Def{}\\
+        \trans `I know that she has seen the letter'\hfill(Swedish)}
+        \ex{\gll Jag vet [\textsubscript{CP\textsubscript{\Q{}}} vad hon har sett $\langle$\sout{vad}$\rangle$]\\
+        I know {} what she has seen $\langle$\sout{what}$\rangle$\\
+        \trans `I know what she has seen'}
+        \ex{\gll [\textsubscript{CP\textsubscript{\Q{}}} Vad har hon $\langle$\sout{har}$\rangle$ sett $\langle$\sout{vad}$\rangle$]?\\
+        {} what has she $\langle$\sout{has}$\rangle$ seen $\langle$\sout{what}$\rangle$\\
+        \trans `What has she seen?'}
+    \end{xlist}
+    }
+\end{exe}
+     
+So we have a good description of the distinction between root and embedded interrogatives.  
+
+% We've speculated that at least in English it is the Q complementizer that requires that its specifier be filled by a \emph{wh}-phrase. This is true in both root and embedded interrogatives, so in that respect there seems no need to distinguish between the complementizer occurring in these two different types of clause.
+
+It now seems that we are going to have to make a distinction between root and embedded interrogatives in terms of whether or not I-to-C movement is required, so it looks like we have to postulate two different complementizers in standard English: one that appears in root interrogatives, and another that appears in embedded interrogatives.
+They share the property of requiring that their specifier be filled by a \emph{wh}-phrase, but they differ in whether or not they require also the movement of the inflected verb (I-to-C movement).   
+
+Work on different dialects of English indicates that these properties can be distributed differently over root and embedded interrogatives.
+\citet{henry_belfast_1995} showed that I-to-C movement is possible also in embedded clauses in Belfast Irish, and this turns out to be the case in a number of varieties of English spoken both in Northern Ireland and the Republic of Ireland \citep{kirk_assessing_2007}, as well as in varieties spoken in Wales \citep{thomas_welsh_1985, penhallurick_welsh_2004}.
+Even more strikingly, `Indian Vernacular English' has been claimed to have the \emph{inverse} pattern to standard British English (and to Standard Indian English), with I-to-C \emph{only} in embedded clauses \citep{bhatt_optimal_2000}.
+
+\subsection{What about yes/no (polar) questions?}
+
+In yes/no questions, we find the same distinction between root and embedded cases: in root polar interrogatives an auxiliary has to move to the left of the subject, while in embedded interrogatives this does not (and in Standard English must not) happen.
+In root interrogatives this is all that needs to be said, descriptively;  in embedded polar interrogatives, on the other hand, we find particular elements  occurring in the initial position of the interrogative clause:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Will they leave?}
+        \ex[*]{I wonder will they leave.}
+        \ex[]{I wonder they will leave.}
+        \ex[*]{I wonder if/whether they will leave.}
+        \ex[*]{I wonder if/whether will they leave.}
+    \end{xlist}
+    }
+\end{exe}
+What, if anything, do we have to add to the system that we have developed so far to get this pattern?
+
+\subsubsection{Root polar interrogatives}
+Starting with the root cases, clearly these are also interpreted as interrogatives, so it is reasonable to think that they also contain the null interrogative complementizer.  
+\begin{exe}
+    \ex{
+    \small\begin{forest}
+        [
+        \iibar{C} [\phantom{X} ]
+        [\ibar{C}
+        [\obar{C} [\obar{C}\\$\emptyset{}$][\obar{I}\\will, name=copyI]][\iibar{I}
+        [\iibar{D} [they, roof, name=copy]][\ibar{I}
+        [$\langle$\sout{\obar{I}}$\rangle$\\$\langle$\sout{will}$\rangle$, name=traceI][\iibar{VP}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{they}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\leave]]]]]]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \draw[->,dotted] (traceI) to[out=south west,in=south] (copyI);
+    \end{forest}
+    }
+\end{exe}
+\vspace{-2em}
+If we're assuming a null complementizer, then we need to say that \obar{I} adjoins to it, which is a new theoretical move for us. It isn't absolutely necessary given what we've said so far---it depends on whether we want the null complementizer---but it is the way people usually think about it nowadays.
+
+Notice however that it means that interrogative clauses in English \textbf{don't} necessarily involve movement of a \emph{wh}-phrase to the specifier position, against what we said earlier.  
+\begin{exe}
+\begin{multicols}{2}
+    \ex{
+    \begin{xlist}
+        \ex[]{Which alternative will she choose?}
+        \ex[*]{Will she choose which alternative?\\}
+    \end{xlist}
+    }\label{ex:willshe}
+    \columnbreak
+    \ex{
+    \begin{xlist}
+        \ex[]{Which woman chose which alternative?}
+        \ex[*]{Which woman which alternative (did) choose?}
+    \end{xlist}
+    }
+\end{multicols}
+\end{exe}
+So what can we do?  
+
+Two hypotheses suggest themselves.
+The first is that we need to distinguish between `polar Q' complementizers and `\emph{wh} Q' complementizers.
+The downsides of such a suggestion are (a) the proliferation of different null elements, and (b) the fact that we don't capture what looks like commonalities (for example, the obligatory I-to-C in root context and lack of it in embedded contexts).
+
+An alternative is to propose the existence in English of a null \emph{wh}-word that can be merged directly in the specifier of CP, a so-called `null operator'.
+\begin{exe}
+    \ex{
+    \small\begin{forest}
+        [
+        \iibar{C}
+        [\textbf{OP}\textsubscript{[\textsc{wh}]}\\$\emptyset{}$][\ibar{C}
+        [\obar{C} [\obar{C}\\$\emptyset{}$][\obar{I}\\will, name=copyI]][\iibar{I}
+        [\iibar{D} [they, roof, name=copy]][\ibar{I}
+        [$\langle$\sout{\obar{I}}$\rangle$\\$\langle$\sout{will}$\rangle$, name=traceI][\iibar{VP}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{they}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\leave]]]]]]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \draw[->,dotted] (traceI) to[out=south west,in=south] (copyI);
+    \end{forest}
+    }
+\end{exe}
+If we do this we could then maintain the generalization that English interrogatives always have a \emph{wh}-element in the specifier of CP .
+
+It is worth noting that certain question-introducing words in other languages (for example Yiddish) have been analysed as the overt equivalent of this hypothesized null operator in English. 
+
+\subsubsection{Embedded polar interrogatives}
+
+As we have already seen, embedded polar interrogatives differ from matrix polar interrogatives in being introduced by either \emph{whether} or \emph{if}, and by featuring the obligatory \emph{lack} of I-to-C movement:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{I wonder if they will leave.}
+        \ex[]{I wonder whether they will leave.}
+        \ex[*]{I wonder they will leave.}
+        \ex[*]{I wonder will they leave.}
+    \end{xlist}
+    }
+\end{exe}
+
+The lack of I-to-C movement parallels exactly what we already saw in embedded \emph{wh}-interrogatives.
+
+What about \emph{whether} and \emph{if}?
+There are two obvious hypotheses.
+The first, and probably most obvious, is that these are actually \emph{overt} [Q] complementizers:
+\begin{exe}
+    \ex[]{I wonder \ldots{} \small\begin{forest}
+        [
+        \iibar{C}
+        [OP\textsubscript{[\textsc{wh}]}\\$\emptyset{}$][\ibar{C}
+        [\obar{C}\\whether/if][\iibar{I}
+        [\iibar{D} [they, roof, name=copy]][\ibar{I}
+        [\obar{I}\\will][\iibar{VP}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{they}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\leave]]]]]]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \end{forest}}
+\end{exe}
+The second is that one or both of these elements is actually an overt instantiation of Op, for example:
+\begin{exe}
+    \ex[]{I wonder \ldots{} \small\begin{forest}
+        [
+        \iibar{C}
+        [OP\textsubscript{[\textsc{wh}]}\\whether/if][\ibar{C}
+        [\obar{C}\\$\emptyset{}$][\iibar{I}
+        [\iibar{D} [they, roof, name=copy]][\ibar{I}
+        [\obar{I}\\will][\iibar{VP}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{they}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\leave]]]]]]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \end{forest}}
+\end{exe}
+Neither of these alternatives is without its problems.
+We will not pursue this issue further, but you can think through what some of the issues here might be. 
+
+\subsection{Crosslinguistic variation}
+As we've seen, in English \emph{wh}-questions the \emph{wh}-phrase moves to the beginning of the clause; we have analysed this as being movement to the specifier of a particular complementizer.
+Since this complementizer heads CPs that are interpreted as questions, we might call this the `Q' complementizer.
+Whether or not this \emph{wh}-movement is required is a language-particular property. 
+We can't go in to all the possibilities here, but they include at least the following:
+\begin{itemize}
+\item In some languages \emph{wh}-expressions do not move; they simply occur in the usual position for arguments/adjuncts, `in situ.'
+Japanese and Chinese (among many others) work like this.
+Note that Japanese is a uniformly \keyword{head-final} language, while Chinese is SVO.
+\begin{exe}
+    \ex[]{\gll Mary-wa [John-ga nani-o tabeta ka] siritagatteimasu.\\
+    Mary-\Top{} [John-\Nom{} what-\Acc{} ate \Q{} wonders\\
+    \trans `Mary wonders what John ate.'\hfill(Japanese)}
+    \ex[]{\gll Wo xiang-zhidao Lisi mai-le shenme.\\
+    I wonder Lisi bought what\\
+    \trans `I wonder what Lisi bought.'\hfill(Chinese)}
+\end{exe}
+\item In some languages \textbf{one} \emph{wh}-phrase moves.
+English is of this type.
+In a typical question, there is only one \emph{wh}-phrase, so in those cases the only \emph{wh}-phrase moves.
+\begin{exe}
+    \ex{
+    \begin{multicols}{2}
+    \begin{xlist}
+        \ex[]{Who did you see?}
+        \ex[]{When did you see Amanda?}
+    \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+But it is possible to question more than one phrase simultaneously, and this is where we see that only one of the phrases can (and must) move:\footnote{It's important to distinguish these cases from cases where we see coordination, like (i):
+\vspace{-0.5em}
+\begin{exe}
+    \exi{(i)}{
+    \begin{multicols}{2}
+    \begin{xlista}
+        \ex[]{Who did you see, and when?}
+        \ex[]{What did they mend, and how?}
+    \end{xlista}
+    \end{multicols}
+    }\label{coordination}
+\end{exe}
+\vspace{-1.5em}
+The syntax of these is quite different, involving the coordination of an interrogative with a single \emph{wh}-word (\emph{Who did you see?}) and an elliptical interrogative (\emph{When \sout{did you see them}?}).}
+\begin{exe}
+    \ex{
+    \begin{multicols}{2}
+    \begin{xlist}
+        \ex[]{Who did you see when?}\label{whodid}
+        \ex[*]{Who when did you see?}\label{whowhen}
+    \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+\item In some languages \textbf{all} \emph{wh}-expressions (can) move.
+This is a particularly noted feature of Slavic languages. 
+\begin{exe}
+    \ex{
+    \begin{multicols}{2}
+    \begin{xlist}
+        \ex[]{\gll Koj kogo e vidjal?\\
+          who whom \Aux{} seen\\
+          \trans `Who saw who?'}
+        \ex[]{\gll Koj kude udari Ivan?\\
+         who where hit Ivan \\
+         \trans `Who hit Ivan where?'\hfill(Bulgarian)}
+    \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+There are intriguing and subtle difference between the different Slavic languages concerning the exact syntax of these multiple \emph{wh}-questions.
+The seminal reference for this is \citet{rudin_multiple_1988}.
+\end{itemize}
+
+We can ask ourselves what item in the different grammars is responsible for these differences.
+There are two obvious candidates.
+The first is the \emph{wh}-expressions: that is, there is some property that e.g.\ Bulgarian \emph{wh}-expressions have, and that Japanese \emph{wh}-expressions lack, which requires that they move.
+English however is a potential problem for making that idea general: it can't be that all \emph{wh}-phrases have to move (or (\ref{whodid}) would be ungrammatical, and (\ref{whowhen}) grammatical), but we also don't want to make \emph{wh}-movement just optional, or we wouldn't be able to explain why (\ref{wh_in_situ_eng}) is not possible as an out-of-the-blue question.\footnote{\emph{Wh}-in-situ is possible in English, but generally only as an \keyword{echo question}, typically when something has been misheard.
+\begin{exe}
+    \exi{(ii)}[]{
+    \begin{xlistA}
+        \ex[]{I bought a hennin yesterday in an antique shop.}
+        \ex[]{You bought (a) \keyword{what}?}
+    \end{xlistA}}%\label{hennin}
+\end{exe}
+Notice that in an echo question it is sometimes possible to replace items with the \emph{wh}-word that can't be questioned in a regular \emph{wh}-question, including even sub-parts of words.
+While \emph{what} in (ii) can replace either \emph{a hennin} or \emph{hennin}, only the former is possible in a regular question:
+\begin{exe}
+\begin{multicols}{2}
+    \exi{(iii)}{
+    \begin{xlist}
+        \ex{A: What did you buy? B: A hennin.}
+        \ex{A: *What did you buy a? B: *Hennin.}
+    \end{xlist}
+    }
+    \exi{(iv)}{
+    \begin{xlistA}
+        \ex{Our teacher today is Professor McCulloch.}
+        \ex{Sorry?  Professor Mc\textsc{Who}?}
+    \end{xlistA}}
+    \end{multicols}
+\end{exe}
+}
+\begin{exe}
+    \ex[*]{Did you see who?}
+    \label{wh_in_situ_eng}
+\end{exe}
+
+For English, it looks like a better generalization is that the Q complementizer requires that \textbf{a} \emph{wh}-phrase occupy its specifier position. 
+
+\section*{Suggested Reading}
+The suggested reading for this topic---to accompany these notes---is the S\&K chapter.
+For detail about how we might account for obligatory movement in terms of different features on the C element, see \citet[][289--297, 341--358]{adger_core_2003}.
+This is not required though.
+
+\printbibliography
+\end{document}

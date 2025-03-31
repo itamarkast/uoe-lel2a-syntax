@@ -1,0 +1,199 @@
+\documentclass{beamer}
+\input{header_beamer}
+\subtitle{Topic 9 Course Notes: Nonfinite clauses}
+
+\begin{document}
+\maketitle
+
+\frame{\frametitle{Recap}
+   \begin{block}{Topic 7 skills}
+    \begin{itemize}
+        \item[7a]{Implement an analysis of complex noun phrases that is consistent with the framework developed.}
+        \item[7b]{Identify elements as complements or adjuncts of a noun in a principled way.}
+    \end{itemize}
+    \end{block}
+
+   \begin{block}{Topic 8 skills}
+    \begin{itemize}
+        \item[8a]{\sout{Implement an analysis of complex noun phrases that is consistent with the framework developed.}}
+        \item[8b]{\sout{Identify elements as complements or adjuncts of a noun in a principled way.}}
+    \end{itemize}
+    \end{block}
+}
+
+\frame{\frametitle{Topic 9}
+     \begin{block}{Topic 9 skills}
+    \begin{itemize}
+        \item[9a]{Identify non-finite clauses headed by infinitival \emph{to} in a principled way.}
+        \item[9b]{Distinguish raising structures from control structures on the basis of $\theta$-role assignment.}
+    \end{itemize}
+    \end{block}
+
+    Research Skills:
+    \begin{itemize}
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+
+\frame{
+    Which of these \emph{to}-s is a preposition and which is a non-finite marker?
+    
+    \ea \textbf{To} resort \textbf{to} contrived examples \textbf{to} give \textbf{to} students \textbf{to} analyse brings me \textbf{to} tears.
+    \z
+}
+
+\frame{
+    Which of these \emph{to}-s is a preposition and which is a \alert{non-finite marker}?
+    
+    \ea \alert{\textbf{To}} resort \textbf{to} contrived examples \alert{\textbf{to}} give \textbf{to} students \alert{\textbf{to}} analyse brings me \textbf{to} tears.
+    \z
+}
+
+\frame{
+Infinitival vs preposition \emph{to}:
+    \begin{itemize}
+        \item Followed by the non-finite form of the verb or by a DP?
+        \item The preposition \emph{to} can be modified by \emph{right}, \emph{straight}, etc.
+        \item Moving the VP complement to I is possible, but not the DP complement to P in an adjunct.
+    \end{itemize}
+}
+
+\frame{
+    What are the arguments of the different verbs?
+
+    \ea They wanted to analyse the sentence.
+    \ex We seem to have solved the problem.
+    \z
+}
+
+\frame{
+    What are the arguments of the different verbs?
+
+    \ea \uline{They} \alert{wanted} [to \textcolor{blue}{analyse} the sentence]. \hfill [Control]
+    \ex We \alert{seem} [to have \textcolor{blue}{solved} the problem]. \hfill [Raising]
+    \z
+}
+
+\frame{ \centering
+    \begin{tabular}{c|c|c}
+        &   Raising & Control\\\hline
+    Expletive subjects & & \\
+    Idiomatic meaning & & \\
+    Agent-oriented adverbs & & \\
+    \end{tabular}
+}
+
+\frame{
+    \ea
+        \ea[]{Many linguists seem to be in the room.}
+        \ex[]{There seem to be many linguists in the room.}
+        \z
+    \ex
+        \ea[]{Many linguists tried to solve the problem.}
+        \ex[*]{There tried many linguists to solve the problem.}
+        \z
+    \z
+}
+
+\frame{ \tiny
+\begin{multicols}{2}
+Control:\\
+\begin{forest}
+baseline,
+    for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+    [\iibar{I}
+        [\iibar{D}$_i$ [\ibar{D} [\obar{D}\\they, name=copy1]]][\ibar{I}
+        [\obar{I}\\\lbrack{}\textsc{past}\rbrack{}][\iibar{V}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{they}$\rangle$, roof, name=trace1]][\ibar{V}
+        [\obar{V}\\tried][\iibar{I}
+        [\iibar{D}$_i$ [\ibar{D} [\obar{D}\\\textsc{pro}, name=copy]]][\ibar{I}
+        [\obar{I}\\to][\iibar{V}
+        [$\langle$\sout{\iibar{D}$_i$}$\rangle$ [$\langle$\sout{\textsc{pro}}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\complete][\iibar{D} [this task, roof]]]]]]]]]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \draw[->,dotted] (trace1) to[out=south west,in=south] (copy1);
+\end{forest}
+Raising:\\
+\begin{forest}
+baseline,
+    for tree={parent anchor=south,child anchor=north,l=7ex,s sep=10pt},
+    [\iibar{I}
+        [\iibar{D} [\ibar{D} [\obar{D}\\you, name=copy]]][\ibar{I}
+        [\obar{I}\\\lbrack{}\textsc{pres}\rbrack{}][\iibar{V}
+        [\ibar{V}
+        [\obar{V}\\seem][\iibar{I}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{you}$\rangle$, roof, name=trace1]][\ibar{I}
+        [\obar{I}\\to][\iibar{V}
+        [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{you}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\enjoy][\iibar{D} [old movies, roof]]]]]]]]]
+    ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (trace1);
+        \draw[->,dotted] (trace1) to[out=south west,in=south] (copy);
+\end{forest}
+\end{multicols}
+}
+
+\frame{ \centering
+    \begin{tabular}{c|c|c}
+        &   Raising & Control\\\hline
+    Expletive subjects & \cmark{} & \xmark{} \\
+    Idiomatic meaning & & \\
+    Agent-oriented adverbs & & \\
+    \end{tabular}
+}
+
+\frame{
+    \ea[]{The cat appears to be out of the bag.}
+    \ex[\#]{The cat tried to be out of the bag.}
+    \z
+}
+
+\frame{
+    Agent-modifying adverbs (\emph{excitedly, diligently}, etc.): what is the prediction? What are some examples?
+
+\bigskip
+    \ea[*]{\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}}
+    \ex[]{\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}}
+    \z
+}
+
+\frame{ \centering
+    \begin{tabular}{c|c|c}
+        &   Raising & Control\\
+        & \emph{seem, appear, \dots{}} & \emph{try, want, \dots{}} \\\hline
+    Expletive subjects & \cmark{} & \xmark{} \\
+    Idiomatic meaning & \cmark{} & \xmark{} \\
+    Agent-oriented adverbs & \xmark{} & \cmark{} \\\hline
+    Matrix subject & Derived subject & PRO\\
+    \end{tabular}
+}
+
+\frame{\frametitle{Summary}
+     \begin{block}{Topic 9 skills}
+    \begin{itemize}
+        \item[9a]{Identify non-finite clauses headed by infinitival \emph{to} in a principled way.}
+        \item[9b]{Distinguish raising structures from control structures on the basis of $\theta$-role assignment.}
+    \end{itemize}
+    \end{block}
+
+    % We also discussed:
+    % \begin{itemize}
+        % \item Complement clauses vs relative clauses.
+        % \item Constituency within the DP.
+    % \end{itemize}
+
+    Research Skills:
+    \begin{itemize} \small
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+\end{document}

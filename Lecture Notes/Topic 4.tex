@@ -1,0 +1,377 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Topic 4 Course Notes: Predicates and Arguments Part 2\\
+Arguments Modifiers, and Subjects}
+\hfill{}\textbf{Skills:}~\ref{c_selection},
+\ref{adjunct_complement}
+
+\section{Storing information in the lexicon}
+\hfill{}\textbf{Skill:}~\ref{c_selection}
+
+We've already seen that sentences are built up of \keyword{constituents} or phrases, and also that each phrase has a \keyword{head} that determines, among other things, the grammatical \keyword{category} of the phrase (a phrase whose head is a noun is a noun phrase, a phrase whose head is a verb is a verb phrase, etc.).
+As well as saying that a word heads a phrase, you'll often hear the terminology that a word \keyword{projects} a phrase.  So a noun projects a noun phrase, a verb projects a verb phrase, etc.
+
+As well as this, many words also want to combine with other phrases, and they frequently have restrictions on the \keyword{category} of the phrases they combine with: this need to combine with a phrase or phrases is called \keyword{selection}; if we are being specific that a word is picky about the syntactic category of what it combines with, we can talk about \keyword{c-selection} (``c'' standing for ``category'').
+So for example,  the preposition \emph{in} combines with a noun phrase to form a prepositional phrase: it \keyword{(c)-selects} a noun phrase.
+Similarly, a transitive verb like \emph{admire} selects two noun phrase to combine with, while an intransitive verb like \emph{sleep} only selects one.  
+
+This kind of information is something that language users associate with the words that they learn.
+The mental dictionary of a speaker is referred to as their \keyword{lexicon}, and the items in it (the words and the information associated with these words) as \keyword{lexical entries}.
+So one crucial component in how syntactic structure is built up is the syntactic information in the \keyword{lexical entries} for words: both the syntactic category of the word itself, but also information about what phrases it needs to combine with. 
+
+%There are different ways to represent this.
+One way to represent this information is as a small tree \keyword{projected} from the word and creating a phrase, along the following lines (we'll amend these trees, but this conveys the general idea):\footnote{The category of the phrase in (c) is given as ``VP(?)'' because at this point one might be wondering what it should be.
+As it's projected from the verb, we'd expect it to be a VP.
+On the other hand, it looks like a sentence. This is an issue that we'll be coming back to very soon.}
+\begin{exe}
+    \ex[]{
+        \begin{xlist}
+        \begin{multicols}{3}
+            \ex[]{
+            \begin{forest}
+                [
+                PP [P\\for] [NP]
+                ]
+            \end{forest}
+            }
+            \label{for_elem_tree}
+            \columnbreak
+            \ex[]{
+            \begin{forest}
+                [
+                NP [N\\cats]
+                ]
+            \end{forest}
+            }
+            \label{cat_elem_tree}
+            \columnbreak
+            \ex[]{
+            \begin{forest}
+                [
+                VP(?)
+                [NP\\(\textsc{agent})][VP
+                [V\\admire][NP\\(\textsc{theme})]]
+                ]
+            \end{forest}
+            }
+            \label{admire_elem_tree}
+        \end{multicols}
+        \end{xlist}}
+\end{exe}
+These small \keyword{elementary trees}, then, are the items that are stored in the lexicon. In~(\ref{for_elem_tree}) the P \emph{for} selects an NP and projects a full PP. One slogan I was taught as a student is ``Whatever selects -- projects!''
+%. S\&K refer to these as \keyword{elementary trees}. 
+
+These elementary trees represent information about the syntactic structure that is associated with each word: specifically, the category of the word and the category of any phrase or phrases that it selects.
+Notice that this means that each word contains \emph{some} information about its syntactic environment, but only \keyword{local} information.
+For example, the representation in (\ref{for_elem_tree}) tells us that the preposition \emph{for} must combine with an NP, but it doesn't contain any information about what particular noun might be in that NP, or whether it is modified by an adjective or not.
+Similarly, the verb \emph{wonder} selects for a clause (its object) and an NP (its subject):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{We wondered where he lived.}
+        \ex[*]{We wondered his address.}
+    \end{xlist}}
+\end{exe}
+This suggests that its elementary tree should be something like this:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        VP?
+        [NP][VP
+        [V\\wonder][S]]
+        ]
+    \end{forest}
+    }
+    \label{wonder_elem_tree}
+\end{exe}
+ But although \emph{wonder} selects for the category of its object (it has to be a clause, not a noun phrase, for example), it doesn't select for anything \emph{inside} that clause.
+ For example, it doesn't require that the verb inside that clause be transitive, or intransitive, or that the clause must contain a PP.
+ \textbf{It is a core fact about c-selection that it is local in this way}.
+ It is an aspect of a feature that makes syntax such a useful and flexible system: it is a system that can build arbitrarily large structures \textbf{out of relatively small pieces}; even though we can produce and understand long, long sentences, the pieces that we need to have memorized---the pieces stored in our lexicon---are small.
+ 
+\section{A general mechanism for combining the items drawn from the lexicon}
+\label{substitution}
+\hfill{}\textbf{Skill:}~\ref{c_selection}
+
+Elementary trees (or lexical entries that include the equivalent information) are one crucial component for syntax.
+The other is \textbf{some way to put these elementary trees together}.
+In the first chapter of  S\&K they describe a process they call \keyword{substitution}:  replace any leaf that is a \keyword{nonterminal} (that is, not a word) with a tree (which could be an elementary tree) of the matching category.
+So, for example given that the lexicon gives us the \textsc{elementary trees} for \emph{for} in (\ref{for_elem_tree}) and for \emph{cats} in (\ref{cat_elem_tree}),  we can replace the NP in the PP in (\ref{for_elem_tree}) with the treelet for \emph{cats} and get the larger phrase in (\ref{PP_forcats}):
+
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        PP
+        [P\\for][NP [N\\cats]]
+        ]
+    \end{forest}
+    }
+    \label{PP_forcats}
+\end{exe}
+So in this framework, \keyword{substitution} in this specific sense is the core assembly mechanism for building up syntactic structures out of elements drawn from the lexicon---elementary trees---which include information about the selectional requirements of words.\fn{At this point you may want to refer to the section entitled ``Generative Grammar'' in Chapter One of the S\&K text which also describes this idea.}
+%We're now going to look a bit more at what determines what goes into these trees; in particular how much might simply be determined by the semantics associated with each word, and how much must be attributed to syntax.
+
+%\subsection{Category specification}
+
+In Topic 3, we saw that verbs differ in the number of arguments that they obligatorily select.\footnote{The notation can be confusing: if a star appears before parentheses, that means we \emph{cannot} drop them.}
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Leon was eating (Brussels sprouts).}
+        \ex[]{Leon is devouring *(Brussels sprouts).}
+        \ex[]{Leon was dining (*Brussels sprouts).}
+    \end{xlist}
+    }
+\end{exe}
+In these examples, properties of \emph{eat}, \emph{devour}, and \emph{dine} determine the number of arguments the verb can take.
+These properties cannot be fully attributable to the semantic properties of these verbs, which can all be associated with the same semantic roles by different means.
+For example, \emph{dine} can be associated with a \keyword{theme} using a preposition.
+\begin{exe}
+    \ex[]{Leon was dining on Brussels sprouts.}
+\end{exe}
+
+There is another way in which the syntactic \keyword{argument structure} cannot be decided entirely on the basis of the semantic properties of the predicates.
+It is determined by \keyword{c-selection}.
+Verbs and other predicates may select for particular \textbf{syntactic categories}:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{They arrived before/after the performance.}
+        \ex[]{They arrived before/after [the performance had finished].}
+    \end{xlist}
+    }\label{before_after}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{They arrived during/*while the performance.}
+        \label{during_whileA}
+        \ex[]{They arrived *during/while [the performance was taking place].}
+        \label{during_whileB}
+    \end{xlist}
+    }\label{during_while}
+\end{exe}
+In (\ref{before_after}), both \emph{before} and \emph{after} can take an noun phrase or clausal complement.
+In (\ref{during_whileA}), \emph{during} takes a noun phrase complement but \emph{while} cannot.
+This situation is reversed in (\ref{during_whileB}); \emph{while} takes a clausal complement but \emph{during} does not.
+
+If we represent the selection restrictions of \emph{during} as and elementary trees we get (\ref{during_elem_tree}).% and (\ref{while_elem_tree}).
+\begin{exe}
+    \ex[]{
+        \begin{xlist}
+        \begin{multicols}{2}
+            \ex[]{
+            \begin{forest}
+                [
+                PP [P\\during] [NP]
+                ]
+            \end{forest}
+            }
+            \label{during_elem_tree}
+            \columnbreak
+            \ex[]{
+            \begin{forest}
+                [
+                \phantom{}
+                [while] [S]
+                ]
+            \end{forest}
+            }
+            \label{while_elem_tree}
+        \end{multicols}
+        \end{xlist}}
+\end{exe}
+Here \emph{during} is shown as a preposition that \keyword{c-selects} an NP complement.
+We haven't yet discussed words like \emph{while} or how to represent a clausal complement.
+For now, this is represented in (\ref{while_elem_tree}) as \emph{while} selecting S (sentence) as a complement, but we will be in a position to revise this by the end of the course.
+
+To summarize, what we've seen so far is that c-selection exists independently of the semantics of the selecting head; there are often correlations, like with devouring requiring a complement, but we cannot tell what the syntactic category of the complement will be based solely on the semantics of the selecting head.
+
+\section{Arguments and modifiers}
+\hfill{}\textbf{Skill:}~\ref{adjunct_complement}
+
+Various other aspects of an event can be expressed in the syntax as \keyword{modifiers}.
+%As S\&K point out, 
+Modifiers can express a range of semantic concepts: manner, point in time, duration, etc.
+Modifiers are often PPs in English.
+\begin{exe}
+\ex[]{She read the letter on Tuesday in a hurry with little attention.}
+\end{exe}
+But adverbs like \emph{quickly, slowly, carefully, comfortably, probably} can also function as modifiers:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{He read the letter carefully.}
+        \ex[]{He carefully read the letter.}
+    \end{xlist}
+    }
+\end{exe}
+And other phrasal categories also can function as modifiers:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{He read the book \emph{to impress his friends}.}
+        \ex[]{He read the book \emph{last week}.}
+    \end{xlist}
+    }
+\end{exe}
+The possibility of adding modifiers seems independent of individual lexical items.
+That is to say, it is a fact about the verb \emph{eat} that it can be followed by an NP or by nothing, while \emph{dine} only occurs intransitively, and \emph{devour} only transitively:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{They ate (dinner).}
+        \ex[]{They dined (*dinner).}
+        \ex[]{They devoured *(dinner).}
+    \end{xlist}
+    }
+\end{exe}
+But \textbf{all} of these verbs can occur with modifiers expressing time, location, purpose, etc etc.   
+\begin{exe}
+    \ex[]{They \{ate dinner/dined\} with friends in the kitchen on Tuesday last week.}
+\end{exe}
+So we don't want to propose that the elementary tree associated with each of these lexical items includes positions for all these modifiers (since that would be to claim that we have to memorize for each verb which modifiers it occurs with).
+But now notice that this means that we can't introduce modifiers into syntactic trees by the same process of \keyword{substitution}, we're going to need something different.
+This will be resolved in Topic 5.
+
+\subsection{VP Substitution}
+For now, let's focus on identifying possible adjuncts by looking at how their behaviour differs from complements, and what this tells us about the structures they represent.
+In Topic 2, we saw a range of tests to identify constituents, such as substitution (\ref{complement_sub}).
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{John ate a banana.}
+        \label{complement_subA}
+        \ex[*]{John ate a banana, and Geraldine did so an apple.}
+        \label{complement_subB}
+        \ex[]{John ate a banana, and Geraldine did so too.}
+        \label{complement_subC}
+        \ex[]{John ate a banana, and Geraldine ate one too.}
+        \label{complement_subD}
+    \end{xlist}
+    }
+    \label{complement_sub}
+\end{exe}
+If we wanted to test if \emph{ate a banana} was a constituent in (\ref{complement_subA}), we could perform a \emph{do so} \keyword{substitution test} as in (\ref{complement_subB}) and (\ref{complement_subC}).
+(\ref{complement_subC}) tells us that \emph{ate a banana} is a \keyword{constituent}.
+While (\ref{complement_subD}) tells us that \emph{a banana} is also a constituent.
+However, the result in (\ref{complement_subB}) shows that \emph{do so} substitution can only substitute for a Verb Phrase, not the verb in isolation.
+That is, the verb cannot be substituted if doing so strands the argument of the verb; in (\ref{complement_subB}) this is the \keyword{theme} \emph{an apple}.
+
+This contrasts with the behaviour of adjuncts, which can be substituted or stranded.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{John ate a banana quickly, and Geraldine did so, too.}
+        \label{adjunct_subA}
+        \ex[]{John ate a banana quickly, and Geraldine did so slowly.}
+        \label{adjunct_subB}
+        \ex[]{Danielle read the paper at home with a cup of coffee while listening to Spotify and Arthur did so, too.}
+        \label{adjunct_subC}
+        \ex[]{Danielle read the paper at home with a cup of coffee while listening to Spotify and Arthur did so in the office with a glass of wine.}
+        \label{adjunct_subD}
+    \end{xlist}
+    }
+    \label{adjunct_sub}
+\end{exe}
+In these examples, (\ref{adjunct_subA}) can be interpreted as \emph{Geraldine ate a banana quickly too}, showing it's possible for \emph{quickly} to be substituted.
+However, in (\ref{adjunct_subB}), parallel to (\ref{complement_subB}) above, we see that the adverb can also be left behind by substitution.
+This suggests a constituent structure for \emph{ate a banana} of \lbrack{}\textsubscript{VP} ate \lbrack{}\textsubscript{NP} a banana\rbrack{}\rbrack{} and for \emph{ate a banana quickly} of \lbrack{}\textsubscript{VP} \lbrack{}\textsubscript{VP} ate \lbrack{}\textsubscript{NP} a banana\rbrack{}\rbrack{} quickly\rbrack{}:
+
+\ea
+    \begin{forest}
+        [
+        VP
+            [ VP 
+                [ V\\ate ]
+                [ NP 
+                    [D\\a ]
+                    [N\\banana ]
+                ]
+            ]
+            [ (quickly) ]
+        ]
+    \end{forest}
+\z
+
+\subsection{Word Order}
+Based on the constituent structure above, we might expect that putting modifiers between verbs and their complements is ungrammatical.
+This follows if a word cannot be shared between two constituents.
+For English, this is the case.\fn{This is not the case cross-linguistically, but is generally the case in SVO languages.}
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{John ate a banana quickly.}
+        \label{adverb_orderA}
+        \ex[]{John quickly ate a banana.}
+        \label{adverb_orderB}
+        \ex[*]{John ate quickly a banana.}
+        \label{adverb_orderC}
+        \ex[]{John gave Geraldine a banana quickly.}
+        \label{adverb_orderD}
+        \ex[]{John quickly gave Geraldine a banana.}
+        \label{adverb_orderE}
+        \ex[*]{John gave Geraldine quickly a banana.}
+        \label{adverb_orderF}
+        \ex[*]{John gave quickly Geraldine a banana.}
+        \label{adverb_orderG}
+    \end{xlist}
+    }
+    \label{adverb_order}
+\end{exe}
+We can see in (\ref{adverb_orderA}) \& (\ref{adverb_orderB}) that modifiers can appear in multiple positions, but we can see in (\ref{adverb_orderC}) that it cannot intervene between the verb and its argument.
+From (\ref{adverb_orderD}-\ref{adverb_orderG}), we can see that this still applies to verbs with multiple complements, in this case the \keyword{theme} \emph{a banana} or \keyword{goal} \emph{Geraldine}.
+
+A word of caution, though: some modifiers can be flexible in where they're placed, depending on all kinds of factors which might not be purely syntactic. For example, we could imagine a context in which it would be ok to say \emph{John gave Geraldine the moment he saw her a banana}. So like with constituency tests, we want to be wary of false negatives and ideally use a few diagnostics.
+
+\subsection{Coordination}
+We saw in (\ref{adjunct_sub}) that it's possible to coordinate clauses with complements and modifiers.
+It's also possible to coordinate arguments (\ref{coordinationA}) and to coordinate modifiers (\ref{coordinationB}).
+That is, in (\ref{coordinationA}), the \keyword{theme} of \emph{ate} is \emph{a banana and an apple}. Let's boldface the arguments and underline the modifiers in the following examples:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{John ate [\textbf{a banana} and \textbf{an apple}] \uline{quickly}.}
+        \ex[]{John ate \textbf{a banana} [\uline{quickly} and \uline{messily}].}
+        \label{coordinationA}
+        \label{coordinationB}
+        \ex[*]{John ate \textbf{a banana} [\uline{quickly} and \textbf{an apple}].}
+        \label{coordinationC}
+        \ex[]{John gave [\textbf{Geraldine} and \textbf{Mary}] \textbf{a banana} \uline{quickly}.}
+        \label{coordinationD}
+        \ex[*]{John gave [\textbf{Geraldine} and \uline{quickly}] \textbf{a banana}.}
+        \label{coordinationE}
+    \end{xlist}
+    }
+    \label{coordination}
+\end{exe}
+However, it's not possible to coordinate an argument with a modifier, (\ref{coordinationC}) \& (\ref{coordinationE}).
+If, as we saw before, the argument of the verb and a verbal modifier do not form a constituent separate from the verb, this follows.
+
+\subsection{Preposition Stranding}
+In Topic~2, we saw that question formation and movement could be used as tests for constituency.
+Like the other tests described above, this test generates different results when applied to arguments and modifiers in prepositional phrases.
+In (\ref{p_strandingB}), it's possible to question the \keyword{goal} of the verb.
+This leaves the preposition \emph{to}, separated from the \keyword{goal}, \emph{who}.
+However, if we apply the same movement to the modifier \emph{the kitchen} in (\ref{p_strandingC}), the result (\ref{p_strandingD}) is degraded.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{John gave a banana *(to Geraldine).}
+        \label{p_strandingA}
+        \ex[]{Who did John gave a banana to \sout{who}?}
+        \label{p_strandingB}
+        \ex[]{Dana read The New York Times (in the kitchen).}
+        \label{p_strandingC}
+        \ex[*?]{What did Dana read The New York Times in \sout{what}?}
+        \label{p_strandingD}
+    \end{xlist}
+    }
+    \label{p_stranding}
+\end{exe}
+This \keyword{preposition stranding} test gives us another way of picking out possible adjuncts.
+Movement appears to only strand a preposition if the PP is a complement. Can you think of a reason why?
+\end{document}
+

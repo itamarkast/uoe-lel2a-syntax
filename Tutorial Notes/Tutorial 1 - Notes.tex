@@ -1,0 +1,148 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Tutorial Notes Week 5: Topics 1, 2 \& 3}
+
+\section*{Question 1}
+\hfill{}
+%\ref{whatissyntaxA} $\Box$,
+\ref{whatissyntaxB} $\Box$, 
+%\ref{whatissyntaxC} $\Box$
+
+\paragraph{Q1A} Given the following list of constituents, visually represent the structure of the sentence \emph{My cousin gave the dog a juicy bone}:
+\begin{itemize}
+    \item my cousin
+    \item the dog
+    \item a juicy bone
+    \item gave the dog a juicy bone
+\end{itemize}
+Don’t worry too much about whether your representation is \emph{right} or not in other aspects, just as long as it
+shows those four strings as constituents. For example, it doesn't need to have any labels for the constituents (like VP or NP).
+
+\textcolor{red}{Here are three possible trees that all meet the requirements set out in the question concerning what must be represented as a constituent. In this case, none of them make any claims about the \emph{categories} of the constituents (all the constituents are unlabelled). The trees differ from each other in terms of what \emph{additional} claims they embody about constituents within the sentence.  For example the trees in II and III both embody a claim that \emph{the dog a juicy bone} is also a constituent). }
+
+
+\begin{quote}
+        \ex[I]{
+    \small \begin{forest}
+for tree={fit=band, parent anchor=north,},
+	[\phantom{}
+ [\phantom{} [my] [cousin]][\phantom{}
+ [gave] [\phantom{} [the] [dog]] [\phantom{}[a] [juicy] [bone] ]]]
+    \end{forest}}
+    \ex[II]{
+    \small \begin{forest}
+for tree={%calign=fixed edge angles,
+fit=band, parent anchor=north,},
+	[[[my] [cousin]][[ gave] [[[the] [dog]] [[a] [juicy] [bone] ]]]]
+    \end{forest}}
+    \ex[III]{
+    \small \begin{forest}
+for tree={%calign=fixed edge angles,
+fit=band, parent anchor=north,},
+	[[[my] [cousin]][[gave]
+ [[the] [dog]]
+ [[a]
+ [[juicy] [bone]] ]]]
+    \end{forest}}
+\end{quote}
+
+\hfill{}\ref{constituencytestVP} $\Box$
+%, M5 $\Box$
+
+\paragraph{For discussion} Above, you were told that \emph{gave the dog a juicy bone} was a constituent.
+However, if we apply an \emph{it-cleft} test of constituency to this string we get the following results:
+\begin{exe}
+    \ex[*]{It is gave the dog a juicy bone that my sister}
+\end{exe}
+What does this mean for the representation you gave above?
+Can you use other diagnostics to resolve this issue (one is enough but if you can give more that's even better)?
+
+\textcolor{red}{Clefts are not a good test for VP constituency, and even if they were, we might still get a false negative. We can try other tests instead and see that the string passes them, indicating that it is a constituent (of type VP) after all: \emph{My cousin gave the dog a juicy bone and I did so too}, \emph{What did my cousin do?}}
+
+\section*{Question 2}
+\hfill{}
+\ref{constituencytestNP} $\Box$,
+\ref{constituencytestVP} $\Box$,
+\ref{constituencytestother} $\Box$
+%, M3 $\Box$, M4 $\Box$
+
+\paragraph{Q2A} Which of the following trees is the best representation of the structure for the sentence \emph{She placed that vase on the table}, based on what you can determine about the constituent
+structure of the sentence? For each of the trees that you didn’t choose in (\ref{Q2_trees}), what is the evidence against it?
+\begin{exe}
+\ex{
+\begin{xlist}
+    \ex{
+    \small \begin{forest}
+for tree={s=2mm, l-=5mm},
+	[S [NP[Pronoun\\\emph{she}]] [VP [V\\\emph{placed}] [NP [Det\\\emph{that}] [NP [N\\\emph{vase}] [PP [P\\\emph{on}] [NP [Det\\\emph{the}] [N\\\emph{table}]]]]]]]
+    \end{forest}}
+    \label{Q2_treesA}
+    \ex{
+    \small \begin{forest}
+for tree={s=2mm, l-=5mm},
+	[S [NP[Pronoun\\\emph{she}]] [VP [V\\\emph{placed}]
+    [NP 
+        [Det\\\emph{that}]
+        [N\\\emph{vase}]
+        [P\\\emph{on}]
+        [NP [Det\\\emph{the}] [N\\\emph{table}]]]]]
+    \end{forest}}
+    \label{Q2_treesB}
+\ex{
+    \small \begin{forest}
+for tree={s=2mm, l-=5mm},
+	[S [NP[Pronoun\\\emph{she}]] [VP [V\\\emph{placed}] [NP [Det\\\emph{that}] [NP [N\\\emph{vase}]]] [PP [P\\\emph{on}] [NP [Det\\\emph{the}] [N\\\emph{table}]]]]]
+    \end{forest}}
+    \label{Q2_treesC}
+    \end{xlist}}
+    \label{Q2_trees}
+\end{exe}
+
+\textcolor{red}{(\ref{Q2_treesC}) is the most adequate.
+Evidence against both (\ref{Q2_treesA}) and (\ref{Q2_treesB}) is that they both represent \emph{that vase on the table} as a constituent here, but there is no constituency test that it passes (\emph{*That vase on the table, she placed; Q: *What did she place? A: that vase on the table}).
+Even more convincingly, there \textbf{is} evidence that \emph{that vase} is a constituent (e.g. \emph{She placed it on the table; That vase, she placed on the table; Q: What did she place on the table? A: That vase; etc}).
+In both (\ref{Q2_treesA}) and (\ref{Q2_treesB}), that string is \textbf{not} represented as a constituent, while in (\ref{Q2_treesC}) it is.
+Why is that more convincing?
+Because we know that sometimes even constituents can fail constituency tests (``False negatives''); so conceivably \emph{that vase on the table} might somehow be failing constituency tests for some extraneous reason.
+But we don't have an equivalent problem of ``False positives'' (you can think about why there might be such an asymmetry), so we can be more confident that \emph{that vase} really \textbf{is} a constituent. Finally, the tree in~(\ref{Q2_treesB}) misses the fact that \emph{on the table} is a PP constituent: \emph{She placed that vase there}, \emph{Where did she place that vase?}}
+
+
+\section*{Question 3}
+\hfill{}
+\ref{syn_sem_roles} $\Box$,
+\ref{sem_roles} $\Box$
+
+As you know, some verbs in English can appear either with two syntactic arguments, or just one:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{This film shocks.\tabto{10em} This film shocks a lot of people.}
+        \ex{The donkey kicked.\tabto{10em} The donkey kicked the door.}
+        \ex{The canary drank.\tabto{10em} The canary drank some water.}
+    \end{xlist}}
+    \label{semantic_rolesA}
+    \ex{
+    \begin{xlist}
+        \ex{The branch broke.\tabto{10em} The branch broke the window.}
+        \ex{The cup dropped.\tabto{10em} The child dropped the bag.}
+        \ex{The lake thawed.\tabto{10em} The sun thawed the ice.}
+    \end{xlist}}
+    \label{semantic_rolesB}
+\end{exe}
+Thinking of the ways in which participant roles (like AGENT or THEME) are mapped onto syntactic functions (like SUBJECT or OBJECT):
+
+\paragraph{Q3A} What is the difference between the verbs in (\ref{semantic_rolesA}) and those in (\ref{semantic_rolesB})? Describe it in terms of the syntactic and semantic arguments of the predicates.
+
+\textcolor{red}{The point here is that all the verbs in (\ref{semantic_rolesA}) consistently assign the same thematic/participant role to their subject, regardless of whether they additionally select another argument or not.
+But the verbs in (\ref{semantic_rolesB}) are such that the subject of the intransitive verb gets the same thematic/participant role as the object of the transitive version.
+Verbs in the class in (\ref{semantic_rolesB}) are sometimes described as participating in the \emph{causative alternation}, which has been a major research focus since the 60s.
+The alternation in (\ref{semantic_rolesA}) is less thoroughly studied, but sometimes called \emph{unspecified object deletion}.}
+
+\paragraph{For discussion:} Can you think of other English verbs that behave like the verbs in (\ref{semantic_rolesA})? And like the verbs in (\ref{semantic_rolesB})?
+
+\paragraph{For discussion:} If you speak or are familiar with another language, are there verbs in that language that behave to some extent (or exactly) like the verbs in (\ref{semantic_rolesB})? If you find a pattern that is similar but not identical, can you describe it?
+
+
+\end{document}

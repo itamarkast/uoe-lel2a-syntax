@@ -1,0 +1,110 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\pagestyle{empty}
+\maketitle
+\subtitle{Tutorial Week 5: Topics 1, 2 \& 3}
+
+\paragraph{Explanation on accumulating Syntax Skills:} Let me stress that the point of the syntax block is to learn how to think like a syntactician, learn about English, and try to have fun. But marks are involved, and here's how we mark Syntax Skills: generally speaking, it's enough to show them once. This means that if we have questions Q1A and Q2B in a given tutorial sheet (for example), both of which target skill 6b, then getting one of them right is enough. That said, it's best to attempt all questions.
+
+Some tutorial questions are primarily \textbf{for discussion}. This means that they can count towards your skill tally, but don't worry if you don't get them right -- their goal is to allow for extended discussion in the tutorial itself and some will go beyond the discussion in class.
+
+(Please remember that we're developing this approach to tutorials and marking together, so your feedback is welcome -- keep it specific and try to give it directly to Itamar.)
+
+\section*{Question 1}
+\hfill{}
+%\ref{whatissyntaxA} $\Box$,
+\ref{whatissyntaxB} $\Box$ 
+%\ref{whatissyntaxC} $\Box$
+
+\paragraph{Q1A} Given the following list of constituents, visually represent the structure of the sentence \emph{My cousin gave the dog a juicy bone}.
+\begin{itemize}
+    \item my cousin
+    \item the dog
+    \item a juicy bone
+    \item gave the dog a juicy bone
+\end{itemize}
+Don’t worry too much about whether your representation is \emph{right} or not in other aspects, just as long as it
+shows those four strings as constituents. For example, it doesn't need to have any labels for the constituents (like VP or NP).
+
+\hfill{}\ref{constituencytestVP} $\Box$ %, \ref{diagnosticlimits} $\Box$
+
+\paragraph{For discussion} Above, you were told that \emph{gave the dog a juicy bone} was a constituent.
+However, if we apply an \emph{it-cleft} test for constituency to this string we get the following results:
+\begin{exe}
+    \ex[*]{It is gave the dog a juicy bone that my cousin}
+\end{exe}
+What does this mean for the representation you gave above?
+Can you use other diagnostics to resolve this issue (one is enough but if you can give more that's even better)?
+
+\section*{Question 2}
+\hfill{}
+\ref{constituencytestNP} $\Box$,
+\ref{constituencytestVP} $\Box$,
+\ref{constituencytestother} $\Box$
+%, M3 $\Box$, M4 $\Box$
+
+\paragraph{Q2A }Which of the following trees is the best representation of the structure for the sentence \emph{She placed that vase on the table}, based on what you can determine about the constituent
+structure of the sentence? For each of the trees that you didn't choose in (\ref{Q2_trees}), what is the evidence against it?
+
+\begin{exe}
+\ex{
+\begin{xlist}
+    \ex{
+    \small \begin{forest}
+for tree={s=2mm, l-=5mm},
+	[S [NP[Pronoun\\\emph{she}]] [VP [V\\\emph{placed}] [NP [Det\\\emph{that}] [NP [N\\\emph{vase}] [PP [P\\\emph{on}] [NP [Det\\\emph{the}] [N\\\emph{table}]]]]]]]
+    \end{forest}}
+    \ex{
+    \small \begin{forest}
+for tree={s=2mm, l-=5mm},
+	[S [NP[Pronoun\\\emph{she}]] [VP [V\\\emph{placed}]
+    [NP 
+        [Det\\\emph{that}]
+        [N\\\emph{vase}]
+        [P\\\emph{on}]
+        [NP [Det\\\emph{the}] [N\\\emph{table}]]]]]
+    \end{forest}}
+\ex{
+    \small \begin{forest}
+for tree={s=2mm, l-=5mm},
+	[S [NP[Pronoun\\\emph{she}]] [VP [V\\\emph{placed}] [NP [Det\\\emph{that}] [NP [N\\\emph{vase}]]] [PP [P\\\emph{on}] [NP [Det\\\emph{the}] [N\\\emph{table}]]]]]
+    \end{forest}}
+    \end{xlist}}
+    \label{Q2_trees}
+\end{exe}
+
+\newpage
+\section*{Question 3}
+\hfill{}
+\ref{syn_sem_roles} $\Box$,
+\ref{sem_roles} $\Box$
+
+
+As you know, some verbs in English can appear either with two syntactic arguments, or just one:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{This film shocks.\tabto{10em} This film shocks a lot of people.}
+        \ex{The donkey kicked.\tabto{10em} The donkey kicked the door.}
+        \ex{The canary drank.\tabto{10em} The canary drank some water.}
+    \end{xlist}}
+    \label{semantic_rolesA}
+    \ex{
+    \begin{xlist}
+        \ex{The branch broke.\tabto{10em} The bear broke the branch.}
+        \ex{The cup dropped.\tabto{10em} The child dropped the bag.}
+        \ex{The lake thawed.\tabto{10em} The sun thawed the ice.}
+    \end{xlist}}
+    \label{semantic_rolesB}
+\end{exe}
+
+Thinking of the ways in which participant roles (like AGENT or THEME) are mapped onto syntactic functions (like SUBJECT or OBJECT):
+
+\paragraph{Q3A} What is the difference between the verbs in (\ref{semantic_rolesA}) and those in (\ref{semantic_rolesB})? Describe it in terms of the syntactic and semantic arguments of the predicates.
+
+\paragraph{For discussion:} Can you think of other English verbs that behave like the verbs in (\ref{semantic_rolesA})? And like the verbs in (\ref{semantic_rolesB})?
+
+\paragraph{For discussion:} If you speak or are familiar with another language, are there verbs in that language that behave to some extent (or exactly) like the verbs in (\ref{semantic_rolesB})? If you find a pattern that is similar but not identical, can you describe it?
+
+\end{document}

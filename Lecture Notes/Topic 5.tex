@@ -1,0 +1,422 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Topic 5 Course Notes: X-bar and the Clause Part 1\\
+X-Bar Schema}
+\hfill{}\textbf{Skills:}~\ref{projection},
+\ref{V_adjunction}
+
+\section[The X-bar schema for phrases]{The X$'$-schema for phrases}
+\hfill{}\textbf{Skill:}~\ref{projection}
+
+We have seen that a transitive verb combines with two syntactic arguments: a subject that frequently realizes an \textsc{agent}-role and an object that frequently realizes a \textsc{theme}-role.
+Moreover, we have seen that (at least in English) there is a particular order in which the verb combines with these two arguments.
+First the verb combines with the object within the \iibar{V}, then the subject combines with the \iibar{V} as a whole.\footnote{There are \emph{empirical} arguments for this, i.e.~linguistic examples that make us think this is the case rather than, say, the other way around: combining first with the subject and then with the object. We won't have time to motivate this decision in LEL2A, but see if you can come up with any relevant evidence.}
+
+We've also seen that we want to represent the selectional properties of heads by small \keyword{elementary trees}.
+So for a transitive verb like \emph{admire}, that would give us a representation like (\ref{admire_tree}), where we can annotate the element V as \obar{V}, just to emphasize that it's the head of its phrase:
+\begin{exe}
+    \ex[]{
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{V}
+        [\iibar{N}\\Subject] [\ibar{V}
+        [\obar{V}] [\iibar{N}\\Object]]
+        ]
+    \end{forest}
+    }
+    \label{admire_tree}
+\end{exe}
+In this representation of the structure projected by a transitive verb, the verb forms a \keyword{constituent} with the object that excludes the subject.
+
+As we've already discussed, the properties of a phrase depend on what its head is: a phrase headed by a noun (an \iibar{N}) shows different syntactic behaviour compared to a phrase headed by a verb (a \iibar{V}).
+To express this, syntacticians say that a verb or noun (or adjective or preposition) \keyword{projects} properties such as its lexical category onto the phrase it heads.
+Thus, in (\ref{admire_tree}) \obar{V} projects its properties to the constituent labelled \ibar{V} (pronounced `V bar') and then further to the \iibar{V}.
+The sequence of nodes \obar{V}--\ibar{V}--\iibar{V} is called the \keyword{projection line} of the verb (S\&K also call it the \keyword{spine} of the tree), and \ibar{V} and \iibar{V} are said to be \keyword{projections} of \obar{V}.
+Within the \iibar{V} projection, we see that there are two positions which can contain an argument of the verb.
+The position that is dominated by \ibar{V} and sister to the head \obar{V} (where the object is in (\ref{admire_tree})) is called the \keyword{complement} position.
+The position that is immediately dominated by ($=$ daughter of) \iibar{V} and sister to \ibar{V} (where the subject is in (\ref{admire_tree})) is called the \keyword{specifier} position:
+\ea[]{
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{V}
+        [specifier] [\ibar{V}
+        [\obar{V}] [complement]]
+        ]
+    \end{forest}
+    }
+\z
+
+We will see below that phrases that have a head of a category other than V have a basic internal structure that is similar to that of \iibar{V}s.
+It has been hypothesized, therefore, that \textbf{all} phrases have a basic structure as in (\ref{xbar}), where X is a variable that ranges over all categories (V, N, A, P, \dots). This is the so-called \ibar{X}-\keyword{schema} for phrase structure. %(pronounced `X bar schema' for reasons you can find in footnote 1 of S\&K’s chapter 4).
+\begin{exe}
+\begin{multicols}{2}
+    \ex[]{
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{X}
+        [specifier] [\ibar{X}
+        [\obar{X}] [complement]]
+        ]
+    \end{forest}
+    }
+    \label{xbar}
+\columnbreak
+    \ex[]{
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{X}
+        [specifier] [\ibar{X}
+        [complement] [\obar{X}]]
+        ]
+    \end{forest}
+    }
+    \label{xbar_SOV}
+    \end{multicols}
+\end{exe}
+Although it can't be represented on the page, this schema defines \keyword{hierarchical} relations, but not left-to-right \keyword{linear order}.
+That is, according to the scheme, the complement is always a sister to the head, but it could occur on the right of the head, or the left.
+So (\ref{xbar_SOV}) is also an instantiation of the \ibar{X}-schema.
+Similarly, the specifier might appear on the right or the left of its sister, the \ibar{X} constituent (although it seems to be the case that this is at the least very rare).
+What \emph{is} excluded by this schema in terms of linear order is any order in which a specifier comes \emph{in between} a head and its complement.
+ 
+To summarize: a head \obar{X} projects to two higher levels: \ibar{X} (`X bar') and \ibar{\ibar{X}} (`X double bar'), the latter corresponding to \iibar{X} (the complete `X Phrase'). The tree in~(\ref{pp_xbar_tree}) gives an idea of how an \iibar{N} could be given a structure that would fit into this schema, although as we'll see shortly there is an alternative way to consider `noun phrases,' namely as projections of determiners, rather than of nouns. Take a moment to identify the head, complement and specifier in~(\ref{pp_xbar_tree}).
+\begin{exe}
+    \ex[]{
+    \begin{forest} 
+        [\iibar{N}
+        [\iibar{N} [Lucy's, roof]][\ibar{N}
+        [\obar{N}\\collection][\iibar{P}
+        [\ibar{P}
+        [\obar{P}\\of][\iibar{N} [bicycles, roof]]]]]
+        ]
+    \end{forest}
+    }
+    \label{pp_xbar_tree}
+\end{exe}
+
+Now, it is also clear that not all possible phrases fit neatly into the schema in~(\ref{xbar}) or~(\ref{xbar_SOV}).
+Sometimes that schema appears to provide too much structure.
+For example, in the case of an intransitive verb, there is no object to fill up the complement position in the \iibar{V}, and in the case of the \iibar{P} in (\ref{pp_xbar_tree}), there doesn't appear to be a specifier of the preposition.
+We will assume that the complement and specifier positions are optional---so in the cases just discussed those positions are simply not projected---although an alternative is that the position is always there, but left empty.%\footnote{A slight variant is to propose that the ``intermediate'' phrase (N$'$, V$'$, P$'$ etc) is only present when there actually is a specifier.  That is to say, in some views the structure in \Last should rather be as in \Next:
+
+%\ex. \Tree  [.NP \qroof{Lucy's}.NP  [.N$'$ N\\collection  [.PP  P\\of  \qroof{bicycles}.NP ] ] ] 		
+
+%Notice that here the NP contains an N$'$---because there is a specifier---but the PP doesn't contain a P$'$.   The decision between these ways of doing things probably doesn't depend on empirical considerations, but which makes for a simpler theory overall.  You'll see both variants in the literature. For now I'll stick to the more elaborated structures that you'll also find in the S\&K text, the ones that always include all three ``levels'' of projection.
+%}
+\ea[]{
+    \begin{forest} 
+        [\iibar{V}
+            [\iibar{N}
+                [(empty) ]
+                [\ibar{N}
+                    [\obar{N}\\Luke]
+                ]
+            ]
+            [\ibar{V} [\obar{V}\\walks]]
+        ]
+    \end{forest}
+}
+\z
+
+What's important is that each head projects a phrase; if we want to leave out the empty specifier we could put the phrase under a ``triangle'' like for the NP \emph{Luke}, sparing us the details in~(\ref{ex:np_no_spec}) that we're not interested in.
+
+\begin{exe}
+\begin{multicols}{2}
+    \ex[]{
+    \begin{forest} 
+        [
+        \iibar{V}
+        [\iibar{N} [Luke, roof]][\ibar{V} [\obar{V}\\walks]]
+        ]
+    \end{forest}
+    }
+\columnbreak
+    \ex[]{
+    \begin{forest}
+        [\iibar{N}
+            [(empty) ]
+            [\ibar{N}
+                [\obar{N}\\Luke]
+            ]
+        ]
+    \end{forest}
+    }     \label{ex:np_no_spec}
+\end{multicols}
+\end{exe}
+
+Returning to broader questions of the X-Bar Schema, (\ref{xbar}) sometimes seems to provide not enough structure.
+For example, where can we put the second object of a ditransitive verb?
+And what do we do with the limitless number of modifiers we can add to a \iibar{V}?
+Ditransitives are a topic for another time, but modifiers are discussed below. 
+
+\section{What does a sentence look like? The projection IP}
+\hfill{}\textbf{Skill:}~\ref{projection}
+
+Now that we have seen what a \iibar{V} looks like, let us consider what the structure of an entire sentence may be. As a first pass, we might well want to consider that a sentence is in fact a projection of the verb; after all, we've focus on finding the main predicate and its arguments. That is to say, what we have been labelling `S' should really be labelled `\iibar{V},' and what we have been thinking of as \iibar{V}s when we do our constituent tests (the constituent that contains the verb and any objects or modifiers it may have) would in fact be \ibar{V}s. That seems like a reasonable way to handle examples like \emph{Fiona saw Iain}, or \emph{Birds fly}.
+
+But we run into problems if we consider more complex sentences, in particular, sentences containing not just the main verb, but also a \keyword{modal} or other \keyword{auxiliary} (e.g.\ \emph{have} or \emph{be}):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Donald may forget Pauline's name.}
+        \ex[]{The doctor will see her patients tomorrow.}
+        \ex[]{The weather might always turn bad.}
+    \end{xlist}
+    }
+    \label{aux}
+\end{exe}
+
+Here the verb that appears leftmost or ``highest'' in clause isn't the lexical verb but the auxiliary. And there is another difference between all the auxiliaries (not only the modals) and all other verbs in English, and that is that modals can stand in front of the sentential negation \emph{not}, and also before certain \keyword{sentence-medial}  adverbs (that is, adverbs that don't---or don't only---occur at the right edge of the \iibar{V}, but somewhere in the middle, notably somewhere between the subject and the object if there is one):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Iris will paint the door.}
+        \ex[]{Iris will not paint the door.}
+        \ex[*]{Iris paints not the door.}
+    \end{xlist}
+    } \label{ex:aux1}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Arthur could quickly open the tin.}
+        \ex[*]{Arthur opened quickly the tin.}
+        \ex[]{Arthur quickly opened the tin.}
+    \end{xlist}
+    } \label{ex:aux2}
+\end{exe}
+
+Such observations have led to the suggestion that modals are not ordinary verbs that head a \iibar{V}.
+% since an ordinary \iibar{V} can be headed by any verb, nonfinite ones like participles, infinitives, or gerunds included.
+Rather, modals are regarded as a special category, a \keyword{closed class} or \keyword{functional} category.
+This category is sometimes called \keyword{I} or \keyword{Infl} (for `Inflection');  alternatively it is sometimes called T (for `Tense').
+%Here we'll stick to the terminology in S\&K and call it I.
+So that means that
+% rather than (\ref{first_pass_modal}) 
+we'd have (\ref{second_pass_modal}). Take a moment to trace all the heads, complements and specifiers, where you can.\footnote{You might be skeptical of putting \emph{Donald} in the specifier of IP, rather than the specifier of VP. Good! We'll return to that very soon, in Topic 6.}
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{I}
+        [\iibar{N} [Donald, roof]][\ibar{I}
+        [\obar{I}\\may][\iibar{V}
+        [\ibar{V}
+        [\obar{V}\\forget][\iibar{N} [Pauline's name, roof]]]]]
+        ]
+    \end{forest}
+    }
+    \label{second_pass_modal}
+\end{exe}
+Although this addition solves one issue, the projection of \obar{I}-\iibar{I}, it creates another; in Topic~4, we said the verb's agent is generated in the specifier of \iibar{V}.
+We will return to this and other issues very soon, in Topic~6, when we consider the idea that the subject might start off in one position in the structure, but end up in another.
+
+    \subsection{Sidebar: why not recursive Vs?}
+So far we've been developing a formalism for thinking about the structure of clauses. Remember, though, that we also want to think critically about these proposals. Here's a small detour trying to contrast different hypotheses: we've just assumed that modals are of category I, but why not assume that they instantiate another case of recursion, namely recursion of V?
+ 
+Modals and auxiliaries are verbal in nature (they can carry tense inflection like other verbs), so perhaps the sentences in (\ref{aux}) involve a recursive \iibar{V} structure: the modal might project a \iibar{V} and take another \iibar{V}, headed by the main verb, as its complement.
+In that case, sentences could indeed be taken to be \iibar{V}s.
+In the tree illustrating this idea in (\ref{first_pass_modal}) I've put subscripts on the \obar{V} projections just so it is clear what part of the structure is projected by each of the two \obar{V}s:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{V}\textsubscript{1}
+        [\iibar{N} [Donald, roof]][\ibar{V}\textsubscript{1}
+        [\obar{V}\textsubscript{1}\\may][\iibar{V}\textsubscript{2}
+        [\ibar{V}\textsubscript{2}
+        [\obar{V}\textsubscript{2}\\forget][\iibar{N} [Pauline's name, roof]]]]
+        ]
+        ]
+    \end{forest}
+    }
+    \label{first_pass_modal}
+\end{exe}
+
+Let's find some evidence to speak against this hypothesis.
+Modals in English have a number of properties that make them fairly different from ordinary verbs. And in fact, we've already seen a few of these in~(\ref{ex:aux1})--(\ref{ex:aux2} above.
+
+In addition, modals can only occur as a \keyword{finite} form (that is a form that expresses tense). The do not occur as nonfinite verbal forms, such as \keyword{infinitives}, \keyword{participles}, or \keyword{gerunds}:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[*]{To can speak French is very useful.}
+        \ex[*]{Miriam seems to can swim.}
+        \ex[*]{Paul has never could do such a think.}
+        \ex[*]{Jennifer's maying to go to America is surprising.}
+    \end{xlist}
+    }
+\end{exe}
+Note that because modals select for the `bare infinitive' form of the verb that follows them, and they themselves can never appear in this form, this precisely means that (at least in standard English) we precisely \textbf{don't} get recursion of modals (or, in fact, of auxiliaries more generally).
+
+This brief detour is an example of how to think about syntactic argumentation, like the Research Skills we're trying to cultivate. Now let's get back to the X-Bar Schema and how it can help us handle modifiers.
+
+
+\section{Adjunction}
+\hfill{}\textbf{Skill:}~\ref{V_adjunction}
+ 
+We've used projections that fit with the \ibar{X}-Schema to account for the structure of clauses. %sentences, augmented, crucially, with the operation of \keyword{movement}.
+But there is still one case that we started out from that we haven't covered: namely, how do we accommodate \keyword{modifiers}?
+
+As we've seen at various points, there appears to be no principled limit to the number of modifiers that can be added to a clause or to a nominal.
+And, secondly, modifiers are not selected by specific heads.
+For both those reasons, we don't want modifiers to be included in the elementary trees for the words that they modify, since that would mean we would have to store an indefinite number of different such trees for each word, which cannot be correct.
+So we need some other way to integrate modifiers into the structure.
+
+The crucial insight about modifiers is that they differ from arguments in the following way: whenever a modifier is added to some category, the result is a category of precisely the same type.
+The same is not true of complements. 
+For example, if we add an object argument to a verb, the result is not another verb.
+This is apparent from the \emph{do so} replacement test; \emph{do so} can replace a combination of verb and object (that is, a \ibar{V}) but not a single verb without its object:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[*]{John ate a banana, and Geraldine did so an apple.}
+        \label{complement_subB}
+        \ex[]{John ate a banana, and Geraldine did so too.}
+        \label{complement_subC}
+    \end{xlist}
+    }
+    \label{complement_sub}
+\end{exe}
+On the other hand, when a modifier is added to a \ibar{V} the result is invariably something that can still be replaced by \emph{do so}, and in fact in all respects the larger constituent has the same properties as the constituent to which the modifer is added.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{John ate a banana quickly, and Geraldine did so, too.}
+        \label{adjunct_subA}
+        \ex[]{John ate a banana quickly, and Geraldine did so slowly.}
+        \label{adjunct_subB}
+        \ex[]{Danielle read the paper at home with a cup of coffee while listening to spotify and Arthur did so, too.}
+        \label{adjunct_subC}
+        \ex[]{Danielle read the paper at home with a cup of coffee while listening to spotify and Arthur did so in the office with a glass of wine.}
+        \label{adjunct_subD}
+    \end{xlist}
+    }
+    \label{adjunct_sub}
+\end{exe}
+As we have earlier hypothesized in exercises about possible structures for sentences and for nominals, this means that modifiers induce \keyword{recursion}:  specifically, the category of their sister (what they attach to) determines the category of their mother (the result of the attachment):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+    \begin{multicols}{2}
+    \ex[]{
+    \begin{forest}
+        [
+        PhraseX
+        [PhraseX [blah blah blah, roof]] [Modifier]
+        ]
+        [
+        PhraseX
+        [Modifier] [PhraseX [blah blah blah, roof]]
+        ]
+    \end{forest}
+    }
+    \columnbreak
+    \ex[]{
+    \begin{forest}
+        [
+        PhraseX
+        [Modifier] [PhraseX [blah blah blah, roof]]
+        ]
+    \end{forest}
+    }
+    \end{multicols}
+    \end{xlist}
+    }
+    \label{modifier_recursion}
+\end{exe}
+
+This way of integrating modifiers into the structure is called \keyword{adjunction}.
+So now we have in fact a second way to build up structure from lexical items and the elementary trees they project:  \keyword{substitution} and now \keyword{adjunction}. %, \keyword{movement}, and now \keyword{adjunction}.
+The technical question is whether we adjoin the modifier to the bar level as in~(\ref{Vbar_adjunction}) or to the phrase level as in~(\ref{VP_adjunction}):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{
+        \begin{forest}
+            % [
+            % \iibar{I}
+            % [\iibar{N} [Kiko the monkey, roof]][\ibar{I}
+            % [\obar{I}\\\lbrack{}+pst\rbrack{}]
+            [\iibar{V}
+            [\iibar{N} [Kiko the monkey, roof]] [\ibar{V} [\ibar{V} [\obar{V}\\ate][\iibar{N} [the banana, roof]] ][\iibar{P} [in the kitchen, roof]]]]
+            % ]
+            % ]
+        \end{forest}
+        } \label{Vbar_adjunction}
+        \ex[]{
+        \begin{forest}
+            % [
+            % \iibar{I}
+            % [\iibar{N} [Kiko the monkey, roof]]
+            % [\ibar{I}
+            % [\obar{I}\\\lbrack{}+pst\rbrack{}]
+            [\iibar{V}
+            [\iibar{V} [\iibar{N} [Kiko the monkey, roof]][\ibar{V} [\obar{V}\\ate][\iibar{N} [the banana, roof]] ]][\iibar{P} [in the kitchen, roof]]
+            ]
+            % ]
+            % ]
+        \end{forest}
+        }
+        \label{VP_adjunction}
+    \end{xlist}
+    }
+\end{exe}
+
+We've assumed that phrases are complete when a head has all the arguments it requires, i.e.~its specifiers and complements. So it wouldn't make sense for a modifier to create another phrasal level like in~(\ref{VP_adjunction}): there's no argument-complement or head-specifier relatinoship between \emph{John at the banan} and \emph{in the kitchen}. Instead, it makes sense for the modifier it to adjoin at the bar-level, like in~(\ref{Vbar_adjunction}): all the relationships of \obar{V} are maintained, plus we get a cheeky modifier for good measure.
+
+We end up with the following way for adjunction to work: When a constituent, say a \iibar{P} like \emph{in the kitchen} \keyword{adjoins} to for example a \ibar{V}, this means that an additional \ibar{V} node is created immediately above the original one, and the modifier is attached so that it is the daughter of this new \ibar{V} node, and the sister of the original one: 
+
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+    \begin{multicols}{3}
+        \ex[]{
+        \begin{forest}
+            [
+            \ibar{V}
+            [\obar{V}\\ate][\iibar{N} [the banana, roof]]
+            ]
+        \end{forest}
+        }
+        \columnbreak
+        \ex[]{
+        \begin{forest}
+            [
+            \ibar{V}
+            [\ibar{V}
+            [\obar{V}\\ate][\iibar{N} [the banana, roof]]]
+            ]
+        \end{forest}
+        }
+        \columnbreak
+        \ex[]{
+        \begin{forest}
+            [
+            \ibar{V}
+            [\ibar{V}
+            [\obar{V}\\ate][\iibar{N} [the banana, roof]]] [\iibar{P} [in the kitchen, roof]]
+            ]
+        \end{forest}
+        }
+    \end{multicols}
+    \end{xlist}
+    }
+\end{exe}
+And because the phrase that you end up with is of the same category as the phrase you started with, this process can be repeated, so that it is possible to accumulate a whole stack of such \keyword{adjuncts}, just by repeating the same process:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [\iibar{V}
+            [\iibar{N} [Kiko the monkey, roof]]
+            [\ibar{V}
+                [\ibar{V}
+                [\ibar{V}
+                [\ibar{V}
+                [\obar{V}\\ate][\iibar{N} [the banana, roof]]
+                ][\iibar{Adv} [stealthily, roof]]
+                ][\iibar{P} [in the kitchen, roof]]
+                ][\iibar{P} [at midnight, roof]]
+            ]
+        ]
+    \end{forest}
+    }
+\end{exe}
+
+\end{document}

@@ -1,0 +1,87 @@
+\usepackage{xr-hyper} %Adds referencing between handouts and the Skills.tex document to avoid typos (req. latexmkrc)
+\externaldocument{Skills} %where to look for labels
+\usepackage[hidelinks]{hyperref} %links and URLS
+\usepackage[linguistics]{forest} %needs tikz, draws trees
+\usepackage[margin=1in]{geometry} %page layout
+\usepackage{graphicx} % Required for inserting images
+\usepackage[T1]{fontenc} %Make sure to be able to get accented characters etc
+\usepackage[utf8]{inputenc}
+\usepackage[normalem]{ulem} %adds strikethrough and other commands
+\setlength{\parindent}{0pt}%don't indent paragraphs...
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} 
+\usepackage{multicol} %adds columns
+\usepackage{gb4e} %for formatting examples, works with leipzig and multicol
+\primebars %setting for gb4e, adds bars for X-bar notation, allows switch between bar or %'%
+\noautomath
+\usepackage{tabto}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{pifont} %allows dingbats to be called (for the "crosses" and "ticks" defined below)
+\usepackage{tipa} % IK
+
+
+\usepackage{leipzig}%primarily used for the abbreviations
+
+\usepackage[backend=biber,
+            style=unified,
+            natbib,
+            maxcitenames=3,
+            maxbibnames=99]{biblatex}
+\addbibresource{references.bib}
+\usepackage{attrib}%allows authors next to quote environments
+
+\makeatletter
+\def\@maketitle{%I guessed from the commenting out of the author below that you don't want an author, this just gets rid of the space associated with the author field
+  \newpage
+  \null
+%  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE {\@title}\par}
+%    \vskip 1.5em%
+%    {\large
+%      \lineskip .5em%
+%      \begin{tabular}[t]{c}%
+%        \@author
+%      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+%  \vskip 1.5em
+}
+\makeatother
+
+\title{LEL2A: Syntax}
+%\author{Instructor: Itamar Kastner}
+\date{Semester 1, 2024-25}%changed to current academic year
+
+\newcommand*{\sqb}[1]{\lbrack{#1}\rbrack}
+\newcommand*{\fn}[1]{\footnote{#1}}
+\newcommand{\keyword}[1]{\textsc{#1}}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\subtitle}[1]{\maketitle\begin{center}{\Large #1}\end{center}}
+\makeatletter
+\newcommand*{\addFileDependency}[1]{% argument=file name and extension
+\typeout{(#1)}% latexmk will find this if $recorder=0
+% however, in that case, it will ignore #1 if it is a .aux or 
+% .pdf file etc and it exists! If it doesn't exist, it will appear 
+% in the list of dependents regardless)
+%
+% Write the following if you want it to appear in \listfiles 
+% --- although not really necessary and latexmk doesn't use this
+%
+\@addtofilelist{#1}
+%
+% latexmk will find this message if #1 doesn't exist (yet)
+\IfFileExists{#1}{}{\typeout{No file #1.}}
+}\makeatother
+
+\newcommand*{\myexternaldocument}[1]{%
+\externaldocument{#1}%
+\addFileDependency{#1.tex}%
+\addFileDependency{#1.aux}%
+}
+\myexternaldocument{Skills} %also necessary for cross referencing, to reference other documents duplicate with name of document

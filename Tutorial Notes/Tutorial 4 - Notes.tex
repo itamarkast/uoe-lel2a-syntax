@@ -1,0 +1,452 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\pagestyle{empty}
+\maketitle
+\subtitle{Week 8}
+
+% \section*{Question 1}%Source: Intro Syntax Assessment 2 Question 4
+% \hfill{} \ref{A_movement} $\Box$,
+% \ref{object_control} $\Box$,
+% \ref{locality_constraints} $\Box$
+
+% Given the examples in (\ref{believe_consider}):
+% \begin{exe}
+%     \ex{
+%     \begin{xlist}
+%         \ex{I believe those people to know the answer.}
+%         \label{believe}
+%         \ex{I consider their proposal to be ridiculous.}
+%     \end{xlist}
+%     }
+%     \label{believe_consider}
+% \end{exe}
+% Here are two hypotheses, \ref{hyp_A} \& \ref{hyp_B}, about the behaviour of \emph{believe} and \emph{consider}:
+% \begin{xlistA}
+%     \ex[]{%\textbf{Hypothesis A}\\
+%     These verbs have two arguments: a \iibar{D} subject argument and an infinitival \iibar{I} object argument.
+%     These verbs are able to assign \keyword{accusative} case in an \textsc{exceptional} way, to the \iibar{D} occupying the specifier position of that infinitival \iibar{I} complement.
+%     So the structure of (\ref{believe}) is roughly:\\ I believe \lbrack{}\textsubscript{\iibar{I}} \lbrack{}\textsubscript{\iibar{D}}those people\rbrack{}\textsubscript{\Acc{}} to know the answer\rbrack{}.
+%     }
+%     \label{hyp_A}
+%     \ex[]{%\textbf{Hypothesis B}\\
+%     These verbs have three arguments: a \iibar{D} subject argument, a \iibar{D} object argument, and an infinitival \iibar{I} second object argument.
+%     The subject of the infinitival \iibar{I} is a \keyword{pro} whose reference is controlled by the \keyword{accusative} object in the main clause.
+%     So the structure of (\ref{believe}) is roughly:\\ I believe \lbrack{}\textsubscript{\iibar{D}} those people\rbrack{}\textsubscript{\Acc{}} \lbrack{}\textsubscript{\iibar{I}} \textsc{pro} to know the answer\rbrack{}.
+%     }
+%     \label{hyp_B}
+% \end{xlistA}
+% Some of the following examples are consistent with either hypothesis, and some may support one over the other.
+% Which of the examples can be used as an argument to support one hypothesis over the other, and which are “neutral” between the two hypotheses?
+% \begin{exe}
+%     \ex{
+%     \begin{xlist}
+%         \ex[*]{I believe they to know the answer.}
+%         \ex[]{I believe there to be a good solution.}
+%         \ex[]{I believe the answer to be known by those people.}
+%         \label{A_case_tree}
+%         \ex[]{They are believed to know the answer.}
+%         \ex[]{There is believed to be a good solution.}
+%         \ex[]{I believe the cat to be out of the bag. (with the interpretation: \emph{I believe that the secret has been exposed})}
+%     \end{xlist}
+%     }
+% \end{exe}
+% Write a short response to justify your answer.
+% In your answer, draw two possible trees for (\ref{A_case_tree})---one implementing each hypothesis---and provide an accompanying rationale for choosing one over the other.
+
+\section*{Question 1}%Source: LEL2A Week 8 tutorial \& IS Assessment 2
+% \hfill{} \ref{raising_control} $\Box$,
+% \ref{passives} $\Box$,
+% \ref{wh_movement} $\Box$,
+% \ref{i_to_c_movement} $\Box$
+
+Instructions:
+\begin{itemize}
+    \item Provide an analysis (syntactic tree) for each of the following sentences, consistent with the course and represent this in tree form.
+    \item You should represent all relevant forms of movement discussed in the course.
+    \item Each sentence is tagged with the main Syntax Skills it relies on.
+    \item These sentences are complex, synthesising everything we've worked on so far. But this also means that you should be able to separate the parts (skills) you're comfortable with from the ones you're not yet proficient in. In other words, do give all three a try!
+    \item If you're still ``missing'' a Syntax Skill from a previous week and believe your tree demonstrates it, include a very brief note (1--2 sentences) after your tree.
+    \item If you want to add some explanations about any of your trees, please keep them short too (e.g.~2--3 sentences or a constituency test).
+\end{itemize}
+
+The sentences!
+\begin{exe}
+    \ex[]{Whose bag did you try to steal? \label{whose_bag} \hfill \ref{np_dp} $\Box$, \ref{raising_control} $\Box$, \ref{passives} $\Box$, \ref{wh_movement} $\Box$}
+    \ex[]{Dr Ali seems to forget which bag her instruments were put in.\label{which_bag} \hfill \ref{raising_control} $\Box$, \ref{A_movement} $\Box$, \ref{passives} $\Box$, \ref{wh_movement} $\Box$}
+    \ex[]{Which stories about the pandemic did the historian consider writing an analysis of? \\
+        \label{which_stories} \hfill \ref{np_structure} $\Box$, \ref{raising_control} $\Box$, \ref{A_movement} $\Box$, \ref{wh_movement} $\Box$}
+\end{exe}
+
+\begin{exe}
+\exi{(1)}{ %Whose bag did you try to steal:\\ %small
+    \begin{forest}
+    [CP
+        [DP [whose bag, roof, name=whcopy1]]
+        [\ibar{C}
+            [C\\did, name=Icopy ]
+            [IP
+                [DP$_i$ [you, roof, name=subjectcopy]]
+                [\ibar{I}
+                    [I\\\sout{did}, name=Itrace]
+                    [VP
+                        [DP$_i$ [\sout{you}, roof, name=subjecttrace]]
+                        [\ibar{V}
+                            [V\\try ]
+                            [CP
+                                [DP [\sout{whose bag}, roof, name=whcopy]]
+                                [\ibar{C}
+                                    [C ]
+                                    [IP
+                                        [DP$_i$ [\textsc{PRO}, roof, name=lowIP]]
+                                        [\ibar{I}
+                                            [I\\to ]
+                                            [VP
+                                                [DP$_i$ [\sout{\textsc{PRO}}, roof, name=lowVP]]
+                                                [\ibar{V}
+                                                    [V\\steal]
+                                                    [\fbox{DP}, name=passivetrace
+                                                        [DP [\sout{whose}, roof]]
+                                                        [\ibar{D}
+                                                            [\obar{D} ]
+                                                            [NP
+                                                                [\phantom{X} ]
+                                                                [\ibar{N} [N\\\sout{bag}]]
+                                                            ]
+                                                        ]
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    \draw[->,dotted] (passivetrace) to[out=south west,in=south] (whcopy);
+    \draw[->,dotted] (whcopy) to[out=south west,in=south] (whcopy1);
+    % \draw[->,dotted] (passivecopy) to[out=south west,in=south] (whcopy);
+    \draw[->,dotted] (subjecttrace) to[out=south west,in=south] (subjectcopy);
+    \draw[->,dotted] (whcopy) to[out=south west,in=south] (whcopy1);
+    \draw[->,dotted] (lowVP) to[out=south,in=south west] (lowIP);
+    \draw[->,dotted] (Itrace) to[out=south west,in=south west] (Icopy);
+    \end{forest}
+\label{tree_whose_bag}
+}
+\end{exe}
+    
+% \begin{forest}
+%     [
+%     CP
+%     [DP [whose bag, roof, name=whcopy1]][C$'$
+%     [C [I\\do, name=Icopy][C\\$\emptyset{}$]][IP
+%     [DP [you, roof, name=subjectcopy]][I$'$
+%     [I\\\sout{do}, name=Itrace][VP
+%     [DP [\sout{you}, roof, name=subjecttrace]][V$'$
+%     [V\\think][CP
+%     [DP [\sout{whose bag}, roof, name=whcopy]][C$'$
+%     [C\\$\emptyset{}$][IP
+%     [DP [\sout{whose bag}, roof, name=passivecopy]][I$'$
+%     [I\\was][VP
+%     [V$'$
+%     [V\\stolen][DP [\sout{whose bag}, roof, name=passivetrace]]]]]]]]]]]]]
+%     ]
+%     \draw[->,dotted] (passivetrace) to[out=south west,in=south] (passivecopy);
+%     \draw[->,dotted] (passivecopy) to[out=south west,in=south] (whcopy);
+%     \draw[->,dotted] (whcopy) to[out=south west,in=south] (whcopy1);
+%     \draw[->,dotted] (subjecttrace) to[out=south west,in=south] (subjectcopy);
+%     \draw[->,dotted] (Itrace) to[out=south west,in=south] (Icopy);
+% \end{forest}}
+
+\textcolor{red}{
+\begin{itemize}
+    \item The example in (\ref{whose_bag}) has two clauses. The embedded clause \emph{\sout{whose bag} PRO to steal \emph{\sout{whose bag}}} is non-finite.
+    \item Its subject is PRO, which undergoes (silent) movement to Spec,IP under the VPISH.
+    \item The internal structure of the possessed DP should have the possessor \emph{whose} in Spec,DP. But it could equally well be in D; what's important is that it isn't in Spec,NP, because it's a possessor, not an argument of \emph{bag}.
+    \item The entire possessive DP undergoes \emph{wh}-movement: first to the intermediate CP (although this isn't crucial for us), and then to the matrix specifier.
+    \item The agent of the matrix clause, and subject of the control verb \emph{try}, is the DP \emph{you}. It controls PRO and undergoes movement to Spec,IP itself.
+    \item I moves to C in the matrix question, which we mentioned but didn't motivate fully.
+\end{itemize}
+}
+% Its subject is passive.
+% Under the framework developed in the course, this means \emph{whose bag} is associated with a $\theta$-role assigning position that is sister to the verb \emph{steal}; \emph{whose bag} is the complement of \emph{stolen}.
+% As the embedded clause is passive, the verb does not assign \textsc{accusative} Case to its complement, triggering A-movement of \emph{whose bag} to \textsc{spec} IP to receive \textsc{nominative} Case (\ref{whose_bag_step1}).
+% \begin{exe}
+%     \ex{
+%     \begin{xlist}
+%         \ex[]{\lbrack{}\textsubscript{IP} \lbrack{}\textsubscript{DP} whose bag] was \lbrack{}\textsubscript{VP} stolen \lbrack{}\textsubscript{DP} \sout{whose bag}\rbrack{}\rbrack{}\rbrack{}}\label{whose_bag_step1}
+%         \ex[]{\lbrack{}\textsubscript{CP} \lbrack{}\textsubscript{DP} whose bag\rbrack{} $\emptyset{}$ \lbrack{}\textsubscript{IP} \lbrack{}\textsubscript{DP} \sout{whose bag}\rbrack{} was \lbrack{}\textsubscript{VP} stolen \lbrack{}\textsubscript{DP} \sout{whose bag}\rbrack{}\rbrack{}\rbrack{}\rbrack{}}\label{whose_bag_step2}
+%     \end{xlist}
+%     }
+% \end{exe}
+% In Topic 11, we looked at the ban on \keyword{super-raising}---moved elements must do so iteratively, stopping off at available intermediate positions.
+% We looked at this in reference to A-movement but there is good reason to think it applies to A$'$-movement also.
+% For our tree, this would mean the wh-phrase, \emph{whose bag}, should move to \textsc{spec} CP of the embedded clause before moving to a position in the higher matrix clause (if you moved the wh-phrase in one step don't worry).
+% The result is (\ref{whose_bag_step2}).}
+
+% \textcolor{red}{The embedded clause starts as the complement of the matrix verb \emph{think}.
+% The matrix subject, \emph{you} starts in the \textsc{spec} VP position where it is associated with an \keyword{agent} $\theta$-role.
+% The matrix subject raises to \textsc{spec} IP to receive \textsc{nominative} Case.
+% The wh-phrase, \emph{whose bag}, raises from \textsc{spec} CP of the embedded clause to \textsc{spec} CP of the matrix clause.
+% Finally, this triggers I-to-C movement in the matrix clause.
+% The auxiliary verb in I moves to adjoin to C.
+% The tree in (\ref{tree_whose_bag}) represents all of this movement and has the desired surface word order.}
+
+
+
+
+
+\begin{exe}
+\exi{(2)}{ %Dr Ali seems to forget which bag her instruments were put in:\\%\small
+\begin{forest}
+    [IP
+        [DP [Dr Ali, roof, name=subjectcopy]]
+        [I$'$
+        [I]
+        [VP
+            [\phantom{X} ]
+            [\ibar{V}
+                [V\\seems ]
+                [IP
+                    [DP [\sout{Dr Ali}, roof, name=subjectmid]]
+                    [\ibar{I}
+                        [I\\to]
+                        [VP
+                            [DP [\sout{Dr Ali}, roof, name=subjecttrace]]
+                            [V$'$
+                                [V\\forget]
+                                [CP
+                                    [DP [which bag, roof, name=whcopy]]
+                                    [IP
+                                    [DP [her instruments, roof, name=passivecopy]][I$'$
+                                    [I\\were][VP
+                                    [V$'$
+                                        [V\\put]
+                                        [\fbox{DP}, name=passivetrace
+                                            [\phantom{X} ]
+                                            [\ibar{D}
+                                                [D\\\sout{her} ]
+                                                [NP [\sout{instruments}, roof]]
+                                            ]
+                                        ]
+                                        [PP
+                                            [P$'$
+                                            [P\\in]
+                                            [\fbox{DP}, name=whtrace
+                                                [\phantom{X} ]
+                                                [\ibar{D}
+                                                    [D\\\sout{which}]
+                                                    [NP [\sout{bag}, roof]]
+                                                ]
+                                            ]
+                                            ]
+                                        ]
+                                    ]
+                                    ]
+                                    ]
+                                    ]
+                                ]
+                            ]   
+                        ]
+                    ]
+                ]
+            ]
+            
+        
+        ]]
+    ]
+    \draw[->,dotted] (whtrace) to[out=south west,in=south] ([yshift=-1em, xshift=-4em] whcopy.southwest);
+    \draw[->,dotted] (subjecttrace) to[out=south west,in=south] (subjectmid);
+    \draw[->,dotted] (subjectmid) to[out=south west,in=south] (subjectcopy);
+    \draw[->,dotted] (passivetrace) to[out=south west,in=south] (passivecopy);
+    % \draw[->,dotted] (Vtrace) to[out=south west,in=south] (Vcopy);
+\end{forest}
+\label{which_bag_tree}
+}
+\end{exe}
+
+\textcolor{red}{
+    \begin{itemize}
+        \item Raising: the derived subject of the matrix clause starts off as the subject of \emph{forget}, then moves to the embedded Spec,IP, and then to the matrix Spec,IP.  But we haven't discussed exactly why this intermediate movement happens beyond ``subject requirement'', so some students prefer to just move this DP all the way up in one fell swoop, which is also ok for our purposes.
+        \item The most deeply embedded clause is a passive one. The Theme undergoes A-movement to the subject position, Spec,IP - but not to Spec,VP because it isn't an Agent in the elementary tree for \emph{put}.
+        \item Wh-question: movement to Spec,CP.
+        \item Wh-question in the DP: we didn't say that the demonstrative is in D so no harm if it's in Spec,DP or something like that.
+        \item The exact structure of the \ibar{V} level for ditransitive \emph{put} verb doesn't matter as long as we see that both arguments are complements, not modifiers of some sort. See more on this below.
+        \item The possessive pronoun \emph{her} is in \obar{D} because we mentioned that it's in complementary distribution with the possessive, but it can also go in Spec,DP (like in the previous example).
+        \item \obar{I} heads: none overt in the matrix clause, \emph{to} in the non-finite clause, \emph{were} as the passive auxliary in the embedded passive clause.
+    \end{itemize}
+}
+
+\textcolor{red}{The example in (\ref{which_bag}) has two clauses.
+The embedded clause \emph{which bag her instruments were put in} is an \keyword{embedded interrogative}.
+This means it is a CP complement to the matrix verb \emph{forgot}, but the wh-prase \emph{which bag} does not raise any higher than embedded \keyword{spec} CP.
+Additionally, the embedded clause is passive and contains a verb, \emph{put} which c-selects a DP and a PP argument.
+We can see from diagnostics like (\ref{adjunct_test}) that \emph{in the bag} is a complement of the verb.
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[*]{she put her instruments quickly and in the bag}
+        \ex[]{she put her instruments in the bag quickly and quietly}
+    \end{xlist}
+    }\label{adjunct_test}
+\end{exe}
+We can see in the diagnostic above that conjunction with an adjunct and \emph{in the bag} is illicit but conjunction with two adjuncts is licit.}
+
+\textcolor{red}{In the framework developed, this means \emph{her instruments} should start as a complement of the verb and raise to \textsc{spec} IP to satisfy the subject requirement(associating it with both a $\theta{}$-position and a Case assigning position (\ref{which_bag_step1}).
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{\lbrack{}\textsubscript{IP} \lbrack{}\textsubscript{DP} her instruments\rbrack{} were \lbrack{}\textsubscript{VP} put \lbrack{}\textsubscript{DP} \sout{her instruments}\rbrack{} \lbrack{}\textsubscript{PP} in \lbrack{}\textsubscript{DP} which bag\rbrack{}\rbrack{}\rbrack{}\rbrack{}}\label{which_bag_step1}
+        \ex[]{\lbrack{}\textsubscript{CP} \lbrack{}\textsubscript{DP} which bag\rbrack{} \lbrack{}\textsubscript{IP} \lbrack{}\textsubscript{DP} his instruments\rbrack{} were \lbrack{}\textsubscript{VP} put \lbrack{}\textsubscript{DP} \sout{his instruments}\rbrack{} \lbrack{}\textsubscript{PP} in \lbrack{}\textsubscript{DP} \sout{which bag}\rbrack{}\rbrack{}\rbrack{}\rbrack{}\rbrack{}}\label{which_bag_step2}
+    \end{xlist}
+    }
+\end{exe}
+As the embedded clause is interrogative, this function is introduced via a functional C head, which triggers A$'$-movement of the wh-phrase, this is shown in (\ref{which_bag_step2}).
+Embedded interrogatives do not trigger I-to-C movement, so the I head \emph{where} remains where it is.}
+
+\textcolor{red}{In order to draw our tree, we need to make a decision about how to represent \emph{put} as it selects two internal arguments \emph{his instruments} and \emph{in which bag}. We've mentioned informally two ways of dealing with verbs like this on the course; either draw a ternary branching structure, or use nested VP shells with V-head movement.}
+
+% \textcolor{red}{As mentioned above, the embedded CP is the complement of \emph{forgot} in the matrix clause. The matrix subject \emph{Dr Ali}, starts in \textsc{spec} VP where it receives a $\theta{}$-role but not Case This triggers A-movement to the Case assigning position \textsc{spec} IP. This is all shown below in (\ref{which_bag_tree}).}
+
+
+\begin{exe}
+\exi{(3)}{ %Which stories about the pandemic did the historian consider writing an analysis of?\\
+\small \hspace{-24em}
+\begin{forest}
+    [CP
+        [DP, name=whcopy, [D$'$[D\\which] [NP [N$'$[N$'$ [N\\stories]] [PP [P$'$ [P\\about] [DP [D$'$ [D\\the] [NP [pandemic, roof]]]]]]]]]
+        ]
+        [C$'$
+            [C\\did, name=Icopy]
+            [IP
+                [DP [the historian, roof, name=subjectcopy]]
+                [I$'$
+                    [I\\\sout{did}, name=Itrace]
+                    [VP
+                        [DP [\sout{the historian}, roof, name=subjecttrace]]
+                        [V$'$
+                            [V\\consider]
+                            [IP
+                                [DP [PRO, roof, name=PROcopy]]
+                                [I$'$
+                                    [I]
+                                    [VP
+                                        [DP [\sout{PRO}, roof, name=PROtrace]]
+                                        [V$'$
+                                            [V\\writing]
+                                            [DP
+                                                [\phantom{X} ]
+                                                [D$'$
+                                                    [D\\an]
+                                                    [NP
+                                                        [\phantom{X} ]
+                                                        [N$'$
+                                                            [N\\analysis]
+                                                            [PP
+                                                                [\phantom{X} ]
+                                                                [P$'$
+                                                                    [P\\of]
+                                                                    [DP [\sout{which stories \dots}, roof, name=whtrace]]
+                                                                ]
+                                                            ]
+                                                        ]
+                                                    ]
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    \draw[->,dotted] (whtrace) to[out=south west,in=west] (whcopy); %([yshift=-20em] whcopy.south);
+    \draw[->,dotted] (subjecttrace) to[out=south west,in=south] (subjectcopy);
+    \draw[->,dotted] (Itrace) to[out=south west,in=south] (Icopy);
+    \draw[->,dotted] (PROtrace) to[out=south west,in=south] (PROcopy);
+\end{forest}
+}
+\end{exe}
+
+\textcolor{red}{
+    \begin{itemize}
+        \item Control: \emph{the historian} controls PRO in the embedded clause; we have two lexical verbs, \emph{consider} and \emph{writing}. If we perform the appropriate diagnostics, we see that \emph{consider} is a control verb:
+        \begin{exe}
+            \sn[*]{There considers to be a problem.}
+        \end{exe}
+        Based on this, we expect the Agent/subject of \emph{writing} to be PRO.
+        \item Strictly speaking, \emph{writing} is in the gerund form, which we haven't discussed directly. It makes sense to have it in \obar{V} but other analyses are also fine as long as they're internally consistent (i.e.~have PRO as the agent of some elementary tree).
+        \item PRO could even be argued to be in Spec,VP of the nominalization \emph{analysis}.
+        \item We haven't been strict about whether the embedded non-finite clauses are IPs are CPs. If the embedded clause is a CP, then ideally the \emph{wh}-phrase passed through the embedded Spec,CP.
+        \item Arguments and adjuncts: \emph{about the pandemic} is a modifier of \emph{stories}, but \emph{of which stories about the pandemic} is best seen as an argument of \emph{analysis}.
+        \begin{exe}
+            \sn{\lbrack{}\textsubscript{IP} PRO to \lbrack{}\textsubscript{VP} \sout{PRO} write \lbrack{}\textsubscript{DP} an analysis \rbrack{} \lbrack{}\textsubscript{PP} of which stories about the pandemic\rbrack{}\rbrack{}\rbrack{}}\label{which_stories_step1}
+            \sn{
+            \begin{xlist}
+                \ex[]{They wrote an analysis of these stories about the pandemic}\label{which_stories_step2a}
+                \ex[]{It was [an analysis of these stories about the pandemic] they wrote}\label{which_stories_step2b}
+                \ex[*]{They wrote \emph{it} of these stories about the pandemic}\label{which_stories_step2c}
+                \ex[\#]{They wrote \emph{one} of these stories about the pandemic}
+                \ex[*]{It was [an analysis] that they wrote of these stories about the pandemic}
+                \ex[*]{It was [an analysis of these stories] that they wrote about the pandemic}\label{which_stories_step2f}
+                \ex[]{It was [these stories about the pandemic] that they wrote an analysis of}\label{which_stories_step2g}
+                \ex[]{They wrote these stories about the pandemic}\label{which_stories_step2d}
+                \ex[]{They wrote these stories about the pandemic and she wrote one about climate change}\label{which_stories_step2e}
+            \end{xlist}
+            }
+        \end{exe}
+        It's true that \emph{analysis of} is not derived from a finite verb \emph{analyse of} with the same PP complement. That's not something we would've expected, but it's a false negative, as the other tests show.
+    \end{itemize}
+}
+
+% \textcolor{red}{The example in (\ref{which_stories}) has two clauses but the embedded clause is non-finite. If we perform an appropriate diagnostic, we see that \emph{consider} is a \textsc{control} verb.
+% \begin{exe}
+%     \ex[*]{There considers to be a problem.}
+% \end{exe}
+% Based on this, we expect the Agent/subject of \emph{writing} to be PRO.}
+
+% \textcolor{red}{Within the embedded clause (\ref{which_stories_step1}), we then need to decide on the complement or adjunct status of the other constituents.
+% \begin{exe}
+%     \ex{\lbrack{}\textsubscript{IP} PRO to \lbrack{}\textsubscript{VP} \sout{PRO} write \lbrack{}\textsubscript{DP} an analysis \rbrack{} \lbrack{}\textsubscript{PP} of which stories about the pandemic\rbrack{}\rbrack{}\rbrack{}}\label{which_stories_step1}
+%     \sn{
+%     \begin{xlist}
+%         \ex[]{They wrote an analysis of these stories about the pandemic}\label{which_stories_step2a}
+%         \ex[]{It was [an analysis of these stories about the pandemic] they wrote}\label{which_stories_step2b}
+%         \ex[*]{They wrote \emph{it} of these stories about the pandemic}\label{which_stories_step2c}
+%         \ex[*]{It was [an analysis of these stories] that they wrote about the pandemic}\label{which_stories_step2f}
+%         \ex[]{It was [these stories about the pandemic] that they wrote an analysis of}\label{which_stories_step2g}
+%         \ex[]{They wrote these stories about the pandemic}\label{which_stories_step2d}
+%         \ex[]{They wrote these stories about the pandemic and she wrote one about climate change}\label{which_stories_step2e}
+%     \end{xlist}
+%     }\label{which_stories_step2}
+% \end{exe}
+% Taking the finite counterpart in (\ref{which_stories_step2a}), the phrase \emph{a book about those stories about the pandemic} appears to be a single constituent (\ref{which_stories_step2b}).
+% Within this constituent, the head \emph{a book} can be substituted for a pronoun (\ref{which_stories_step2b}) to the exclusion of the PP \emph{about these stories about the pandemic}, suggesting that the PP is an adjunct.
+% Within the string \emph{about these stories about the pandemic}, we can see that \emph{these stories about the pandemic} is a single constituent (\ref{which_stories_step2f}-\ref{which_stories_step2g}).
+% Deciding if \emph{about the pandemic} is an adjunct or complement of \emph{stories} is more difficult as there are independent reasons why many of our tests will fail in the multiple embedded clause.
+% Comparing a similar sentence, where the object is \emph{stories about the pandemic} (\ref{which_stories_step2d}-\ref{which_stories_step2e}), we can see that \emph{about the pandemic} behaves like an adjunct.}
+
+% \textcolor{red}{
+% Note that it’s also ok to take \emph{of which stories about the pandemic} as a modifier of \emph{write} rather than of \emph{book}.
+% \begin{itemize}
+% \item \emph{wh}-phrase moves from a complement of P to SPEC CP
+% \item \emph{did} undergoes I-to-C movement
+% \item Both subjects move from SPEC VP, where they receive a $\theta$-role to SPEC IP
+% \item \emph{which} as D head with \emph{stories about the pandemic} as its NP complement
+% \item \emph{plan} taking as its complement an infinitival IP (or CP complement containing an IP) with \emph{to} as its head
+% \item \emph{plan} as a \textbf{control} verb, i.e.\ the subject of the infinitival IP being a PRO that originates as the subject of \emph{write}
+% \end{itemize}}
+
+
+\section*{Question 2 (for discussion)}
+
+What was the most interesting thing you learned in the LEL2A syntax block?
+
+\end{document}

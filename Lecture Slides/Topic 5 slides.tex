@@ -1,0 +1,220 @@
+\documentclass{beamer}
+\input{header_beamer}
+\subtitle{Topic 5 Course Notes: The X-Bar Schema}
+
+\begin{document}
+\maketitle
+
+\frame{\frametitle{Recap}
+   \begin{block}{Topic 4 skills}
+    \begin{itemize}
+        \item[4a]{Relate differences in types of verbal complements to c-selection properties of the verb.}
+        \item[4b]{Perform an appropriate diagnostic to distinguish a complement from an adjunct.}
+    \end{itemize}
+    \end{block}
+
+    We also discussed:
+    \begin{itemize}
+        \item Elementary trees.
+    \end{itemize}
+}
+
+\frame{\frametitle{Topic 5}
+   \begin{block}{Topic 5 skills}
+    \begin{itemize}
+        \item[5a]{Represent heads and phrases, identified via constituency tests, in a manner consistent with the \emph{projection principle}.}
+        \item[5b]{Use X-bar representations to distinguish adjunction from complementation.}
+    \end{itemize}
+    \end{block}
+
+    Research Skills:
+    \begin{itemize}
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+
+\frame{\frametitle{The X-bar schema}
+    \begin{enumerate}
+        \item A given head might select for its argument.
+        \item A given head might also need an additional argument, e.g.~the subject/Agent of a verb.
+        \item The X-bar schema: head, complement, specifier.
+    \end{enumerate}
+}
+
+\frame{\frametitle{The X-bar schema}
+\centering
+
+\bigskip
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{V}
+        [specifier] [\ibar{V}
+        [\obar{V}] [complement]]
+        ]
+    \end{forest}
+}
+
+% \frame{
+%     The specifier and complement are both phrases.
+    
+%     \bigskip
+%     Why?
+% }
+
+\frame{
+    The specifier and complement are both phrases.
+    
+\bigskip
+    Why?
+
+\bigskip
+    Because we think in terms of \textbf{constituents}, satisfying the projection principle.
+}
+
+\frame{
+
+    Is this a good X-bar representation?
+
+    \begin{center}
+        \begin{forest}
+            [VP
+                [NP
+                    [\ibar{N} [N \\dugs ]]
+                ]
+                [V'
+                    [V\\like ]
+                    [NP
+                        [\ibar{N} [N\\claps ]]
+                    ]
+                ]
+            ]
+        \end{forest}
+    \end{center}
+}
+
+\frame{
+
+    Is this a good X-bar representation?
+
+    \begin{center}
+        \begin{forest}
+            [VP
+                [NP
+                    [\ibar{N} [N \\dugs ]]
+                ]
+                [V' 
+                    [V\\like ]
+                    [NP
+                        [\ibar{N} [N\\claps ]]
+                    ]
+                ]
+            ]
+        \end{forest}
+        {\Large =}
+        \begin{forest}
+            [VP
+                [NP [dogs,roof]]
+                [V' 
+                    [V\\like ]
+                    [NP [pats,roof]]
+                ]
+            ]
+        \end{forest}
+        {\Large =}
+        \begin{forest}
+            [VP [dogs like pats,roof]]
+        \end{forest}
+    \end{center}
+}
+
+\frame{
+ Is this a good X-bar representation?
+
+    \begin{center}
+        \begin{forest}
+            [PP
+                [P\\in]
+                [N\\Edinburgh]
+            ]
+        \end{forest}
+    \end{center}
+}
+
+% \frame{
+%     Any other suggested phrases/trees?
+% }
+
+\frame{
+    \begin{itemize}
+        \item These are technical points: ``do things this way''.
+        \item \textbf{But} they're supposed to show our understanding of syntactic relationships.
+        \item Try to keep both of these aspects in mind.
+    \end{itemize}
+
+\bigskip
+    Some things we haven't talked about yet: adjectives, adverbs, more kinds of verbs, \dots{}
+}
+
+\frame{
+    Let's talk about adverbs.
+
+\bigskip
+    Adjectives will wait a bit till we develop the structure of NPs a bit more.
+
+\bigskip
+    Recap: what's the difference between adverbs and arguments?
+
+% \pause
+
+    \begin{itemize}
+        \item Optional.
+        \item Pattern differently (we have diagnostics for them).
+    \end{itemize}
+}
+
+\frame{
+    Modifiers in our theory: \textbf{adjunction} to the \textbf{bar-level}.
+
+    \ea Dogs really like pats.
+    \ex Students draw trees diligently.
+    \z
+}
+
+\frame{
+    A couple of twists in the following examples:
+
+    \ea I might draw trees slowly.
+    \ex Dogs really like pats behind the ear.
+    \z
+}
+
+
+\frame{\frametitle{Summary}
+   \begin{block}{Topic 5 skills}
+    \begin{itemize}
+        \item[5a]{Represent heads and phrases, identified via constituency tests, in a manner consistent with the \emph{projection principle}.}
+        \item[5b]{Use X-bar representations to distinguish adjunction from complementation.}
+    \end{itemize}
+    \end{block}
+
+    We also discussed:
+    \begin{itemize}
+        \item The projection I (for modals and auxiliaries).
+        \item Adjunction side (left/right).
+        % \item Movement of the subject from Spec,VP to Spec,IP.
+    \end{itemize}
+
+    Research Skills:
+    \begin{itemize} \small
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+
+}
+\end{document}

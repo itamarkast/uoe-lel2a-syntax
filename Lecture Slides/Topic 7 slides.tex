@@ -1,0 +1,367 @@
+\documentclass{beamer}
+\input{header_beamer}
+\subtitle{Topic 7 Course Notes: Nonverbal XPs (DP), Part 2}
+
+\begin{document}
+\maketitle
+
+\frame{\frametitle{Recap}
+      \begin{block}{Topic 6 skills}
+    \begin{itemize}
+        \item[6a]{Use constituency tests to identify and justify projection of different functional heads in a representation, such as I, C, and NEG.}
+        \item[6b]{Implement a \emph{VP-internal subject hypothesis} analysis.}
+    \end{itemize}
+    \end{block}
+}
+
+\frame{\frametitle{Topic 7}
+   \begin{block}{Topic 7 skills}
+    \begin{itemize}
+        \item[7a]{Implement an analysis of complex noun phrases that is consistent with the framework developed.}
+        \item[7b]{Identify elements as complements or adjuncts of a noun in a principled way.}
+    \end{itemize}
+    \end{block}
+
+    Research Skills:
+    \begin{itemize}
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+
+\frame{\frametitle{The DP hypothesis}
+\centering
+    \begin{forest}
+        [DP
+            [{} ]
+            [\ibar{D}
+                [\obar{D} ]
+                [NP ]
+            ]
+        ]
+    \end{forest}
+}
+
+\frame{
+    Let's list some things worth pointing out about examples like the following:
+
+    \ea
+        \ea[]{Taylor considered her options.}
+        \ex[]{Taylor considered that her fans would be upset.}
+        \ex[]{Taylor relied on her fans.}
+        \ex[*]{Taylor relied at her audience.}
+        \z
+    \ex
+        \ea[]{Taylor's consideration of her options.}
+        \ex[]{Taylor expected consideration of her options.}
+        \ex[?]{Taylor's consideration that her fans would be upset.}
+        \ex[]{The consideration of her options annoyed her.}
+        \ex[]{Taylor's reliance on her fans.}
+        \ex[*]{Taylor's reliance at her audience.}
+        \z
+    \z
+}
+
+\frame{
+    \begin{itemize}
+        \item Parallels between verbal and nominal versions (c-selection).
+        \item No subject requirement in nominals (no expletive subjects needed).
+        \item The definite article and the possessor are in complementary distribution.
+    \end{itemize}
+}
+
+\frame{
+    What's the difference between Taylor's reliance and Taylor's hat? (two structures)
+
+    \ea Taylor's reliance on her fans.
+    \ex Taylor's hat on the hanger.
+    \z
+}
+
+\frame{
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{forest}
+                [\iibar{D} 
+                    [\iibar{D} [Taylor, roof]]
+                    [\ibar{D}
+                        [\obar{D}\\'s]
+                        [\iibar{N}
+                            [\iibar{D} [\sout{Taylor}, roof]]
+                            [\ibar{N}
+                                [\obar{N}\\reliance ]
+                                [\iibar{P} [on her fans, roof]]
+                            ]
+                        ]
+                    ]
+                ]
+            \end{forest}
+        \end{center}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{forest}
+                [\iibar{D}
+                    [\iibar{D} [Taylor, roof]]
+                    [\ibar{D}
+                        [\obar{D}\\'s]
+                        [\iibar{N}
+                            [\ibar{N}
+                                [\ibar{N}
+                                    [N\\hat]
+                                ]
+                                [\iibar{P} [on the hanger, roof]]
+                            ]
+                        ]
+                    ]
+                ]
+            \end{forest}
+        \end{center}
+        \end{column}
+    \end{columns}
+}
+
+\frame{
+    Which of these two? What's at stake?
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{forest}
+                [\iibar{D}
+                    [\obar{D}\\the ]
+                    [\iibar{N}
+                        [\ibar{N}
+                            [\ibar{N}
+                                [\obar{N}\\day]
+                            ]
+                            [\iibar{P}
+                                [\ibar{P}
+                                    [\obar{P}\\ before ]
+                                    [AdvP [yesterday, roof]]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            \end{forest}
+        \end{center}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{forest}
+                [\iibar{D}
+                    [\ibar{D}
+                        [\obar{D}\\the]
+                        [\iibar{N}
+                            [\ibar{N} [\obar{N}\\day]
+                            ]
+                        ]
+                    ]
+                    [\iibar{P}
+                        [\ibar{P}
+                            [\obar{P}\\ before ]
+                            [AdvP [yesterday, roof]]
+                        ]
+                    ]
+                ]
+            \end{forest}
+        \end{center}
+        \end{column}
+    \end{columns}
+}
+
+\frame{
+    Let's think through constituency:
+    
+    \ea
+        \ea[]{The day before yesterday}
+        \ex[]{The one before yesterday}
+        \ex[]{The day before yesterday and the one next week}
+        \z
+    \z
+
+    \ea
+        \ea[]{It was the day before yesterday that I remember.}
+        \ex[*]{It was the day that I remember before yesterday.}
+        \z
+    \z
+}
+
+\frame{
+    Which of these two? What's at stake?
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{forest}
+                [\iibar{D}
+                    [\obar{D}\\the ]
+                    [\iibar{N}
+                        [\ibar{N}
+                            [\ibar{N}
+                                [\obar{N}\\day]
+                            ]
+                            [\iibar{P}
+                                [\ibar{P}
+                                    [\obar{P}\\ before ]
+                                    [AdvP [yesterday, roof]]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            \end{forest}
+        \end{center}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{forest}
+                [\iibar{D}
+                    [\ibar{D}
+                        [\obar{D}\\the]
+                        [\iibar{N}
+                            [\ibar{N} [\obar{N}\\day]
+                            ]
+                        ]
+                    ]
+                    [\iibar{P}
+                        [\ibar{P}
+                            [\obar{P}\\ before ]
+                            [AdvP [yesterday, roof]]
+                        ]
+                    ]
+                ]
+            \end{forest}
+        \end{center}
+        \end{column}
+    \end{columns}
+}
+
+\frame{
+    Constituency tests identify \emph{day before yesterday} as a constituent: we adjoin the modifier PP to the \ibar{N} level.
+
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{forest}
+                [\iibar{D}
+                    [\obar{D}\\the ]
+                    [\textcolor{red}{\iibar{N}}
+                        [\ibar{N}
+                            [\ibar{N}
+                                [\obar{N}\\\textcolor{blue}{day}]
+                            ]
+                            [\textcolor{red}{\iibar{P}}
+                                [\ibar{P}
+                                    [\obar{P}\\ \textcolor{blue}{before} ]
+                                    [AdvP [\textcolor{blue}{yesterday}, roof]]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            \end{forest}
+        \end{center}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+        \begin{center}
+            \begin{forest}
+                [\iibar{D}
+                    [\ibar{D}
+                        [\obar{D}\\the]
+                        [\iibar{N}
+                            [\ibar{N} [\obar{N}\\day]
+                            ]
+                        ]
+                    ]
+                    [\iibar{P}
+                        [\ibar{P}
+                            [\obar{P}\\ before ]
+                            [AdvP [yesterday, roof]]
+                        ]
+                    ]
+                ]
+            \end{forest}
+        \end{center}
+        \end{column}
+    \end{columns}
+}
+\frame{
+    Argument vs adjunct again:
+
+    \ea 
+        \ea[]{The professor is proud.}
+        \ex[]{The professor is proud by nature.}
+        \ex[]{The professor is proud of her students.}
+        \z
+    \z
+
+\bigskip
+    What can and can't we co-ordinate?
+    \ea
+        \ea[]{The professor is proud by nature and \trace{}\trace{}\trace{}.}
+        \ex[*]{The professor is proud by nature and \trace{}\trace{}\trace{}.}
+        \ex[]{The professor is proud of her students and \trace{}\trace{}\trace{}.}
+        \ex[*]{The professor is proud of her students and \trace{}\trace{}\trace{}.}
+        \z
+    \z
+}
+
+\frame{\frametitle{Noun complement clauses}
+
+    \ea
+        \ea{I confessed [that I listen to K-pop].}
+        \ex{My confession [that I listen to K-pop].}
+        \z
+    \ex{The hat [that you gave me \trace{} yesterday].}
+    \z
+
+    \begin{center}
+    \begin{tabular}{l|c|c}
+        & Noun complement clause & Relative clause\\\hline
+    Argument/modifier? & & \\\hline
+    Gap  &   &  \\
+    \emph{that/which} & & \\
+    \end{tabular}
+    \end{center}
+}
+
+\frame{
+    \centering
+    \begin{tabular}{l|c|c}
+        & Noun complement clause & Relative clause\\\hline
+    Argument/modifier? & Argument & Modifier \\\hline
+    Gap  & No  & Yes \\
+    \emph{that/which} & \emph{that} & either one \\
+    \end{tabular}
+}
+
+\frame{\frametitle{Summary}
+   \begin{block}{Topic 7 skills}
+    \begin{itemize}
+        \item[7a]{Implement an analysis of complex noun phrases that is consistent with the framework developed.}
+        \item[7b]{Identify elements as complements or adjuncts of a noun in a principled way.}
+    \end{itemize}
+    \end{block}
+
+    We also discussed:
+    \begin{itemize}
+        \item Complement clauses vs relative clauses.
+        \item Constituency within the DP.
+    \end{itemize}
+
+    Research Skills:
+    \begin{itemize} \small
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+\end{document}

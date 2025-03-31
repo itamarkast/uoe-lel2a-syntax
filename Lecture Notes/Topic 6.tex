@@ -1,0 +1,365 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Topic 6 Course Notes: X-bar and the Clause Part 2\\
+Other Functional Categories}
+\hfill{}\textbf{Skills:}~\ref{functional_heads},
+\ref{VPinternal_subjects}
+
+\section{Negation}
+\hfill{}\textbf{Skill:}~\ref{functional_heads}
+
+In Topic~5, on the basis of examples like (\ref{i_head_modal}) \& (\ref{i_head_adverb}), we proposed a functional head, \obar{I}, that projects an \iibar{I}.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Iris will (not) paint the door.}
+        \ex[]{Iris (*not) painted the door.}
+        \ex[*]{Iris paints not the door.}
+    \end{xlist}
+    }
+    \label{i_head_modal}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Arthur could (not) quickly open the tin.}
+        \ex[*]{Arthur opened quickly the tin.}
+        \ex[]{Arthur (*not) quickly opened the tin.}
+    \end{xlist}
+    }
+    \label{i_head_adverb}
+\end{exe}
+We now have a framework to account for the distribution of every word but \emph{not} in these examples. Where do we think it fits in our \keyword{clausal spine}?
+
+First, let's check the basic word order. We see that \emph{not} occurs before the verb and after the overt \obar{I} head. This means it's higher than V and lower than I, because it appears between them. It cannot be a \keyword{specifier} of \iibar{V} because it's not the subject (we will see another reason this cannot be the case below). The only position left is as a complement of \obar{I}, as its own projection (category).
+
+This allows us to propose that negation could be a head that takes \iibar{V} as its complement, and is itself in a phrase that is the complement of \obar{I}.
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [\ibar{I}
+            [\obar{I} ]
+            [
+            \iibar{Neg}
+            [\ibar{Neg}
+            [\textbf{Neg}\\not][\iibar{V}]]
+            ]
+        ]
+    \end{forest}
+    }
+\end{exe}
+As long as we allow modals to take either \iibar{V}s or \iibar{Neg}s as their complements, that would now give us an account of why negation precedes ordinary verbs, but has to follow modals:\footnote{You might want to reflect on whether this feels like a satisfactory solution: have we seen other cases where a head can take different kinds of complements?}
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{I}
+        [\iibar{N} [Donald, roof]][\ibar{I}
+        [\obar{I}\\may][\iibar{Neg}
+        [\ibar{Neg}
+        [\obar{Neg}\\not][\iibar{V}
+        [\ibar{V}
+        [\obar{V}\\forget][\iibar{N} [Pauline's name, roof]]]]]]]
+        ]
+    \end{forest}
+    }
+\end{exe}
+
+\section{Associating arguments with the right predicates}
+\hfill{}\textbf{Skill:}~\ref{VPinternal_subjects}
+
+If we think of how this structure is built up so far, we run into a problem. Setting aside negation again for the moment, it now looks like we'd have to have the following elementary trees for \emph{may} and \emph{forget}:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+    \begin{multicols}{2}
+        \ex[]{
+        \begin{forest}
+            [
+            \iibar{I}
+            [\iibar{N}][\ibar{I}
+            [\obar{I}\\may][\iibar{V}/\iibar{Neg}]]
+            ]
+        \end{forest}
+        }
+        \columnbreak
+        \ex[]{
+        \begin{forest}
+            [
+            \iibar{V}
+            [\ibar{V}
+            [\obar{V}\\forget][\iibar{N}]]
+            ]
+        \end{forest}
+        }
+    \end{multicols}
+    \end{xlist}
+    }
+\end{exe}
+But that can't be right!
+The subject in a sentence with \emph{forget}, like \emph{Donald may forget Pauline's name} is not selected by \emph{may}!
+It's selected by \emph{forget}!
+In Topic~3, we said \emph{forget} assigns the \keyword{semantic role} to the subject.
+And in fact, semantically the modal \keyword{takes scope} over the whole proposition (think of the paraphrase of \emph{may} as \emph{it is possible that})\fn{This will be expanded on in the Semantics block.}.
+So we want to be able to retain our original elementary trees for ordinary verbs like \emph{forget}, and we don't want a tree for the modal that represents the initial nominal as its argument (since the initial nominal isn't an argument of the modal):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+    \begin{multicols}{2}
+        \ex[]{
+        \begin{forest}
+            [
+            \iibar{I}
+            [\ibar{I}
+            [\obar{I}\\may][\iibar{V}/\iibar{Neg}]]
+            ]
+        \end{forest}
+        }
+        \columnbreak
+        \ex[]{
+        \begin{forest}
+            [
+            \iibar{V}
+            [\iibar{N}][\ibar{V}
+            [\obar{V}\\forget][\iibar{N}]]
+            ]
+        \end{forest}
+        }
+    \end{multicols}
+    \end{xlist}
+    }
+\end{exe}        
+But obviously there is a snag: if we do all the substitutions (that is, assemble these elementary trees into a larger structure), the subject winds up in the wrong position, namely after the modal rather than before it. The (temporary, wrong) tree in~(\ref{ex:vpish-pre-movement}) would give us the final string *\emph{May Donald forget Pauline's name} for a declarative clause.
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{I}
+        [\ibar{I}
+        [\obar{I}\\may][\iibar{V}
+        [\iibar{N} [Donald, roof]][\ibar{V}
+        [\obar{V}\\forget][\iibar{N} [Pauline's name, roof]]]]]
+        ]
+    \end{forest}
+    } \label{ex:vpish-pre-movement}
+\end{exe}
+
+    \subsection{The VPISH: Selection and agreement}
+It's also worth noting that while the element heading the \iibar{I} doesn't \keyword{select} the subject, it does enter into certain relations with it.
+In particular, it \keyword{agrees} with it.
+We can't see this with modals, as they don't have distinct agreeing forms any more, but it's obvious with e.g.\ \emph{have} or \emph{be}:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The children *is/are playing.}
+        \ex[]{The skateboarder has/*have left Bristo Square.}
+    \end{xlist}
+    }
+\end{exe}
+So the subject seems to be entering into two relationships, at least one of which (selection) ought to require the subject to be in a different position (the specifier of the \iibar{V}) than the one in which we can hear/see it (the specifier of the \iibar{I}).  
+
+To account for cases like this (we'll see more!) we hypothesize that syntax allows an operation for building up structure in addition to the operation of \keyword{substitution}.
+This new operation allows a piece of the structure to enter the structure by virtue of the ordinary process of substitution, so that it can satisfy some head's selectional restrictions, but then subsequently it can be \keyword{moved}, or \keyword{copied} over to satisfy some \emph{other} kind of requirement, to a position higher in the tree.\footnote{This is basically the same mechanism as \keyword{head movement}, which you might've already encountered in a previous course, except now we're moving phrases.}
+In (\ref{subject_movement}) we've shown the original position of the subject in $\langle$angle brackets$\rangle$ and \sout{strikeout}:
+%\footnote{You may notice that since I assumed that in the initial tree for the modal there was no specifier position (since the modal does does not select for a nominal argument), this movement operation is actually \emph{creating} a specifier position.  This is not exactly how this operation is thought of in the S\&K text, where it is assumed that the initial tree for the modal \emph{does} include a specifier position, just one that is not filled initially and so is empty until a phrase moves into it from elsewhere in the structure. }
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{I}
+        [\iibar{N} [Donald, roof, name=copy]][\ibar{I}
+        [\obar{I}\\may][\iibar{V}
+        [$\langle$\sout{\iibar{N}}$\rangle$ [$\langle$\sout{Donald}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\forget][\iibar{N} [Pauline's name, roof]]]]]
+        ]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \end{forest}
+    }
+    \label{subject_movement}
+\end{exe}
+
+We have now established what is referred to as the \keyword{VP-Internal Subject Hypothesis} (VPISH): that the subject starts off (is \keyword{base-generated}) as the specifier of V, and then moves out of the VP (to the specifier of I).
+
+There are various different ways of theorizing exactly what is `left behind' in the original position.
+Possibly the simplest assumption is that indeed this is a process of copying, so that there are identical elements in the two specifier positions---clearly though there must be some principle that will guarantee that only the topmost copy is actually pronounced.
+A slightly different version assumes that movement leaves behind a particular type of silent element, which shares all its properties with the moved element: this is called a \keyword{trace}, and is generally represented just as the letter \emph{t}, generally with a subscript shared with the moved element, to record what element it is the trace of.
+This latter version is the one adopted in the S\&K text.
+%There are in fact empirical arguments that can be made in favour of one or the other conception, but they require some quite elaborate argumentation, and for many purposes the two proposals are equivalent; we won't be exploring how one might tell them apart. 
+
+\subsection{Support for the `\iibar{V}-internal subject' hypothesis}
+The VPISH solves a technical problem for us. What's really striking is that adopting it allows to explain a number of additional phenomena, a few of which we survey below.
+
+\subsubsection{Sentential idioms}
+
+It has been observed that there are some \keyword{idioms} that seem to consist of entire sentences, suggesting that that whole piece of structure has been stored together. Classic examples of this are:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Heads will roll.}
+        \ex[]{The shit will hit the fan.}
+        \ex[]{The cat is out of the bag.}
+        \label{cat}
+    \end{xlist}
+    }
+\end{exe}
+Strikingly, however, the idiom seems to `jump' modals, auxiliaries, and tense.
+That is, while the subject, the verb, and the object (where there is one) are fixed, the tense can vary, and modals can appear without affecting the idiomaticity of the expression.\footnote{You might notice that \emph{be} is the only verb in (\ref{cat}). To understand what's going on there, we'd need to investigate the structure of copular clauses in more depth.}
+
+In the following, the idiomatically fixed part of the expression is indicated by italics:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{\emph{Heads} may/might/will/could \emph{roll}.}
+        \ex[]{\emph{The shit} will/could/has \emph{hit the fan}.}
+        \ex[]{\emph{The cat} is/was/will be may be \emph{out of the bag}.}
+    \end{xlist}
+    }
+\end{exe}
+Given the way we now think sentences are built, this now seems much less surprising.
+These are not actually `sentential' idioms, they are \emph{\iibar{V}} idioms.
+That is, what is stored in the lexicon is an entire \emph{\iibar{V}}, in each case.
+This includes the subject, but not (as now makes perfect sense) any modal or auxiliary.
+
+\subsubsection{Floating quantifiers}
+
+The quantifier \emph{all} can form a constituent with a following noun phrase, or it can come after the noun phrase, in which case it seems that the combination does \emph{not} in fact form a constituent:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{{[}All the workers] left.}
+        \ex[]{Who left? [All the workers].}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{{[}The workers] [all] left.}
+        \ex[]{Who left? *[The workers] [all].}
+    \end{xlist}
+    }
+\end{exe}
+What is perhaps even more striking is that when \emph{all} occurs to the right of the subject, it \emph{doesn't even have to be next to it}:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The workers may all leave.}
+        \ex[]{The workers have all left.}
+    \end{xlist}
+    }
+\end{exe}
+
+So, we have a hypothesis: the structure of the nominal \emph{all the workers} is something along the lines of (\ref{quantifier}):\footnote{The category of \emph{all} is less important right now. We've put ``X'' for now, but you can imagine ``Q'' for Quantifier, ``D'' for Determiner, or others.}
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{X}
+        [all][\iibar{N} [the workers, roof]]
+        ]
+    \end{forest}
+    }
+    \label{quantifier}
+\end{exe}
+Now, if this is substituted in as the subject of a \iibar{V}, what moves to the [\textsc{spec}, \iibar{I}] position could be the larger \iibar{X} (in which case we'd get (\ref{q_floatA})), or it could be the \emph{smaller} \iibar{N}, in which case the quantifier \emph{all} would be `stranded' in the original position---hence it's possible position \emph{after} the modal:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{\tikzstyle{every picture}+=[remember picture, inner sep=0pt, baseline, anchor=base]%
+	{}\lbrack{}\tikz\node(copy){All \lbrack{}the workers \rbrack{}};\rbrack{} may \lbrack{} \tikz\node(trace){\sout{all} \lbrack{}\sout{the workers}\rbrack{}};\rbrack{} leave
+    \begin{tikzpicture}[overlay]
+	\draw[-latex,rounded corners=.25em](trace.south)--+(0,-8pt)-|(copy.south);
+	\end{tikzpicture}}
+        %\ex[]{\lbrack{}All \lbrack{}the workers\rbrack{}\rbrack{} may \lbrack{}\sout{all} \lbrack{}\sout{the workers}\rbrack{}\rbrack{} leave.}
+        \label{q_floatA}
+        \vspace{1.5em}
+        \ex[]{\tikzstyle{every picture}+=[remember picture, inner sep=0pt, baseline, anchor=base]%
+	{}\lbrack{}\tikz\node(copy){The workers};\rbrack{} may \lbrack{}all \lbrack{}\tikz\node(trace){\sout{the workers}};\rbrack{}\rbrack{} leave
+    \begin{tikzpicture}[overlay]
+	\draw[-latex,rounded corners=.25em](trace.south)--+(0,-8pt)-|(copy.south);
+	\end{tikzpicture}}
+        %\ex[]{\lbrack{}{The workers}\rbrack{} may \lbrack{}all \lbrack{}{\sout{the workers}}\rbrack{}\rbrack{} leave.
+        %}
+        \label{q_floatB}
+    \end{xlist}
+    }
+    \label{q_float}
+\end{exe}
+%\vspace{0.5em}
+This argument can be found in one of the main sources for the hypothesis that subjects originate internally to the \iibar{V}, \citet{koopman_position_1991}, and you might want to have a look at that paper.
+You can also find a textbook presentation, taking only a few pages, in \citet{haegeman_thinking_2006}.
+In addition to a discussion of floating quantifiers, \citeauthor{haegeman_thinking_2006} sets out additional empirical arguments in favour of the \iibar{V}-internal subject hypothesis, on pages 250--66, which are well worth reading.
+
+\subsection{What about sentences with no modals?}
+
+As you'll see in the text, we don't want to assume that the \iibar{I} projection is only present when there is an auxiliary. 
+Instead, we consider that Tense (past or present) is also of category I, and projects an \iibar{I} in exactly the same way.
+While the Tense head in English is silent, it affects the form of the verb in the \iibar{V}.
+This may seem odd, but it is not all that different in fact from what we have to assume for modals.
+That is to say: a modal doesn't select just \textbf{any} kind of \iibar{V} but a \iibar{V} headed by a `bare infinitive' form.
+In a similar way we might say that Past selects a \iibar{V} headed by a `past tense' form.  
+
+% We will see in a later lecture that different languages deal with the relation between Tense and the verb in different ways. 
+
+\section{Clausal superstructure}
+\hfill{}\textbf{Skill:}~\ref{functional_heads}
+
+For main clauses, the structure that we've hypothesized so far mainly suffices.
+But when we consider embedded clauses, it turns out that we don't have enough structure yet.
+This is because embedded clauses can contain an extra head-like element, besides the main verb and any modals/auxiliaries, that has the function of linking such sentences to the main clause.
+These elements seem to express the \keyword{type} of subordinate clause that we are dealing with: for example, whether it is an indirect question, a condition for what is expressed by the main clause, a reason, etc.
+Such elements are called \keyword{complementizers} in the literature (although you may come across other terms for at least some of them, including `subordinating conjunction'). 
+Two examples are \emph{that}  and \emph{if} in (\ref{comp_examples}):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Thomas knew [\textsubscript{\iibar{C}} \emph{that} Betty would never go to Peru].}
+        \ex[]{Corinne asked [\textsubscript{\iibar{C}} \emph{if} she could stay in Argentina a bit longer].}
+    \end{xlist}
+    }
+    \label{comp_examples}
+\end{exe}
+
+In English, the complementizer always appears in front of everything in the embedded clause.
+This is different in so-called `head-final’ languages, such as Japanese for example, where the complementizer appears at the very end of the embedded clause:%\footnote{\printglossaries}
+\begin{exe}
+    \ex[]{\gll Mitiko-wa \lbrack{}\textsubscript{\iibar{C}} ryoori-ga oisiku nai \emph{to}\rbrack{} itta.\\
+    Mitiko-\Top{} \lbrack{}\textsubscript{\iibar{C}} cooking-\Nom{} delicious \Neg{} \Comp{}\rbrack{} said\\
+    \trans `Michiko said that the cooking was not good.'}
+\end{exe}         
+
+Accordingly, we add to our lexicon another \keyword{functional category}: C[omplementizer], which is a head, and so will project a phrase in the usual way:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{C}
+        [\ibar{C}
+        [\obar{C}\\that/if][\iibar{I}]]
+        ]
+    \end{forest}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{They will say that Donald may forget Pauline's name.}
+        \ex[]{They will say \dots{} \begin{forest}
+            [
+            \iibar{C}
+            [\ibar{C}
+            [\obar{C}\\that/if][\iibar{I}
+            [\iibar{N} [Donald, roof, name=copy]][\ibar{I}
+        [\obar{I}\\may][\iibar{V}
+        [$\langle$\sout{\iibar{N}}$\rangle$ [$\langle$\sout{Donald}$\rangle$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\forget][\iibar{N} [Pauline's name, roof]]]]]
+            ]]
+            ]
+            \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+        \end{forest}}
+    \end{xlist}
+    }
+\end{exe}
+
+%\textsc{Exercise}: You have the tree for the subordinate clause in \Last[a].  Now come up with the tree that includes also the matrix clause.
+
+Given the \ibar{X}-Schema, we expect that \iibar{C}s may also have a specifier position.
+And indeed it turns out that there are constituents that appear in this position, something that we'll be coming back to when we discuss questions.
+\printbibliography
+\end{document}

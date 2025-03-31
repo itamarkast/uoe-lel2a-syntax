@@ -1,0 +1,255 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Topic 8 Course Notes: Nonverbal XP's Part 2\\
+AdjP, PP, \& Headedness}
+\hfill{}\textbf{Skills:}~\ref{adjp_pp},
+\ref{xp_structure}
+
+\section{Adjective Phrases}
+\hfill{}\textbf{Skills:}~\ref{adjp_pp},
+\ref{xp_structure}
+
+We have seen the parallels between clauses and noun phrases that have led to the postulation of the general X$'$ schema for phrase structure. Now we'll briefly consider how phrases built from the two remaining main lexical categories, \keyword{adjectives} and \keyword{prepositions}, fit into this general scheme.
+
+Looking at AdjPs, let us first try to answer the question whether an \obar{Adj} can have a complement. That does seem to be the case: some adjectives are optionally transitive:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{They are proud (of their daughter).}
+        \ex[]{They are keen (on pineapple).}
+    \end{xlist}
+    }
+    \label{adj_of_on}
+\end{exe}
+And \emph{fond} is even obligatorily transitive:
+\begin{exe}
+    \ex[]{They are fond *(of their daughter).}
+    \label{fond}
+\end{exe}
+
+For speakers who allow \emph{so} substitution for adjectival phrases (I personally don't really have this as part of my grammar), it can be shown that the \emph{of-} and \emph{on-}phrases in (\ref{adj_of_on}) are complements, rather than modifiers, on the basis of the constituent replacement test.
+(Note that the \emph{of}-phrase in (\ref{fond}) must be regarded as a complement anyway if it is true that modifiers are never obligatory; see earlier notes, and Chapter 2 of S\&K).
+For such speakers, the Adj$'$ constituent inside an AdjP can be replaced by the word \emph{so}.
+An adjective and its complement form an Adj$'$ constituent that excludes modifiers of Adj.
+Hence, it should be possible to replace the constituent containing an adjective and its complement by \emph{so}, while leaving a modifier unaffected by this replacement.
+It should not be possible to replace the adjective while leaving the complement unaffected by the replacement (if indeed \emph{so} can only replace an Adj$'$ constituent, not an Adj).
+The sentences and judgements in (\ref{proud_sub})--(\ref{keen_sub}) show, then, that \emph{of their daughter} and \emph{on pineapple} are complements:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{She was proud of her daughter and he was so, too.}
+        \ex[*]{She was proud of her daughter and he was so of his son.}
+    \end{xlist}
+    }
+    \label{proud_sub}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{They are keen on pineapple and we are so, too.}
+        \ex[*]{They are keen on pineapple, and we are so on pomegranates.}
+    \end{xlist}
+    }
+    \label{keen_sub}
+\end{exe}
+\newpage
+\begin{exe}
+    \ex{
+    \begin{multicols}{4}
+    \begin{xlist}
+            \ex{\small
+            \begin{forest}
+                [
+                \iibar{Adj}
+                [\ibar{Adj}
+                [\obar{Adj}\\proud][\iibar{P}/\iibar{C}]]
+                ]
+            \end{forest}
+            }%\columnbreak
+            \ex{\small
+            \begin{forest}
+                [
+                \iibar{Adj}
+                [\ibar{Adj}
+                [\obar{Adj}\\fond][\iibar{P}]]
+                ]
+            \end{forest}
+            }%\columnbreak
+            \ex{\small
+            \begin{forest}
+                [
+                \iibar{Adj}
+                [\ibar{Adj}
+                [\obar{Adj}\\keen][\iibar{P}/\iibar{C}]]
+                ]
+            \end{forest}
+            }%\columnbreak
+            \ex{\small
+            \begin{forest}
+                [
+                \iibar{Adj}
+                [\ibar{Adj}
+                [\obar{Adj}\\happy][\iibar{P}]]
+                ]
+            \end{forest}
+            }
+    \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+
+So, adjectives can have complements.
+Can they have specifiers as well?
+We can observe that, within an AdjP, the adjective can indeed be preceded by specific elements, especially by degree words such as \emph{very}, \emph{rather}, \emph{extremely}, or \emph{too}:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{That shirt is [\textsubscript{AdjP} too red to go in the washing machine with the white shirt]}
+        \ex[]{In winter the city is [\textsubscript{AdjP} very cold]}
+        \ex[]{Sam is [\textsubscript{AdjP} rather fond of dogs]}
+    \end{xlist}
+    }
+\end{exe}
+
+The problem with treating these as specifiers is similar to the problem with treating determiners as specifiers of NPs, discussed above.
+Namely, most of these degree expressions are not complete phrases themselves, but rather single words.
+Therefore, parallel to the DP hypothesis, it has been proposed that these degree words are heads of a phrase in their own right.
+In that case, AdjPs that include such degree words are really DegPs (Degree Phrases) in which the Deg head takes an AdjP as its complement.
+But we won't pursue this question any further here -- we've mostly established that adjectives can have complements within their AdjP. 
+
+\section{Preposition/postposition phrases}
+\hfill{}\textbf{Skills:}~\ref{adjp_pp},
+\ref{xp_structure}
+
+Next we consider PPs, the phrases built from prepositions or postpositions.
+Can we discern complements and specifiers in the structure of PPs?
+It certainly seems plausible to say that a P can take a complement.
+Many prepositions are in fact obligatorily transitive (that is, they obligatorily take a complement):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{This will last [\textsubscript{PP} until *(Doomsday)]}
+        \ex[]{a piece [\textsubscript{PP} of *(cake)]}
+        \ex[]{We’ll go on [\textsubscript{PP} from *(this page)]}
+    \end{xlist}
+    }
+\end{exe}
+\begin{exe}
+    \ex[]{
+    \begin{multicols}{3}
+        \begin{xlist}
+            \ex[]{
+            \begin{forest}
+                [
+                \iibar{P}
+                [\ibar{P}
+                [\obar{P}\\until][\iibar{D}]]
+                ]
+            \end{forest}
+            }
+            \ex[]{
+            \begin{forest}
+                [
+                \iibar{P}
+                [\ibar{P}
+                [\obar{P}\\of][\iibar{D}]]
+                ]
+            \end{forest}
+            }
+            \ex[]{
+            \begin{forest}
+                [
+                \iibar{P}
+                [\ibar{P}
+                [\obar{P}\\from][\iibar{D}]]
+                ]
+            \end{forest}
+            }
+        \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+
+As with the other lexical categories, some members of the category do not or do not necessarily take a complement, as discussed in S\&K.
+Examples of optionally intransitive prepositions include:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{I’ve never met him [\textsubscript{PP} before (today)]}
+        \ex[]{The paint came [\textsubscript{PP} off (the wall)]}
+    \end{xlist}
+    }
+\end{exe}
+\newpage
+\begin{exe}
+    \ex[]{
+    \begin{multicols}{2}
+        \begin{xlist}
+            \ex[]{
+            \begin{forest}
+                [
+                \iibar{P}
+                [\ibar{P}
+                [\obar{P}\\of][(\iibar{D})]]
+                ]
+            \end{forest}
+            }
+            \ex[]{
+            \begin{forest}
+                [
+                \iibar{V}
+                [\ibar{V}
+                [\obar{V}\\eat][(\iibar{D})]]
+                ]
+            \end{forest}
+            }
+        \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+
+The complement of a P need not always be a DP, it can sometimes be a \keyword{clause} or even another PP:\footnote{Where the complement of the preposition is a clause, we still have to decide: is it a CP, or just an IP?  For a discussion of this question, see the textbook.}
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{\lbrack{}\textsubscript{PP} after \lbrack{}\textsubscript{Clause} they went to America\rbrack{}\rbrack{} they started a new business.}
+        \ex[]{The play will last \lbrack{}\textsubscript{PP} until \lbrack{}\textsubscript{PP} after midnight\rbrack{}\rbrack{}}
+    \end{xlist}
+    }
+\end{exe}
+As for \iibar{P}s, it is not so obvious what might occupy the specifier position of \iibar{P}s.
+For now we will leave this question open.
+
+\section*{Bonus material: Headedness}
+\hfill{}\textbf{(No Skills)}
+
+The examples above illustrate that in a typical English phrase, the head first combines with something to its right, the complement, after which the head--complement combination combines with something to its left, the specifier.
+This results in general specifier--head--complement order in English phrases.
+
+This order is not universal.
+There is language variation, in particular with respect to the order between head and complement: in some languages the head follows rather than precedes the complement.
+Languages with complement--head order are often called \keyword{head-final}, and languages with head--complement order \keyword{head-medial} (also often called `head-initial').\footnote{Part of the difficulty with terminology here (and something to watch out for) is that, as indicated here, the terms ``head-inital''/``head-final'' are typically used to refer  to the order of the head with respect to its \emph{complement}.
+But that means, for example, that a VP might be ``head-final'' in this sense while still allowing for adjuncts to follow the verb; similarly, a VP could be described as head-initial if the object follows the verb, even if the specifier precedes it.}
+For some reason, there seems to be less language variation with respect to the position of specifiers, which tend to be phrase-initial.
+It is also important to note that while languages \emph{tend} to be either head-initial or head-final in all their phrases, but this is not necessary; it is possible for a language to have some phrases that are head-initial and some that are head-final.
+It even happens that a head of the same lexical category sometimes occurs before and sometimes after its complement. Such behaviour is shown, for instance, by the category P in Dutch (note that (\ref{dutch_p_headedness_A}) and (\ref{dutch_p_headedness_B}) have different meanings):
+\begin{exe}
+   \ex[]{
+   \begin{xlist}
+       \ex[]{\gll Ze zwommen \lbrack{}\textsubscript{PP} in het kanaal\rbrack{}\\
+       they swam in the canal\\
+       \trans `They were swimming in the canal.'}
+       \label{dutch_p_headedness_A}
+       \ex[]{\gll Ze zwommen \lbrack{}\textsubscript{PP} het kanaal in\rbrack{}.\\
+       they swam the canal in\\
+       \trans `They swam into the canal'}
+       \label{dutch_p_headedness_B}
+    \end{xlist}
+    }
+\end{exe}
+Interestingly, the headedness of (phrases in) a language can change during its history.
+For example, Old and Middle English showed both complement--verb and verb--complement orders, rather than the consistent verb--complement order we see today.
+English is therefore said to have undergone a change `from OV to VO' (where O stands for Object). 
+
+%\printbibliography
+\end{document}

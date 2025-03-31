@@ -1,0 +1,344 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Topic 2 Course Notes: Constituent Structure and Constituency Tests}
+\hfill{}\textbf{Skills:}~\ref{constituencytestNP},
+\ref{constituencytestVP},
+\ref{constituencytestother}
+
+\section{Diagnostics for constituency}
+
+We have already seen that sentences have an internal structure: they consist of constituents, which in turn may consist of smaller constituents, and so on. 
+These notes go over how we can determine whether a string of words in a sentence is a constituent or not.
+That is, we are going to discuss a number of \keyword{diagnostics} for sentence structure, so that we can be more precise about what we mean when we say that some words in the sentence `belong together'.
+
+The two most basic tests to determine whether a sequence of words (also called a \keyword{string}) is a constituent are:
+
+\begin{enumerate}
+	\item A constituent can be \emph{replaced} by a single word.
+	\item A constituent can, in its entirety, be \emph{placed in a different position} in the sentence.
+\end{enumerate}
+
+We will discuss a third test as well, the \emph{cleft}, after we have seen what these two amount to. It's important to remember that constituency tests can confirm, but not disprove: if a string passes a test, it's likely to be a constituent. But there are various reasons why it might not pass a test even if it is a constituent, so we need to be careful of these \textsc{false negatives} (see the discussion in Chapter 2 of the Santorini and Kroch reading).
+
+\section{Substitution}
+
+\subsection{Noun phrases}
+\hfill{}\textbf{Skill:}~\ref{constituencytestNP}
+
+A constituent that is built around a \keyword{noun} is called a \keyword{noun phrase}, or \keyword{np} for short.
+That the noun is the most important element, called the \keyword{head}, of a noun phrase is suggested by the fact that you generally cannot leave it out:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{{[}Grandmothers] wear hats.}
+        \ex[]{{[}Scottish grandmothers] wear hats.}
+        \ex[]{{[}Grandmothers from Ayrshire] wear hats.}
+        \ex[]{{[}Scottish grandmothers from Ayrshire] wear hats.}
+        \ex[*]{{[}Scottish] wear hats.}
+        \ex[*]{{[}From Ayrshire] wear hats}
+        \ex[*]{{[}Scottish from Ayrshire] wear hats.}
+    \end{xlist}
+    }
+\end{exe}
+
+A noun phrase can be recognized as such because it can be replaced by a \keyword{pronoun}.
+Thus, we can determine that in (\ref{np_subA}) the string \emph{the boy with a bad haircut who fed the cat} is one constituent (functioning as the direct object of the verb \emph{saw}), because it can be replaced by the pronoun \emph{him}, as in (\ref{np_subB}).
+By the same means, we can determine that just the string \emph{the boy} is not a constituent of (\ref{np_subA}), since it cannot be replaced in this way: see (\ref{np_subC}).
+Of course, \emph{the boy} can be a constituent in a different sentence, such as (\ref{np_subD}), as we can infer from the fact that (\ref{np_subE}) is well-formed.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Joan saw [the boy with a bad haircut who fed the cat].}
+        \label{np_subA}
+        \ex[]{Joan saw [him].}
+        \label{np_subB}
+        \ex[*]{Joan saw [[him] with a bad haircut] who fed the cat.}
+        \label{np_subC}
+        \ex[]{Joan saw [the boy] while he fed the cat.}
+        \label{np_subD}
+        \ex[]{Joan saw [him] while he fed the cat}
+        \label{np_subE}
+    \end{xlist}
+    }
+\end{exe}
+
+Similarly, (\ref{recursion_NP_subB}) shows that the entire string \emph{the woman \ldots\ shop} is a constituent (namely the object) of (\ref{recursion_NP_subA}).
+That this constituent in turn consists of smaller constituents is shown by (\ref{recursion_NP_subC}), where replacement with pronominal \emph{them} indicates that \emph{the shoes that I had donated to the Oxfam shop} is one of the constituents within the object constituent of (\ref{recursion_NP_subA}) - recursion! 
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Yesterday I met [the woman who you told me you noticed on the corner wearing [the shoes that I had donated to the Oxfam shop]].}
+        \label{recursion_NP_subA}
+        \ex[]{I met [her].}
+        \label{recursion_NP_subB}
+        \ex[]{I met [the woman who you told me you noticed on the corner wearing [them]].}
+        \label{recursion_NP_subC}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection{Preposition phrases}
+\hfill{}\textbf{Skill:}~\ref{constituencytestother}
+
+\keyword{Preposition phrases} or \keyword{pp}s are constituents that have a \keyword{preposition} as their head.
+That the preposition is the head is again suggested by the fact that it cannot be left out:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{the man [in the room]}
+        \ex[*]{the man [the room]}
+    \end{xlist}
+    }
+\end{exe}
+
+An indication that something is a constituent of the PP type is that it can be replaced by certain \keyword{adverbs}, although this only really works for locative PPs with \emph{there} and temporal PPs with \emph{then} (can you figure out why?):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{She went \lbrack{}\textsubscript{PP} to the port of Rotterdam\rbrack{}.}
+        \ex[]{She went [there].}
+        \ex[]{I have never seen that \lbrack{}\textsubscript{PP} in a place like Edinburgh\rbrack{}.}
+        \ex[]{I have never seen that [here].}
+    \end{xlist}
+    }
+\end{exe}
+
+Thus, (\ref{pp_subB}--\ref{pp_subC}) show that \emph{in the theatre with the painted ceiling}, but not just \emph{in the theatre}, is a constituent of (\ref{pp_subA}), while (\ref{pp_subE}) shows that in (\ref{pp_subD}) \emph{in the theatre} is a constituent.
+We can also determine that \emph{in the theatre with a friend of mine} is not a constituent of (\ref{pp_subE}), because \emph{there} in (\ref{pp_subC}) cannot stand in for this entire string.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{He was [in the theatre with the painted ceiling].}
+        \label{pp_subA}
+        \ex[*]{He was there with the painted ceiling.}
+        \label{pp_subB}
+        \ex[]{He was [there].}
+        \label{pp_subC}
+        \ex[]{He was [in the theatre] with a friend of mine.}
+        \label{pp_subD}
+        \ex[]{He was [there] with a friend of mine.}
+        \label{pp_subE}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection{Adjective phrases}
+\hfill{}\textbf{Skill:}~\ref{constituencytestother}
+
+The phrases in (\ref{adjectivesA}--\ref{adjectivesB}) have an \keyword{adjective} as their head; this head cannot be left out, as shown by (\ref{adjectivesC}--\ref{adjectivesD}).
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Marian seems \lbrack{}\textsubscript{AP} very ill\rbrack{}.}
+        \label{adjectivesA}
+        \ex[]{That music is \lbrack{}\textsubscript{AP} too loud to be bearable\rbrack{}.}
+        \label{adjectivesB}
+        \ex[*]{Marian seems \lbrack{}very\rbrack{}.}
+        \label{adjectivesC}
+        \ex[*]{That music is \lbrack{}too to be bearable\rbrack{}.}
+        \label{adjectivesD}
+    \end{xlist}
+    }
+\end{exe}
+
+An \keyword{adjective phrase}, or \keyword{ap}, can for some speakers be replaced by the word \emph{so} (although this is not felicitous in just any context; adding the word \emph{too} to the sentence often helps):
+\begin{exe}
+    \ex[]{Marian seems ill and Harriet seems so, too.}
+\end{exe}
+
+This test indicates that in (\ref{ap_subA}) \emph{rather weird} is an AP, while just \emph{weird} is not.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Harry is rather weird, and Bill is so, too.}
+        \label{ap_subA}
+        \ex[*]{Harry is rather weird, and Bill is very so, too.}
+        \label{ap_subB}
+    \end{xlist}
+    }
+\end{exe}
+Note that the test does not work when the AP is used \keyword{attributively}, that is, as a \keyword{prenominal modifier}:
+\begin{exe}
+\ex{\begin{xlist}
+    \ex[]{a rather weird man}
+    \ex[*]{a so woman, too}
+\end{xlist}}
+\end{exe}
+
+\subsection{Verb phrases}
+\hfill{}\textbf{Skill:}~\ref{constituencytestVP}
+
+Finally, there are phrases that have a verb as their head, \keyword{verb phrases} or \keyword{VP}s, such as the bracketed phrases in (\ref{vp}).
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{To \lbrack{}\textsubscript{VP} work in the garden\rbrack{} is a nice thing to do.}
+        \ex[]{Mary will \lbrack{}\textsubscript{VP} rent some films tonight\rbrack{}.}
+    \end{xlist}
+    }
+    \label{vp}
+\end{exe}
+
+A VP constituent can be recognized by its being replaceable by the expression \emph{do so}.
+This is, admittedly, not a single word, but since arguably neither the part \emph{do} nor the part \emph{so} on its own stands in for a constituent, we are going to assume for now that this is a fixed expression that substitutes as a whole for a VP:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Mary will \lbrack{}\textsubscript{VP} rent some films tonight\rbrack{} and Bill will \emph{do so} as well.}
+        \ex[]{Shane has \lbrack{}\textsubscript{VP} given money to that charity\rbrack{} and Jane has \emph{done so}, too.}
+        \ex[]{To \lbrack{}\textsubscript{VP} work in the garden\rbrack{} is a nice thing to do, and to \emph{do so} in the morning is especially relaxing.}
+    \end{xlist}
+    } \label{vp-do-so}
+\end{exe}
+
+Notice, for example, that in~(\ref{vp-do-so}c), what's relaxing to do in the morning is not just to \emph{work}, but to \emph{work in the garden}.
+
+    \subsection{Summary of substitutions}
+Let's summarise the substitutions we've discussed so far:
+
+\begin{center}
+\begin{tabular}{ll}
+    Constituent type & Substitution \\\hline
+    NP & pronoun \\
+    PP & \emph{here/there/then} \\
+    AdjP & \emph{so (too)} \\
+    VP & \emph{do so} \\
+\end{tabular}
+\end{center}
+
+In a sense, the substitutions give us the simplest, least informative forms of the constituents being substituted. You can try this with other languages you're familiar with and share what you've found out.
+
+\section{Movement}
+\hfill{}\textbf{Skills:}~\ref{constituencytestNP},
+\ref{constituencytestVP},
+\ref{constituencytestother}
+
+The \keyword{word order} of a sentence can be altered in certain ways such that the result is still a possible sentence.
+You can recognize a constituent by its staying together as a unit in such a `displacement' process.
+We will refer to such processes with the term \keyword{movement}.
+So, a constituent can be recognized as such because it can move to another position in the sentence---typically, to the first position (note that it is not the case that any constituent can move to any position in a sentence; this depends on the exact rules of syntax of a particular language).
+A string of words that do not form a constituent cannot move like this.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Mary will never read \textbf{that novel by Robinson}.}
+        \label{CHEx13a}
+        \ex[]{\textbf{That novel by Robinson}, Mary will never read (although she's a keen reader in general).}
+        \ex[*]{\textbf{That novel}, Mary will never read \textbf{by Robinson}.}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{John never will \textbf{read a thousand novels}.}
+        \label{vp_move}
+        \ex[]{\textbf{Read a thousand novels}, John never will.}
+        \ex[*]{\textbf{Read}, John will never \textbf{a thousand novels}.}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Shelly was reading a book \textbf{in the garden}.}
+        \label{pp_move}
+        \ex[]{\textbf{In the garden}, Shelly was reading a book.}
+        \ex[*]{A book \textbf{in the garden}, Shelly was reading.} \label{object_adjunct_move}
+    \end{xlist}
+    }
+\end{exe}
+
+We can conclude from these examples that in (\ref{CHEx13a}) \emph{that novel by Robinson} is a constituent (an NP), in (\ref{vp_move}) \emph{read a thousand novels} is a constituent (a VP), and in (\ref{pp_move}) \emph{in the garden} is a constituent (a PP).
+We also do not have evidence that \emph{a book in the garden} is a constituent of (\ref{pp_move}), as shown by the ungrammaticality of (\ref{object_adjunct_move}).
+
+    \subsection{Questions}
+A combination of the replacement test and the movement test involves trying to \keyword{question} the string of words for which you want to determine if it is a constituent.
+If you can replace the string by a \keyword{question word} or \keyword{wh-word} like \emph{who} or \emph{what} and move this question word to the first position of the sentence, then you are dealing with a constituent:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{John ate \textbf{a sandwich with veggie haggis}.}
+        \ex[]{ What did John eat?   Answer: \textbf{A sandwich with veggie haggis}.\hfill{}(NP)}
+        \ex[*]{What did John eat \textbf{veggie haggis}?  Answer: \textbf{A sandwich with}.\hfill{}(not a constituent)}
+    \end{xlist}
+    }
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Ruby was \textbf{in the large garden}.}
+        \ex[]{Where was Ruby?    Answer: \textbf{In the large garden}.\hfill{}(PP)}
+        \ex[*]{Where was Ruby \textbf{garden}?  Answer: \textbf{In the large}.\hfill{}(not a constituent)}
+    \end{xlist}
+    }
+\end{exe}
+
+In the case of questioned VPs, a form of \emph{do} must appear in addition to the moved question word, if there is no other auxiliary in the sentence:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Beatrice will [read that book].}
+        \ex[]{\emph{What} will Beatrice \emph{do}?}
+    \end{xlist}
+    }
+\end{exe}
+
+\section{\emph{It}-clefts}
+\hfill{}\textbf{Skills:}~\ref{constituencytestNP},
+\ref{constituencytestVP},
+\ref{constituencytestother}
+
+English has a construction known as the \keyword{cleft} construction.
+Schematically, a cleft sentence looks as follows:
+\begin{exe}
+\ex[]{It --- form of \emph{to be} --- \textbf{X} --- \emph{that/who/which} --- Y}
+\label{it_cleft_schema}
+\end{exe}
+
+In this scheme, X is something that represents the answer to an implicit question; it is the new information in the sentence, and there is also frequently some kind of contrast involved.
+In brief, it is the \keyword{focus} of the sentence.
+Here are some examples of clefts; what is special about the ``X'' or the ``Y'' part?
+\begin{exe}
+\ex[]{
+\begin{xlist}
+\ex[]{It was McTominay that scored the goal (not another player).}
+\ex[]{It is the female bird that has yellow feathers (not the male).}
+\ex[]{It is a strong tree that can carry such a heavy burden (not a weak tree).}
+\end{xlist}
+}
+\end{exe}
+
+Crucially, only constituents can be the focus of a cleft, i.e. the ``X'' part in the scheme in (\ref{it_cleft_schema}).
+Hence, something is a constituent of a sentence if we can turn the sentence into a cleft that has the relevant string as its focus.
+So for example, if you want to know whether the string \emph{with two sugars} is a constituent in the sentence \emph{She usually drinks her coffee with two sugars}, you would form the relevant cleft by placing the string \emph{with two sugars} in the focus position, and omitting it from the `tail' of the cleft (here we've indicated this omission by striking through the phrase in its original position).
+\begin{exe}
+    \ex[]{It is \textbf{with two sugars} that she usually drinks her coffee \sout{with two sugars}.}
+\end{exe}
+So this shows that in the sentence \emph{It is with two sugars that she usually drinks her coffee}, the string \emph{with two sugars} is indeed a constituent.
+If you wanted to test whether \emph{her coffee} is a constituent in this same sentence, you would need instead to consider whether the following is grammatical:
+\begin{exe}
+    \ex[]{It is \textbf{her coffee} that she usually drinks \sout{her coffee} with two sugars.}    
+\end{exe}
+
+It is, so we know that \emph{her coffee} is a constituent in the sentence \emph{She usually drinks her coffee with two sugars}. 
+
+Thus, from the examples in (\ref{it_cleft}) it can be deduced that in (\ref{it_cleftA}) \emph{the old lady with the grey coat} and \emph{on the steep stairs} are constituents, but \emph{the old lady} and \emph{on the steep} are not.
+You will need to look at the `tails' of the clefts carefully to verify this---take your time!
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The old lady with the grey coat fell on the steep stairs}
+        \label{it_cleftA}
+        \ex[]{It was the old lady with the grey coat that fell on the steep stairs}
+        \label{it_cleftB}
+        \ex[]{It was on the steep stairs that the old lady with the grey coat fell}
+        \label{it_cleftC}
+        \ex[*]{It was the old lady that with the grey coat fell on the steep stairs}
+        \label{it_cleftD}
+        \ex[*]{It was on the steep that the old lady with the grey coat fell stairs}
+        \label{it_cleftE}
+    \end{xlist}
+    }
+    \label{it_cleft}
+\end{exe}
+
+This concludes our discussion of different constituency tests. The first tries to substitute a constituent with a simpler replacement (in some syntactic and semantic sense); the second tries to move the constituent around; and the third is a bit of a combination of the first two. Play around with these, and remember that if a string passes a test it's probably a constituent, whereas if it doesn't we still can't be sure that it isn't - can you come up with some examples of such ``false negatives''?
+
+\end{document}

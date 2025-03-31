@@ -1,0 +1,157 @@
+\documentclass{beamer}
+\input{header_beamer}
+\subtitle{Topic 11: Passives}
+
+\begin{document}
+\maketitle
+
+\frame{\frametitle{Recap}
+      \begin{block}{Topic 10 skills}
+    \begin{itemize}
+        \item[10a]{Motivate raising to subject position (A-movement) in terms of either Case or the EPP.}
+        \item[10b]{\sout{Analyse instances of object control in a way that is consistent with the framework developed}.}
+    \end{itemize}
+    \end{block}
+}
+
+\frame{\frametitle{Topic 11}
+   \begin{block}{Topic 11 skills}
+    \begin{itemize}
+        \item[11a]{Account for the behaviour of passive movement, including any relevant restrictions, within the framework developed.}
+        \item[11b]{\sout{Identify relevant locality constraints on A-movement.}}
+    \end{itemize}
+    \end{block}
+
+    Research Skills:
+    \begin{itemize}
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+
+\frame{
+    Let's enumerate the differences (and similarities) between the active and passive variants of the same basic clause:
+
+    \bigskip
+    \ea
+        \ea Billie launched a new perfume.
+        \ex A new perfume was launched (by Billie).
+        \z
+    \z
+
+    \pause
+    \begin{enumerate}
+        \item Same selectional restrictions.
+        \item Promotion of object to derived subject.
+        \item Optional Agent (or in \emph{by}-phrase).
+        \item Passive auxiliary and participial marking.
+    \end{enumerate}
+}
+
+\frame{ \tiny
+\begin{columns}
+    \begin{column}{0.4\textwidth}
+\hspace*{-3em}
+         \begin{forest}
+    [IP
+        [DP [A new perfume, roof, name=copy]]
+        [I'
+            [I\\was]
+            [VP
+                [\phantom{X} ]
+                [V'
+                    [V\\launched][DP\\\sout{a new perfume}, name=trace]
+                ]
+            ]
+        ]            
+    ]
+        \draw[->,dotted] (trace) to[out=south west,in=south west] (copy);
+    \end{forest}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+        \begin{forest}
+    [IP
+        [DP [A new perfume, roof, name=copy]]
+        [I'
+            [I\\was]
+            [VP
+                [\phantom{X} ]
+                [V'
+                    [V'
+                        [V\\launched][DP\\\sout{a new perfume}, name=trace]
+                    ]
+                    [PP
+                        [\phantom{X} ]
+                        [P'
+                            [P\\by]
+                            [DP [Billie, roof]]
+                        ]
+                    ]
+                ]
+            ]
+        ]            
+    ]
+        \draw[->,dotted] (trace) to[out=south west,in=south west] (copy);
+    \end{forest}
+    \end{column}
+\end{columns}
+}
+
+\frame{\frametitle{Extensions: locality}
+
+    \ea
+        \ea{It seems [that Sean plays the piano ].}
+        \ex{Sean seems [to \trace{} play the piano ].}
+        \z
+    \ex
+        \ea{Sean was believed [to \trace{} play the piano].}
+        \ex{It seems [that Sean was believed [to \trace{} play the piano]].}
+        \ex{Sean seems [to \trace{} be believed [to \trace{} have played the piano.]]}
+        \z
+    \ex[*]{Sean seems [that it was believed [ \trace{} to play the piano]].}
+    \z
+}
+
+\frame{\frametitle{Extensions: locality}
+    A \textbf{locality} constraint: we cannot move \alert{a DP} across \textcolor{blue}{\textbf{another DP}}.
+
+    \bigskip
+    \ea
+        \ea It seems [that Sean plays the piano ].
+        \ex Sean seems [to \trace{} play the piano ].
+        \z
+    \ex
+        \ea Sean was believed [to \trace{} play the piano].
+        \ex It seems [that Sean was believed [to \trace{} play the piano]].
+        \ex Sean seems [to \trace{} be believed [to \trace{} have played the piano.]]
+        \z
+    \ex[*]{\alert{Sean} seems [that \textcolor{blue}{\textbf{it}} was believed [ \trace{} to play the piano]].}
+    \z
+}
+
+\frame{\frametitle{Summary}
+   \begin{block}{Topic 11 skills}
+    \begin{itemize}
+        \item[11a]{Account for the behaviour of passive movement, including any relevant restrictions, within the framework developed.}
+        \item[11b]{\sout{Identify relevant locality constraints on A-movement.}}
+    \end{itemize}
+    \end{block}
+
+    We also discussed:
+    \begin{itemize}
+        \item Locality in A-movement.
+    \end{itemize}
+
+    Research Skills:
+    \begin{itemize} \small
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+\end{document}

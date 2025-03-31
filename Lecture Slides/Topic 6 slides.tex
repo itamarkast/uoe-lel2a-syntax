@@ -1,0 +1,274 @@
+\documentclass{beamer}
+\input{header_beamer}
+\subtitle{Topic 6 Course Notes: The X-Bar Schema, Part 2}
+
+\begin{document}
+\maketitle
+
+\frame{\frametitle{Recap}
+      \begin{block}{Topic 5 skills}
+    \begin{itemize}
+        \item[5a]{Represent heads and phrases, identified via constituency tests, in a manner consistent with the \emph{projection principle}.}
+        \item[5b]{Use X-bar representations to distinguish adjunction from complementation.}
+    \end{itemize}
+    \end{block}
+
+    We also discussed:
+    \begin{itemize}
+        \item The projection I (for modals and auxiliaries).
+        \item Adjunction side (left/right).
+        % \item Movement of the subject from Spec,VP to Spec,IP.
+    \end{itemize}
+}
+
+\frame{\frametitle{Topic 6}
+   \begin{block}{Topic 6 skills}
+    \begin{itemize}
+        \item[6a]{Use constituency tests to identify and justify projection of different functional heads in a representation, such as I, C, and NEG.}
+        \item[6b]{Implement a \emph{VP-internal subject hypothesis} analysis.}
+    \end{itemize}
+    \end{block}
+
+    Research Skills:
+    \begin{itemize}
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+
+
+\frame{
+    Let's first consider some ways in which modals/auxiliaries differ from main/lexical verbs.
+
+\bigskip
+
+    Auxiliaries invert with the subject to form a question; lexical verbs don't.
+
+    \ea
+        \ea[]{I have seen a dog.}
+        \ex[]{Have you \trace{} seen a dog?}
+        \ex[*]{Did you have seen a dog?}
+        \z
+    \ex
+        \ea[]{You saw a dog.}
+        \ex[*]{Saw you \trace{} a dog?}
+        \ex[]{Did you see a dog?}
+        \z
+    \z
+}
+
+\frame{
+
+    Let's try another one. What difference does this minimal pair sow?
+    
+    \ea[]{Dogs never steal biscuits, but cats \textbf{do}.}
+    \ex[]{Dogs have never stolen biscuits, but cats \textbf{have}.}
+    % \ex[*]{\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}}
+    \z
+}
+
+\frame{ \small
+
+    1.~Sentences with auxiliaries show selection by V:\\
+            \begin{forest}
+                [VP
+                    [\textcolor{blue}{NP} [cats, roof]]
+                    [V'
+                        [V\\\textcolor{blue}{steal}]
+                        [\textcolor{blue}{NP} [biscuits, roof]]
+                    ]
+                ]
+            \end{forest}
+    
+    2.~Sentences with auxiliaries also show agreement with I:\\
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \begin{center}
+                \begin{forest}
+                [IP
+                    [NP [the \textcolor{red}{cats}, roof]]
+                    [I'
+                        [I\\\textcolor{red}{have} ]
+                        [VP [stolen the biscuits, roof]]
+                    ]
+                ]
+                \end{forest}
+                \end{center}
+            \end{column}
+            \begin{column}{0.5\textwidth}
+                \begin{forest}
+                [IP
+                    [NP [the \textcolor{red}{cat}, roof]]
+                    [I'
+                        [I\\\textcolor{red}{has} ]
+                        [VP [stolen the biscuits, roof]]
+                    ]
+                ]
+            \end{forest}
+            \end{column}
+        \end{columns}
+}
+
+\frame{
+    The VP-Internal Subject Hypothesis (VPISH):
+
+% \pause
+    \begin{enumerate}
+        \item The subject starts off as the Specifier of VP (selected by V).
+        \item It then \textbf{moves} to the Specifier of IP (agreeing with I).
+    \end{enumerate}
+}
+
+\frame{ \centering
+    \emph{The cats have sneakily stolen the biscuits}:
+
+\pause
+    \begin{forest}
+    [IP
+        [NP [the cats, roof, name=specIP]]
+        [I'
+            [I\\have]
+            [VP
+                [NP [\sout{the cats}, roof, name=specVP]]
+                [V'
+                    [AdvP [sneakily, roof]]
+                    [V'
+                        [V\\stolen ]
+                        [NP [the biscuits, roof]]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    \draw[->] (specVP) to[out=south west,in=south] (specIP);
+    \end{forest}
+}
+
+\frame{\frametitle{Idioms}
+    What's the relevance of these?
+
+    \ea The cat \{is / was / will be / may be\} out of the bag.
+    \ex \dots{}
+    \z
+}
+
+\frame{\frametitle{Quantifiers}
+    What's the relevance of these?
+
+    \ea The workers have all left.
+    \ex \dots{}
+    \z
+}
+
+\frame{ \centering \scriptsize
+    \emph{We think that [the cats have stealthily stolen the biscuits]}:
+
+\vfill
+    \begin{forest}
+        [IP [the cats have stealthily \sout{the cats} stolen the biscuits, roof]]
+    \end{forest}
+}
+
+\frame{ \centering \scriptsize
+    \emph{We think that [the cats have stealthily stolen the biscuits]}:
+
+    \begin{forest}
+    [CP
+        [\phantom{} ]
+        [C'
+            [C]
+            [IP
+                [NP [we, roof, name=specIP] ]
+                [I'
+                    [I]
+                    [VP
+                        [NP [\sout{we}, roof, name=specVP]]
+                        [V'
+                            [V\\think]
+                            [CP
+                                [\phantom{}]
+                                [C'
+                                    [C\\that]
+                                    [IP [the cats have stealthily \sout{the cats} stolen the biscuits, roof]]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    \draw[->] (specVP) to[out=south,in=south] (specIP);
+    \end{forest}
+}
+
+
+\frame{
+    Our \textbf{clausal spine}:
+    
+    CP > IP > VP
+
+    Where does negation fit in?
+
+\pause
+
+\bigskip
+    \ea I think \uline{that} Cats \textcolor{blue}{might} \textcolor{red}{not} \textbf{like} dogs.
+    \z
+
+    \uline{CP} > \textcolor{blue}{IP} > \textcolor{red}{NegP} > \textbf{VP}
+}
+
+
+\frame{\frametitle{Summary}
+    \begin{block}{Topic 6 skills}
+    \begin{itemize}
+        \item[6a]{Use constituency tests to identify and justify projection of different functional heads in a representation, such as I, C, and NEG.}
+        \item[6b]{Implement a \emph{VP-internal subject hypothesis} analysis.}
+    \end{itemize}
+    \end{block}
+
+    We also discussed:
+    \begin{itemize}
+        \item Differences between auxiliaries and lexical verbs.
+    \end{itemize}
+
+    Research Skills:
+    \begin{itemize} \small
+    \item[M1]{State a hypothesis clearly}
+    \item[M2]{Present data in support of a hypothesis}
+    \item[M3]{Define the conditions under which a hypothesis would be refuted}
+    \item[M4]{Present data to refute a hypothesis}
+    \item[M5]{Consider the limitations of a diagnostic test when interpreting the results}
+    \end{itemize}
+}
+
+\frame{\frametitle{Reminder: Weekly routine}
+    \alert{Tutorials on Monday!}
+
+\bigskip
+    You have a total of three attempts to show that you've acquired any of the Syntax Skills: two in Learn exercises and one in the tutorial submission.
+
+\bigskip
+    A suggested routine for each Topic (lecture):
+    \begin{enumerate}
+        \item Watch the video and read the lecture notes before the lecture.
+        \item Come to the lecture.
+        \item Open an exercise and see if you want to give it a go.
+        \item \alert{Submit the tutorial sheet at the end of the week (before Monday 9am).}
+        \item Try your first or second Learn attempt once you feel ready (the only deadline is the end of the semester).
+    \end{enumerate}
+}
+
+\frame{\frametitle{The puzzles}
+    \begin{itemize}
+        \item Puzzle 1
+        \item Puzzle 2
+        \item Puzzle 3
+    \end{itemize}
+}
+
+\end{document}

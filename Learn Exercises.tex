@@ -1,0 +1,2095 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\pagestyle{empty}
+\forestset{
+  nice nodes/.style={
+    for tree={
+      inner sep=0pt,
+      fit=band,
+    },
+  },
+  default preamble=nice nodes,
+}
+\maketitle
+\subtitle{Learn Exercises}
+
+\section*{Topic 1 -- What is Syntax?}
+%\subsection*{Question 1}%Source: Intro to Syntax Learn q's topic 1 - Removed as it no longer matched a skill
+%\hfill{}
+%\ref{whatissyntaxA} $\Box$
+%\begin{exe}
+%    \ex{Which of the following do you think can be analysed as %involving recursive embedding of a PP within a PP?
+%    \begin{xlist}
+%        \ex[]{I spoke to the children after dinner}
+%        \ex[]{The apples in the basket were rotten.}
+%        \ex[]{She thought that we were late.}
+%        \ex[]{I spoke to the children from Jordan.}%this one
+%    \end{xlist}
+%    }
+%\end{exe}
+\subsection*{Question 1}%Source: Intro to Syntax midterm q2 (make easier)
+\hfill{}
+\ref{constituencytestVP} $\Box$
+%, \ref{whatissyntaxC} $\Box$
+
+\begin{figure}
+    \centering
+    \begin{forest}
+     for tree={calign=fixed edge angles, parent anchor=north,},
+        [\phantom{}
+        [The] [\phantom{}
+        [woman] [\phantom{}
+        [that] [\phantom{}
+        [\phantom{} [my] [\phantom{} [mother's] [uncle]]] [\phantom{}
+        [married] [\phantom{}
+        [claimed] [\phantom{}
+        [\phantom{}[that] [she]] [\phantom{}
+        [could] [\phantom{}
+        [speak] [French]]]]]]]]]]
+    \end{forest}
+    \caption{A tree for the sentence \emph{The woman that my mother's uncle married claimed that she could speak French}}
+    \label{speakfrench}
+\end{figure}
+
+
+\begin{exe}
+    \ex{Identify two accurate claims about constituency made in the tree in Figure~\ref{speakfrench}}
+\end{exe}
+
+\subsection*{Question 2}%Source: Intro to Syntax midterm q2 (make easier)
+\hfill{} 
+\ref{constituencytestNP} $\Box$
+%, \ref{whatissyntaxC} $\Box$
+
+\begin{exe}
+    \ex{Identify two inaccurate claims about constituency made in the tree in Figure~\ref{speakfrench}}
+\end{exe}
+
+\subsection*{Question 3}%Source: Intro to Syntax Learn q's topic 1
+\hfill{} \ref{whatissyntaxB} $\Box$
+
+\begin{exe}
+    \ex{Comparison of three of the following examples (notice that some are grammatical and some ungrammatical) demonstrates that the rule for forming questions in English is structure-dependent. Which three?
+    \begin{xlist}
+        \ex[]{Will the children who are playing outside notice the car approaching?}
+        \label{ItoC_embedded_aux}
+        \ex[*]{Are the children who playing outside will notice the care approaching?}
+        \label{ItoC_nearest_aux}
+        \ex[*]{Are I ready to go?}
+        \ex[]{Are the children playing outside?}
+        \label{ItoC_only_aux}
+        \ex[*]{Playing the children are outside?}
+    \end{xlist}
+    }
+\end{exe}
+
+\textcolor{red}{Answer: (\ref{ItoC_embedded_aux}), (\ref{ItoC_nearest_aux}), and (\ref{ItoC_only_aux}).}
+
+\textcolor{red}{(\ref{ItoC_only_aux}) shows a grammatical sentence where the auxiliary verb has been fronted to form a yes/no question.
+There is only one auxiliary verb in this sentence, so the this auxiliary verb is both the one that would occur first in the corresponding declarative sentence, and the one that would follow the subject in the declarative.
+In both (\ref{ItoC_embedded_aux}) and (\ref{ItoC_nearest_aux}) there are two auxiliary verbs.
+(\ref{ItoC_embedded_aux}) shows a grammatical sentence where the first auxiliary verb after the subject constituent has been “fronted” to form a yes/no question.
+(\ref{ItoC_nearest_aux}) shows an ungrammatical sentence where the first auxiliary verb in the sentence (just counting words from the beginning) has been fronted.
+Since (\ref{ItoC_embedded_aux}) is grammatical and (\ref{ItoC_nearest_aux}) is not, this supports an argument that syntactic rules are structure-dependent.}
+
+
+%\subsection*{Question 5}%Source: Intro to Syntax Learn q's topic 1 - removed as it no longer matches a skill
+%\hfill{} 
+%\ref{whatissyntaxD} $\Box$
+
+%\begin{exe}
+%    \ex{Which of the following sentences do you think could be categorised as incorrect from a prescriptive point of view, but grammatical from a descriptive point of view? You can choose more than one.
+%    \begin{xlist}
+%        \ex[]{Whom do you think was talking?}
+%        \ex[]{Whom did they say she met?}
+%        \ex[]{I bought less books last year than this year.}
+%        \ex[]{I want to never see this again.}
+%        \ex[]{I want to never see this again.}
+%        \ex[]{Me and my sister are planning to meet up later.}
+%    \end{xlist}
+%    }
+%\end{exe}
+
+\subsection*{Question 4}%Source: Intro to Syntax Learn q's topic 2
+\hfill{} \ref{whatissyntaxB} $\Box$
+
+\begin{exe}
+    \ex{Given the structure for the noun phrase \emph{the cherry on the cake on the plate} in Figure~\ref{cherry}, which of the following is/are constituents in \emph{the cherry on the cake on the plate}?
+    \begin{xlist}
+        \ex[]{the cherry on the cake on the plate}%Yes
+        \ex[]{the cherry}
+        \ex[]{on the plate}%Yes
+    \end{xlist}
+    }
+\end{exe}
+
+\begin{figure}
+    \centering
+    \begin{forest}
+        [NP
+        [D\\the] [N\\cherry] [PP [P\\on] [NP [D\\the] [N\\cake] [PP [P\\on] [NP [D\\the] [N\\plate]]]]]]
+        ]
+    \end{forest}
+    \caption{A tree for the structure \emph{the cherry on the cake on the plate}.}
+    \label{cherry}
+\end{figure}
+
+\subsection*{Question 5}%Source: RW
+\hfill{} \ref{whatissyntaxB} $\Box$
+
+\begin{exe}
+    \ex[]{Match the images (Figure~\ref{constituency_violation}, ) with the appropriate descriptions.
+    \begin{xlist}
+        \ex[]{A tree that represents some constituents in the phrase \emph{The man saw a dog with a bow-tie} but without any hierarchical structure.}%no_hierarchy
+        \ex[]{A tree that represents the hierarchical structure of the phrase \emph{The man saw a dog with a bow-tie} but violates constituency}%constituency_violation
+        \ex[]{A tree that represents hierarchical structure and constituency for the phrase \emph{The man saw a dog with a bow-tie}.}
+    \end{xlist}
+    }
+\end{exe}
+\begin{figure}
+\centering
+\begin{forest}
+[
+S
+[the man][VP
+[saw] [NP
+    [NP,name=S1
+        [a]
+        [dog,phantom]
+    ]
+    [dog,tier=term,no edge,name=shared]
+    [PP,name=S2
+        [dog,phantom]
+        [with a bow-tie,tier=term]
+    ]
+    ]]]
+]
+\draw (S2) -- (shared);
+\draw (S1) -- (shared);
+\end{forest}
+\caption{A tree for the structure \emph{A man saw a dog with a bow-tie}.}
+\label{constituency_violation}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{forest} for tree={parent anchor=north,},
+[
+[\phantom{}[the] [man]]
+[saw] [\phantom{} [a] [dog]] [\phantom{} [with] [a] [bow-tie]
+]]
+\end{forest}
+\caption{A tree for the structure \emph{A man saw a dog with a bow-tie}.}
+\label{no_hierarchy}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{forest} for tree={calign=fixed edge angles, parent anchor=north,},
+[
+[\phantom{} [the] [man]][\phantom{}
+[saw] [\phantom{} [\phantom{} [a] [dog]] [\phantom{} [with] [\phantom{}
+[a][bow-tie]]]]
+]
+]
+\end{forest}
+\caption{A tree for the structure \emph{A man saw a dog with a bow-tie}.}
+\label{constituency_hierarchy}
+\end{figure}
+
+\subsection*{Question 6}
+\hfill{} \ref{whatissyntaxB} $\Box$
+
+\begin{exe}%Source: RW
+    \ex[]{Match the following to the appropriate descriptions.
+    \begin{xlist}
+        \ex[]{Constituent -- A unit of grammatical structure, represented in tree structures as single nodes.}
+        \ex[]{String -- Any linear sequence of words, for example the cherry on the cake on the plate, but also on the, cherry on, and on the plate.}
+        \ex[]{Recursion -- One instance of a syntactic category contains, or dominates, another instance of the same category. The relation between the two instances of the same category may be immediate (e.g. the cherry [on the cake [on the plate]]), but needn't be (e.g. the man holding a dog is an NP containing a smaller NP a dog).}
+        \ex[]{\emph{I thought I saw a seagull fly away with a pair of binoculars} -- An example of a sentence with structural/syntactic ambiguity. This can be represented hierarchically by changing the relative positions of nodes and phrases in a tree.}
+        \ex[]{\emph{Outside of a dog, a book is a man's best friend; inside it's too hard to read} -- An example of lexical/semantic ambiguity.  This cannot be represented hierarchically by changing the relative positions of nodes and phrases in a tree.}
+    \end{xlist}
+    }
+\end{exe}
+
+\section*{Topic 2 -- Constituent structure \& Constituency tests}
+\subsection*{Question 1}%Source: Intro to Syntax midterm q3
+\hfill{}
+\ref{constituencytestNP} $\Box$, \ref{constituencytestother} $\Box$
+
+\begin{exe}
+    \ex{Given the sentence \emph{I got the book from my mother}, what do the clefts \emph{it was from my mother that I got the book} and \emph{it was my mother I got the book from} tell us about its structure.
+    \begin{xlist}
+        \ex[]{Only that the NP \emph{my mother} and the PP \emph{from my mother} are both constituents.}
+        \ex[]{Only that the NP \emph{my mother} is a constituent.}
+        \ex[]{That the NP \emph{my mother}, the PP \emph{from my mother}, and the VP \emph{got the book} are constituents.}
+        \ex[]{That the NP \emph{mother} and the PP \emph{from my mother}, are both constituents.}
+        \ex[]{This test does not tell us anything about the constituency structure of \emph{I got the book from my mother}.}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 2}%Source: Intro to Syntax midterm q3
+\hfill{} \ref{constituencytestNP} $\Box$
+
+\begin{exe}
+    \ex{The sentence \emph{I bumped into the woman with a coffee cup} is ambiguous between two readings, one where she is holding coffee and one where I am.
+    However, if we move the strings \emph{the woman} or \emph{the woman with the coffee}, the ambiguity is lost.
+    \begin{xlisti}
+        \ex[]{the woman with a coffee cup, I bumped into.}
+        \ex[]{the woman, I bumped into with a coffee cup.}
+    \end{xlisti}
+    What does this tell us about the structure of \emph{I bumped into the woman with a coffee cup}?
+    \begin{xlist}
+        \ex[]{In both readings, \emph{the woman} is a constituent.}
+        \ex[]{In one reading, \emph{the woman} is a constituent and in the other, \emph{the woman with a coffee cup} is a constituent.}
+        \ex[]{In both readings, \emph{the woman with a coffee cup} is a constituent.}
+        \ex[]{Nothing, as the ambiguity is derived from the scope of the quantifier \emph{a}.}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 3}%Source: Intro to Syntax Learn q's topic 2
+\hfill{} \ref{constituencytestother} $\Box$
+
+\begin{exe}
+\ex{Consider the string \emph{with the right} tools in the sentence \emph{You can achieve any goal with the right tools}. 
+Which of the following is true?
+\begin{xlist}
+    \ex[]{\emph{with the right tools} is a constituent, and we know this because it passes both the substitution and the movement test.}
+    \sn[]{\textcolor{red}{No. It is indeed a constituent, but it doesn't pass both of these tests!}}
+    \ex[]{\emph{with the right tools} is a constituent, and we know this because it passes the movement test.}
+    \sn[]{\textcolor{red}{Yes! It is grammatical to `topicalize' \emph{with the right tools}:
+    \emph{With the right tools, you can achieve any goal}.
+    So this proves that it is a constituent.
+    It is true that it doesn't pass any substitution test (\emph{You can achieve any goal there/then} is a grammatical sentence, but clearly has a very different meaning, so should not be taken as related to the sentence in question).
+    But as we know, some PPs just don't have associated pro-forms.}}
+    \ex[]{\emph{with the right tools} is a constituent on one reading of this sentence, and not a constituent on another reading, and that is why it passes one constituency test and fails another.}
+    \sn[]{\textcolor{red}{No. Even if the sentence was structurally ambiguous in a relevant way, that wouldn't be a reason for it to pass one test on one reading, and the other test on a different reading.}}
+    \ex[]{\emph{with the right tools} is not a constituent, since it fails a substitution tests.}
+    \sn[]{\textcolor{red}{No. Consider whether there might be some reason why this string fails one of the tests, \emph{other} than because it is not a constituent.}}
+\end{xlist}
+}
+\end{exe}
+
+\subsection*{Question 4}%Source: Intro to Syntax Learn q's topic 2
+\hfill{} \ref{constituencytestother} $\Box$
+
+\begin{exe}
+    \ex{Consider the following question–answer sequence:
+    \begin{xlist}
+        \exi{Q:}{\emph{Where can we buy ice-cream?}}
+        \exi{A:}{\emph{At the shop on the corner.}}
+    \end{xlist}
+    This sequence provides evidence that\dots
+    \begin{xlist}
+        \ex[]{in the sentence \emph{We can buy ice-cream at the shop on the corner}, the string \emph{at the shop on the corner} is a constituent. }
+        \ex[]{in the sentence \emph{We can buy ice-cream at the shop on the corner}, the string \emph{the shop on the corner} is not a constituent}
+        \ex[]{in the sentence \emph{We can buy ice-cream at the shop on the corner}, the strings \emph{the shop on the corner} and \emph{at the shop on the corner} are both constituents.}
+        \ex[]{None of the above.}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 5}%Source: Intro to Syntax Learn q's topic 2
+\hfill{} \ref{constituencytestVP} $\Box$
+\begin{exe}
+    \ex{Consider the following sequence of sentences:
+    \begin{xlist}
+        \sn{\emph{I think that I will go to Paris next year.}}
+        \sn{\emph{I think that my sister will do so to.}}
+    \end{xlist}
+    They can be used as evidence that, in the first sentence (\emph{I think that I will go to Paris next year}) \dots
+    \begin{xlist}
+        \ex[]{the sequence \emph{will go to Paris next year} is a VP constituent.}
+        \ex[]{the sequence \emph{think that I will go to Paris next year} is a VP constituent.}
+        \ex[]{the sequence \emph{go to Paris next year} is a VP constituent.}
+        \ex[]{All of the above.}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 6}%Source: LEL2A Learn Exercise: Constituency tests
+\hfill{} \ref{constituencytestNP} $\Box$
+
+\begin{exe}
+    \ex[]{Consider the string \emph{absolutely everything we could possibly want is available} in the following sequence:
+    \begin{xlist}
+        \sn[]{\emph{In food terms, we have moved on into what I would call an era of plenty.}}
+        \sn[]{\emph{Absolutely everything we could possibly want is available.}}
+    \end{xlist}
+    Now consider the following constituency tests:
+    \begin{xlist}
+    \begin{multicols}{2}
+            \exi{Q:}[*]{What is we could possibly\\ want available?}
+            \exi{Q:}[]{What is available?\\}
+            \columnbreak
+            \exi{A:}[$\#$]{Absolutely everything}
+            \exi{A:}[]{Absolutely everything we could possibly want}    
+    \end{multicols}
+    \end{xlist}
+    What kind of constituency test is this, and what does it reveal?
+    \begin{xlist}
+        \ex[]{The first pair shows that \emph{Absolutely everything} is a constituent.}
+        \ex[]{The first pair shows that \emph{Absolutely everything} is not a constituent.}
+        \ex[]{The second pair indicates \emph{Absolutely everything we could possibly want} is a constituent.}
+        \ex[]{The second pair indicates \emph{Absolutely everything we could possibly want} is not a constituent.}
+        \ex[]{That neither \emph{Absolutely everything} nor \emph{Absolutely everything we could possibly want} are constituents.}
+        \ex[]{That both \emph{Absolutely everything} and \emph{Absolutely everything we could possibly want} are constituents.}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 7}
+\hfill{} \ref{constituencytestVP} $\Box$
+
+\begin{exe}
+    \ex[]{Given the sentence: \emph{I will go to the cinema on Friday}\\
+Complete the diagnostic below to show that \emph{go to the cinema} is a constituent.\\
+I will go to the cinema on Friday and she will [\textcolor{red}{do so (too)}] on Saturday}
+\end{exe}
+
+\subsection*{Question 8}%Source: IntroSyntax02-tutorial.tex
+\hfill{} \ref{constituencytestNP} $\Box$
+
+\begin{exe}
+    \ex[]{Given the following sentence:\\
+    \emph{The books that my sister bought were not very interesting to my parents.}\\
+Select all that apply.
+\begin{xlist}
+    \ex[]{\emph{The books that my sister bought} is a constituent because it passes a substitution test \emph{they were not very interesting to my parents.}}
+    \ex[]{The string \emph{my sister} is not a constituent as it fails movement tests *\emph{My sister, the books that bought were not very interesting to my parents}.}
+    \ex[]{The string \emph{my parents} is not a constituent because when it moves it must most as part of a PP \emph{to my parents, the books that my sister bought were not very interesting} is grammatical but *\emph{my parents, the books that my sister bought were not very interesting to is not}.}
+    \ex[]{The string \emph{my sister} is a constituent as it passes a substitution test \emph{the books that she bought were not very interesting to my parents}.}
+\end{xlist}
+}
+\end{exe}
+
+\subsection*{Question 9}%Source: IntroSyntax02-tutorial.tex
+\hfill{} \ref{constituencytestother} $\Box$
+
+\begin{exe}
+    \ex[]{Consider the following pair of sentences:
+    \begin{xlist}
+        \sn[]{\emph{I wrote \lbrack{}a book about five years ago\rbrack{}}.}
+        \sn[]{\emph{I wrote \lbrack{}a book about five famous linguists\rbrack{}}.}
+    \end{xlist}
+In both examples the bracketed phrases pass a number of the same constituency tests:
+    \begin{xlist}
+        \sn[]{\emph{I wrote \lbrack{}it\rbrack{}}.}
+        \sn[]{\emph{I wrote \lbrack{}it\rbrack{}}.}
+        \sn[]{\emph{I wrote \lbrack{}a book about it\rbrack{}}.}
+        \sn[]{\emph{I wrote \lbrack{}a book about them\rbrack{}}.}
+        \sn[]{\emph{It was \lbrack{}a book about five years ago\rbrack{} I wrote}.}
+        \sn[]{\emph{It was \lbrack{}a book about five famous linguists\rbrack{} I wrote}.}
+    \end{xlist}
+However, at least for me, they differ on the following:
+    \begin{xlist}
+        \sn[]{\emph{about five years ago, I wrote a book}.}
+        \sn[*?]{\emph{about five famous linguists, I wrote a book}.}
+    \end{xlist}
+What does this tell us?
+\begin{xlist}
+    \ex[]{The sentence \emph{I wrote a book about five years ago} is not structurally ambiguous.}%no
+    \ex[]{The sentence \emph{I wrote a book about five famous linguists} is not structurally ambiguous.}%yes
+    \ex[]{The sentence \emph{I wrote a book about five years ago} is structurally ambiguous.
+    In one possible structure, \emph{a book about five years ago} is a constituent, but in the other \emph{a book} and \emph{about five years ago} are separate constituents.}%yes
+    \ex[]{The sentence \emph{I wrote a book about five famous linguists} is structurally ambiguous.
+    In one possible structure, \emph{a book about five famous linguists} is a constituent, but in the other \emph{a book} and \emph{about five famous linguists} are separate constituents.}%no
+\end{xlist}
+}
+\end{exe}
+
+\section*{Topic 3 -- predicates and arguments: syntactic and semantic arguments}
+\subsection*{Question 1}%Source: Intro to Syntax midterm q3
+\hfill{} \ref{syn_sem_roles} $\Box$
+
+\begin{exe}
+    \ex{You want to construct an argument to demonstrate that the claim `every argument with a \textsc{theme} or \textsc{patient} thematic role is realised as an object' is false.
+    Which of the following pairs of sentences will be most useful (tick all that apply)?
+    \begin{xlist}
+        \ex[]{\emph{John gave the ball to Mary} and \emph{John gave Mary the ball}}
+        \ex[]{\emph{I spread butter on toast} and \emph{butter spreads well on toast}}
+        \ex[]{\emph{The orcas sank the yacht} and \emph{the yacht sank}}
+        \ex[]{\emph{John wants him to leave} and *\emph{John wants he to leave}}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 2}%Source: Intro to Syntax Learn q's topic 3
+\hfill{} \ref{sem_roles} $\Box$
+
+\begin{exe}
+    \ex{Which of the following sentences involves an expletive, in the syntactic sense?
+    \begin{xlist}
+        \ex[]{I simply don't understand it}
+        \ex[]{It was completely obvious}
+        \ex[]{It seems that they are late}
+        \ex[]{All of the above}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 3}%Source: Intro to Syntax Learn q's topic 3
+\hfill{}\ref{syn_sem_roles} $\Box$%, \ref{syn_sem_roles} $\Box$
+
+\begin{exe}
+    \ex{An event of \emph{renting} involves at least a person who owns a property, a property, and a person who pays money to the owner in order to have use of the property.
+    However, the following is a perfectly grammatical sentence of English: \emph{I have been renting for ten years now}.\\This is some evidence that \dots
+    \begin{xlist}
+        \ex[]{An act of renting really only necessarily involves one entity (a person).}
+        \ex[]{The number of syntactic arguments that a verb takes is not entirely predictable from the number of participants in the event it describes.}
+        \ex[]{Although rent is a transitive verb, in English all transitive verbs can also “drop” their objects.}
+        \ex[]{The verb rent can take as its argument either an NP denoting the property, or a PP denoting the length of the rental period.}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 4}%Source: Intro to Syntax midterm q3
+\hfill{} \ref{syn_sem_roles} $\Box$
+
+\begin{exe}
+    \ex{You want to construct an argument to demonstrate that the claim `every argument with an \textsc{agent} thematic role is realised as a subject' is false.
+    Which of the following pairs of sentences will be most useful (tick \emph{any} that apply)?
+    \begin{xlist}
+        \ex[]{\emph{John gave the ball to Mary} and \emph{Mary was given the ball by John}}%yes
+        \ex[]{\emph{I spread butter on toast} and \emph{butter spreads well on toast}}%no
+        \ex[]{\emph{The orcas sank the yacht} and \emph{the yacht sank}}%no
+        \ex[]{\emph{John seems to have burnt his dinner} and \emph{the dinner seems to have been burnt}}%no
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 5}%Source: S\&K Ch 9
+\hfill{} \ref{sem_roles} $\Box$
+
+\begin{exe}
+    \ex{How can we account for the difference between the following groups of examples?
+    \begin{xlistI}
+        \ex[]{
+        \begin{xlista}     
+        \ex[]{There is a problem}
+        \ex[]{There exists a number of solutions}
+        \ex[]{There remains a single way forward}
+        \ex[]{There occurred a number of unfortunate incidents}
+        \end{xlista}
+        }\label{expletive_yes}
+        \ex[]{
+        \begin{xlista}     
+        \ex[*]{There seems no solution}
+        \ex[*]{There danced a dance}
+        \ex[*]{There wrote a book}
+        \ex[*]{There sank a boat}
+        \end{xlista}
+        }\label{expletive_noA}
+        \ex[]{
+        \begin{xlista}     
+        \ex[]{She seems nice}
+        \ex[]{They danced a jig}
+        \ex[]{We wrote a book}
+        \ex[]{A boat sank}
+        \ex[]{I sank a boat}
+        \end{xlista}
+        }\label{expletive_noB}
+    \end{xlistI}
+    \begin{xlist}
+        \ex[]{All of the examples in (\ref{expletive_yes}) \& (\ref{expletive_noA}) involve expletive there. We can see from (\ref{expletive_yes}) that only copula verbs allow expletive subjects. We can see from (\ref{expletive_noA}) \& (\ref{expletive_noB}), that all other verbs must assign an \textsc{agent} role.}
+        \ex[]{All of the examples in (\ref{expletive_yes}) \& (\ref{expletive_noA}) involve expletive there. We can see from (\ref{expletive_yes}) that some verbs allow expletive subjects. We can see from (\ref{expletive_noA}) \& (\ref{expletive_noB}), that some verbs must assign an \textsc{agent} role.}
+        \ex[]{All of the examples in (\ref{expletive_yes}) \& (\ref{expletive_noA}) involve expletive there. We can see from (\ref{expletive_yes}) that some verbs allow expletive subjects. We can see from (\ref{expletive_noA}) \& (\ref{expletive_noB}), that other verbs do not allow expletive subjects, even when no \textsc{agent} is present.}%YES
+        \ex[]{We can see from the examples that all verbs allow expletive subjects if and only if they have assigned all of their other thematic roles. In (\ref{expletive_noA}) \& (\ref{expletive_noB}), we can see that the verbs in (\ref{expletive_noA}) have not assigned all of their roles.}
+    \end{xlist}
+    }
+\end{exe}
+
+\newpage
+\section*{Topic 4 -- predicates and arguments: arguments and modifiers, subjects}
+\subsection*{Question 1}%Source: Intro to Syntax miterm q4
+\hfill{} \ref{c_selection} $\Box$
+\begin{exe}
+    \ex{If you wanted to make the argument that heads can select the syntactic category of their complement, which would be the best pair of example sentences to use?\\You should assume the validity of the judgments given.
+    \begin{xlist}
+        \ex[]{
+        \begin{multicols}{2}
+        \begin{xlist}
+            \ex[]{She opened the door.}
+            \columnbreak
+            \ex[]{The door opened.}
+        \end{xlist}
+        \end{multicols}
+        }
+        \ex[]{
+        \begin{multicols}{2}
+        \begin{xlist}
+            \ex[]{They inquired where the men were going.}
+            \columnbreak
+            \ex[*]{They inquired the men's destination.}
+        \end{xlist}
+        \end{multicols}
+        }
+        \ex[]{
+        \begin{multicols}{2}
+        \begin{xlist}
+            \ex[]{My parents left during the performance.}
+            \columnbreak
+            \ex[\#]{My parents left during the garden.}
+        \end{xlist}
+        \end{multicols}
+        }
+        \ex[]{
+        \begin{multicols}{2}
+        \begin{xlist}
+            \ex[]{This food comes from my favourite cafe.}
+            \columnbreak
+            \ex[]{That bad smell is coming from behind the fridge.}
+        \end{xlist}
+        \end{multicols}
+        }
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 2}%Source: LEL2A Tutorial Week 6
+\hfill{} \ref{adjunct_complement} $\Box$
+\begin{exe}
+    \ex[]{In the sentence \emph{toddlers can't wander freely to another lot}, should we analyse the phrase \emph{to another lot} as a complement or adjunct of the verb?
+    Choose any two answers with \emph{good} diagnostics that justifies them.
+    \begin{xlist}
+        \ex[]{A complement, because the preposition can be stranded, as in \emph{Where did they wander to \sout{where}?}}
+        \ex[]{A complement, because it cannot be coordinated with another adjunct, *\emph{toddlers wander to another lot and freely}}
+        \ex[]{A complement, because adjuncts can appear outside of a VP substitutions test, \emph{toddlers wander to another lot freely and cats do so quietly}, but a complement must be substituted with the verb \emph{toddlers wander to another lot and cats do so (*to a school) too}.}
+        \ex[]{A complement, because \textsc{goal} thematic roles are obligatory.}
+        \ex[]{An adjunct, because it appears outside the adjunct \emph{freely}.}
+        \ex[]{An adjunct, because \emph{wander} can appear alone, \emph{I've been wandering}, so does not assign an internal semantic role.}
+        \ex[]{An adjunct, because PPs are always adjuncts.}
+    \end{xlist}
+    }
+\end{exe}
+\newpage
+\subsection*{Question 3}%Source: Intro to Syntax miterm q4
+\hfill{} \ref{c_selection} $\Box$
+\begin{exe}
+    \ex{If you wanted to make the argument that heads can select the syntactic category of their complement, which would be the best pair of example sentences to use (assume the validity of the judgments given)?
+    \begin{xlist}
+        \ex[]{
+        \begin{multicols}{2}
+        \begin{xlist}
+            \ex[\#]{She smiled a deep frown}
+            \columnbreak
+            \ex[]{She smiled a broad smile.}
+        \end{xlist}
+        \end{multicols}
+        }%No. In both of these cases smile is followed by a Noun Phrase. The first example is odd for semantic reasons, but there’s no reason to think that this has to do with its syntactic category.
+        \ex[]{
+        \begin{multicols}{2}
+        \begin{xlist}
+            \ex[\#]{She came in during the spoon.}
+            \columnbreak
+            \ex[]{She came in during the performance.}
+        \end{xlist}
+        \end{multicols}
+        }%No. The syntactic category of the spoon and the performance is the same, so something else (semantic anomaly of some kind) is what is responsible for the oddness of the first sentence.
+        \ex[]{
+        \begin{multicols}{2}
+        \begin{xlist}
+            \ex[]{She wondered what the time was.}
+            \columnbreak
+            \ex[*]{She wondered the time.}
+        \end{xlist}
+        \end{multicols}
+        }%Yes, this is probably the best pair to make this argument. They suggest that wonder can select an NP but not a clause. This argument would actually be stronger if one contrasted the behaviour of wonder with that of ask, which can select for an NP or a clausal complement: She asked what the time was and She asked the time. 
+        \ex[]{
+        \begin{multicols}{2}
+        \begin{xlist}
+            \ex[]{They were building.}
+            \columnbreak
+            \ex[]{They were building a wall.}
+        \end{xlist}
+        \end{multicols}
+        }%These sentences suggest that build can either select for an object noun phrase or occur without it, but they don’t show clearly that what the verb is selecting for is the category of its complement
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 4}
+\hfill{} \ref{adjunct_complement} $\Box$
+\begin{exe}
+    \ex[]{Match the labels with the appropriate diagnostic (assume the judgements given are correct).
+    \begin{xlist}
+    \begin{multicols}{2}
+        \ex{\emph{of goodwill} - complement}
+        \ex{\emph{of goodwill} - adjunct}
+        \ex{\emph{of the plan} - complement}
+        \ex{\emph{for 12 hours} - adjunct}
+        \ex{\emph{for 12 hours} - complement}
+        \columnbreak
+        \ex[]{What is he suspicious of?}
+        \ex[*]{What would the work not have been allowed to continue without a lot of?}
+        \ex[]{What did they approve of?}
+        \ex[]{They slept well and for 12 hours}
+        \ex[]{They asked for 12 hours and an assistant.}
+    \end{multicols}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 5}
+\hfill{} \ref{adjunct_complement} $\Box$
+\begin{exe}
+    \ex{Given the string \emph{she took her shoes off} we can see that \emph{her shoes} is a constituent by performing a substitution test, \emph{she took them off}.
+    If we wanted to diagnose it as a complement or adjunct, which of pair below is most informative?
+    \begin{multicols}{2}
+    \begin{xlist}
+        \ex[*]{She took quickly off}
+        \ex[]{She took her shoes off quickly}
+        \ex[]{She took her shoes and socks off quickly and quietly}%Yes
+        \ex[]{She quickly and quietly took her shoes off}
+    \end{xlist}
+    \begin{xlist}
+        \ex[*]{She took quickly her shoes off}
+        \ex[]{She took off her shoes quickly}
+        \ex[*]{She took her shoes and quickly off}%YEs
+        \ex[]{She quickly and quietly took her shoes and socks off}
+    \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+\textcolor{red}{This question is difficult as we have not looked at "multi-word verbs" but the principles are the same. There are word order restrictions that prevent us from putting adjuncts between the verb and the object in English, and there are restrictions that prevent coordination of adjuncts and complements. Many of the examples given show that the adverb \emph{quickly} cannot intervene between the verb and object or between the verb and participle (\emph{off}). The correct examples also show that we cannot coordinate \emph{quickly} with \emph{shoes} but we can coordinate it with other adverbs.}
+
+
+\newpage
+\section*{Topic 5 -- X-bar and the clause: X-bar schema}
+\subsection*{Question 1}%Source: IS Topic 4 Review Qs (unused)
+\hfill{}\ref{projection} $\Box$
+
+Which of the following trees is/are consistent with \ibar{X}-Theory as presented in the notes and reading (may be more than one).
+\begin{exe}
+    \ex{
+    \begin{multicols}{4}
+    \begin{xlist}
+        \ex{
+        \small\begin{forest}
+            [NP
+            [D\\the] [\ibar{N} [N\\dogs]]
+            ]
+        \end{forest}
+        }
+        \columnbreak
+        \ex{
+        \small\begin{forest}
+            [NP
+            [DP [\ibar{D} [D\\the]]] [\ibar{N} [N\\dogs]]
+            ]
+        \end{forest}
+        }
+        \columnbreak
+        \ex{
+        \small\begin{forest}
+            [DP
+            [\ibar{D}
+            [D\\the] [\ibar{N} [N\\dogs]]]
+            ]
+        \end{forest}
+        }
+        \columnbreak
+        \ex{
+        \small\begin{forest}
+            [DP
+            [\ibar{D}
+            [D\\the] [NP [\ibar{N} [N\\dogs]]]]
+            ]
+        \end{forest}
+        }
+    \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+\textcolor{red}{A: No. In this tree the \obar{D} does not \emph{project} (only the \obar{N} does)}
+
+\textcolor{red}{B: Yes, this tree is consistent with \ibar{X}-Theory as presented.
+The determiner the projects a \iibar{D}, and this is in the specifier position of the \iibar{N} projected by the \obar{N}.}
+
+\textcolor{red}{C:	No. In this tree the \obar{N} doesn't have a \emph{maximal projection} (an \iibar{N})}
+
+\textcolor{red}{D:	Yes, this tree is consistent with \ibar{X}-Theory as presented. The determiner takes the maximal projection of the \obar{N} as its complement, and the determiner itself projects a full \emph{spine}.}
+
+\subsection*{Question 2}%Source: Intro to Syntax Review questions for Topic 4.1: X' Theory and the basic structure of the clause
+\hfill{} \ref{projection} $\Box$
+
+\begin{exe}
+    \ex[]{Which of the following is true of \ibar{X}-Theory as set out in the notes so far?
+    \begin{xlist}
+        \ex[]{According to \ibar{X}-Theory, the category of a phrase is determined by the category of its head.}
+        \ex[]{According to \ibar{X}-Theory, the complement of a head can either precede it or follow it.}
+        \ex[]{According to \ibar{X}-Theory, a head \obar{X} can have at most one complement and one specifier.}
+        \ex[]{All of the above.}
+        \label{x_bar_alltrue}
+        \ex[]{None of the above.}
+    \end{xlist}
+    }
+\end{exe}
+\textcolor{red}{The answer is (\ref{x_bar_alltrue}).}
+
+\subsection*{Question 3}%Source: IntroSyntax04 ReviewQs
+\hfill{} \ref{V_adjunction} $\Box$
+\begin{exe}
+    \ex[]{It is possible to have a large number of modifiers for a single phrase (for example multiple modifiers of an NP, like \emph{from Glasgow} and \emph{in the blue jacket} in the sentence \emph{The woman from Glasgow in the blue jacket was talking on her mobile}). The way we have accommodated this within \ibar{X}-theory is as follows:
+    \begin{xlist}
+        \ex[]{We have abandoned our earlier assumption that branching is always binary, so that a head can have multiple complements, as in\\
+        \begin{forest}
+            [NP
+            [D\\the][N\\woman][PP[from Glasgow, roof]][PP[in the blue jacket,roof]]
+            ]
+        \end{forest}
+        }%No. We haven't needed to abandon the assumption of binary branching just because of multiple modifiers.
+        \ex[]{We have retained the assumption a head only ever takes a single complement, but we have had to abandon our assumption of binary branching for higher levels within the phrase, as in\\
+        \begin{forest}
+            [NP
+            [D\\the][\ibar{N}
+            [\ibar{N} [N\\woman]][PP [from Glasgow, roof]][PP [in the blue jacket,roof]]
+            ]
+            ]
+        \end{forest}
+        }%No. We haven't needed to abandon the assumption of binary branching just because of multiple modifiers.
+        \ex[]{We have proposed that when a modifier combines with an element of category \ibar{X}, the result is another constituent of category \ibar{X}, as in\\
+        \begin{forest}
+            [NP
+            [D\\the][\ibar{N}
+            [\ibar{N} [\ibar{N} [N\\woman]][PP [from Glasgow, roof]]][PP [in the blue jacket,roof]]
+            ]
+            ]
+        \end{forest}
+        }%Yes! We have proposed the operation of “adjunction” for adding modifiers into the structure, and this operation can take place recursively, as here.
+        \ex[]{We have left this as an open question that we cannot as yet resolve within our current assumptions about \ibar{X}-Theory}%No, we have been able to do better than that!
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 4}%Source: IntroSyntax04 ReviewQs
+\hfill{} \ref{projection} $\Box$
+\begin{exe}
+    \ex[]{Identify three claims made by the tree in Figure~\ref{not_xbar}, that are inconsistent with X$'$-schema presented.
+    \begin{xlist}
+        \ex[]{The tree only shows a VP but this is not a complete sentence, we need to add more structure.}%This is probably true but it is not inconsistent with the theory to show only a smaller part of a larger structure.
+        \ex[]{The adjective, \emph{other}, violates the projection principle and is shown as a complement of the noun, \emph{day}.}%Yes
+        \ex[]{The subject, \emph{we} is shown without any structure.}%This is a standard way of simplifying sections of a tree. Notice that \emph{we} still projects NP
+        \ex[]{The determiner heads are shown as bare Ds in specifier of NP.}%Putting the determiner heads in specifier of NP is inconsistent with the \emph{projection principle}, any head must project a full phrase.}%Yes
+        \ex[]{The phrase \emph{the other day} is represented as a complement in the tree, rather than an adjunct.}%Yes, we want to represent adjuncts as sisters to X-bar levels so this should adjoin higher in the tree.
+        \ex[]{The pronouns and determiners are shown as parts of NPs.}%Although the DP hypothesis is widely adopted, an NP analysis is not inconsistent with X-bar.
+    \end{xlist}
+    }
+\end{exe}
+\begin{figure}
+    \centering
+\begin{forest} for tree={calign=fixed edge angles,},
+[
+VP
+[NP [We, roof]][V$'$
+[V\\saw][NP
+[D\\the][N$'$
+[N\\Mona Lisa]]
+][NP [D\\the] [N$'$ [A\\other] [N\\day]]]
+]
+]
+\end{forest}
+\caption{A tree representing the string \emph{We saw the Mona Lisa the other day}.}
+\label{not_xbar}
+\end{figure}
+
+\subsection*{Question 5}%Source:IntroSyntax04-tutorial.tex unused
+\hfill{} \ref{V_adjunction} $\Box$
+
+\begin{exe}
+    \ex{In my judgement, (\ref{conjunction_testA}) is more acceptable than (\ref{conjunction_testB}).
+What is the best representation of \emph{my sister painted today}, based on these judgements?
+\begin{xlist}
+    \ex[]{My sister painted today, and I did so yesterday.}\label{conjunction_testA}
+    \ex[*]{My sister painted a landscape, and I did so a portrait.}\label{conjunction_testB}
+\end{xlist}
+\begin{xlisti}
+    \ex{
+    \begin{forest}
+        [\iibar{I}
+        [\iibar{D} [my sister, roof, name=copy]][\ibar{I}
+        [\obar{I}\\\lbrack{}\textsc{past}\rbrack{}][
+        \iibar{V}
+        [\sout{\iibar{D}} [\sout{my sister}, roof, name=trace]][\ibar{V}
+        [\obar{V}\\paint][\iibar{Adv} [today, roof]]
+        ]]]]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \end{forest}
+    }%No, substitution of VP would replace today
+    \ex{
+    \begin{forest}
+        [\iibar{I}
+        [\iibar{D} [my sister, roof, name=copy]][\ibar{I}
+        [\obar{I}\\\lbrack{}\textsc{past}\rbrack{}][
+        \iibar{V}
+        [\sout{\iibar{D}} [\sout{my sister}, roof, name=trace]][\ibar{V}
+        [\obar{V}\\painted]][\iibar{Adv} [today, roof]]
+        ]]]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \end{forest}
+    }%No, same as above and ternery branching mess
+    \ex{
+    \begin{forest}
+        [\iibar{I}
+        [\iibar{D} [my sister, roof, name=copy]][\ibar{I}
+        [\obar{I}\\\lbrack{}\textsc{past}\rbrack{}]
+        [\iibar{V}
+        [\sout{\iibar{D}} [\sout{my sister}, roof, name=trace]] [\ibar{V} [\ibar{V}
+        [\obar{V}\\painted]][\iibar{Adv} [today, roof]]]
+        ]
+        ]]
+        \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \end{forest}
+    }%yes, a single node represents the substituted constituent
+\end{xlisti}
+}
+\end{exe}
+
+\subsection*{Question 6}%Source:IntroSyntax04-tutorial.tex unused
+\hfill{} \ref{V_adjunction} $\Box$
+\begin{exe}
+    \ex{The following tree (Figure~\ref{with_his_parents}) fails to account for one or more acceptability judgments which would typically be held by native speakers of English.
+    Which of the judgements below are not represented?
+    \begin{xlist}
+        \ex[]{Alex will discuss the matter with his parents, but I will not.}%no
+        \ex[]{Alex will discuss the matter with his parents, and I will do so with my parents.}%yes
+        \ex[]{Who will Alex discuss the matter with?}%no
+        \ex[*]{Alex will discuss the matter with his parents, and I will do so the matter with my siblings.}
+    \end{xlist}
+    }
+\end{exe}
+\begin{figure}
+    \centering
+    \begin{forest}
+     for tree={calign=fixed edge angles},
+        [\iibar{I}
+        [\iibar{N} [Alex, roof]][\ibar{I}
+        [\obar{I} [will]][\iibar{V}
+        [\sout{\iibar{N}} [\sout{Alex}, roof]][\ibar{V}
+        [\obar{V}[discuss]][\iibar{N} [the matter, roof]][\iibar{P} [with his parents, roof]]]
+        ]]
+        ]
+    \end{forest}
+    \caption{A tree for the sentence \emph{Alex will discuss the matter with his parents}.
+    It shows the structure as [Alex [will [\sout{Alex} discuss [the matter] [with his parents]]]]}
+    \label{with_his_parents}
+\end{figure}
+
+
+%Q.	In the sentence They slowly walked along the lane under the leafy trees the number of VP modifiers is
+%A.	one No, that’s an undercount! Remember that modifiers can be of different syntactic categories.
+%B.	two Possible under one of the interpretations of the sentence—but there is structural ambiguity here!
+%C.	two or three (because the sentence is structurally ambiguous) Yes! One VP modifier is slowly. It is possible that the lane under the leafy trees is a single constituent, in which case the second VP modifier is along the lane under the leafy trees. But it is also possible to interpret under the leafy trees as VP modifier (describing where they walked). On that reading there are three VP modifiers.
+%D.	three Possible under one of the interpretations of the sentence—but there is structural ambiguity here!
+
+
+
+
+\newpage
+\section*{Topic 6 -- X-bar and the clause: \iibar{I}, modals, V and I, VPISH, \iibar{C}} 
+\subsection*{Question 1}%Source:IS Topic 4 tutorial unused
+\hfill{}
+\ref{c_selection} $\Box$%, \ref{functional_heads} $\Box$
+
+\textcolor{red}{I've left this here because although it doesn't test skill~\ref{functional_heads}, it does rely on ideas associated with this topic.}
+\begin{exe}
+    \ex{Assume that in the following sentences, \emph{the children to enjoy the trip} is a non-finite clause, the infinitival counterpart of finite clauses like \emph{the children enjoy(ed) the trip} or \emph{the children will enjoy the trip}:
+    \begin{xlisti}
+        \ex[]{I expect [the children to enjoy the trip]}
+        \ex[]{I expect [that the children will enjoy the trip]}
+        \ex[*]{I think [the children to enjoy the trip]}
+        \ex[]{I think [that the children will enjoy the trip]}
+        \ex[]{I want [the children to enjoy the trip]}
+        \ex[*]{I want [that the children will enjoy the trip]\\}
+    \end{xlisti}
+    }
+    Considering also other related sentences, which of the following is the best generalization?
+    \begin{xlist}
+        \ex[]{\emph{expect}, \emph{think}, and \emph{want} differ in whether they select for finite clauses, non-finite clauses, or both.}
+        \ex[]{\emph{expect}, \emph{think}, and \emph{want} differ in whether they select for clauses headed by transitive or intransitive verbs (or both).}
+        \ex[]{\emph{think} requires that the clause that it selects contains a modal, while this is not true of  \emph{want} and \emph{expect}.}
+    \end{xlist}
+\end{exe}
+
+\subsection*{Question 2}%Source: Intro to Syntax Review questions for Topics 4.2–4.4
+\hfill{} \ref{VPinternal_subjects} $\Box$
+\begin{exe}
+    \ex[]{All of the following allow the idiomatic interpretation Every misfortune is/was/may be associated with some benefit:
+    \begin{xlisti}
+        \ex[]{Every cloud has a silver lining.}
+        \ex[]{Every cloud may have a silver lining}
+        \ex[]{Every cloud had a silver lining\\}
+    \end{xlisti}
+This suggests that, in storing information about this idiom in our mental lexicon, \dots
+    \begin{xlist}
+        \ex[]{We do not need to include information about tense, so the information we store is as represented in the elementary tree.\\
+        \begin{forest}
+            [VP
+            [NP [every cloud, roof]][\ibar{V} [V\\have][NP [a silver lining, roof]]]
+            ]
+        \end{forest}}
+        \ex[]{We need to store a number of alternative elementary trees, one for each possible tense/modal/auxiliary combination, for example\\
+        \begin{multicols}{2}
+        \begin{xlist}
+        \ex{
+        \begin{forest}
+            [IP
+            [NP [every cloud, roof]][\ibar{I}
+            [I\\\Prs{}] [VP
+            [\ibar{V}
+            [V\\has][NP [a silver lining, roof]]]]]
+            ]
+        \end{forest}
+        }
+        \columnbreak
+        \ex{
+        \begin{forest}
+            [IP
+            [NP [every cloud, roof]][\ibar{I}
+            [I\\may] [VP
+            [\ibar{V}
+            [V\\have][NP [a silver lining, roof]]]]]
+            ]
+        \end{forest}
+        }
+        \end{xlist}
+        \end{multicols}
+        }
+        \ex[]{Each idiomatic sentence should just be considered a single word, as far as the syntax is concerned.}
+        \ex[]{None of the above.}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 3}%Source: 
+\hfill{} \ref{functional_heads} $\Box$
+\begin{exe}
+    \ex[]{We’ve seen that in an English sentence containing a modal (e.g. The dogs may bark), there is reason to think that the modal occupies a distinct position—I—that takes the VP as its complement and projects an IP. If a sentence does not contain any modal (e.g. The dogs bark), we concluded that:
+\begin{xlist}
+    \ex[]{The sentence should be considered a projection of the verb (a VP)}%A strong argument for a uniform analysis is that sentences with and without modals have the same distribution, suggesting that they must be of the same category, they are selected by the same heads. Also, we need to assume a silent complementiser in some cases, but there is no reason to think that it only occurs in sentences where there is no modal. Finally, The category of a sentence like The dogs bark does not have the distribution of an NP, we can show this with substitution.
+    \ex[]{The sentence should be considered a projection of a silent complementiser (a CP)}%A strong argument for a uniform analysis is that sentences with and without modals have the same distribution, suggesting that they must be of the same category, they are selected by the same heads. Also, we need to assume a silent complementiser in some cases, but there is no reason to think that it only occurs in sentences where there is no modal. Finally, The category of a sentence like The dogs bark does not have the distribution of an NP, we can show this with substitution.
+    \ex[]{The sentence should be considered an IP, with a silent/abstract tense morpheme in the I position.}%Yes. This would explain why present/past tense sentences have the same distribution as sentences with modals—they are all of the same category, IP.
+    \ex[]{The sentence should be considered an NP, with the N dogs as its head.}%A strong argument for a uniform analysis is that sentences with and without modals have the same distribution, suggesting that they must be of the same category, they are selected by the same heads. Also, we need to assume a silent complementiser in some cases, but there is no reason to think that it only occurs in sentences where there is no modal. Finally, The category of a sentence like The dogs bark does not have the distribution of an NP, we can show this with substitution.
+\end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 4}%
+\hfill{}
+\ref{functional_heads} $\Box$%,
+\begin{exe}
+    \ex[]{Which of the following is the strongest motivation for considering modal verbs in Present Day English to occupy a different syntactic position to that of “main” verbs like \emph{drink} or \emph{laugh}?
+    \begin{xlist}
+        \ex[]{Modal verbs, unlike main verbs, can precede negation.}%Yes!
+        \ex[]{Modal verbs don’t show any agreement with their subjects, unlike main verbs.}%This is a true observation about modal verbs in Present Day English. But of itself it is not a strong motivation for considering them to occupy a different syntactic position.
+        \ex[]{Modal verbs don’t show any tense distinctions, unlike main verbs.}%No. At least some modal verbs have present and past forms (e.g. can/could)—this is an irregular past form, but many main verbs also have irregular past forms.
+        \ex[]{None of the other options are reasons to consider modal verbs in English to occupy a different position to that of main verbs.}%No, at least one of A–C is motivation for this conclusion.
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 5}%source: IntroSyntax04-tutorial.tex
+\hfill{}
+\ref{VPinternal_subjects} $\Box$%,
+\begin{exe}
+    \ex[]{Why are the following (Figure~\ref{may_enjoy}) problematic as the elementary trees that contribute to building the structure of a sentence like \emph{The children may enjoy the music}?}
+    \begin{xlist}
+        \ex[]{In the sentence \emph{the children may enjoy the music}, \emph{the children} is assigned a thematic role by \emph{enjoy}, it is selected by \emph{enjoy}.}%Yes
+        \ex[]{If \emph{may} selects the external argument, it could select an NP incompatible with the $\theta{}$-roles assigned by the VP, e.g. \emph{\#colourless green ideas enjoy music}.}%yes
+        \ex[]{The tree for \emph{may} should select a NegP, with a null \obar{Neg} head.}%no
+        \ex[]{The word \emph{may} is a main verb in the example given and should project a VP, this allows it to select an NP argument.}%no
+    \end{xlist}
+\end{exe}
+\begin{figure}
+    \centering
+    \begin{forest}
+     for tree={calign=fixed edge angles},
+        [
+        \iibar{I}
+        [\iibar{N}][\ibar{I}
+        [\obar{I}\\may][\iibar{V}]]
+        ]
+        \end{forest}
+        \begin{forest}
+        for tree={calign=fixed edge angles},
+        [
+        \iibar{V}
+        [\ibar{V}
+        [\obar{V}\\enjoy][\iibar{N}]]
+        ]
+    \end{forest}
+    \caption{Elementary trees for \emph{may} and \emph{enjoy}.}
+    \label{may_enjoy}
+\end{figure}
+
+\subsection*{Question 6}%Source:IS Topic 4 tutorial unused
+\hfill{}
+\ref{functional_heads} $\Box$%, 
+\begin{exe}
+    \ex{Two linguists are unsure how to analyse modal verbs like \emph{will}.
+    Knowing that they are verbal Linguist A decides to treat them as verbs in a V head.
+    While Linguist B suggests they should occupy a higher head, such as I.
+    
+    Which of the following examples are helpful in resolving this? (select all that apply)
+    \begin{xlisti}
+        \ex[]{A: Anyone want to go with me?\\
+        B: Oh, I will!}
+        \ex[]{A: I’ve asked the main office to send additional temporary staff to assist us.\\
+        B: But if they will do so in time is anyone's guess.}%YES
+        \ex[]{A: Can you drive a car?\\
+        B: *I not do so}%YES
+        \ex[]{There is a spare set in the cupboard, should you ever need it.}
+    \end{xlisti}
+    }%A: Anyone want to go with me?B: Oh, I will!This response is not very helpful in answering the question. The B response initially appears to suggest will is a verb that selects the pronoun as its external argument. However, we can see that this is most likely so form of ellipsis oh, I will (go with you). The issue is that the response doesn't really mirror the structure of the antecedent, so it's not possible without additional examples to see what's being elided.A: I’ve asked the main office to send additional temporary staff to assist us.B: But, if they will do so in time is anyone's guess.This response is helpful and directly relevant. In the B response, do so substitution suggests the VP send additional temporary staff... is a VP constituent. This suggests will occupies a head that selects a VP complement and in English we do not have any other examples of verbs that select VP complements. We can see this more clearly with "but, they will not do so in time". Here will selects a NegP complement, which is inconsistent with the behaviour of other verbs we've seen.A: Can you drive a car?B: *I not do soThis response is helpful and directly relevant. This example shows that it's not possible to include the modal in do so substitution. In fact, can, must precede not in the B response for it to be grammatical.There is a spare set in the cupboard, should you ever need it.This example shows the modal in an initial position within the clause. It's interesting but not very helpful for answering the question at hand.
+\end{exe}
+
+\subsection*{Question 7}%Source: RW
+\hfill{} \ref{VPinternal_subjects} $\Box$
+
+\begin{exe}
+    \ex{
+    On the basis of examples like \emph{heads \{may/could/will\} roll}, we suggested that verbs originate inside the VP and move to the SPEC IP position.
+    In this way, the lexical head, V, assigns the $\theta{}$-role and the subject is linked to the $\theta{}$-role position by a \keyword{trace}/\keyword{copy} that is not pronounced.
+    Which of the following examples might be considered problematic for this analysis?
+    \begin{xlist}
+        \ex[]{The ship will ram an iceberg and might sink.}%Yes
+        \ex[]{Mary said she would write a book and publish it herself.}%No
+        \ex[]{Which dishes did the students eat and the teachers not eat?}%No
+        \ex[]{It was Mary who won and will claim the prize}%
+    \end{xlist}
+    }
+\end{exe}
+
+\section*{Topic 7 -- Nonverbal \iibar{X}s: arguments of N \& the DP Hypothesis}
+\subsection*{Question 1}%IntroSyntax05-ReviewQs 
+\hfill{}
+\ref{np_dp} $\Box$%,
+
+\begin{exe}
+    \ex{Here are two DP structures:
+    \begin{multicols}{2}
+    \begin{xlist}
+        \ex{
+        \begin{forest}
+        for tree={calign=fixed edge angles},
+        [DP
+        [DP$_i$] [\ibar{D} 
+        [Det\\'s] [NP
+        [\sout{DP$_i$}] [\ibar{N}
+        [\ibar{N} [N]][PP]]]]]
+        \end{forest}
+        }
+        \label{poss_bill_departure}
+        \columnbreak
+        \ex{
+        \begin{forest}
+        for tree={calign=fixed edge angles},
+       [DP
+       [DP] [\ibar{D} 
+       [Det\\'s] [NP
+       [\ibar{N} 
+       [\ibar{N} [N]] [PP] ]]]]
+        \end{forest}
+        }
+    \label{poss_bill_house}
+    \end{xlist}
+\end{multicols}
+}
+    \ex{Which of the following statements about these structures is most accurate?
+    \begin{xlist}
+        \ex[]{The tree in (\ref{poss_bill_departure}) is the most plausible structure (out of (\ref{poss_bill_departure}) and (\ref{poss_bill_house})) for both \emph{Bill's house in Wales}, and  \emph{Bill's departure on Tuesday}.}%No.  Think about the fact that this tree represents the possessor DP as being an argument of the N. Is that equally plausible for both cases?
+        \ex[]{The tree in (\ref{poss_bill_house}) is the most plausible structure (out of (\ref{poss_bill_departure}) and (\ref{poss_bill_house}) for both \emph{Bill's house in Wales}, and  \emph{Bill's departure on Tuesday}.}%No, probably not. Think about whether Bill is an argument of the other noun in one of teh two cases.
+        \ex[]{The tree in (\ref{poss_bill_departure}) is a plausible structure for \emph{Bill's house in Wales}, and the one in (\ref{poss_bill_house}) is a plausible structure for \emph{Bill's departure on Tuesday}.}%No. If (i) were the tree for Bill’s house in Wales, it would be making the claim that Bill is an argument of house.  Does that seem right?
+        \ex[]{The tree in (\ref{poss_bill_departure}) is a plausible structure for \emph{Bill's departure on Tuesday}, and the one in (\ref{poss_bill_house}) is an plausible structure for \emph{Bill's house in Wales}.}%yes
+    \end{xlist}
+    }
+\end{exe}
+%Explain the justification for your choice of answer.
+
+\subsection*{Question 2}%source: LEL2A week 5 tutorial
+\hfill{}
+\ref{np_structure} $\Box$%,
+
+\begin{exe}
+    \ex[]{Given the sentence `my Sim’s collection \emph{of space rocks} was stolen', decide if the italicised string is a complement or an adjunct of the preceding noun and choose an appropriate justification
+    \begin{xlist}
+        \ex[]{An adjunct because PPs always introduce adjuncts}
+        \ex[]{An adjunct because the string \emph{of space rocks} is optional}
+        \ex[]{A complement because \emph{collection} is a nominalisation of the verb \emph{collect}, which would take \emph{space rocks} as a complement}
+        \ex[]{An adjunct because it fails a preposition stranding test *`what was my sim's collection of stolen'}
+    \end{xlist}
+    }%We cannot say for certain that PPs always introduce adjuncts, so we need diagnostics to create a more informed analysis. Although "space rocks" is optional, we cannot rule out complement-hood based on this as even some verbs take optional complements, "I ate (dinner) already". In the example, ‘my Sim’s collection of space rocks was stolen’, the verb is a nominalisation of collect, ‘my Sim’s collects space rocks’. As a verb, collect, does not require a preposition to introduce an argument so no preposition stranding test is necessary. If we were to apply a preposition stranding test, it would be to the verbal form, not the nominal DP.
+\end{exe}
+
+\subsection*{Question 3}%sourse: LEL2A week 7 tutorial
+\hfill{}
+\ref{np_structure} $\Box$%,
+
+\begin{exe}
+    \ex[]{Given the sentence `their immunity \emph{to lava} allowed my salamanders to ambush the Black Knight', decide if the italicised string is a complement or an adjunct of the preceding noun and choose an appropriate justification
+    \begin{xlist}
+        \ex[]{An adjunct because PPs always introduce adjuncts}
+        \ex[]{An adjunct because \emph{immunity} isn't a nominalisation of a verb}
+        \ex[]{A complement because \emph{immune} is a predicate}
+        \ex[]{A complement because the adjective form, \emph{immune}, does not allow conjunction of \emph{to lava} and another adjunct: \emph{they are immune naturally}, \emph{they are immune naturally and from birth}, *\emph{they are immune naturally and to lava}, *\emph{they are immune to lava and naturally}.}
+    \end{xlist}
+    }%Although there is no corresponding verb for immunity, we will learn in semantics that adjectives are also predicates. However, this does not mean that to lava, is automatically a complement. We need a more principled test for this. Conjunction between two complements is licit and between two adjuncts is licit. Conjunction between a complement and an adjunct is illicit. This means we can use conjunction as a test for complement-hood.
+\end{exe}
+
+\subsection*{Question 4}%source: LEL2A week 7 tutorial
+\hfill{}
+\ref{np_structure} $\Box$%,
+
+\begin{exe}
+    \ex[]{Given the sentence `The news \emph{that my bile demons managed to manufacture a fear trap in the workshop} lifted everyone's spirits', decide if the italicised string is a complement or an adjunct of the preceding noun and choose an appropriate justification
+    \begin{xlist}
+        \ex[]{An adjunct because it's a relative clause and relative clauses are adjuncts}
+        \ex[]{A complement because it's a noun complement clause; we can see this as it resists wh- substitution for \emph{that}, *`The news \emph{which my bile demons managed to manufacture a fear trap in the workshop} lifted everyone's spirits}
+        \ex[]{An adjunct because \emph{news} is not a nominalisation of a verb}
+        \ex[]{A complement because \emph{news} fails \emph{one}-substitution tests *`The news \emph{that my bile demons managed to manufacture a fear trap in the workshop} lifted everyone's spirits and the \emph{one} that my goblins managed to make a cake did too'}
+    \end{xlist}
+    }%Both relative clauses and noun complement clauses modify nouns. The former are adjuncts and the latter are complements. As such, they have different properties. Relative clauses are characterised by a gap in the clause. If we look at the italicised string, my bile demons managed to manufacture a fear trap in the workshop, we can see there isn't a gap (it's a complete sentence). Relative clauses also allow us to substitute wh- words for that, *The news which my bile demons managed to manufacture a fear trap in the workshop. We can see our example doesn't allow this, identifying it as a noun complement clause. We saw in the notes that one-substitution is a test for complement-hood but in this case one may not be an appropriate substitute for news, independent of the complement/adjunct; Q: "I gave her some news" A: #"Which one".
+\end{exe}
+
+\subsection*{Question 5}%Source: S&K Exercise 5.2
+\hfill{}
+\ref{np_dp} $\Box$%,
+\begin{exe}
+    \ex{Formally, the structure in the tree below is consistent with X$'$ theory.
+    Empirically, however, it is an unsatisfactory representation because it is inconsistent with certain linguistic judgments.
+    Which of the judgements given below are problematic for the representation given?
+    (Adapted from Santorini \& Kroch, Syntax of natural language)
+    \begin{xlist}
+        \ex[]{The ones on the corner}%no
+        \ex[]{These houses on the corner, not those ones}%YES
+        \ex[]{The houses on the corner and the ones past the trees} %NO
+        \ex[\#]{They painted them on the corner}%YES
+    \end{xlist}}%If we assume that all determiners occupy the D head, then the sentence These houses on the corner, not those ones is problematic for the analysis given. It shows that the string houses on the corner can be substituted for one without the determiner.They painted the houses on the corner is structurally ambiguous between a reading where the location of the painting is on the corner and the location of the houses is on the corner (this is easier to think about if you replace houses with something smaller). If we substitute the houses for the pronoun them, the reading where the houses are located on the corner is lost, and only the reading where the PP modifies the verb remains. The tree given does not predict this as it should be possible to substitute for them and keep the PP attached to the DP.
+\end{exe}
+\begin{figure}
+    \centering
+\begin{forest}
+    [DP
+    [D$'$
+    [D$'$ [D\\the][NP [N$'$ [N\\houses]]]][PP [P$'$ [P\\on]
+    [DP [D$'$ [D\\the][NP [N$'$ [N\\corner]]]]]]]
+    ]]
+\end{forest}
+\end{figure}
+
+\section*{Topic 8 -- Nonverbal XPs: AdjP, PP, headedness}
+\subsection*{Question 1}
+\hfill{}
+\ref{adjp_pp} $\Box$%,
+
+\begin{exe}
+    \ex[]{In the following phrase, is the italicised section best analysed as a complement or an adjunct of the adjective: `I was happy \emph{for you}'\\
+    Choose the best justification below
+    \begin{xlist}
+        \ex[]{A complement, because constituency tests fail to separate \emph{happy} and the PP:
+        \begin{xlist}
+            \ex[]{I was happy for you and she was so too}
+            \ex[*]{I was happy for you and she was so for him}
+        \end{xlist}
+        }
+        \ex[]{An adjunct because there is no verbal form of \emph{happy} so we should not expect a parallel}
+        \ex[]{A complement because \emph{happy} also takes a clausal complement `I'm happy that you came'}
+    \end{xlist}
+    }%The lack of a verbal equivalent does not mean the same principles fail to apply here. If you agree with the judgement given for i) and ii), then to you is a complement of good. If we think in terms of trees, substitution requires a bar-level. If the string is a complement, substitution must replace both the head and the complement as they are both daughters to the bar-level. If the string is an adjunct, there are two bar-levels and we can replace the one that has only the head, or the one with both the head and the adjunct.
+\end{exe}
+
+\subsection*{Question 2}%Source: Adapted from IntroSyntax05-tutorial Q2
+\hfill{}
+\ref{xp_structure} $\Box$%,
+
+\begin{exe}
+    \ex{
+    The whole phrase \emph{the women from those villages} is \keyword{plural} in number; we can tell from the way the verb would agree with it if we made it the subject: \emph{The women from those villages are/*is annoyed}.
+    This changes if we make \emph{women} singular, the verb now has to be singular: \emph{The woman from those villages is/*are annoyed}.
+    This suggests that the number of the phrase \emph{the women from those villages} is inherited from the noun \emph{women}, suggesting that \emph{women} must be the head of the phrase.
+    Is this problematic for the DP hypothesis?
+    \begin{xlist}
+        \ex[]{Yes. If we look at VPs and PPs, we see that the head determines the form of other elements in the phrase:
+        \begin{xlist}
+            \ex She/*her hugged the dog
+            \ex The dog hugged *she/her
+            \ex The fly landed \lbrack{}\textsubscript{PP} on him/*he\rbrack{}
+            \end{xlist}
+        }
+        \ex[]{No. If we look at other cases, the determiner in English has to \textsc{agree} in number with the head noun:
+            \begin{xlist}
+            \ex this woman; *this women; *these woman; these women
+            \ex that house; *that houses; *those house; those houses
+            \ex a man; *a men
+            \end{xlist}
+        Auxiliary verbs are also the heads of IPs but \textsc{agree} with their arguments:
+        \begin{xlist}
+            \ex They have/*has left the village
+            \ex She *have/has left the village
+        \end{xlist}
+            }
+        \ex[]{Yes. A determiner is not always required, as in \emph{Women from those villages like hip-hop}}
+    \end{xlist}
+    }%We have here a pattern of agreement and we can see if we look elsewhere, such as other DPs and IPs, that agreement morphology is not always marked on dependent arguments. Some types of agreement are marked on dependents, as in the example "She/*her hugged the dog". However, we also see that agreement is sometimes marked on heads, as in "they have/*has left the village" or "he likes that house".Of course we need to formalize exactly how this relation of agreement comes about. But given that it does, we can assume that it also holds for the, it is just that the does not have distinct morphological forms for singular and plural. So, that means that in a phrase like the women, the will in fact have a plural feature (because it agrees with women); and since the syntactic features of a phrase are inherited from the syntactic features of the head of that phrase, this means that under the DP hypothesis, the DP the women will also be plural. Upshot: this pattern isn't evidence for the DP hypothesis, but nor is it evidence against it. It does suggest that we need to come up with a theory of agreement, of course.
+\end{exe}
+
+\subsection*{Question 3}%Source: S&K Exercise 5.2
+\hfill{}
+\ref{adjp_pp} $\Box$%,
+\begin{exe}
+    \ex{Formally, the structure in the tree below is consistent with X$'$ theory.
+    Empirically, however, it is an unsatisfactory representation because it is inconsistent with certain linguistic judgments.
+    Which of the judgements given below are problematic for the representation given?
+    (Adapted from Santorini \& Kroch, Syntax of natural language)
+    \begin{xlist}
+        \ex[\#]{I took a picture on it with a sign}%YES
+        \ex[]{On the corner with a sign and on the one with a postbox}%NO
+        \ex[\#]{What were they standing on the corner with?}%NO
+        \ex[]{It was the corner with a sign that he standing on}%YES
+    \end{xlist}}%The tree given predicts that it should be possible to substitute all or part of on the corner without substituting with a sign. Also, it predicts that we should not be able to substitute overlapping parts of on the corner and with a sign, we should only be able to substitute the whole phrase. However, we can see in the question answer pair that I took a picture on it involves substitution for the string the corner with a sign. This indicates the corner with a sign should be represented as a constituent or branching from a single node in the tree. Similarly, it was the corner with a sign that he standing on involves moving the constituent the corner with a sign out of the PP without moving on. The tree given does not represent this constituency judgement correctly.
+\end{exe}
+\begin{figure}
+    \centering
+\begin{forest}
+    [PP
+    [P$'$
+    [P$'$
+    [P\\on][DP
+    [D$'$
+    [D\\the][NP [N$'$ [N\\corner]]]]
+    ]][PP
+    [P$'$
+    [P\\with][DP
+    [D$'$[D\\a]][NP [N$'$ [N\\sign]]]]]]]
+    ]
+\end{forest}
+\end{figure}
+
+\subsection*{Question 4}%thin air
+\hfill{}
+\ref{adjp_pp} $\Box$%,
+
+\begin{exe}
+    \ex{A linguist has given the representation below for the sentence \emph{she is likely to win}.
+    Which of the following judgements is/are problematic for this analysis?
+    \begin{xlist}
+        \ex[]{She is likely to win and he is so too}%NO
+        \ex[]{She is likely to win and without much difficulty}%no
+        \ex[*]{She is likely}%YES
+        \ex[*]{She is likely to win the swimming and he is so to win the long-jump too}%YES
+    \end{xlist}}%That the string likely to win can be substituted for so (too) is consistent with the analysis given. There is a single node that could be substituted to replace this entire string. The judgement in she is likely to win and without much difficulty is almost useful but would need to be paired with *she is likely without much difficulty and to win as this would indicate that to win is a complement of likely and not an adjunct as shown in the tree. The judgement *She is likely is problematic for the analysis given as it shows likely requires a complement to be grammatical (adjuncts are not obligatory). This indicates the analysis given isn't quite right. Similarly, *She is likely to win the swimming and he is so to win the long-jump too shows that substitution of likely without to win... is not possible. Again this indicates that the analysis given is incorrect. 
+\end{exe}
+\begin{figure}
+    \centering
+\begin{forest}
+    [IP [DP [she, roof, name=copy]][I$'$ [VP [\sout{DP} [\sout{she}, roof, name=trace]][V$'$ [V\\is][AP
+    [A$'$
+    [A$'$
+    [A\\likely]][YP [to win, roof]]]
+    ]]]]]
+    \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+\end{forest}
+\end{figure}
+
+\subsection*{Question 5}%sourse: LEL2A week 7 tutorial
+\hfill{}
+\ref{xp_structure} $\Box$%,
+\begin{exe}
+    \ex{Based on the framework developed in the course so far, is the tree below a good representation of the sentence \emph{the girl's salamander's immunity to lava}?
+    Select the correct answer and the best justification.
+    \begin{xlist}
+        \ex[]{Yes, like clauses DPs always require an argument move to subject position. Otherwise, the possessive 's would come first and this is ungrammatical.}
+        \ex[]{No, \emph{immunity} has no verbal form so does not describe any kind of event. This means it does not assign a $\theta{}$-role and no movement is necessary. The string the girl's salamander should start in \textsc{spec} DP, not \textsc{spec} NP. This is the same as \emph{the girl} not starting in \textsc{spec} NP of \emph{salamander}.}
+        \ex[]{Yes, adjectives like \emph{immune} assign roles to their arguments and we can assume their nominal forms do also. The noun \emph{salamander} is not a nominalisation of any kind and requires no arguments. There is no reason to suggest \emph{salamander} selects arguments like \emph{immunity} does.}
+        \ex[]{No, the sentence contains two possessive constructions. This means there should be two instances of movement to \textsc{spec} of DP but the tree only shows one.}
+    \end{xlist}}%This DP has two possessives but they behave differently. Salamander has no parallel form that depicts a state or event, it is not a nominalisation of a predicate. However, immunity is a nominalisation of a predicate, immune. Adjectives, like verbs, assign roles to their arguments. That is, something has to have the quality of being immune, but a salamander is just a salamander. In the possessive, the highest argument of immunity can then move to the SPEC DP position.Crucially, DPs do not appear to require filled SPEC positions in the same way verbs do. Otherwise, even a DP like the girl would need something to move to SPEC DP.
+\end{exe}
+\begin{figure}
+    \centering
+\begin{forest}
+    [DP
+    [DP, name=copy
+    [DP [D$'$ [D\\the][NP [N$'$ [N\\girl]]]]][D$'$
+    [D\\'s][NP [N$'$ [N\\salamander]]]]]
+    [D$'$
+    [D\\'s][NP
+    [\sout{DP}, name=trace
+    [\sout{DP} [\sout{D$'$} [\sout{D}\\\sout{the}][\sout{NP} [\sout{N$'$} [\sout{N}\\\sout{girl}]]]]][\sout{D$'$}
+    [\sout{D}\\\sout{'s}][\sout{NP} [\sout{N$'$} [\sout{N}\\\sout{salamander}]]]]]
+    [N$'$
+    [N\\immunity][PP
+    [P$'$
+    [P\\to][DP
+    [D$'$
+    [D\\$\emptyset{}$][NP
+    [N$'$ [N\\lava]]]]]]]]]]
+    ]
+    \draw[->,dotted] ([yshift=-16em] trace.south) to[out=south west,in=south] ([yshift=-16em] copy.south);
+\end{forest}
+\end{figure}
+
+\subsection*{Question 6}
+\hfill{}
+\ref{xp_structure} $\Box$%,
+\begin{exe}
+    \ex{In the notes it was shown that there are parallels between VP structures and other phrases, like DPs.
+    Phrases like \emph{The cat's hatred of the dog} were said to have a parallel structure to \emph{the cat hates the dog}.
+    On the basis of this, a linguist wants to put forward the analysis that the expression \emph{Aom's drawing of Boon} should have a parallel structure to \emph{Aom drew Boon}.
+    This parallel is captured in the following trees:
+
+    Which of the following examples, are difficult to account for under this analysis? (select all that apply)
+    \begin{xlisti}
+        \ex[]{Aom's drawing of Boon is better than Ploy's one}%no, consistent
+        \ex[]{Aom's drawing of Boon and Ploy's one of Mali}%yes
+        \ex[*]{It is Boon that Aom's drawing of}%No
+        \ex[*]{Who did Ploy like Aom's drawing of?}
+    \end{xlisti}
+}
+%Aom's drawing of Boon is better than Ploy's one - This example is consistent with the analysis given. One has been substituted for the NP drawing of Boon.
+%Aom's drawing of Boon and Ploy's one of Mali - This example is inconsistent with the analysis given. One has been substituted for the N head, drawing, to the exclusion of the PP. In discussions so far, we have taken this as evidence adjunction
+%*It is Boon that Aom's drawing of - This example is not really helpful in deciding on an analysis here. All it shows is that movement of Boon is barred for some reason (this is a false negative constituency test).
+%*Who did Ploy like Aom's drawing of? - This example is not really helpful in deciding on an analysis here. All it shows is that movement of the wh-word is barred for some reason (compare with the in-situ Ploy liked Aom's drawing of who?).
+\end{exe}
+ \begin{figure}
+\small\centering
+\begin{forest}
+    [\iibar{D}
+        [\iibar{D}
+        [Aom, roof, name=copy]][\ibar{D} [\obar{D}\\'s][\iibar{N}
+        [{\iibar{D}}\textsubscript{\textsc{agent}} [\sout{Aom}, roof, name=trace]][\ibar{N}
+        [\obar{N}\\drawing][\iibar{P}\textsubscript{of,~\textsc{theme}}
+        [\ibar{P} 
+        [\obar{P}\\of][\iibar{D}
+        [Boon, roof]]]]]]]]
+        \draw[->,dotted] (trace) to[out=south,in=south] (copy);
+\end{forest}
+\begin{forest}
+    [\iibar{I}
+        [\iibar{D}
+        [Aom, roof, name=copy]][\ibar{I} [\obar{I}\\\lbrack{}\textsc{+pst}\rbrack{}][\iibar{V}
+        [{\iibar{D}}\textsubscript{\textsc{agent}} [\sout{Aom}, roof, name=trace]][\ibar{V}
+        [\obar{V}\\draw][\iibar{D}\textsubscript{\textsc{theme}}
+        [Boon, roof]]]]]]
+        \draw[->,dotted] (trace) to[out=south,in=south] (copy);
+\end{forest}
+\end{figure}
+\section*{Topic 9 -- Non-finite clauses Part 1: To-infinitives, Raising \& Control}
+\subsection*{Question 1}%Source: IntroSyntax06 Review Questions
+\hfill{}
+\ref{nonfin_to} $\Box$%,
+
+\begin{exe}
+    \ex[]{Which of the following sentences does \emph{not} contain a preposition?
+    \begin{xlist}
+        \ex[]{She took to ballet right away.}
+        \ex[]{She is likely to go.}%Yes
+        \ex[]{We went to the bank.}%Preposition
+        \ex[]{I really wanted to leave.}%Yes
+    \end{xlist}
+    }%Both of these introduce non-finite clauses. We can see this as neither is compatible with an expletive subject: *There wanted to leave. We can also see that the verb in both can be modified with adjuncts independent of the matrix verb: I quietly wanted to leave loudly (compare with we went to the bank slowly, where the adverb can only be interpreted with went or #she slowly took to ballet right away). Lastly, we can see that she is likely to go and I really wanted to leave have alternatives where the verbal complement takes a subject it is likely she will go (finite clause with expletive subject), I really wanted him to leave (the subject is able to get Case by other means so this is still non-finite).
+\end{exe} 
+
+%\begin{exe}
+%    \ex[]{Which of the following is true?
+%    \begin{xlist}
+%        \ex[]{All clauses are finite.}
+%        \ex[]{All root clauses are finite.}
+%        \ex[]{All subordinate clauses are nonfinite.}
+%    \end{xlist}
+%    }
+%    \ex[]{Which of the following is true?
+%    \begin{xlist}
+%        \ex[]{Only verbs can take clauses as complements.}
+%        \ex[]{Some verbs and some adjectives can take clauses as complements.}
+%    \end{xlist}
+%    }
+%\end{exe}
+
+\subsection*{Question 2}%Source: IntroSyntax06 Tutorial
+\hfill{}
+\ref{raising_control} $\Box$%,
+
+\begin{exe}
+    \ex{Which of the following verbs should be given a \keyword{control} analysis  (like \emph{try}), and which a \keyword{raising} analysis (like \emph{seem})?
+    Note that you are likely to have to consider sentences others than the examples given.
+    \begin{xlist}
+        \ex[]{\emph{tend} (e.g.\ Power tends to corrupt people)} %Raising: There tends to be a lot of problems; #Michael deliberately tends to be late (if ok, probably because deliberately can appear before tend while scoping only over be late).
+        \ex[]{\emph{decide} (e.g.\ Aisha decided to leave)} % Control: #There decided to be a lot of problems. (Positive evidence for a control interpretation isn’t easy to come by but it’s clearly not raising and it has to be something)
+        %\ex[]{\emph{begin} (e.g.\ The storm began to strengthen)} %Removed due to ambiguity
+        \ex[]{\emph{happen} (e.g.\ I happen to know the answer)} % Raising: There happened to be a lot of problems, #They deliberately happen to be late.
+        %\ex[]{\emph{hope} (e.g.\ We hope to leave on time)}%Removed due to ambiguity
+        %\ex[]{\emph{need} (e.g.\ We need to talk about Kevin)}%Removed due to ambiguity
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 3}%Source: IntroSyntax06 Review Questions
+\hfill{}
+\ref{raising_control} $\Box$%,
+
+\begin{exe}
+    \ex[]{You want to test whether the verb hope is a raising verb or a control verb or neither.
+    You have already established that the sentence \emph{They hoped to leave early} is grammatical.
+    Which of the following additional sentences would it be most useful to also test for grammaticality?
+    Note that the examples don’t have judgments indicated.
+    \begin{xlist}
+        \ex[]{There hoped to leave early.}% No. This sentence is ungrammatical. But that would be predicted if it was a raising verb or if it was a control verb.
+        \ex[]{There hoped to be a solution.}%Yes!  If hope is a raising verb, we would expect this sentence to be grammatical, since there would be licensed by be in the infinitival clause. On the other hand, if hope is a control verb, we would expect the sentence to be ungrammatical, since in this case there would be getting a theta-role from hoped, which there cannot do.  So this is a good test.  In fact the sentence is ungrammatical, so this tells us that hope is a control verb.
+        \ex[]{They hoped to be on time.}%No!  This sentence is predicted to be grammatical under the hypothesis that hope is a raising verb; but it is also predicted to be grammatical under the hypothesis that hope is a control verb. So it doesn’t allow us to distinguish between the two hypotheses.
+        \ex[]{They hoped that they would be on time.}%This sentence is suggestive, but it’s not the most useful. The fact that here hoped is taking a non-expletive subject (they) does mean that it must be assigning they a theta-role. But in this sentence note that hope is selecting for a finite complement. If the properties of hope when it selects an infinitival complement are otherwise essentially the same when it selects a finite complement, then this does lead us to think that hope is a control verb. But one of the other examples gives a more straightforward argument.
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 4}%Source: LEL2A Learn questions - As, to and that: January 1981
+\hfill{}
+\ref{nonfin_to} $\Box$%,
+
+Identify prepositions, conjunctions, demonstratives and the infinitival marker to by taking note of what elements follow them.
+The sentences have been taken from the January 1981 text (text corpus).\\
+\begin{exe}
+    \ex[]{The passing boat has halted the man’s work rhythm.
+    In the grip of an impulse to$_1$ move he has been turning out lights, putting on a heavy winter coat, preparing to$_2$ trudge along by the rain-swept canal to$_3$ the closest restaurant.
+    That place calls itself La Venezia, a reference to$_4$ the area’s popular name – Little Venice.
+    There is only about ten minutes to$_5$ go before the kitchen closes for the night.
+    His hand is on the door when the phone rings.
+    Damn.
+    Answer or not?
+    No decisions are more loaded than those involving delaying departures to$_6$ take unexpected calls. 
+    \begin{xlist}
+        \ex[]{(1) \textcolor{red}{Infinitival Marker}}
+        \ex[]{(2) \textcolor{red}{Infinitival Marker}}
+        \ex[]{(3) \textcolor{red}{Preposition}}
+        \ex[]{(4) \textcolor{red}{Preposition}}
+        \ex[]{(5) \textcolor{red}{Infinitival Marker}}
+        \ex[]{(6) \textcolor{red}{Infinitival Marker}}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Question 5}
+\hfill{}
+\ref{raising_control} $\Box$%,
+\begin{exe}
+    \ex{A linguist wants to propose a \keyword{control} analysis of \emph{threaten} based on the following examples:
+    \begin{xlist}
+        \ex[]{Somchai threatened the other students.}
+        \ex[]{Somchai threatened to tell the teacher.}
+        \ex[]{The bus drivers threatened that they would go on strike.}
+        \ex[*]{The bus drivers seem that they would go on strike.}
+    \end{xlist}
+    In the first two examples, both \emph{threaten} and \emph{tell} assign a $\theta{}$-role the the external argument, \emph{Somchai}.
+    We can also see from comparison of the third and fourth examples that \emph{threaten} can assign an \textsc{agent} role even when subject-raising is blocked or impossible. 
+    
+    Which examples below are problematic for this analysis? (select all that apply)
+    \begin{xlisti}
+        \ex[*]{It threatens that Pim will tell the teacher}%No consistent with control
+        \ex[]{Heads threatened to roll (assume the idiomatic meaning is preserved)}%yes, looks like raising
+        \ex[]{There threatens to be a problem}%yes, looks like raising
+        \ex[*]{Nattamon threatened me to complete the form on time}%No consistent with control
+    \end{xlisti}
+    }%*It threatens that Pim will tell the teacher - This example is consistent with a control analysis. The verb threaten assigns an AGENT role and so is unable to take an expletive subject, compare with it seems that Pim will tell the teacher. Heads threatened to roll unless they act fast - For me this example is grammatical with the idiomatic meaning preserved (this is also found in corpus data). We used similar data to motivate the VP internal subject hypothesis. If, heads starts as the external argument of roll, then this is more consistent with a raising analysis, so is problematic for a uniform control analysis. There threatens to be a problem - This example is problematic as the expletive subject here is more compatible with a raising analysis. Similar examples were used as diagnostics for raising in the notes. *Nattamon threatened me to complete the form on time - This is consistent with either a raising or control analysis and so isn't very helpful. All we can say is that threaten does not select multiple internal arguments.
+\end{exe}
+
+\subsection*{Question 6}%Source: IntroSyntax06 Review Questions
+\hfill{}
+\ref{nonfin_to} $\Box$%,
+
+Identify the emboldened elements as preposition, infinitival markers, or finite verbs in the following text by taking note of what elements follow them.
+\begin{exe}
+    \ex{That short walk back \textbf{into} the belly of the house \textbf{to} pick up the phone is heavy with premonition.
+    Something unexpected, something very disruptive, is already hovering over the commonplace action of saying ‘Hullo?’\\Caller: ‘May I speak \textbf{to} Mr David Leitch?’\\‘Yes. Speaking.’ It’s a strange voice, a woman’s. She sounds nervous. The man \textbf{knows} that they have never spoken before, almost for sure. Yet there is the faintest hint of ungraspable, indefinable familiarity about her.
+    \begin{xlist}
+        \ex[]{\textbf{to} pick up the phone --- Non-finite clause}
+        \ex[]{\textbf{to} Mr David Leitch --- Prepositional Phrase}
+        \ex[]{The man \textbf{knows} that they have never spoken before --- Finite clause}
+        \ex[]{\textbf{into} the belly of the house --- Prepositional Phrase}
+    \end{xlist}}%to pick up the phone - This string contains the verb pick up, which assigns a θ-role (though implicit in the text). We can see that the complement of to is a VP in this instance (to not pick up the phone, I went to pick up the phone and she came to do so too). However, we know that a string like I to pick up the phone is ungrammatical compared to I went to pick up the phone, as the matrix clause needs to be finite. to Mr David Leitch - Here to takes an NP complement, which we can see from substitution tests to him. The man knows that they have never spoken before - Here we have a complete finite clause, we can substitute knows that ... for do so (and she did so too). We can also compare the string with a non-finite counterpart the man seems to know that they have never met before. into the belly of the house - Here to takes an NP complement, which we can see from substitution tests into it.
+\end{exe}
+
+\section*{Topic 10 -- Non-finite clauses Part 2: Raising \& Control Revisited}
+
+\subsection*{Question 1}
+\hfill{}
+\ref{A_movement} $\Box$%,
+\begin{exe}
+    \ex[]{In English, a number of verbs have the following transitive-intransitive alternation:
+    \begin{xlisti}
+        \begin{multicols}{2}
+            \ex{They sank the ship}
+            \ex{I broke the vase}
+            \ex{She dropped the ball}
+            \columnbreak
+            \ex{The ship sank}
+            \ex{The vase broke}
+            \ex{The ball dropped}
+        \end{multicols}
+    \end{xlisti}
+    In the transitive examples, the \keyword{agent} appears in subject position and \keyword{theme} appears in object position.
+    In each of the intransitive examples, the \keyword{theme} appears in subject position.
+    Based on this, a linguist wants to propose the idea that \textbf{all} intransitive verbs are instances of movement to subject position for \textsc{nom} Case.
+    Which of the following sets of data would be most difficult to reconcile with this account?
+    \begin{xlist}
+        %\ex[]{The ship was sunk. The vase was broken. *The boy was slept. *The neighbour was shouted}%YES
+        \ex[]{i. I broke the vase with a golf club. *the vase broke with a golf club. *the vase broke with reckless abandon. ii. They sank the ship with a torpedo. *The ship sank with a torpedo. *The ship sank with reckless abandon. iii. The neighbour shouted with a megaphone. The neighbour shouted with reckless abandon. iv. She danced with ballerina flats. She danced with reckless abandon.}%Yes.
+        \ex[]{I smelled the flowers.
+        The flowers smelled.
+        *I departed the visitors.
+        The visitors departed.
+        I thawed the chicken.
+        The chicken thawed.
+        *I fainted Lucy.
+        Lucy fainted.
+        }%No, the lack of a transitve form has no bearing on the question.
+        \ex{*Their sank a ship.
+        *Their broke a vase.
+        *Their dropped a ball}%This is consistent with the analysis that movement is driven by Case.
+    \end{xlist}
+    }%That not all intransitive verbs have a transitive alternation is not incompatible with the analysis suggested. It has no bearing. That the verbs sank, drop, and broke, cannot take expletive subjects is compatible with the analysis. If an expletive subject occupies the subject position, the object is not in a Case assigning position. That the verbs sank, drop, and broke cannot take an instrument when intransitive is compatible with the analysis. They have no AGENT and an instrument requires an AGENT. The same is true when we modify the verb with the phrase with reckless abandon. However, we see that some intransitive verbs can take adjuncts that introduce an instrument or manner. These verbs, like shout and dance, have AGENTS and there is no reason to believe the argument has moved from any other position.
+\end{exe}
+
+\subsection*{Question 2}
+\hfill{}
+\ref{object_control} $\Box$%,
+
+\begin{exe}
+\ex{A linguist has proposed an analysis of \emph{expect} as an Object Control verb, e.g.\\
+\emph{John expects her to welcome the guests}\\
+Which of the following pairs of examples is most problematic for that view?
+\begin{xlist}
+    \ex{It seems John welcomed the guests\\
+    *It expects John welcomed the guests}
+    \ex{She was expected to welcome the guests by John\\
+    She was persuaded to welcome the guests by John}%NO
+    \ex{John expects the guests to be welcomed by her\\
+    John persuaded the guests to be welcomed by her}%YES
+\end{xlist}%Comparing expect with seem is not very helpful in this respect. If expect is a control verb, it shouldn't be able to take an expletive subject so the seem/expect comparison is compatible with the object control analysis. Comparing expect and persuade (one of the object control examples from the notes) is more helpful. However, we see no meaningful difference when the matrix clause is made passive, so this example is again unhelpful. If we compare expect and persuade but make the embedded clause passive, we see a difference. The meaning of the example with persuade changes but the meaning of the example with expect does not. This result is borne out with other known object control verbs (John forced the guests to be welcomed by her). Although a judgement like this would not be enough to outright reject such an analysis, it would present a problem that needs to be addressed.
+}
+\end{exe}
+
+\subsection*{Question 3}
+\hfill{}
+\ref{object_control} $\Box$%,
+\begin{exe}
+    \ex{A linguist wants to put forward an analysis of \emph{ask} as an \keyword{object control} verb (it is advised that you refer carefully to the course notes for this question).
+    They start with the following set of examples, having already identified \emph{appear} and \emph{try} as \keyword{raising} and \keyword{control verbs} respectively:
+    \begin{xlist}
+        \sn{Mary asked Jill to promote the idea}
+        \sn{Jill offered Mary to promote the idea}
+        \sn{Jill appeared (to Mary) to promote the idea}
+    \end{xlist}
+    Which of the following sets of examples would be most useful for them in developing this analysis? (choose 1)
+   \begin{xlist}
+       \ex{
+       \begin{xlist}
+           \ex[]{There appeared (to Mary) to be several problems}
+           \ex[*]{There offered to be several problems}
+           \ex[*]{There asked (Jill) to be several problems}
+       \end{xlist}
+       }
+       \ex{
+       \begin{xlist}
+           \ex[*]{Mary was offered to promote the idea (by Jill)}
+           \ex[]{Jill was asked to promote the idea}
+           \ex[*]{Jill/it was appeared (to Mary) to promote the idea}
+       \end{xlist}
+       }
+       \ex{
+       \begin{xlist}
+           \ex[*]{Mary asked there to be several problems}
+           \ex[*]{Jill offered there to be several problems}
+           \ex[*]{Jill appeared (to Mary) there to be several problems}
+       \end{xlist}
+       }
+   \end{xlist}
+    }%The set of examples with expletive matrix subjects shows that the raising verb appear behaves unlike the other two, but this is insufficient to show that ask behaves as an object control verb. This only shows that it is incompatible with a raising analysis.The set of examples with expletive embedded subjects shows that all three verbs are incompatible with an ECM verb analysis (see the notes for Topic 10). The matrix verb has selection restrictions on the possible DP. This does not help us identify ask as a potential object control verb.The passive examples are useful! We can see that ask and offer are incompatible with passive matrix verbs (see Topic 11 course notes to understand why raising verbs would not allow this). In fact, this is part of a larger generalisation, called Visser’s Generalization, that object control verbs allow implicit subjects where subject control verbs do not. This makes sense from our understanding of object control, if the embedded subject is PRO and this points the object of the matrix clause, it shouldn't matter if the matrix object moves because it leaves a trace behind.
+\end{exe}
+
+\subsection*{Question 4}
+\hfill{}
+\ref{A_movement} $\Box$%,
+\begin{exe}
+\ex{
+In the notes, it was suggested that arguments move to subject positions to satisfy a Case requirement:
+%\begin{exe}
+    %\ex{
+    \begin{xlist}
+        \ex[*]{fell Rex}\label{fell_acc}
+        \ex[]{Rex fell}\label{fell_nom}
+    \end{xlist}
+    %}
+%\end{exe}
+In (\ref{fell_acc}), the unaccusative verb \emph{fell} cannot assign Case to the internal argument.
+Under our account, the \keyword{theme}, \emph{Rex}, moves to \keyword{spec} IP to receive \Nom{} case (\ref{fell_nom}).
+However, this doesn’t seem to be the full picture.
+%\begin{exe}
+    %\ex{
+    \begin{xlist}
+        \ex[*]{seems that Kiwi likes Rex}\label{seems_EPP}
+        \ex[]{It seems that Kiwi likes Rex}\label{seems_it}
+    \end{xlist}
+    %}
+%\end{exe}
+In (\ref{seems_EPP}), the verb \emph{like} selects two arguments, an \keyword{agent} and a \keyword{theme}.
+Both arguments are part of a finite clause, so both have Case.
+The matrix verb, \emph{seem}, is a raising verb so does not assign an external $\theta{}$-role.
+Despite this, a dummy subject is required (\ref{seems_it}).
+In the notes, this was attributed to a subject requirement (the \keyword{epp}), which requires that \keyword{spec} IP be filled.
+However, this also does not seem to be the whole picture. Which of the following examples cannot be accounted for by the framework developed so far?
+%\begin{exe}
+    %\ex{
+    \begin{xlisti}
+        \ex[*]{It seems Kiwi to like Rex}
+        \ex[*]{Poppy tried to seem that Kiwi likes Rex}%yes
+        \ex[*]{Kiwi seems it to like Rex}
+        \ex[*]{seems for Kiwi to like Rex}
+    \end{xlisti}
+    %}
+%\end{exe}
+%The example *It seems Kiwi to like Rex can be accounted for as the embedded subject, Kiwi, is not in a Case assigning position.In *seems for Kiwi to like Rex, we see why the EPP is also necessary. Even when a preposition, for, assigns Case to Kiwi the sentence is still ungrammatical without an external argument.In *Kiwi seems it to like Rex, we can see that the EPP subject requirement is satisfied. Also, Kiwi is in a Case assigning position. But, there is no argument position for Kiwi to have moved from. The matrix verb seem is a raising verb so does not assign an external θ-role. Kiwi also cannot have moved from the embedded subject position as this is occupied already by it.The example that we don't have a sufficient explanation for yet is *Poppy tried to seem that Kiwi likes Rex. In this example, all three arguments Poppy, Kiwi, and Rex are associated with θ-roles and argument positions. Also, all three arguments occupy Case assigning positions. The difference in this example is the inclusion of the control verb, try (in fact, this is part of a wider pattern in the distribution of PRO, which is incompatible with expletive positions).
+}
+\end{exe}
+
+\subsection*{Question 5}
+\hfill{}
+\ref{object_control} $\Box$%,
+
+\begin{exe}
+    \ex{The data-set below uses a examples with verbs from the lectures and course notes for this topic.
+    It appears that some of the verbs have a passive counterpart (we will deal more explicitly with passives in Topic 11, you can wait and come back to this question then if you prefer but this isn't completely necessary to answer the question).
+    However, some of the verbs are ungrammatical if we try to form a passive counterpart.
+    From the following data-set, what generalisation can we draw?
+    \begin{xlist}
+        \ex[]{Golf tried to call the doctor}
+        \ex[*]{Golf was tried to call the doctor}
+        \ex[]{They persuaded the politicians to answer the questions}
+        \ex[]{The politicians were persuaded to answer the questions}
+        \ex[]{Bank asked Ploy to wash the dished}
+        \ex[*]{Ploy was asked to wash the dishes}
+        \ex[]{They convinced their grandmother to write her memoirs}
+        \ex[]{Their grandmother was convinced to write her memoirs}
+    \end{xlist}
+    What generalisation can we make from the data above?
+    \begin{xlisti}
+        \ex{\keyword{raising} verbs allow passivisation but \keyword{control} verbs do not.}%No
+        \ex{\keyword{object control} predicates can be passivized but \keyword{subject controlled} predicates cannot be.}%YES
+        \ex{\keyword{subject controlled} predicates can be passivized but \keyword{object control} predicates cannot be.}%No
+        \ex{Verbs with a non-finite complement do not have a passive form.}%No
+    \end{xlisti}
+    }
+    %We can see that all of these verbs are instances of \keyword{control}:
+    %\begin{xlist}
+     %   \ex[*]{There tried to be a problem.}
+      %  \ex[*]{There asked (Ploy) to be a problem}
+       % \ex[*]{There persuaded (the politicians) to be a problem}
+       % \ex[*]{There convinced (their grandmother) to be a problem}
+    %\end{xlist}
+    %None of the verbs, as used above, take an expletive subject (even using an embedded verb compatible with an expletive). So, we can rule out the possibility that they are \keyword{raising} verbs.
+    %Similarly, some of the examples shown do have both a non-finite complement and a passive alternation. So, we cannot attribute this to non-finite complementation.
+    %What we can notice is that \emph{try} and \emph{ask} involve \keyword{subject control} and \emph{persuade} and \emph{convince} involve \keyword{object control}. That is, the agent of \emph{call} in \emph{Golf tried to call the doctor} is \emph{Golf}---the subject of the matrix clause---and the agent of \emph{answer} in \emph{They persuaded the politicians to answer the questions} is \emph{the politicians}, the object of the matrix clause. The examples that are ungrammatical when passive all involve \keyword{subject control} and the grammatical passives involve \keyword{object control}. This is known in the literature as Visser's Generalisation and extends to many other languages beyond English. Explaining this generalisation is still an area of active research and falls beyond the scope of the course.
+\end{exe}
+
+\section*{Topic 11 -- Passives: More movement to subject position}
+\subsection*{Question 1}%Source: IntroSyntax07 Course Notes
+\hfill{}
+\ref{passives} $\Box$%,
+    \begin{exe}
+    \ex[]{The following sentence is predicted to be ungrammatical by the framework presented in the course:\\
+    *\emph{John}\textsubscript{i} \emph{seems that it was arrested t}\textsubscript{i}\\
+    Which of the following is the correct explanation for why?
+    \begin{xlist}
+        \ex[]{In the example, \emph{John} is not in a position to receive Accusative Case. The embedded subject is expletive, so the embedded verb is not assigning it a $\theta{}$-role. If a verb doesn't assign a $\theta{}$-role to its subject, it also does not assign Accusative Case.}
+        \ex[]{In the example, \emph{John} receives two $\theta{}$-roles. It is the \textsc{theme} of the verb \emph{arrest} and the \textsc{agent} of the verb \emph{seem}.}
+        \ex[]{In the example, the subject position of the embedded clause is occupied by \emph{it}. \emph{John} cannot move past this to the matrix subject position as it involves skipping a more local subject position.}%YES
+        \ex[]{In the example, \emph{it} receives a $\theta{}$-role, so it must also receive Case. However, it is not in a position to receive Case because the embedded clause is passive.}
+    \end{xlist}%Super-raising is a constraint on movement. An argument cannot move to a higher-subject position if it involves skipping over another, more local, subject position. This is clear when the more local subject position is occupied. In *John\textsubscript{i} \emph{seems that it was arrested t}\textsubscript{i}, the subject position of the embedded clause is occupied by it, if \emph{John} tries to move past this, the results are ungrammatical. This means \emph{John} cannot receive Case because the verb in the embedded clause is passive. It does not assign a role to the external argument or Accusative Case.
+    }
+    \end{exe}
+
+\subsection*{Question 2}
+\hfill{}
+\ref{passives} $\Box$%,
+\begin{exe}
+    \ex[]{In which of the following sentences is there an instance of A-movement? (For the purposes of this question, exclude movement from SPEC VP to SPEC IP, i.e. the verb internal subject hypothesis)
+    \begin{xlist}
+        \ex[]{Carla probably tried to persuade Bill to read that book.}
+        \ex[]{Carla probably was persuaded to read that book.}%Yes, passive movement
+        \ex[]{That book was what Carla persuaded Bill to read.}
+        \ex[]{Carla doesn't like people persuading others to read books.}
+    \end{xlist}
+    }%In "Carla probably tried to persuade Bill to read that book", there is no movement to subject position. try is a control verb, not a raising verb, so Carla  is the external argument of try itself and the infinitival complement clause to persuade Bill etc. has a PRO subject. The verb in that infinitival complement, so persuade, is also a control verb, so the PRO subject in this clause receives a theta-role from persuade, and the most deeply embedded infinitival complement clause (to read that book) also has a PRO subject. The latter receives a theta-role from read.In "Carla probably was persuaded to read that book", the main clause is passive, and the NP object of the ditransitive control verb persuade, Carla in this case, moves into the subject position.In "that book was what Carla persuaded Bill to read", there is no movement to subject position. There is movement in this sentence, namely of the wh-phrase what from the object position to read to a position in front of Carla, but that is not the subject position of the relevant clause. Carla is the subject of that clause.In "Carla doesn’t like people persuading others to read books", there is no movement to subject position. None of the clauses are passive, and none of the verbs like, persuade and read is a raising verb. persuade is a control verb, so people receives a theta-role from persuade itself and the infinitival complement clause to read books has a PRO subject that receives a theta-role from read. 
+\end{exe}
+
+\subsection*{Question 3}
+\hfill{}
+\ref{locality_constraints} $\Box$%,
+\begin{exe}
+    \ex{The following sentence is ungrammatical in most dialects of English:
+    \begin{xlisti}
+        \ex[*]{In the next sentence, the original subject has been substituted by a pronoun.}
+    %\end{xlist}
+    However, if the by-phrase is removed it becomes grammatical. How can this be accounted for?
+    %\begin{xlist}
+        \ex[]{In the next sentence, the original subject has been substituted.}
+    \end{xlisti}
+    (Adapted from Santorini \& Kroch, Syntax of Natural Language)
+    \begin{xlist}
+        \ex[]{%Transitive \emph{substitute} cannot take a non-\textsc{agent} subject, like \emph{a pronoun}, so the active form of the first example is malformed: *\emph{In the next sentence, a pronoun substitutes the original subject}. But 
+        The verb \emph{substitute} can be transitive, only if it takes an \textsc{agent} as its subject, e.g. \emph{In the next sentence, I substituted the original subject}. The ungrammatical example tries to introduce a non-\textsc{agent} subject.}
+        \ex[]{The first example is ungrammatical because \emph{substitute} cannot be used transitively. Intransitive verbs like \emph{wander}, \emph{come}, and \emph{substitute} only have one argument and cannot be made passive.}
+        \ex[]{The first example is ungrammatical because it uses the wrong preposition. \emph{In the next sentence, the original subject has been substituted for a pronoun} is grammatical. This shows that active sentences with an \textsc{agent} subject can express agent-hood with a by-phrase in passive voice and sentences non-\textsc{agent} subjects express these with \emph{for}-phrases in passive voice.}
+        \ex[]{In both examples the position I is occupied by \emph{has}. This means the verb \emph{be} cannot move to I and so is not in a position higher than the by-phrase in the tree. This means it is unable to assign an \textsc{agent} role.}
+    \end{xlist}
+    }
+\end{exe} 
+
+\subsection*{Question 4}%Source: LEL2A Syntax Tutorial Week 7
+\hfill{}
+\ref{locality_constraints} $\Box$%,
+\begin{exe}
+    \ex{What is wrong with the tree diagram below for the sentence:\\
+    \emph{Rogues do not seem to like to do research in the library}
+    Select all that apply.
+    \begin{xlist}
+        \ex[]{The tree depicts \emph{Rogues} as moving from an embedded VP position to the matrix IP specifier position, without stopping in any intervening positions.}%YES
+        \ex[]{The tree depicts \emph{like} as a raising verb.}%YES
+        \ex[]{The tree depicts \emph{in the library} as an adjunct to \emph{research}.}
+        \ex[]{The tree depicts \emph{seem} as a raising verb.}
+        \ex[]{The tree depicts the \emph{do} in the embedded clause as a V head but \emph{do} is an auxiliary verb and belongs in I.}
+        \ex[]{The tree depicts \emph{not} as having its own phrase NegP, this means the subject \emph{Rogues} should move to the specifier of NegP before moving to the specifier of IP.}
+    \end{xlist}}%We know that seem is a raising verb from examples like It (seems) John has won. However, like does not behave in the same way (*It likes (that) John has won). We therefore want a PRO subject in the most embedded clause. This also means Rogues should originate higher in the tree, as the external argument of like. As like it non-finite, Rogues is not in a Case assigning position and must move to specifier of IP in the matrix clause to receive Case. However, we can see that Rogues must have originated as the external argument of like and must have stopped off in SPEC IP of like from comparing the following: *Rogues do not seem it to like to do research in the library. *It does not seem Rogues to like to do research in the library. The first example shows Rogues must originate in a position associated with the theta-role of like, and the second shows that Rogues must raise to a Case assigning position.
+\end{exe}
+\begin{figure}
+    \centering
+\begin{forest}
+    [
+    IP
+    [DP [Rogues, roof, name=copy]][I$'$
+    [I\\do][NegP
+    [Neg\\not][VP
+    [V\\seem][IP
+    [I\\to][VP
+    [V\\like][IP
+    [I\\to][VP
+    [\sout{DP} [\sout{Rogues}, roof, name=trace]][V$'$[V$'$
+    [V\\do][DP [research, roof]]][PP [in the library, roof]]]]]]]]]]
+    ]
+    \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+\end{forest}
+\end{figure}
+
+\subsection*{Question 5}%Source: IntroSyntax07 Tutorial Notes
+\hfill{}
+\ref{passives} $\Box$%,
+\begin{exe}
+    \ex{Which of the following trees is the best representation of the passive form of the sentence \emph{this company built many houses in 1922}?
+    \begin{xlist}
+        \ex[]{
+        \begin{forest}
+            [
+            IP
+            [DP [many houses, roof, name=passivecopy]][I$'$
+            [I\\
+            were][VP
+            [V$'$
+            [V$'$
+            [V\\built][DP [\sout{many houses}, roof, name=passivetrace]]][PP [by this company, roof]]][PP [in 1922, roof]]
+            ]]
+            ]
+            \draw[->,dotted] (passivetrace) to[out=south west,in=south] (passivecopy);
+        \end{forest}
+        }
+        \ex[]{
+        \begin{forest}
+            [
+            IP
+            [V$'$, name=passivecopy
+            [V\\built][DP [\sout{many houses}, roof]]][I$'$
+            [I [I\\were][V\\built, name=vcopy]][VP
+            [V$'$
+            [\sout{V}$'$, name=passivetrace
+            [\sout{V}\\\sout{built}, name=vtrace][\sout{DP} [\sout{many houses}, roof]]][PP [by this company, roof]]][PP [in 1922, roof]]
+            ]]
+            ]
+            \draw[->,dotted] ([yshift=-5.5em] passivetrace.south) to[out=south west,in=south] ([yshift=-5.5em] passivecopy.south);
+            \draw[->,dotted] (vtrace) to[out=south west,in=south] (vcopy);
+        \end{forest}
+        }
+        \ex[]{
+        \begin{forest}
+            [
+            IP
+            [DP [many houses, roof, name=passivecopy]][I$'$
+            [I\\
+            were][VP
+            [DP [\sout{many houses}, roof, name=passivetrace]][V$'$
+            [V$'$
+            [V$'$
+            [V\\built]][PP [by this company, roof]]][PP [in 1922, roof]]
+            ]]]
+            ]
+            \draw[->,dotted] (passivetrace) to[out=south west,in=south] (passivecopy);
+        \end{forest}
+        }
+    \end{xlist}
+    }%The verb "build" in the prompt, this company built many houses in 1922, has two arguments, "this company" and "many houses". If we think about this in terms of θ-roles and in terms of syntactic roles, in the initial prompt "the company" is both subject and AGENT and "many houses" is both THEME and object. In the notes, we related syntactic roles, subject and object, to Case positions, Nominative and Accusative. The verb assigns an AGENT role to the external argument and this then moves to SPEC IP to receive nominative Case.\\We want to think of passive movement as a syntactic operation that reduces the number of external arguments of a verb. So, the passive form of the prompt is "many houses were built by this company in 1922". Passivisation then needs to remove a θ-role, AGENT, and a syntactic role. We see in the example, that the THEME gets moved to the subject position. We motivated this in terms of the verb no longer assigning accusative Case to its complement. So, instead of starting with [VP [NP this company] built [NP many houses]] we start with [VP built [NP many houses]] so there is no longer an AGENT but the THEME is introduced in the same position, just lacking Case. In order for the internal argument to receive Case, it must move to the subject position (SPEC IP) to receive nominative Case: [IP [NP many houses] were [VP built [NP many houses]]].
+\end{exe}
+
+\subsection*{Question 6}%Source:heavyily modifed from IntroSyntax07-ReviewQs
+\hfill{}
+\ref{locality_constraints} $\Box$%,
+
+\begin{exe}%This is set up in learn as a hotspot question
+    \ex{Where else does our theory predict the argument \emph{John} should move to before arriving in SPEC IP of the matrix clause?
+    \begin{xlist}
+        \ex[]{SPEC VP - Matrix Clause}
+        \ex[]{SPEC IP - Embedded Clause}%YES
+        \ex[]{SPEC vP - Specifier of "have"}
+        \ex[]{SPEC vP - Specifier of "be"}
+        \ex[]{SPEC VP - Embedded Clause}
+    \end{xlist}}%Our theory of movement (A-movement) distinguishes two types of position, θ-role positions and Case positions. A-movement is movement from a position associated with a θ-role to a position associated with Case.\\In the embedded clause "to have been arrested", the verb is passive. This means it assigns a θ-role but not Accusative Case. So, the argument "John" is associated with a θ-role but not Case and must move to a Case assigning position. The only Case assigning positions we have seen are complement of V, complement of P, and SPEC IP. This is why "John" eventually moves to the matrix SPEC IP position, to receive Case.\\However, based on examples like *Johni seems that it was arrested ti we limited A-movement. "John" can't move to matrix SPEC IP if the embedded IP is filled (the derivation crashes). We placed a locality restriction on movement, a Ban on Superraising. For this reason, "John" must move to SPEC IP in the embedded clause first, even if (as in the question) this is a non-finite clause and cannot assign Case. From this position, "John" can then move to SPEC IP for Nominative Case.
+\end{exe}
+\begin{figure}
+    \centering
+    \begin{forest}
+        [IP
+        [DP [John, roof]][I$'$
+        [I\\\lbrack{}+\textsc{arg}\rbrack{}][VP
+        [\phantom{}][V$'$
+        [V\\seem][IP
+        [\phantom{}][I$'$
+        [I\\to][\emph{v}P
+        [\phantom{}][\emph{v}$'$
+        [\emph{v}\\have][\emph{v}P
+        [\phantom{}][\emph{v}$'$
+        [\emph{v}\\be][VP
+        [\phantom{}][V$'$
+        [V\\arrest][DP [\sout{John}, roof]]]]]]]]]]]]]
+        ]
+    \end{forest}
+\end{figure}
+
+
+\section*{Topic 12 -- \emph{Wh}-movement}%Source: IntroSyntax08-ReviewQs
+\subsection*{Question 1}
+\hfill{}
+\ref{wh_movement} $\Box$%,
+\begin{exe}
+    \ex{If we assume that a wh-phrase at the left edge of a clause is inside the CP of that clause, how many CPs has the wh-phrase in the following example moved out of?\\
+\emph{Which royal family did your mother say that her grandparents thought that they were descended from?}
+\begin{xlist}
+    \ex{1}
+    \ex{2}%YES
+    \ex{3}
+    \ex{0}
+\end{xlist}
+% “that they were descended from ...” is a CP, and it’s contained within the larger CP “that her grandparents thought that they were descended from ...” There is indeed one more clause, but you were asked to assume that the wh-phrase at the beginning of a CP is still within that CP. Taken together this means the answer is 2![CP Which royal family did your mother say [CP Which royal family that her grandparents thought [CP Which royal family that they were descended from Which royal family]]]
+}
+\end{exe}
+
+\subsection*{Question 2}%Source: IntroSyntax08-ReviewQs
+\hfill{}
+\ref{wh_movement} $\Box$%,
+\begin{exe}
+    \ex{A linguist has proposed the structure below for the embedded wh-interrogative clause in \emph{I wonder who he admires?} Is this a good representation?
+    \begin{xlist}
+        \ex[]{Yes. The verb admire selects two arguments and assigns two $\theta{}$-roles. Both arguments of the verb are in positions to receive Case. The wh-question word has moved to the left edge of the clause.}
+        \ex[]{No. The tree violates the ban on superraising as the lower DP has moved past the higher subject position.}
+        \ex[]{No. The wh-question word has moved to the wrong position.}
+    \end{xlist}%The wh-phrase who is not the head of the CP, but should occupy its specifier position. If we consider sentences like \emph{I wonder which linguist he admires?}, we can see that it is the entire phrase that moves, not just a head. Phrases move to specifier positions.
+    }
+\end{exe}
+\begin{figure}
+    \centering
+\begin{forest}
+    [
+    CP
+    [C$'$
+    [C [who, roof, name=whcopy]][IP
+    [DP [he, roof, name=copy]][I$'$
+    [I\\\lbrack{}\textsc{pres}\rbrack{}][VP
+    [\sout{DP} [\sout{he}, roof, name=trace]][V$'$
+    [V\\admires][DP [\sout{who}, roof, name=whtrace]]]]]]]
+    ]
+    \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \draw[->,dotted] (whtrace) to[out=south west,in=south] (whcopy);
+\end{forest}
+\end{figure}
+
+
+\subsection*{Question 3}%Source: IntroSyntax08-ReviewQs
+\hfill{}
+\ref{wh_movement} $\Box$%,
+
+\begin{exe}
+    \ex{Which of the following trees is the best representation of the sentence \emph{When did he claim that he lived in Paris}?\\
+    (The wh-word when is given as a YP, for the purposes of the question it is not important what the correct label for this is).
+    \begin{xlist}
+        \ex[]{A}
+        \ex[]{B}
+        \ex[]{Both}
+    \end{xlist}
+    }
+\end{exe}
+
+\begin{figure}
+\small
+    \centering
+\begin{forest}
+    [CP
+    [YP [when, roof, name=whcopy2]][C$'$
+    [C [I\\did, name=copyI][C\\$\emptyset{}$]][IP
+    [DP [he, roof, name=copy1]][I$'$
+    [\sout{I}\\\sout{did}, name=traceI][VP
+    [\sout{DP} [\sout{he}, roof, name=trace1]][V$'$
+    [V\\claim][CP
+    [\sout{YP} [\sout{when}, roof, name=whcopy1]][C$'$
+    [C\\that][IP
+    [DP [he, roof, name=copy]][I$'$
+    [I\\\lbrack{}\textsc{+pst}\rbrack{}][VP [V$'$ [\sout{DP} [\sout{he}, roof, name=trace]] [V$'$
+    [V\\live][PP [in Paris, roof]]]
+    ][\sout{YP} [\sout{when}, roof, name=whtrace]]]
+    ]]]]]]]]]
+    ]
+    \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \draw[->,dotted] (trace1) to[out=south west,in=south] (copy1);
+    \draw[->,dotted] (traceI) to[out=south west,in=south] (copyI);
+    \draw[->,dotted] (whtrace.south east)..controls +(2, -3) and +(0, -7) .. (whcopy1);
+    \draw[->,dotted] (whcopy1) to[out=south west,in=south] (whcopy2);
+\end{forest}
+\end{figure}
+
+\begin{figure}
+\small
+    \centering
+\begin{forest}
+    [CP
+    [YP [when, roof, name=whcopy]][C$'$
+    [C [I\\did, name=copyI][C\\$\emptyset{}$]][IP
+    [DP [he, roof, name=copy1]][I$'$
+    [\sout{I}\\\sout{did}, name=traceI]
+    [VP[V$'$
+    [\sout{DP} [\sout{he}, roof, name=trace1]][V$'$
+    [V\\claim][CP
+    [C$'$
+    [C\\that][IP
+    [DP [he, roof, name=copy]][I$'$
+    [I\\\lbrack{}\textsc{+pst}\rbrack{}][VP [\sout{DP} [\sout{he}, roof, name=trace]] [V$'$
+    [V\\live][PP [in Paris, roof]]]
+    ]
+    ]]]]]][\sout{YP} [\sout{when}, roof, name=whtrace]]]]]]
+    ]
+    \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+    \draw[->,dotted] (trace1) to[out=south west,in=south] (copy1);
+    \draw[->,dotted] (traceI) to[out=south west,in=south] (copyI);
+    \draw[->,dotted] (whtrace.south east)..controls +(15, -20) and +(0, -15) .. (whcopy);
+\end{forest}
+\end{figure}
+
+\subsection*{Question 4}%Source: S&K
+\hfill{}
+\ref{i_to_c_movement} $\Box$%,
+\begin{exe}
+\ex{In addition to the finite indirect questions in (\ref{finite_ind_q}), English also has nonfinite ones, as illustrated in (\ref{nonfinite_ind_q}).
+\begin{xlist}
+\ex{They know [who they should invite.]}
+\ex{They know [which topic they should talk about.]}
+\ex{They know [who should speak.]}\label{whoshouldspeak}
+\end{xlist}\label{finite_ind_q}
+\begin{xlist}
+\ex{They know [who to invite.]}
+\ex{They know [which topic to talk about.]}
+\ex[*]{They know [who to speak.] (Intended meaning: (\ref{whoshouldspeak}))}
+\end{xlist}\label{nonfinite_ind_q}
+Why is (2f) ungrammatical? 
+\\(Adapted from Santorini \& Kroch, The Syntax of Natural Language)
+}
+\end{exe}
+
+\subsection*{Question 5}%Source: NA
+\hfill{}
+\ref{i_to_c_movement} $\Box$%,
+\begin{exe}
+    \ex{A linguist is interested in how to analyse \emph{ought to} under the framework developed. e.g \emph{She ought to invite Ben.}
+    They note that \emph{ought} and \emph{to} often occur together, and that they are used to mean something similar to \emph{should}.
+    Based on the analysis of \emph{should}, they propose that \emph{ought to} is one element, a modal auxiliary, that it merged in the I head.
+    Which of the following examples is problematic for this analysis? (Select all that apply)
+    \begin{xlist}
+        \ex[]{Q: What about inviting Ben? A: I really ought to}%NO
+        \ex[]{Ought we to invite Ben?}%YES
+        \ex[]{Who should we invite?}%no
+        \ex[]{We ought not to have invited Ben}%Yes
+    \end{xlist}
+    }%These examples make it very difficult to maintain a single-constituent analysis of ought to. Although somewhat formal, ought we to invite Ben? is grammatical (for me at least). If ought has undergone I-to-C movement as other auxiliaries do in English, it should not be able to leave to behind. This indicates that these occupy different positions in the tree. This is confirmed with the example we ought not to have invited Ben, where we can see that it's possible to put a negative between ought and to. This doesn't tell us example what the structure should be but it does give us enough evidence to reject the analysis in the prompt.The question and answer pair shows ellipsis of the VP invite Ben, this is actually consistent with the analysis of ought to as a one element. The example, who did you say we ought to invite? questions the matrix clause and tells us nothing about the structure of the embedded clause.
+\end{exe}
+
+\subsection*{Question 6}%Source: NA
+\hfill{}
+\ref{i_to_c_movement} $\Box$%,
+\begin{exe}
+    \ex{Based on the framework developed on the course, which of the trees below is the most appropriate representation of the question: \emph{Which train will you take?}
+    \begin{xlist}
+        \ex[]{
+        \begin{forest}
+            [CP
+            [DP [which train, roof, name=wh_copy]][C$'$
+            [C\\$\emptyset{}$][IP
+            [I\\will, name=I_trace][VP
+            [DP [you, roof, name=trace]][V$'$
+            [V\\take][DP [\sout{which train}, roof, name=wh_trace]]]]]
+            ]]
+            %\draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+            %\draw[->,dotted] (I_trace) to[out=south west,in=south] (I_copy);
+            \draw[->,dotted] (wh_trace) to[out=south west,in=south] (wh_copy);
+        \end{forest}
+        }
+        \ex[]{
+        \begin{forest}
+            [IP
+            [DP [which train, roof, name=wh_copy]][I$'$
+            [I\\{will}, name=I_trace][VP
+            [DP [\sout{you}, roof, name=trace]][V$'$
+            [V\\take][DP [\sout{which train}, roof, name=wh_trace]]]]]
+            ]
+            %\draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+            %\draw[->,dotted] (I_trace) to[out=south west,in=south] (I_copy);
+            \draw[->,dotted] (wh_trace) to[out=south west,in=south] (wh_copy);
+        \end{forest}
+        }
+        \ex[]{
+        \begin{forest}
+            [CP
+            [DP [which train, roof, name=wh_copy]][C$'$
+            [C [I\\will, name=I_copy][C\\$\emptyset{}$]][IP
+            [DP [you, roof, name=copy]][I$'$
+            [I\\\sout{will}, name=I_trace][VP
+            [DP [\sout{you}, roof, name=trace]][V$'$
+            [V\\take][DP [\sout{which train}, roof, name=wh_trace]]]]]
+            ]]]
+            \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+            \draw[->,dotted] (I_trace) to[out=south west,in=south] (I_copy);
+            \draw[->,dotted] (wh_trace) to[out=south west,in=south] (wh_copy);
+        \end{forest}
+        }
+        \ex[]{
+        \begin{forest}
+            [CP
+            [DP [which train, roof, name=wh_copy]][C$'$
+            [C\\$\emptyset{}$][IP
+            [DP [you, roof, name=copy]][I$'$
+            [I\\{will}, name=I_trace][VP
+            [DP [\sout{you}, roof, name=trace]][V$'$
+            [V\\take][DP [\sout{which train}, roof, name=wh_trace]]]]]
+            ]]]
+            \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
+            %\draw[->,dotted] (I_trace) to[out=south west,in=south] (I_copy);
+            \draw[->,dotted] (wh_trace) to[out=south west,in=south] (wh_copy);
+        \end{forest}
+        }
+    \end{xlist}}%The question, "Which train will you take?", is a single clause. Under the framework developed in the course, the verb assigns θ-roles and does so to the phrases in its complement and specifier positions. The verb "take" assigns an AGENT and a THEME role in this context. We know that syntactically, it selects DPs/NPs as its complement and specifier ([DP you] will take [DP this train]). So, we can start with the initial configuration: [VP [DP you] take [DP which train]]. The verb c-selects two arguments and assigns a THEME role to "which train" and an agent role to "you".\\We then want to introduce tense/inflection/agreement via an I head. In this case, the I head is occupied by "will", and this selects the VP above as its complement: [IP will [VP [DP you] take [DP which train]]]. Although both arguments of the verb are in positions associated with θ-roles, only "which train" is in a Case assigning position, so "you" moves to SPEC IP to receive Nominative Case: [IP [DP you] will [VP [DP you] take [DP which train]]].\\We said that questions are introduced via an additional head, C. In this instance, the C head is null (there is nothing there that is pronounced). The question C head triggers two further types of movement, the wh-phrase moves to SPEC CP and the I head moves to adjoin to C: [CP [DP which train] will [IP [DP you] will [VP [DP you] take [DP which train]]]].
+\end{exe}
+
+\end{document}

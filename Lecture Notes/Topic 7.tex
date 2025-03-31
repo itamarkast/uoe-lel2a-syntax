@@ -1,0 +1,711 @@
+\documentclass{article}
+\input{header}
+\begin{document}
+\maketitle
+\subtitle{Topic 7 Course Notes: Nonverbal XP's Part 1\\
+Arguments of N \& the DP Hypothesis}
+\hfill{}\textbf{Skills:}~\ref{np_dp},
+\ref{np_structure}
+\section{Noun phrases}
+\hfill{}\textbf{Skill:}~\ref{np_dp}
+
+The last set of notes discussed the structure of sentences in terms of the X$'$-schema for phrase structure.
+The X$'$-schema is motivated by the observation that the structures of phrases of different lexical categories show certain parallels.
+Here we will investigate  those parallels further, by discussing the structure of phrases of other categories.
+We will also note certain differences between clauses and projections of other categories.
+Let's start with noun phrases in English.
+
+    \subsection{Similarities between VP and NP arguments}
+There are some clear similarities between the structure of a sentence with a verb like \emph{distribute}, and the structure of the \iibar{N} that can be built from a \keyword{nominalization} of this verb, the noun \emph{distribution}:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{The company distributed the record.}
+        \label{thecompanys}
+        \ex[]{the company's distribution of the record}
+    \end{xlist}
+    }
+\end{exe}
+The \keyword{arguments} of the verb \emph{distribute} are there in the nominalization as well.
+Moreover, they are expressed in a parallel way: the \textsc{agent} argument is expressed in a phrase on the left, in what could be described  as a  subject-like position within the NP, and the \textsc{theme} argument is expressed on the right, in what we might then think of as an object-like position within the NP.
+So it is at least plausible to claim that \iibar{N}s contain a complement position and a specifier position just like \iibar{V}s , in accordance with the X$'$-schema.
+We can then make the attractive assumption that the correspondence between semantics and syntactic structure works exactly the same way in \iibar{N}s as it works in \iibar{V}s: when there is both an agent and a theme, the agent corresponds to the constituent in the specifier position and the theme corresponds to the constituent in the complement position. 
+So the elementary tree for \emph{distribution} would be something like (\ref{distribution_elem_tree}):
+\begin{exe}
+    \ex{
+    \begin{forest}
+        [
+        \iibar{N}
+        [\iibar{N}][\ibar{N}
+        [\obar{N}\\distribution][\iibar{P}\textsubscript{of}]]
+        ]
+    \end{forest}
+    }
+    \label{distribution_elem_tree}
+\end{exe}
+
+The parallel can even be taken a step further.
+We know there are grammatical processes that can manipulate the correspondences between semantic arguments and syntactic positions.
+\keyword{passivization} is one such rule: it `demotes' the \textsc{agent} argument to an optional \emph{by}-phrase and `promotes' the \textsc{theme} argument to subject:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{The company distributed the record. \hfill \keyword{Active}}
+        \ex[]{The record was distributed (by the company). \hfill \keyword{Passive}}
+    \end{xlist}
+    }
+\end{exe}
+It appears that exactly the same process can apply in \iibar{N}s, although in this case there is no particular morphology associated with it.
+That is, there seems to be a `passive' version of (\ref{thecompanys}): 
+\begin{exe}
+    \ex{the record’s distribution by the company}
+\end{exe}
+
+Finally, modifiers can be added to \iibar{N}s in a way that parallels the addition of modifiers to a \iibar{V} or IP:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{The Normans invaded England in 1066.}
+        \ex[]{the Normans’ invasion of England in 1066}
+    \end{xlist}
+    }
+    \ex{
+    \begin{xlist}
+        \ex[]{The company exploited child workers to make more money.}
+        \ex[]{the company’s exploitation of child workers to make more money}
+    \end{xlist}
+    }
+\end{exe}
+
+
+    \subsection{Differences between VP and NP arguments}
+At the same time, we must note some clear differences between verbal projections on the one hand and nominal projections on the other. 
+
+For a start, the form in which the arguments of the head are expressed is different.
+In \iibar{V}s we most often see ordinary \iibar{N}s functioning as argument.
+In \iibar{N}s, we see that the subject argument must have a special \keyword{possessive} form, expressed in English by the clitic \emph{-s}:\footnote{A \keyword{clitic} is a morpheme that's more free than a suffix but more bound than a root.}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[*]{Mary collection of mushrooms}
+        \ex[]{Mary's collection of mushrooms}
+    \end{xlist}
+    }
+\end{exe}
+In English, the object argument of a noun is not even expressed as an NP.
+Rather, it must be a PP, usually with the preposition \emph{of} as head.\footnote{Remember that an asterisk outside parentheses means that the element within the parenthesis is obligatory (or, equivalently, that omitting that element is ungrammatical).}
+\begin{exe}
+    \ex{Mary’s collection *(of) mushrooms}
+\end{exe}
+Notice that this is a completely general fact about nominals in English.
+That is, some verbs take \iibar{N} complements (\emph{know her mother}), and others take \iibar{P} complements (\emph{rely on his mother}), but there is no noun in English that selects for an \iibar{N} complement directly.
+We may ask ourselves if there is a particular reason for this---it's a question we will come back to briefly later in the course.
+
+Next, arguments of N are optional.
+The interpretation suggests that nouns can assign the same thematic roles as verbs do.
+So, for example, just as we interpret the first \iibar{N} in (\ref{V_roles}) as the \textsc{experiencer}, and the last \iibar{N} as the thing that provokes the emotion, so too we have this interpretation for the first and last \iibar{N} in (\ref{N_roles}):
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{Matilda hates cats.}
+        \label{V_roles}
+        \ex[]{Matilda's hatred of cats}
+        \label{N_roles}
+    \end{xlist}
+    }
+\end{exe}
+But while arguments of verbs are frequently (although, as we have seen, not always) obligatory, the same does not seem to be true of the arguments of nouns:
+\begin{exe}
+\begin{multicols}{2}
+    \ex{
+    \begin{xlist}
+        \ex[]{We admired the city.}
+        \ex[*]{We admired.}
+        \ex[*]{Admired.}
+    \end{xlist}
+    }
+    \ex{
+    \begin{xlist}
+        \ex[]{Kim's admiration of her was surprising.}
+        \ex[]{Kim wanted her admiration.}
+        \label{argument_structures_b}
+        \ex[]{This sight commands admiration.}
+        \label{argument_structures_c}
+    \end{xlist}
+    }
+    \label{argument_structures}
+    \end{multicols}
+\end{exe}
+There is a quite complex pattern of when arguments in noun phrases built around eventive nouns are obligatory or optional.
+The classic reference for this is \citet{grimshaw_argument_1990}, and if you are interested in this topic, I strongly recommend that you read this.
+Unfortunately here we can't go into this question further except to notice that there is an overall difference to verb phrases.
+
+The examples in (\ref{argument_structures}) illustrate a further difference between \iibar{N}s and \iibar{V}s/\iibar{I}s.
+Recall that we saw that \iibar{I}s have to have a subject, regardless of the semantic arguments of the predicate.
+There is no parallel requirement subject requirement in \iibar{N}s.
+So (\ref{argument_structures_b}) is just as grammatical as (\ref{argument_structures_c}).  
+
+As a consequence, we don't find \keyword{expletive} subjects in nominals.
+Recall that a clause can have a so-called expletive subject that is only there to fill the subject position.
+Unstressed \emph{there} is one type of expletive.
+Since the subject requirement does not hold for \iibar{N}s, such expletives will not occur here:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{There suddenly appeared three zebras round the corner.}
+        \ex[*]{Suddenly appeared three zebras round the corner.}
+    \end{xlist}
+    }
+    \ex{
+    \begin{xlist}
+        \ex[*]{There's sudden appearance of three zebras surprised us.}
+        \ex[]{The sudden appearance of three zebras surprised us.}
+    \end{xlist}
+    }
+    \ex{
+    \begin{xlist}
+        \ex[]{There exists no proof of this conjecture.}
+        \ex[*]{Exists no proof of this conjecture.}
+    \end{xlist}
+    }
+    \ex{
+    \begin{xlist}
+        \ex[*]{There's existence of a proof is disputed.}
+        \ex[]{The existence of a proof is disputed.}
+    \end{xlist}
+    }
+    \label{existence}
+\end{exe}
+
+\section{The DP Hypothesis}
+
+In case there is no possessive \iibar{N} in the specifier position, we usually see another element cropping up in English noun phrases: a \keyword{determiner}, such as \emph{the}, \emph{a}, \emph{that}, or \emph{those}:
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{\{My sister's / the / a\} dog jumped up onto my lap.}
+        \ex[*]{Dog jumped up onto my lap.}
+    \end{xlist}
+    }
+\end{exe}
+
+The determiner in English precedes the noun, and it is in \keyword{complementary distribution} with possessive \iibar{N}s:
+\begin{exe}
+    \ex{
+    \begin{multicols}{2}   
+    \begin{xlist}
+        \ex[*]{Michael's the book}
+        \ex[*]{the Michael's book}
+        \ex[]{Michael's book}
+        \ex[]{the book}
+    \end{xlist}
+    \end{multicols}
+    \label{ex:d-np}
+    }
+\end{exe}
+
+We now need to figure out where in the structure the determiner fits.
+
+    \subsection{Determiners as heads that take NPs as their complements}
+\hfill{}\textbf{Skill:}~\ref{np_dp}
+
+% \subsubsection{The basic proposal: Determiners as heads of `noun phrases'}
+
+If a determiner always precedes the noun, we could imagine that it is a head that takes an \iibar{N} as its complement:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{D}
+        [\ibar{D}
+        [Det\\the][\iibar{N}
+        [\ibar{N}
+        [\ibar{N} [\obar{N} [man, roof]]][\iibar{P} [on the moon, roof]]]]]
+        ]
+    \end{forest}
+    }
+    \label{dp_projection}
+\end{exe}
+This hypothesis has been very widely adopted, and is discussed at length in S\&K.
+
+If this proposal, sometimes referred to as the \keyword{DP hypothesis}, is correct, the parallels between sentence structure and the structure of nominal phrases extend even further.
+We've already seen arguments that a full sentence is not just a projection of the main verb, but rather a projection of a \keyword{functional category}: I\lbrack{}nfl\rbrack{} (or C).
+This functional category took a projection of a \keyword{lexical category}---the verb---as its complement.
+If (\ref{dp_projection}) is the right structure for a nominal phrase, they have the same kind of architecture:  nominal phrases too would be the projection of a functional element (D in the case of the nominal, I in the case of a clause) that selects a lexical element as its complement (N in the case of the nominal, V in the case of a clause).
+
+\ea
+    \begin{forest}
+    [\iibar{I}
+        [\dots{} ]
+        [\ibar{I}
+            [\obar{I} ]
+            [VP
+                [.\dots{} ]
+                [\ibar{V}
+                    [\obar{V} ]
+                    [{NP/PP/CP\\\dots{}} ]
+                ]
+            ]
+        ]
+    ]
+    \end{forest}
+    \begin{forest}
+    [\iibar{D}
+        [\dots{} ]
+        [\ibar{D}
+            [\obar{D} ]
+            [NP
+                [.\dots{} ]
+                [\ibar{N}
+                    [\obar{N} ]
+                    [{NP/PP/CP\\\dots{}} ]
+                ]
+            ]
+        ]
+    ]
+    \end{forest}
+\z
+
+
+
+\subsection{Possessives revisited}
+\hfill{}\textbf{Skill:}~\ref{np_structure}
+
+At this point, we should go back to the phrases that contained a possessive \iibar{N} rather than a determiner.
+We analysed these as \iibar{N}s with the possessive occupying the specifier position.
+Does this mean that a nominal phrase is an \iibar{N} when it contains a possessor, but a \iibar{D} when its contains a determiner?
+That is not a very attractive hypothesis, because as far as their syntactic distribution goes, nominal phrases containing a possessor behave exactly like nominal phrases containing a determiner.
+If there is no difference in their \keyword{distribution}, we would not want to say they belong to different categories.
+This implies that nominal phrases containing a possessive \iibar{N} are DPs, too.
+But if they are determiner phrases, then what is the determiner in their case?
+A possible answer to this question is that the possessive clitic \emph{-s} is in fact a determiner. And in that case, the possessor would be in the Specifier of DP:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{D}
+        [\iibar{D} [Mary, roof]][\ibar{D}
+        [\obar{Det}\\'s][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\collection][\iibar{P} [of mushrooms, roof]]]]
+        ]
+        ]
+    \end{forest}
+    }
+\end{exe}
+This analysis means that we still have an explanation for the complementary distribution that we noticed above between determiners and possessors in English, illustrated again here:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The collection of mushrooms is a favourite pastime in Finland.}
+        \ex[]{Mary's collection of mushrooms is extensive.}
+        \ex[*]{The Mary's collection of mushrooms is extensive.}
+        \ex[*]{Mary's the collection of mushrooms is extensive.}
+    \end{xlist}
+    }
+\end{exe}
+Although under this analysis the possessor \emph{Mary} doesn't occupy the same position as the determiner \emph{the}, the possessive \emph{'s} does, hence they cannot occur together.
+
+Notice also that the possessor, under this analysis in the specifier-of-\iibar{D} position, can be a full (multi-word) phrase, as expected for specifiers:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{\lbrack{}My neighbour\rbrack{}'s new car was in his drive.}
+        \ex[]{\lbrack{}The Duchess of Cambridge\rbrack{}'s hat cost a fortune.}
+    \end{xlist}
+    }
+\end{exe}
+
+        \subsubsection{Where does the possessive phrase originate?}
+\hfill{}\textbf{Skill:}~\ref{np_structure}
+
+Nouns like \emph{collection}, \emph{hatred}, \emph{love}, \emph{criticism}, \emph{arrival}, and many more seem to assign the same \keyword{thematic roles} to their arguments as the related verbs \emph{collect}, \emph{hate}, \emph{love}, \emph{criticize}, \emph{arrive}.
+For example, just as \emph{hate} assigns the \textsc{experiencer} role to its subject and the \textsc{theme} role to its object, so too the noun \emph{hatred} assigns the \textsc{experiencer} role to the `possessive' phrase on the left and the \textsc{theme} role to the \iibar{P} on the right.
+In (\ref{cat_hate_V}) the only possible interpretation is that the experiencer of the emotion of hatred is \emph{the cat}, and the object that arouses this emotion is \emph{the dog}; how the dog feels about the cat is not specified (we can guess, but it's only a guess---the sentence doesn't tell us!).
+Exactly the same is true of the \iibar{D} in (\ref{cat_hate_N}):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{The cat hates the dog.}
+        \label{cat_hate_V}
+        \ex[]{the cat's hatred of the dog.}
+        \label{cat_hate_N}
+    \end{xlist}
+    }
+\end{exe}
+
+We've proposed that lexical items are stored in a language user's mental lexicon together with information about the phrases that they select as arguments: this is the information that is represented in the elementary trees out of which we build more complex structures.  So on the basis of what we've just said, it appears that the elementary trees for \emph{hate} and \emph{hatred} should be very similar:
+\begin{exe}
+    \ex[]{
+    \begin{multicols}{2}
+    \begin{xlist}
+        \ex[]{
+        \begin{forest}
+            [
+            \iibar{V}
+            [\iibar{D}\textsubscript{\textsc{experiencer}}][\ibar{V}
+            [\obar{V}\\hate][\iibar{D}\textsubscript{\textsc{theme}}]]
+            ]
+        \end{forest}
+        }
+        \ex[]{
+        \begin{forest}
+            [
+            \iibar{N}
+            [\iibar{D}\textsubscript{\textsc{experiencer}}][\ibar{N}
+            [\obar{N}\\hatred][\iibar{P}\textsubscript{of,~\textsc{theme}}]]
+            ]
+        \end{forest}
+        }
+    \end{xlist}
+    \end{multicols}
+    }
+\end{exe}
+
+As we saw, typically a \iibar{V} combines with the elementary tree projected by some Infl[ectional] element, as well as elementary trees that will be the arguments:\footnote{The arguments \emph{the cat} and \emph{the dog} are themselves built up from elementary trees for the determiners and the nouns; I'm skipping that step here and showing those DPs `pre-assembled' just so we can focus on the rest of the structure.}
+\begin{exe}
+    \ex[]{\small
+    \begin{xlist}
+    \begin{multicols}{4}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{I}
+        [\ibar{I}
+        [\obar{I}\\may][\iibar{V}]]
+        ]
+    \end{forest}
+    }\columnbreak
+    \ex[]{
+        \begin{forest}
+            [
+            \iibar{V}
+            [\iibar{D}\textsubscript{\textsc{exp.}}][\ibar{V}
+            [\obar{V}\\hate][\iibar{D}\textsubscript{\textsc{theme}}]]
+            ]
+        \end{forest}
+        }\columnbreak
+    \ex[]{
+    \begin{forest}
+        [\iibar{D}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\cat]]]]]
+    \end{forest}
+    }\columnbreak
+    \ex[]{
+    \begin{forest}
+        [\iibar{D}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\dog]]]]]
+    \end{forest}
+    }
+    \end{multicols}
+    \ex[]{
+    \begin{forest}
+        [\iibar{I}
+        [\ibar{I} [\obar{I}\\may][\iibar{V}
+        [\iibar{D}\textsubscript{\textsc{exp.}}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\cat]]]]][\ibar{V}
+        [\obar{V}\\hate][\iibar{D}\textsubscript{\textsc{theme}}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\dog]]]]]]]]]
+    \end{forest}
+    }
+    \end{xlist}
+    }
+\end{exe}
+Then, as we've seen, as a final step, the subject \iibar{D} (\emph{the cat} in this case) moves up to become the specifier of IP:
+\begin{exe}
+    \ex[]{\small
+    \begin{forest}
+        [\iibar{I}
+        [\iibar{D}, name=copy
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\cat]]]]][\ibar{I} [\obar{I}\\may][\iibar{V}
+        [$\langle{}$\sout{\iibar{D}}$\rangle{}$\textsubscript{\textsc{exp.}} [$\langle{}$\sout{the cat}$\rangle{}$, roof, name=trace]][\ibar{V}
+        [\obar{V}\\hate][\iibar{D}\textsubscript{\textsc{theme}}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\dog]]]]]]]]]
+        \draw[->,dotted] (trace) to[out=south,in=south] ([yshift=-14em] copy.south);
+    \end{forest}
+    }
+\end{exe}
+
+Building up the nominal proceeds in exactly the same way, except that whereas a \iibar{V} is complement to the functional head I, an \iibar{N} is complement to the functional head D\lbrack{}et\rbrack{} (and recall that the complement of the noun is a \iibar{P} rather than a \iibar{D}):
+\begin{exe}
+    \ex[]{\small
+    \begin{xlist}
+    \begin{multicols}{4}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{D}
+        [\ibar{D}
+        [\obar{D}\\'s][\iibar{N}]]
+        ]
+    \end{forest}
+    }\columnbreak
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{N}
+        [\iibar{D}\textsubscript{\textsc{exp.}}][\ibar{N}
+        [\obar{N}\\hatred][\iibar{P}\textsubscript{of,~\textsc{theme}}]]
+        ]
+    \end{forest}
+    }\columnbreak
+    \ex[]{
+    \begin{forest}
+        [\iibar{D}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\cat]]]]]
+    \end{forest}
+    }\columnbreak
+    \ex[]{
+    \begin{forest}
+        [\iibar{P}\textsubscript{of,~\textsc{theme}}
+        [\ibar{P} 
+        [\obar{P}\\of][\iibar{D}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\dog]]]]]]]
+    \end{forest}
+    }
+    \end{multicols}
+    \ex[]{
+    \begin{forest}
+        [\iibar{D}
+        [\ibar{D} [\obar{D}\\'s][\iibar{N}
+        [\iibar{D}\textsubscript{\textsc{exp.}}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\cat]]]]][\ibar{N}
+        [\obar{N}\\hatred][\iibar{P}\textsubscript{of,~\textsc{theme}}
+        [\ibar{P} 
+        [\obar{P}\\of][\iibar{D}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\dog]]]]]]]]]]]
+    \end{forest}
+    }
+    \end{xlist}
+    }
+\end{exe}
+Again here it looks like we have wound up with the `subject' (\emph{the cat}) on the wrong side of the D element (the same problem that we had with sentences, where having the subject originate in the \iibar{V} meant that at first it is on the right hand side of any modal).
+We can adopt exactly the same solution as we did for the sentence, and propose that the subject of the \iibar{N} moves to the Specifier of the \iibar{D} (past the D element \emph{'s}), just as the subject of the \iibar{V} moved to the Specifier of the \iibar{I} (past any I element like \emph{may}):
+\begin{exe}
+    \ex[]{\small
+    \begin{forest}
+        [\iibar{D}
+        [\iibar{D}, name=copy
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\cat]]]]][\ibar{D} [\obar{D}\\'s][\iibar{N}
+        [$\langle{}$\sout{\iibar{D}}$\rangle{}$\textsubscript{\textsc{exp.}} [$\langle{}$\sout{the cat}$\rangle{}$, roof, name=trace]][\ibar{N}
+        [\obar{N}\\hatred][\iibar{P}\textsubscript{of,~\textsc{theme}}
+        [\ibar{P} 
+        [\obar{P}\\of][\iibar{D}
+        [\ibar{D} [\obar{D}\\the][\iibar{N}
+        [\ibar{N}
+        [\obar{N}\\dog]]]]]]]]]]]
+        \draw[->,dotted] (trace) to[out=south,in=south] ([yshift=-14em] copy.south);
+    \end{forest}
+    }
+\end{exe}
+
+    \subsection{Alternative hypothesis: Determiners as specifiers of NPs}
+
+Recall the generalization that the determiner in English  precedes the noun, and is in complementary distribution with possessive \iibar{N}s, (\ref{ex:d-np}). Another possible hypothesis is that it occupies the specifier position of the \iibar{N} just as suggested above for the possessor:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{N}
+        [\obar{D}\\a] [\ibar{N}
+        [\obar{N}\\lover] [\iibar{P}[of Bach, roof]]]
+        ]
+    \end{forest}
+    }
+\end{exe}
+But that tree isn't consistent with our assumptions about possible phrase structure: the specifier has to be a \keyword{maximal projection (\iibar{X})}:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{N}
+        [\iibar{D} [\ibar{D} [\obar{D}\\a]]] [\ibar{N}
+        [\obar{N}\\lover] [\iibar{P}[of Bach, roof]]]
+        ]
+    \end{forest}
+    }
+\end{exe}
+This structure is compatible with the  X$'$-schema.
+But it has worried people that the DPs we're now having to postulate headed by \emph{the}, \emph{this}, \emph{that}, \emph{those}, etc.\ always seem to consist only of single words.
+This seems a bit suspicious, leading us back to the DP Hypothesis we've established above.
+
+
+\section{Arguments and modifiers in the DP}
+As a final step, we can revisit arguments and modifiers (or complements and adjuncts), and see how the situation in the nominal domain (DPs) mirrors that in the verbal domain (VPs). To recap, we saw at the beginning of this topic that \keyword{nominalizations} like \emph{distribution} and \emph{hate} can take arguments, just like the verbs \emph{distribute} and \emph{hate} can. We said that the \obar{N} takes an argument, which is often a PP but might also be something else, like a CP.
+
+So given a nominalization and some constituent that follows it, how can we tell whether that constituent is an argument or a modifier (and accordingly how to represent that in the syntax)? Let's go through a few diagnostics.
+
+    \subsection{Diagnostic \#1: Arguments of the verb}
+While there are many nouns like \emph{hatred} that seem to assign the same kind of thematic roles as verbs, there are also lots of nouns like \emph{hat}, \emph{coat}, \emph{grass}, \emph{cat}, \emph{dog} which don't describe events, and so don't have participant roles; they aren't derived from verbs.
+In these cases it doesn't seem reasonable to say that any possessive noun phrase that appears is an \emph{argument} of the noun.
+That is, the only elementary tree associated with a noun like \emph{hat} just looks like (\ref{hat_elem_tree}), where there are no `slots' for arguments to be substituted in:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{N}
+        [\ibar{N}
+        [\obar{N}\\hat]]
+        ]
+    \end{forest}
+    }
+    \label{hat_elem_tree}
+\end{exe}
+
+In other words, if there is no underlying verb with an argument, then the derived nominalization won't have an argument either.
+
+\ea
+    \ea[]{The rabbit disappeared.}
+    \ex[*]{The rabbit disappeared the carrot.}
+    \z
+\ex \ea[]{The rabbit's disappearance.}
+    \ex[*]{The rabbit's disappearance of the carrot.}
+    \ex[*]{The disappearance of the carrot by the rabbit.}
+    \z
+\ex The rabbit's disappearance of the day. \label{ex:disappear-pp}
+\z
+
+Example~(\ref{ex:disappear-pp}) only makes sense if we're talking about the adverbial, modifying use of \emph{of the day}; for example, if a magician makes a rabbit disappear once a day. In this case \emph{of the day} is a modifier, not a complement to the noun. We attach it, accordingly, at the bar-level \ibar{N} and \emph{not} as a complement of N:
+\ea
+    \begin{forest}
+    [\iibar{N}
+        [\ibar{N}
+            [\ibar{N}
+                [N\\disappearance]
+            ]
+            [\iibar{P} [of the day, roof]
+            ]
+        ]
+    ]
+    \end{forest}
+\z
+
+    \subsection{Diagnostic \#2: Complement clauses vs relative clauses}
+Some verbs might take entire clauses as their complements. Accordingly, the nominalization will also take a clause as its complement:
+\ea I confessed [that I listen to K-pop].
+\ex My confession [that I listen to K-pop].
+\z
+
+But not all clauses attaching to a noun are complements. Returning to \emph{hat}, we get examples like the following, where the noun is followed by a \keyword{relative clause}. See if you can see what's special about relative clauses; we'll identify two points immediately below.
+\ea
+    \ea The hat [you gave me yesterday].
+    \ex The hat [that you gave me yesterday].
+    \ex The hat [which you gave me yesterday].
+    \z
+\z
+
+All three variants above are equivalent for our purposes. The first difference between the embedded relative clause here and a complement clause like \emph{that I listen to K-pop} is that a relative clause always contains a \keyword{gap}, where the DP would've otherwise been:
+\ea The hat you gave me \uline{\sout{the hat}} yesterday.
+\z
+
+The second difference is that relative clauses can usually be headed by either the complementizer \emph{that} or \emph{which}. But complement clauses require \emph{that}:\footnote{This generalization is true of many ``standard'' variants of English. If it's not true in your dialect, that's fine! Other differences between different kinds of embedded clauses have also been proposed in the literature, so while we only picked out a few diagnostics for our course, as syntacticians we can rely on a range of tests.}
+\ea[*]{I confessed which I listen to K-pop.}
+\z
+
+    \subsection{Existing diagnostics}
+We can also use our existing diagnostics for distinguishing arguments from modifiers. Not all will transfer well from VPs to DPs, which is why we want to watch out for false negatives.
+
+    \subsection{Modifiers in possessives}
+To complete the picture, if there is a possessive (as in e.g.\ \emph{the cat's hat}), there is no reason to think that the possessive \emph{the cat} originated in a position within the NP, so there is no movement involved:
+\begin{exe}
+    \ex[]{
+    \begin{forest}
+        [
+        \iibar{D}
+        [
+        \iibar{D}
+        [\ibar{D}
+        [\obar{D}\\the][ \iibar{N}
+        [\ibar{N}
+        [\obar{N}\\cat]]]]
+        ][
+        \ibar{D}
+        [\obar{D}\\'s][ \iibar{N}
+        [\ibar{N}
+        [\obar{N}\\hat]]]
+        ]
+        ]
+    \end{forest}
+    }
+\end{exe}
+
+
+%\subsubsection{``Bare'' NPs}
+
+%In the S\&K chapter (in the section ``More on Determiners'' you will see arguments given that some nominal phrases in English that are grammatical without an overt determiner (in particular, phrases headed by singular mass nouns like \emph{water} or \emph{wine} and by plural count nouns like \emph{people} or \emph{trees}) should be analysed as DPs where the particular Det involved is ``null'' or silent:
+
+%\ex. \Tree [.DP [.D' {\O} [.NP [.N' N\\water ]]]]
+
+%Please be sure to read that section of the S\&K text.    That analysis---where NPs always occur within a DP, the head of which is in some cases phonologically null---is very widely adopted for English and many other languages, including most of those in the Romance and Germanic families.  This raises the question though of whether noun phrases \emph{always} appear within DPs across the world's languages. In a number of languages---Russian is one example, but there are many others, including Mandarin and Cantonese---there are no elements that would be classified as either definite or indefinite articles, and even count nouns can appear ``bare'' (without an overt determiner). The Russian examples in \Next  are from \cite{bailyn12}; the Mandarin examples in \NNext from \cite{huang-etal09}:
+
+%\ex.
+%\ag. Gruzoviku ne proexat’. \\
+%         truck-\textsc{dat} neg {go through} \\
+%          ‘The truck can’t get through.’          
+%\bg. Sonja xotela  kupit’ plat’e. \\
+%         Sonya-\textsc{nom} wanted  buy.\textsc{infin} dress-\textsc{acc}\\
+%          ‘Sonya wanted to buy a dress.’
+         
+%\ex.
+%\ag. gou hen congming. \\
+%      dog very intelligent \\
+%      ‘Dogs are intelligent.’ 
+%\bg. wo kandao gou.\\
+%       I saw dog\\
+%      ‘I saw a dog/dogs.’ 
+%\bg. gou pao-zou-le.\\
+%       dog run-away-\textsc{perf} \\
+%       ‘The dog(s) ran away.’
+          
+%We can then ask whether the arguments that are made in S\&K for the existence of a silent determiner in English extend to this kind of language.  
+
+%There were two arguments given in S\&K for the existence of a silent determiner in English. The first was really specifically about the possibility of bare plurals in English (\emph{There were \textbf{books} on the table}):  the idea was that postulating a null plural indefinite determiner ``allows us to minimize the difference between English and a language like Spanish,'' which has an overt indefinite plural determiner and uses it in most of the contexts where English would use a bare plural.  The second was that determinerless nominal phrase in English like \emph{rice} and \emph{beans} have essentially exactly the same distribution as nominals that include a determiner.  That is, there are no verbs or adjectives or prepositions that select only for DPs or only for NPs.  So if we said that these determinerless nominal phrases were NPs, we'd have to redundantly set up (multiple) parallel elementary trees for \textbf{every} verb, preposition etc: for every tree that has an empty slot for a DP there would have to be a corresponding tree that has an empty slot for an NP.
+
+%This second argument is strong for a language where some/most nominal phrases have determiners (as is the case in English). But if a language does not have any elements that one would class as determiners, then there is no economy gain in making all nominal phrases DPs rather than NPs; instead it could just be that all verbs select for NPs in Russian, for example, while they all select for DPs in English.  Of course it needs to be said that although Russian has no \textbf{articles}, but that doesn't actually mean that it has no \textbf{determiners}; for example it does have items that at least translate as demonstratives (\emph{{\`e}tot} `this \_\_\_/', \emph{tot} `that \_\_\_').   As for the first argument, again it looks  weaker if one compares Russian or Chinese to Spanish than if one compares English to Spanish. In postulating a null plural indefinite determiner in English we are filling in one part of a paradigm, the rest of which looks parallel to the paradigm in Spanish.  But there is \textbf{no} paradigm of articles in Russian or Chinese to begin with.
+
+%In fact there is a very lively debate as to whether languages have no articles should be considered to have DPs. One place to start looking at this literature particularly as it relates to Slavic is \cite{bailyn12},  from which the examples above were taken (Bailyn himself argues that Russian \textbf{does} have DPs, but he also gives citations for work that argues the opposite, in particular \cite{boskovic04,boskovic05}).  For Mandarin, a good place to start is Chapter 8 in \cite{huang-etal09}, and again the evidence is much more complex (and interesting!) than the bare bones presented here.
+
+%Even a very cursory look at Mandarin and Cantonese brings up another point: namely that there may be \textbf{additional} functional heads within nominals. Most noticeably, these languages have a system of \textsc{classifiers} that have to appear when there is a numeral in the nominal phrase---but can sometimes appear even without the numeral, as in the Mandarin examples in \Next[d]:
+
+%\ex.
+%\ag. san zhi bi \\
+%       three \textsc{cl} pen \\
+%       `three pens'
+%\bg. san ben shu \\
+%       three \textsc{cl} book \\
+%       `three books'
+%\bg. san ge ren \\
+%       three \textsc{cl} person \\
+%       `three people'
+%\bg. wo mai-le ben shu \\
+%       I    buy-\textsc{perf} \textsc{cl} book \\
+%       `I bought a book.'
+
+%As a first pass at least it seems that we might need to posit \textsc{classifier}  as a functional head that combines with NPs in languages like Mandarin and Cantonese. 
+
+%The more general point to make is that there has been a growing view that nominal expressions minimally consist of the projection of a noun (an NP), and that above this there may be one or more functional projections. In fact again we can see this as not so dissimilar from what we find in the verbal domain, where above the projection of the verb (the VP) there can be at least an IP and a CP---and most researchers assume at least the possibility of many further functional projections in this domain also.  A good deal of the literature then addresses the question of what functional categories there are, where exactly they appear in the structure, and how universal (or not) they may be.
+
+\printbibliography
+\end{document}

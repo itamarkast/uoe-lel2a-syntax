@@ -1,0 +1,222 @@
+\documentclass{article}%Skills.tex has its own preamble to avoid errors from importing its own labels for referencing
+\usepackage[hidelinks]{hyperref}
+\usepackage[linguistics]{forest}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[T1]{fontenc} %Make sure to be able to get accented characters etc
+\usepackage[utf8]{inputenc}
+\usepackage[normalem]{ulem}
+\setlength{\parindent}{0pt}%don't indent paragraphs...
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} 
+\usepackage{gb4e}
+\usepackage{tabto}
+\noautomath
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+%\usepackage{sectsty}
+\usepackage{setspace}
+\usepackage{leipzig}
+
+
+\makeatletter
+\def\@maketitle{%this just gets rid of the space associated with the author field
+  \newpage
+  \null
+%  \vskip 2em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE {\@title}\par}
+%    \vskip 1.5em%
+%    {\large
+%      \lineskip .5em%
+%      \begin{tabular}[t]{c}%
+%        \@author
+%      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+%  \vskip 1.5em
+}
+\makeatother
+
+\title{LEL2A Syntax}
+
+\date{Semester 1, 2024-25}
+
+\newcommand{\subtitle}[1]{\maketitle\begin{center}{\Large #1}\end{center}}
+
+\begin{document}
+\pagestyle{empty}
+\maketitle
+
+\subtitle{Research Skills}
+\begin{exe}
+    \exi{M1}{State a hypothesis clearly}
+    \label{hypothesise}
+    \exi{M2}{Present data in support of a hypothesis}
+    \label{supporthypothesis}
+    \exi{M3}{Define the conditions under which a hypothesis would be refuted}
+    \label{definehypothesis}
+    \exi{M4}{Present data to refute a hypothesis}
+    \label{refutehypothesis}
+    \exi{M5}{Consider the limitations of a diagnostic test when interpreting the results}
+    \label{diagnosticlimits}
+\end{exe}
+
+\subtitle{Syntax Skills (updated 31 Oct 2024)}
+
+\subsection*{Topic 1 -- What is Syntax?}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        %\ex{Represent language as having hierarchical structure (is explicit reference to recursion justified?)}
+        %\label{whatissyntaxA}
+        \ex{Use a hierarchical structure to represent constituency}
+        \label{whatissyntaxB}
+        %\ex{\sout{Use a hierarchical structure to represent structural ambiguity}}
+        %\label{whatissyntaxC}
+        %\ex{Differentiate between prescriptive and descriptive rules}
+        %\label{whatissyntaxD}
+    \end{xlist}
+}
+\end{exe} 
+
+\subsection*{Topic 2 -- Constituent Structure and Constituency Tests}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Perform an appropriate constituency test for an NP}
+        \label{constituencytestNP}
+        \ex{Perform an appropriate constituency test for a VP}
+        \label{constituencytestVP}
+        \ex{Perform an appropriate constituency test for PP/AP/AdvP}
+        \label{constituencytestother}
+    \end{xlist}
+    }
+\end{exe}
+
+
+\subsection*{Topic 3 -- Predicates and arguments: syntactic and semantic arguments}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        %\ex{Distinguish one-place \& two-place predicates and arguments}
+        %\label{one_two_place_predicates}%is this entailed by 3c?
+        \ex{Identify divergences in the mapping between semantic and syntactic predicates \& arguments}
+        \label{syn_sem_roles}
+        \ex{Identify arguments that bear semantic roles (such as agent, theme/patient, goal, \& location) and any arguments that do not}
+        \label{sem_roles}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 4 -- Predicates and arguments: arguments and modifiers, subjects}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Relate differences in types of verbal complements to c-selection properties of verbs}%combine with \ref{sem_roles} to yield loose theta-criterion
+        \label{c_selection}
+        \ex{Perform an appropriate diagnostic to distinguish a verbal complement from an adjunct}
+        \label{adjunct_complement}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 5 -- X-bar and the clause: X-bar schema}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Represent heads and phrases, identified via constituency tests, in a manner consistent with the \emph{projection principle}}
+        \label{projection}
+        \ex{Use X$'$ representations to distinguish adjunction from complementation}
+        \label{V_adjunction}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 6 -- X-bar and the clause: IP, modals, V and I, VPISH, CP}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Use constituency tests to identify and justify projection of different functional heads in a representation, such as I, C, and \Neg{}}
+        \label{functional_heads}
+        \ex{Implement a \emph{VP-internal subject hypothesis} analysis}%needs re-writing
+        \label{VPinternal_subjects}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 7 -- Nonverbal XP's Part 1: Arguments of N \& the DP Hypothesis}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Implement an analysis of complex noun phrases that is consistent with the framework developed}\label{np_dp}
+        \ex{Identify elements as complements or adjuncts of a noun in a principled way}
+        \label{np_structure}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 8 -- Nonverbal XPs Part 2: AdjP, PP, headedness}%Was cut from Semester 1, 2024
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Implement an analysis of AdjPs and PPs that is consistent with the framework developed}
+        \label{adjp_pp}%Was cut from Semester 1, 2024
+        \ex{Use appropriate parallels with VPs to analyse the internal structure of other phrases}
+        \label{xp_structure}%Was cut from Semester 1, 2024
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 9 -- Non-finite clauses Part 1: To-infinitives, Raising \& Control}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Identify non-finite clauses headed by infinitival \emph{to} in a principled way}
+        \label{nonfin_to}
+        \ex{Distinguish raising structures from control structures on the basis of $\theta$-role assignment}
+        \label{raising_control}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 10 -- Non-finite clauses Part 2: Why raise \& Object Control}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Motivate raising to subject position (A-movement) in terms of either \textsc{case} or the \textsc{epp}}
+        \label{A_movement}
+        \ex{Analyse instances of \textsc{object control} in a way that is consistent with the framework developed}\label{object_control}%Was cut from Semester 1, 2024
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 11 -- Passives}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Account for the behaviour of passive movement, including any relevant restrictions, within the framework developed}
+        \label{passives}
+        \ex{Identify relevant locality constraints on A-movement}%Was cut from Semester 1, 2024
+        \label{locality_constraints}
+    \end{xlist}
+    }
+\end{exe}
+
+\subsection*{Topic 12 -- Wh-questions}
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex{Implement a movement based analysis of wh-movement}
+        \label{wh_movement}
+        \ex{Account for differences in the order of subjects and auxiliary verbs in question formation (head movement)}%Was cut from Semester 1, 2024
+        \label{i_to_c_movement}
+    \end{xlist}
+    }
+\end{exe}
+
+%\subsection*{Topic 13 -- Relative Clauses} Possible extension but not core.
+
+\end{document}

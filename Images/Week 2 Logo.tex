@@ -1,0 +1,59 @@
+\documentclass[preview]{standalone}
+\usepackage[hidelinks]{hyperref} %links and URLS
+\usepackage[linguistics]{forest} %needs tikz, draws trees
+\usetikzlibrary{positioning}
+\usepackage[margin=1in]{geometry} %page layout
+\usepackage{graphicx} % Required for inserting images
+\usepackage[T1]{fontenc} %Make sure to be able to get accented characters etc
+\usepackage[utf8]{inputenc}
+\usepackage[normalem]{ulem} %adds strikethrough and other commands
+\setlength{\parindent}{0pt}%don't indent paragraphs...
+\setlength{\parskip}{1ex plus 0.5ex minus 0.2ex} 
+\usepackage{multicol} %adds columns
+\usepackage{gb4e} %for formatting examples, works with leipzig and multicol
+\primebars %setting for gb4e, adds bars for X-bar notation, allows switch between bar or %'%
+\noautomath
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,trees,positioning}
+\usepackage{tabto}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+\usepackage{setspace}
+\usepackage{pifont} %allows dingbats to be called (for the "crosses" and "ticks" defined below)
+\usepackage{tipa} % IK
+
+\usepackage{leipzig}
+\makeglossaries
+
+\newcommand{\keyword}[1]{\textsc{#1}}
+
+\usepackage[backend=biber,
+            style=unified,
+            natbib,
+            maxcitenames=3,
+            maxbibnames=99]{biblatex}
+\addbibresource{references.bib}
+\title{LEL2A: Syntax}
+\author{Instructor: Itamar Kastner}
+\date{Autumn 2024}
+
+
+\begin{document}
+
+%\begin{figure}
+    \centering
+    \begin{forest}for tree={calign=fixed edge angles,},
+        [
+        IP
+        [NP\\\keyword{subject}][I$'$
+        [I\\\Aux{}][VP
+        [\sout{NP}\\\sout{\keyword{subject}}][V$'$
+        [V][NP\\\keyword{object}]]]
+        ]
+        ]
+    \end{forest}
+    %\caption{Caption}
+    \label{week_2_logo}
+%\end{figure}
+\end{document}
