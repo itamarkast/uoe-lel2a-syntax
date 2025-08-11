@@ -219,8 +219,7 @@ Such a group of words that cling together is called a \keyword{constituent} of t
 \section{Hierarchical Structure}
 \hfill{}\textbf{Skill:}~\ref{whatissyntaxB}
 
-\textbf{Constituents can themselves contain smaller constituents}.
-The subject in (\ref{RC_speak_dec}) (\emph{the woman who can speak Gaelic}), for example, contains a \keyword{relative clause} (namely \emph{who can speak Gaelic}), which in turn contains constituents, such as its \keyword{direct object} \emph{Gaelic}.
+\textbf{Constituents can themselves contain smaller constituents}. The subject in (\ref{RC_speak_dec}) (\emph{the woman who can speak Gaelic}), for example, contains a \keyword{relative clause} (namely \emph{who can speak Gaelic}), which in turn contains constituents, such as its \keyword{direct object} \emph{Gaelic}.
 Such containment relationships (that is, the \keyword{constituency} of a sentence) can be expressed by a \keyword{tree structure}:
 \ea
     \begin{forest}
@@ -230,19 +229,56 @@ Such containment relationships (that is, the \keyword{constituency} of a sentenc
     \end{forest}
 \z
 
-Or more abstractly:
+\textbf{Notation.} Syntax is about figuring out what these structures are like. We can show these structures in different ways. For example, we can use \textsc{bracket notation} or syntactic trees; both express the same information in different ways. Some linguists find brackets easier to work with, some prefer trees, and some go back and forth between the two. Here's an illustration of the two formalisms conveying the same information for each of two different sentences:
+\ea 
+    {[}Anna] [read] [[a] [book]]
 
+    \begin{forest}
+        [{Anna read a book}
+            [Anna ]
+            [read ]
+            [{a book}
+                [a ]
+                [book ]
+            ]
+        ]
+    \end{forest}
+
+\bigskip
+\ex 
+    {[[}The] [students]] [love] [linguistics]
+
+    \begin{forest}
+        [{The students love linguistics}
+            [{The students}
+                [The ]
+                [students ]
+            ]
+            [love ]
+            [linguistics ]
+        ]
+    \end{forest}
+\z
+
+\textbf{Hierarchy.} More abstractly, what's going on in all of the examples above is some variant of the following:
 \begin{exe}
     \ex{
     \begin{forest}
         [Sentence
-        [Constituent [Constituent] [Constituent] ] [Constituent [Constituent] [Constituent] ] ]
+        [Constituent$_\text{1}$ [Constituent$_\text{3}$] [Constituent$_\text{4}$] ] [Constituent$_\text{2}$ [Constituent$_\text{5}$] [Constituent$_\text{6}$] ] ]
     \end{forest}
     }
-    \label{heirarchy}
+    \label{hierarchy}
 \end{exe}
-(\ref{heirarchy}) expresses the claim that there is a sentence that consists of two constituents, each of which happens to consist of two smaller constituents.
-For example, a simple sentence like \emph{The girl read a book} will have the more refined tree structure in (\ref{tree_girl_read_book}) (more on this in Topics 2--3):
+
+Or, if you prefer brackets, we can label each of the bigger constituents, like so:
+\ea {[}$_\text{Sentence}$ [$_\text{Constituent$_\text{1}$}$ Constituent$_\text{3}$ Constituent$_\text{4}$] [$_\text{Constituent$_\text{2}$}$ Constituent$_\text{5}$ Constituent$_\text{6}$] ]
+    \label{hierarchy2}
+\z
+
+Both~(\ref{hierarchy}) and~(\ref{hierarchy2}) express the claim that there is a sentence that consists of two constituents (Constituent$_\text{1}$ and Constituent$_\text{2}$), each of which happens to consist of two smaller constituents (numbers 3, 4, 5 and 6).
+
+Once we start getting comfortable thinking about constituents in terms of parts of speech (syntactic categories), we'll be able to say that a simple sentence like \emph{The girl read a book} will have the more refined tree structure in (\ref{tree_girl_read_book}) (more on this in Topics 2--3):
 \begin{exe}
     \ex{
     \begin{forest}
@@ -252,6 +288,7 @@ For example, a simple sentence like \emph{The girl read a book} will have the mo
     }
     \label{tree_girl_read_book}
 \end{exe}
+
 
 \section{Recursion}
 \hfill{}\textbf{Skill:}~\ref{whatissyntaxB}

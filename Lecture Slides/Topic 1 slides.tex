@@ -27,9 +27,15 @@
 
 \frame{
     \begin{itemize}
-        \item Let's talk linguistics: join the Wooclap at \textbf{SYN2A}.
-        \item First question: what's a constituent?
-        \item Second question: what isn't a constituent?
+        \item Let's talk linguistics!
+            \begin{itemize}
+                \item Constituency
+                \item Hierarchical structure
+                \item Syntactic and lexical ambiguity
+            \end{itemize}
+        \item Join the Wooclap at \textbf{SYN2A}.
+        \item What's a constituent?
+        % \item Second question: what isn't a constituent?
     \end{itemize}
 }
 
@@ -74,8 +80,8 @@
 \frame{
     What do you think, do these two sentences have the same structure?
 
-    \ea Anna read a book.
-    \ex The students love linguistics.
+    \ea Anna read a book. \hfill (7 constituents)
+    \ex The students love linguistics. \hfill (7 constituents)
     \z
 }
 
@@ -85,6 +91,44 @@
     \ea {[}Anna] [read] [[a] [book]].
     \ex {[[}The] [students]] [love] [linguistics].
     \z
+}
+
+\frame{
+    \begin{itemize}
+        \item We have different ways of representing \emph{structure}.
+        \item The two main ones are bracket notation and trees.
+        \item For example, we can start with this:
+    \end{itemize}
+
+\bigskip
+    \begin{multicols}{2}
+    {[}Anna] [read] [[a] [book]]
+
+    \begin{forest}
+        [{Anna read a book}
+            [Anna ]
+            [read ]
+            [{a book}
+                [a ]
+                [book ]
+            ]
+        ]
+    \end{forest}
+    
+    {[[}The] [students]] [love] [linguistics]
+
+    \begin{forest}
+        [{The students love linguistics}
+            [{The students}
+                [The ]
+                [students ]
+            ]
+            [love ]
+            [linguistics ]
+        ]
+    \end{forest}
+    \end{multicols}
+    
 }
 
 \frame{
@@ -123,9 +167,10 @@
     \ea[]{{[}The student who is in McEwan Hall] is happy.}
     \z
 
-\pause
+\bigskip
+    What's the \emph{grammatical} yes-no question? What's the \emph{ungrammatical} one that conforms to a simple linear rule?
 
-    What's the grammatical yes-no question? What's the \emph{ungrammatical} one that conforms to a simple linear rule?
+\pause
     \ea
         \ea[*]{Is [the student who \trace{} in McEwan Hall] is happy?}
         \ex[]{Is [the student who is in McEwan Hall] \trace{} happy?}
@@ -169,12 +214,13 @@
 }
 
 \frame{\frametitle{Assessment: Skills-based grading}
-    You have a total of three attempts to show that you've acquired any of the Syntax Skills: two in Learn exercises and one in the tutorial submission.
+    You have a total of three attempts to show that you've acquired any of the Syntax Skills: two in Learn exercises and one in the tutorial submission.\\
+    (Learning adjustments $\Rightarrow$ Three attempts for Learn exercises)
 
     \bigskip
     A suggested routine for each Topic (lecture):
     \begin{enumerate}
-        \item Watch the video and read the lecture notes before the lecture.
+        \item Watch the video and/or read the lecture notes before the lecture.
         \item Come to the lecture.
         \item Open an exercise and see if you want to give it a go.
         \item Submit the tutorial sheet at the end of the week (before Monday 9am).
@@ -182,7 +228,7 @@
     \end{enumerate}
 
     \bigskip
-    \textbf{Office hours:} right after each lecture, DSB 2.23 (Tue 3-4, Thu 2-3, Fri 2-3).
+    \textbf{Office hours:} right after the Tue and Fri lectures, DSB 2.23 (Tue 3-4, Fri 2-3), or whenever is convenient for us.
 }
 
 \end{document}
