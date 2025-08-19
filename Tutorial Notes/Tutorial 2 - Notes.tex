@@ -1,5 +1,8 @@
 \documentclass{article}
 \input{header}
+
+\usepackage[solution]{myProbSol}
+
 \forestset{
   nice nodes/.style={
     for tree={
@@ -17,13 +20,12 @@
 
 Some tutorial questions are primarily \textbf{for discussion}. This means that they can count towards your skill tally, but don't worry if you don't get them right -- their goal is to allow for extended discussion in the tutorial itself and some will go beyond the discussion in class.
 
-(Please remember that we're developing this approach to tutorials and marking together, so your feedback is welcome -- keep it specific and try to give it directly to Itamar.)
-
 \section*{Question 1}
 \hfill{} \ref{c_selection} $\Box$, \ref{adjunct_complement} $\Box$, \ref{sem_roles} $\Box$
 
-\paragraph{Q1A} For each of the examples in~(\ref{ungrammatical1}), explain why the sentence is not grammatical using the framework developed so far in the course.
-Though you may find it useful, it is not necessary to give corrected versions. The first one has been done for you -- longer answers are not necessary, and you don't have to identify the individual skills yourselves either, as long as you engage with the concepts properly.
+\paragraph{Q1A} For each of the examples in~(\ref{ungrammatical1}), explain why the sentence is not grammatical using the framework developed so far in the course. You don't need to give a corrected, grammatical version.
+
+The first one has been done for you -- longer answers are not necessary, and you don't have to identify the individual skills yourselves either, as long as you engage with the concepts properly.
 
 \begin{exe}
     \ex{
@@ -33,16 +35,23 @@ Though you may find it useful, it is not necessary to give corrected versions. T
         }
         % \ex[*]{John gave Bill}
         % \label{ungrammatical_gave}
-        \ex[*]{Susan laughed the joke\\
-        \textcolor{red}{The verb does not select for an NP (skill \ref{c_selection}); compare~(\ref{intransitive_laugh}) with \emph{Susan laughed}.
-        We might be tempted to say that \emph{laugh} selects a PP complement which might be a Theme (skill \ref{sem_roles}, though we haven't discussed whether \emph{the joke} would count as a Theme) as in \emph{Susan laughed at the joke}, but this doesn't appear to hold up: we can see that PPs like \emph{at the joke} are adjuncts in \emph{Susan laughed quietly at the joke} and \emph{Susan laughed at her reflection and Bill at his.} (skill \ref{adjunct_complement})}\label{intransitive_laugh}
+        \ex[*]{Amelia laughed the joke
+        \begin{answer}
+        {
+        The verb does not select for an NP (skill \ref{c_selection}); compare~(\ref{intransitive_laugh}) with \emph{Amelia laughed}.
+        We might be tempted to say that \emph{laugh} selects a PP complement which might be a Theme (skill \ref{sem_roles}, though we haven't discussed whether \emph{the joke} would count as a Theme) as in \emph{Amelia laughed at the joke}, but this doesn't appear to hold up: we can see that PPs like \emph{at the joke} are adjuncts in \emph{Amelia laughed quietly at the joke} and \emph{Amelia laughed at her reflection and Idris at his.} (skill \ref{adjunct_complement})        }
+        \end{answer}
         }
+        \label{intransitive_laugh}
         % \ex[*]{Bill liked}
         % \label{intransitive_like}
         % \ex[*]{Bill liked Anna the book}
         % \label{ditransitive_like}
-        \ex[*]{Bill liked on Tuesday\\
-        \textcolor{red}{This example feels incomplete, \emph{Bill liked what on Tuesday}? The \keyword{theme} role is unassigned here (skill~\ref{adjunct_complement}); we could also say that we need selection for an NP (skill~\ref{c_selection}). As part of the answer, we could also show that \emph{on Tuesday} is an adjunct and not an argument (skill~\ref{adjunct_complement}).}
+        \ex[*]{Idris liked on Tuesday
+        \begin{answer}
+            {
+            This example feels incomplete, \emph{Idris liked what on Tuesday}? The \keyword{theme} role is unassigned here (skill~\ref{adjunct_complement}); we could also say that we need selection for an NP (skill~\ref{c_selection}). As part of the answer, we could also show that \emph{on Tuesday} is an adjunct and not an argument (skill~\ref{adjunct_complement}). }
+        \end{answer}
         }
         \label{intransitive_like_adjunct}
     \end{xlist}
@@ -52,23 +61,34 @@ Though you may find it useful, it is not necessary to give corrected versions. T
 
 \paragraph{For discussion} Here are a few more examples, similar to those Q1A, which you might want to attempt.
 \ea
-        \ea[*]{John gave Bill\\
-        \textcolor{red}{The problem with (\ref{ungrammatical_gave}) is that \emph{give} must select three NP arguments (skill~\ref{c_selection}). A CP argument does not improve anything, *\emph{John gave that Bill was wrong}.
-        Here, it's clear that we are missing an argument, e.g. \emph{John gave Bill the book} is grammatical.
-        In this case, the verb selects three NP arguments with the following roles (skill~\ref{sem_roles}):
+        \ea[*]{John gave Bill
+        \begin{answer}
+        {
+        The problem with (\ref{ungrammatical_gave}) is that \emph{give} must select three NP arguments (skill~\ref{c_selection}). A CP argument does not improve anything: *\emph{John gave that Bill was wrong}.
+        Here, it's clear that we are missing an argument, e.g. \emph{John gave Bill the book} is grammatical.\\
+        So in this case, the verb selects three NP arguments with the following roles (skill~\ref{sem_roles}):
         \begin{itemize}
             \item \emph{John} the \keyword{agent}
             \item Something that is given, e.g. \emph{the book}, the \keyword{theme}
             \item A recipient of the thing that's given, e.g. \emph{Bill}, the \keyword{goal}
         \end{itemize}
-        We can see that all three are \textbf{obligatorily} as *\emph{John gave the book} is also incomplete.}}
+        We can see that all three are \textbf{obligatorily} as *\emph{John gave the book} is also incomplete.}
+        \end{answer}
+        }
         \label{ungrammatical_gave}
-        \ex[*]{Bill liked\\
-        \textcolor{red}{In (\ref{intransitive_like}), we see again that verbs must have certain arguments: \emph{like} is transitive so requires a complement Theme (skill~\ref{sem_roles}) which is an NP (skill~\ref{c_selection}), e.g.~\emph{Bill likes the book}.}}
+        \ex[*]{Bill liked
+        \begin{answer}
+        {
+        In (\ref{intransitive_like}), we see again that verbs must have certain arguments: \emph{like} is transitive so requires a complement Theme (skill~\ref{sem_roles}) which is an NP (skill~\ref{c_selection}), e.g.~\emph{Bill likes the book}.  }
+        \end{answer}
+        }
         \label{intransitive_like}
-        \ex[*]{Bill liked Anna the book\\
-        \textcolor{red}{In (\ref{ditransitive_like}), we see that verbs cannot take \emph{extra} arguments.
-        That is, \emph{like} selects one internal argument, the \keyword{theme}, and one external argument, the \keyword{agent} (skill~\ref{sem_roles}). We are beginning to approach a generalisation that verbs have a set number of arguments that they must select. If we compare~(\ref{intransitive_like_adjunct}), (\ref{intransitive_like}) and now~\ref{ditransitive_like}), we see that \emph{like} must select one internal argument, and that this argument must be an NP and not a PP (skill~\ref{c_selection}).}
+        \ex[*]{Bill liked Anna the book
+        \begin{answer}
+        {
+        In (\ref{ditransitive_like}), we see that verbs cannot take \emph{extra} arguments.
+        That is, \emph{like} selects one internal argument, the \keyword{theme}, and one external argument, the \keyword{agent} (skill~\ref{sem_roles}). We are beginning to approach a generalisation that verbs have a set number of arguments that they must select. If we compare~(\ref{intransitive_like_adjunct}), (\ref{intransitive_like}) and now~(\ref{ditransitive_like}), we see that \emph{like} must select one internal argument, and that this argument must be an NP and not a PP (skill~\ref{c_selection}).    }
+        \end{answer}
         }
         \label{ditransitive_like}
         \z
@@ -111,39 +131,45 @@ For each of the constituents \sqb{\emph{quickly}}, \sqb{\emph{Bill}}, \sqb{\emph
 
 \textcolor{red}{\textbf{Quickly} is an adjunct, since it allows \emph{do-so} substitution: \emph{John gave Bill the book quickly in the street on Tuesday, and Paul did so slowly (at work on Wednesday}. To give another example, \emph{quickly} cannot appear before the argument \emph{Bill}: *\emph{John gave quickly Bill the book.}}
 
-\textcolor{red}{There are multiple possible ways to get this answer, one is given below:
+\begin{answer}{
+There are multiple possible ways to get this answer, one is given below:
 \begin{exe}
-    \sn{John gave Bill the book quickly in the street on Tuesday
+    \sn{John gave Bill the book quickly in the street on Tuesday \dots{}
     \begin{xlist}
-        \ex[]{and Paul did so on Thursday}
-        \ex[]{and Paul did so at work (on Monday)}
-        \ex[]{and Paul did so slowly (at work on Wednesday)}
-        \ex[*]{and Paul did so the mug (quickly in the street on Tuesday)}
-        \ex[*]{and Paul did so Mary (the mug quickly in the street on Tuesday)}
+        \ex[]{\dots{} and Paul did so on Thursday}
+        \ex[]{\dots{} and Paul did so at work (on Monday)}
+        \ex[]{\dots{} and Paul did so slowly (at work on Wednesday)}
+        \ex[*]{\dots{} and Paul did so the mug (quickly in the street on Tuesday)}
+        \ex[*]{\dots{} and Paul did so Mary (the mug quickly in the street on Tuesday)}
     \end{xlist}
     }
 \end{exe}
 We can see that \sqb{\emph{quickly}}, \sqb{\emph{in the street}}, and \sqb{\emph{on Tuesday}} all behave like adjuncts as they allow \emph{do so} substitution.
-However, \sqb{\emph{Bill}} and \sqb{\emph{the book}} both behave like complements as they cannot be substituted by \emph{do so}.}
+However, \sqb{\emph{Bill}} and \sqb{\emph{the book}} both behave like complements as they cannot be substituted by \emph{do so}.    }
+\end{answer}
 
 \paragraph{For discussion:} Based on the data in (\ref{ungrammatical1})--(\ref{grammatical_gave}) above, and supplementing with any grammatical counterparts you feel necessary, what can we say about the relationship between c-selection/complementation and semantic roles?
 
-\textcolor{red}{So far, we have seen that different verbs have selection requirements and that they \textbf{must} select the correct number of arguments.
+\begin{answer}
+{
+So far, we have seen that different verbs have selection requirements and that they \textbf{must} select the correct number of arguments.
 An intransitive verb only has one argument, a transitive verb must have two arguments, and a ditransitive verb must have three arguments.
 We also saw that \keyword{adjuncts} can appear in any number.
 This is important as it means that cannot satisfy a verb's selection requirements (\keyword{adjuncts} don't count).
 In the examples in (\ref{ungrammatical1})--(\ref{grammatical_gave}) above, NPs are \keyword{complements} and \keyword{adjuncts} are PPs and adverbs.
-It also appears that certain semantic roles, \textsc{agent}, \textsc{theme}, \& \textsc{goal}, are associated with NP complements and others, \textsc{location} etc., are associated with adjuncts.}
+It also appears that certain semantic roles, \textsc{agent}, \textsc{theme}, \& \textsc{goal}, are associated with NP complements and others, \textsc{location} etc., are associated with adjuncts. }
+\end{answer}
 
-\paragraph{For discussion:} For (\ref{grammatical_put}), are the strings, \emph{the book} and \emph{on the table}, complements or adjuncts? 
+\paragraph{For discussion:} For (\ref{grammatical_put}), are the strings \emph{the book} and \emph{on the table} complements or adjuncts? 
 Do you need to reformulate your answer to the previous question in order to accommodate (\ref{grammatical_put})?
 \begin{exe}
     \ex{John won't put the book on the table}
     \label{grammatical_put}
 \end{exe}
 
-
-\textcolor{red}{As above, there are multiple ways to get the right answers here, but here is one possible way:
+\begin{answer}
+{
+As above, there are multiple ways to get the right answers here, but here is one possible way:
 \begin{exe}
     \sn{John won't put the book on the table
     \begin{xlist}
@@ -155,7 +181,7 @@ Do you need to reformulate your answer to the previous question in order to acco
 Both \emph{the book} and \emph{on the table} appear to be \keyword{complements}.
 If above we said that PPs were uniformly \keyword{adjuncts}, we now need to revise our generalisation.
 The verb \emph{put} selects an NP \keyword{theme} and a PP \keyword{goal} as \keyword{complements}.
-Notice that an NP \keyword{goal} doesn't work *\emph{John won't put the book the table}, so this must be more than $\theta{}$-roles, and that changing the order doesn't change the roles assigned \emph{it is on the table that John won't put the book}.
+Notice that an NP \keyword{goal} doesn't work (*\emph{John won't put the book the table}), so this must be more than $\theta{}$-roles, and that changing the order doesn't change the roles assigned: \emph{it is on the table that John won't put the book}.
 Our generalisation may now be something like:
 \begin{exe}
     \sn{Generalisation:
@@ -165,7 +191,8 @@ Our generalisation may now be something like:
         \ex[]{\keyword{adjuncts} do not count towards satisfying \keyword{c-selection} or assignment of $\theta{}$-roles}
     \end{xlist}
     }
-\end{exe}}
+\end{exe}   }
+\end{answer}
 
 \section*{Question 2}
 \hfill{} \ref{projection} $\Box$, \ref{functional_heads} $\Box$, \ref{VPinternal_subjects} $\Box$
@@ -191,23 +218,26 @@ for tree={s=2mm, l-=5mm},
     \label{spicy_food}
 \end{exe}
 
-\textcolor{red}{
+\begin{answer}
+{
 The point of this question is thinking about constituency.
 It asks you a fairly specific question (what is empirically wrong with the trees).
 It \textbf{doesn't} ask you whether the trees match our theory (e.g.\ X$'$-theory).
-There multiple ways to answer this question, but here is one obvious acceptability judgment for which the tree make the wrong predictions:
+There are multiple ways to answer this question, but here is one acceptability judgment for which the tree makes the wrong predictions:
 \begin{itemize}
     \item Tree (\ref{spicy_food}) represents the hypothesis (among other things) that \emph{may like} is a constituent.
-    \item That \emph{like very spicy food} is not.
-    \item This predicts that \emph{like very spicy food} can not be substituted for \emph{do so}.
+    \item It also represents the hypothesis that \emph{like very spicy food} is not a constituent.
+    \item This predicts that \emph{like very spicy food} cannot be substituted for \emph{do so}.
     \item But this is not the case: \emph{The guests may like very spicy food and the staff may do so too} is perfectly acceptable.
     \item So the tree fails to account for the judgment that \emph{The guests may like very spicy food and the staff may do so too} is fully acceptable.
 \end{itemize}
 }
+\end{answer}
 
 \paragraph{Q2B} Draw an elementary tree for \emph{like}. Which positions in the tree do the roles of \emph{agent} and \emph{theme} merge into (skill~\ref{projection})? 
 
-\textcolor{red}{
+\begin{answer}
+{
 As we have a better idea of the constituent structure, we are in a better position to start building the tree and we can do this in stages, starting with an elementary tree of the verb:
 \begin{center}
     \begin{forest}
@@ -218,11 +248,12 @@ As we have a better idea of the constituent structure, we are in a better positi
 \end{forest}
 \end{center}
 }
+\end{answer}
 
-For now, do not worry about the internal structure of the arguments, add \emph{the guests} and \emph{very spicy food} to the tree for \emph{like} and label them as NPs.
+Now let's add the arguments. For now, do'nt worry about the internal structure of the arguments, just add \emph{the guests} and \emph{very spicy food} to the tree for \emph{like} and label them as NPs.
 
-\textcolor{red}{
-As we have a better idea of the constituent structure, we are in a better position to start building the tree and we can do this in stages, starting with an elementary tree of the verb:
+\begin{answer}
+{
 \begin{center}
     \begin{forest}
     [VP, nice empty nodes
@@ -232,26 +263,30 @@ As we have a better idea of the constituent structure, we are in a better positi
 \end{forest}
 \end{center}
 }
+\end{answer}
 
 Now draw the elementary tree for \emph{may} (recall that we are assuming that modals like \emph{may} and auxiliaries like \emph{be} all occupy the category I, part of skill~\ref{functional_heads}).
 Which type of phrase(s) does \emph{may} take as a complement?
 
-\textcolor{red}{
+\begin{answer}
+{
 So, what about the \keyword{auxiliary}?
-We said in the Course Notes that, this should go in an I head and take a VP complement.
+This should go in an \obar{I} head and take a VP complement.
 \begin{center}
     \begin{forest}
     [IP, nice empty nodes
     [][I$'$
-    [I\\may][VP]]
+    [\obar{I}\\may][VP]]
     ]
 \end{forest}
 \end{center}
 }
+\end{answer}
 
-Finally, combine the elementary trees to derive a tree for the sentence \emph{the guests may like very spicy food} consistent with the framework developed so far (skills \ref{functional_heads} and \ref{VPinternal_subjects}).
+Finally, combine the two trees to derive a tree for the sentence \emph{the guests may like very spicy food} consistent with the framework developed so far (skills \ref{functional_heads} and \ref{VPinternal_subjects}).
 
-\textcolor{red}{
+\begin{answer}
+{
 At this stage we have an IP tree that takes a VP complement and VP with two arguments.
 We can combine these quite straightforwardly:
 \begin{center}
@@ -264,16 +299,18 @@ We can combine these quite straightforwardly:
     ]
 \end{forest}
 \end{center}
-The VP-internal subject then raises to the Specifier of IP, as explained next.
+The VP-internal subject then raises to the Specifier of IP, as discussed next.
 }
+\end{answer}
 
 \paragraph{For discussion:} How is the idiom \emph{the cat may be out of the bag} (which means roughly `the secret has been revealed') relevant to determining the structure projected by \emph{may}? 
 
-\textcolor{red}{
-Our current tree for Q2B has the wrong surface order, \emph{may the guests like very spicy food}.
-We used idioms like \emph{the cat may be out of the bag}, to show that auxiliaries preserve idiomatic meanings.
+\begin{answer}
+{
+Our current tree for Q2B has the wrong surface order: \emph{may the guests like very spicy food}.
+Idioms like \emph{the cat may be out of the bag} show that auxiliaries preserve idiomatic meanings.
 We probably don't want a lexical entry for every idiomatic phrase with every possible combination of auxiliary.
-For this reason, we said that \emph{the cat is out of the bag} is stored and the external argument moves to \keyword{spec} IP:
+For this reason, we say that \emph{the cat is out of the bag} is stored and the external argument moves to \keyword{spec} IP:
 \begin{center}
     \begin{forest}
     [IP, nice empty nodes
@@ -286,27 +323,31 @@ For this reason, we said that \emph{the cat is out of the bag} is stored and the
 \end{forest}
 \end{center}
 }
+\end{answer}
 
 \section*{Question 3}
-\hfill{} \ref{functional_heads} $\Box$, \ref{V_adjunction} $\Box$
+\hfill{} \ref{V_adjunction} $\Box$, \ref{functional_heads} $\Box$, 
+\ref{VPinternal_subjects} $\Box$
 
-\paragraph{Q3}Returning to the sentences given in (\ref{grammatical_gave}) and (\ref{grammatical_put}), repeated below, draw trees to represent them. One tree would be enough for both Syntax Skills (if you get them both right).
+\paragraph{Q3}Returning to the sentences given in (\ref{grammatical_gave}) and (\ref{grammatical_put}), repeated below, draw trees to represent them. One tree is enough to demonstrate the skills, but you should try both: each has an extra challenge!
 \begin{exe}
     \exr{grammatical_gave}{John gave Bill the book quickly in the street on Tuesday.}
     \exr{grammatical_put}{John will not put the book on the table.}
 \end{exe}
 
-\textcolor{red}{We know that in (\ref{grammatical_gave}), \emph{Bill} and \emph{the book} are complements.
-This means they should be sisters to \obar{V}.
+\begin{answer}
+{
+We know that in (\ref{grammatical_gave}), \emph{Bill} and \emph{the book} are complements.
+This means they should be sisters to \obar{V}.\\
 We also know that \emph{quickly}, \emph{in the street}, and \emph{on Tuesday} are adjuncts.
-This means they should be sisters to \ibar{V} levels.
-We also know (see above) that it's possible to substitute \emph{do so} for the verb and no adjuncts, the verb plus one adjunct, the verb plus two adjuncts, \dots{}.
-This means the adjuncts are not sisters to each other but to \ibar{V} levels, and the other adjuncts are daughters of those \ibar{V} levels.
-In (\ref{grammatical_put}), we have a negative auxiliary, \emph{won't}.
+This means they should be sisters to \ibar{V} levels.\\
+We also know (see above) that it's possible to substitute \emph{do so} for the verb and no adjuncts, the verb plus one adjunct, the verb plus two adjuncts, and so on with many many adjuncts.
+This means that the adjuncts are not sisters to each other but to \ibar{V} levels, and the other adjuncts are daughters of those \ibar{V} levels.\\
+Now, in~(\ref{grammatical_put}), we have a negative auxiliary, \emph{won't}.
 In the notes we proposed a head above VP, Neg, to put \emph{not} and this is what's shown in the tree.
 At this point, we don't have enough evidence to work out how \emph{will not} becomes \emph{won't} or if this is even a question for syntax.
-So, these have been separated in the tree.
-Putting this all together gives us the two trees below.}
+So, these have been separated in the tree.\\
+Putting this all together gives us the two trees below.
 \begin{center}
     \begin{forest}
     [IP%, nice empty nodes
@@ -316,10 +357,7 @@ Putting this all together gives us the two trees below.}
     [V\\gave][NP, [Bill, roof]][NP [the book, roof]]][AdjP [quickly, roof]]][PP [in the street, roof]]][PP [on Tuesday, roof]]]]]
     ]
     \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
-\end{forest}
-\end{center}
-
-\begin{center}
+\end{forest}\\
     \begin{forest}
     [IP%, nice empty nodes
     [NP [John, roof, name=copy]][I$'$
@@ -329,17 +367,14 @@ Putting this all together gives us the two trees below.}
     \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
 \end{forest}
 \end{center}
-
-\textcolor{red}{Both of these examples deal with something we haven't come across in the notes yet, ditransitive verbs.
-That these verbs have two internal arguments means that V in our trees has two sisters.
-This fits with out constituency tests but violates \keyword{binary branching}, a principle that's gone otherwise unstated in the notes so far.
-At this stage, we are not in a position to motivate an analysis that preserves \keyword{binary branching}, but below are versions of the trees that do.
+Both of these examples deal with something we haven't come across in the notes yet, ditransitive verbs.
+That these verbs have two internal arguments means that V in our trees has two sisters.\\
+This fits with our constituency tests but violates \keyword{binary branching}, a principle stating that each mother node can only have two daughter nodes. At this stage, we are not in a position to motivate an analysis that preserves \keyword{binary branching}, but below are versions of the trees that do.
 In the first example (\ref{grammatical_gave}), this involves decomposing the verb \emph{give} into two parts, \textsc{cause} and \textsc{have}, and associating these with separate verbal heads.
 The higher verbal head is labelled \emph{v} (little-\emph{v}) and selects a VP complement.
 The verb in V then undergoes \keyword{head-movement} to adjoin to \emph{v}.
-The key text on this is \citet{larson_double_1988} but relies on ideas not covered yet in notes.
-We will return to this in Topic 10.
-}
+The key text on this is \citet{larson_double_1988} but relies on ideas not covered yet.
+% We will return to this in Topic 10.
 \begin{center}
     \begin{forest}
     [IP%, nice empty nodes
@@ -350,10 +385,7 @@ We will return to this in Topic 10.
     ]
     \draw[->,dotted] (trace) to[out=south west,in=south] (copy);
     \draw[->,dotted] (vtrace) to[out=south west,in=south] (vcopy);
-\end{forest}
-\end{center}
-
-\begin{center}
+\end{forest}\\
     \begin{forest}
     [IP%, nice empty nodes
     [NP [John, roof, name=copy]][I$'$
@@ -364,21 +396,28 @@ We will return to this in Topic 10.
     \draw[->,dotted] (vtrace) to[out=south west,in=south] (vcopy);
 \end{forest}
 \end{center}
+}
+\end{answer}
 
 \paragraph{For discussion:} What changes would you need to make to your tree to accommodate the changes shown in (\ref{cp_put})?
 \begin{exe}
     \ex{}{It seems that John won't put the book on the table}
     \label{cp_put}
 \end{exe}
-\textcolor{red}{The example in (\ref{cp_put}) has an embedded clause:
-\begin{exe}
-    \sn \lbrack{}\textsubscript{CP} It seems \lbrack{}\textsubscript{CP} that \lbrack{}\textsubscript{IP} John won't put the book on the table\rbrack{}\rbrack{}\rbrack{}
-\end{exe}
-The embedded clause in (\ref{cp_put}) is (\ref{grammatical_put}) from above.
+
+\begin{answer}
+{
+This example has an embedded clause:
+% \begin{exe}
+    % \sn 
+    \lbrack{}\textsubscript{CP} It seems \lbrack{}\textsubscript{CP} that \lbrack{}\textsubscript{IP} John won't put the book on the table\rbrack{}\rbrack{}\rbrack{}\\
+% \end{exe}
+The embedded clause is (\ref{grammatical_put}) from above.
 In the Topic 6 notes, we saw that some verbs select clausal complements and that these are headed by a \keyword{complementizer}.
 In (\ref{cp_put}), \emph{that} is the \keyword{complementizer} selected by \emph{seem} and this in turn selects the IP.
-This is represented below with \keyword{binary branching} as above but \keyword{ternary branching} for embedded \emph{put} and its complements would be acceptable here too.}
-\begin{center}\small
+This is represented below with \keyword{binary branching} as above but \keyword{ternary branching} for embedded \emph{put} and its complements would be acceptable here too.
+\begin{center}
+    \begin{small}
     \begin{forest}
     [IP
     [NP [it, roof, name=copy1]][I$'$
@@ -395,7 +434,10 @@ This is represented below with \keyword{binary branching} as above but \keyword{
     \draw[->,dotted] (trace1) to[out=south west,in=south] (copy1);
     \draw[->,dotted] (vtrace) to[out=south west,in=south] (vcopy);
 \end{forest}
+\end{small}
 \end{center}
+}
+\end{answer}
 
 \printbibliography
 \end{document}

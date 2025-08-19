@@ -1,6 +1,6 @@
 \documentclass{beamer}
 \input{header_beamer}
-\subtitle{Topic 5 Course Notes: The X-Bar Schema}
+\subtitle{Topic 5: The X-Bar Schema}
 
 \begin{document}
 \maketitle
@@ -38,21 +38,88 @@
 }
 
 \frame{\frametitle{The X-bar schema}
+    So far we've established that:
+        \begin{itemize}
+            \item Predicates (verbs) always take a certain set of arguments (noun phrases, clauses, etc). \hfill [4a]
+            \item These arguments have different semantic roles (Agent, Patient, etc). \hfill [3b]
+            \item We can also add a potentially unlimited number of modifiers (adverbs, etc). \hfill [4b]
+        \end{itemize}
+
+\bigskip
+    So: how do we put arguments [5a] and adjuncts [5b] into a precise formal system?
+
+\bigskip
+    (Later in this block, and then definitely in LEL2D and Hons courses: what \emph{predictions} does the formal system make?)
+}
+
+\frame{\frametitle{The X-bar schema}
     \begin{enumerate}
         \item A given head might select for its argument.
         \item A given head might also need an additional argument, e.g.~the subject/Agent of a verb.
         \item The X-bar schema: head, complement, specifier.
+        \item Modifiers extend the projection.
     \end{enumerate}
+
+\bigskip
+    Important:
+    \begin{itemize}
+        \item We've already said all of these things; now we'll get more precise with the terminology and formalism.
+        \item Take your time with the formal aspects; they're just one way to represent our understanding and intuitions.
+    \end{itemize}
+}
+
+\frame{\frametitle{The X-bar schema}
+    \begin{itemize}
+        \item On the left: the schema (for a verb with subject and object).
+        \item Then two examples of it in action.
+        \item Pick out the: heads, arguments, complements, specifiers.
+    \end{itemize}
+
+\bigskip
+    \centering
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{V}
+        [\iibar{N}\\Subject] [\ibar{V}
+        [\obar{V}] [\iibar{N}\\Object]]
+        ]
+    \end{forest}
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{V}
+        [\iibar{N}\\Artists] [\ibar{V}
+        [\obar{V}\\hate] [\iibar{N}\\Spotify]]
+        ]
+    \end{forest}
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{V}
+        [\iibar{N}\\Spotify] [\ibar{V}
+        [\obar{V}\\depends] [\iibar{P}\\{on artists}]]
+        ]
+    \end{forest}
 }
 
 \frame{\frametitle{The X-bar schema}
 \centering
-
+    More general form:
+    
 \bigskip
     \begin{forest} for tree={calign=fixed edge angles},
         [\iibar{V}
         [specifier] [\ibar{V}
         [\obar{V}] [complement]]
+        ]
+    \end{forest}
+}
+
+\frame{\frametitle{The X-bar schema}
+\centering
+
+    Even more general form:
+    
+\bigskip
+    \begin{forest} for tree={calign=fixed edge angles},
+        [\iibar{X}
+        [specifier] [\ibar{X}
+        [\obar{X}] [complement]]
         ]
     \end{forest}
 }
@@ -97,7 +164,7 @@
 
 \frame{
 
-    Is this a good X-bar representation?
+    % Is this a good X-bar representation?
 
     \begin{center}
         \begin{forest}
@@ -138,6 +205,19 @@
             [PP
                 [P\\in]
                 [N\\Edinburgh]
+            ]
+        \end{forest}
+    \end{center}
+}
+
+\frame{
+ More accurate:
+
+    \begin{center}
+        \begin{forest}
+            [PP
+                [P\\in]
+                [\alert{NP}\\Edinburgh]
             ]
         \end{forest}
     \end{center}
@@ -184,10 +264,15 @@
 }
 
 \frame{
-    A couple of twists in the following examples:
+    And there are a couple of twists in the following examples (see the lecture notes).
 
+    Auxiliary verb:
     \ea I might draw trees slowly.
-    \ex Dogs really like pats behind the ear.
+    \z
+\bigskip
+
+    Where does each of the two modifiers adjoin?
+    \ea Dogs really like pats behind the ear.
     \z
 }
 

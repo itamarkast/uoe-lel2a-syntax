@@ -1,8 +1,13 @@
 \documentclass{beamer}
 \input{header_beamer}
-\subtitle{Topic 4 Course Notes: Predicates and arguments part 2}
+\subtitle{Topic 4: Predicates and arguments part 2}
 
 \begin{document}
+
+\frame{ \centering
+    \includegraphics[width=0.6\textwidth]{Images/agreement-attraction.jpg}
+}
+
 \maketitle
 
 \frame{\frametitle{Recap}
@@ -19,10 +24,6 @@
         \item Agreement.
         \item Expletive subjects.
     \end{itemize}
-}
-
-\frame{ \centering
-    \includegraphics[width=0.6\textwidth]{Images/agreement-attraction.jpg}
 }
 
 \frame{\frametitle{Topic 4}
@@ -44,10 +45,75 @@
 }
 
 \frame{
-    Give an example of an \textbf{elementary tree}.
+    \begin{itemize}
+        \item We're going to start developing our \emph{formal theory} from now on.
+        \item It might be a bit early to see exactly how this works, but as language scientists we:
+            \begin{itemize}
+                \item \textbf{Observe} interesting patterns,
+                \item \textbf{Generalise} them, i.e.~state them in a way that's true as universally as possible,
+                \item and \textbf{analyse} them using a formalism.
+            \end{itemize}
+    \end{itemize}
+
+\pause
+\bigskip
+    Example: generalising about Lewis Capaldi.
+}
+
+\frame{
+    \begin{itemize}
+        \item Our goal in this Topic is to understand the relationship between verbs and their arguments.
+        \item What can we say about the arguments of \emph{wonder}?
+    \end{itemize}
+
+\bigskip
+    \ea
+        \ea[]{I wonder when Lewis Capaldi will go on tour again.}
+        \ex[]{I wonder whether Lewis Capaldi was on \emph{Chicken Shop Date}.}
+        \ex[]{I wonder who Lewis Capaldi's favourite writer is.}
+        \z
+    \ex
+        \ea[*]{I wonder Lewis Capaldi's biggest hit.}
+        \ex[*]{I wonder Lewis Capaldi's age.}
+        \ex[*]{I wonder Lewis Capaldi to the shop.}
+        \ex[*]{I wonder Lewis Capaldi pet.}
+        \z
+    \ex
+        \ea[*]{Yesterday wondered when Lewis Capaldi will go on tour again.}
+        \ex[*]{That musicians are famous wondered what Lewis Capaldi's biggest hit is.}
+        \z
+    \z
+}
+
+\frame{
+    C-selection and Elementary trees:
+    \begin{itemize}
+        \item The verb \emph{wonder} \textbf{selects for} an NP Agent and a clause Theme.
+        \item Not much else matters!
+        \item The clause could be future or past, the agent could be singular or plural, etc
+        \item So: c-selection is about \textbf{syntactic category} and is \textbf{local}.
+    \end{itemize}
+
+    \begin{center}
+    \begin{forest}
+        [(VP?)
+            [NP\\(Agent) ]
+            [(VP?)
+                [V\\\emph{wonder} ]
+                [S\\(Theme)]
+            ]
+        ]
+    \end{forest}
+    \end{center}
+
+    (We can express this using bracket notation too, it just gets messy)
 }
 
 \frame{ \centering
+    These elementary trees, or lexical entries, can then be combined.
+
+\bigskip
+
     \begin{forest}
     [PP
         [P\\about ]
@@ -75,7 +141,7 @@
 }
 
 \frame{
-    C-selection vs semantics:
+    C-selection vs semantics (consolidation exercise):
 
     How do these examples illustrate the difference between selection and the meaning of the verb?
 
@@ -95,13 +161,20 @@
 
 \frame{
 
-    A syntactic head selects its argument(s).
+    A syntactic head selects its argument or arguments. \hfill [4a]
 
 \bigskip
-    What are modifiers? (Or what are they not?)
+    Now: what are modifiers? (Or what are they not?) \hfill [4b]
 
+\bigskip
+\pause
+    \centering
+    \begin{tabular}{lll}
+        & Role  & Formalisation \\\hline
+    Obligatory:  &   Argument  & Complement  \\
+    Optional:    &   Modifier & Adjunct\\
+    \end{tabular}
 }
-
 
 \frame{
 
@@ -113,13 +186,18 @@
         \item Preposition stranding can leave the preposition without an argument, but not without a modifier.
     \end{enumerate}
 
+\bigskip
+    Try it! Are the phrases in brackets arguments (complements) or modifiers (adjuncts)?
     \ea
-        \ea Bears hunt [fish].
-        \ex Bears hunt [in the river].
-        \ex Bears rely [on fish].
+        \ea Bears hunt \alert{[fish]}.
+        \ex Bears hunt \alert{[in the river]}.
+        \ex Bears rely \alert{[on fish]}.
         \z
-    \ex Kim walked [to the shop].
+    \ex Kim walked \alert{[to the shop]}.
     \z
+
+\bigskip
+    In Topic 5 (next) we'll put some order into all these trees, arguments and adjuncts.
 }
 
 % \frame{
@@ -175,7 +253,7 @@
 
 \frame{\frametitle{Skills-based grading}
     \begin{enumerate}
-        \item Feedback:
+        \item Feedback is:
             \begin{itemize}
                 \item Timely
                 \item Actionable
@@ -195,8 +273,8 @@
             \end{itemize}
     \end{enumerate}
 
-\bigskip
-    \ding{228} Rubric will require 2 fewer skills once updated next week.
+% \bigskip
+    % \ding{228} Rubric will require 2 fewer skills once updated next week.
 }
 
 \end{document}
