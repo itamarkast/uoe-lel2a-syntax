@@ -30,22 +30,22 @@ shows those four strings as constituents. For example, it doesn't need to have a
 
 \begin{answer}
 {
-Here are three possible trees that all meet the requirements set out in the question concerning what must be represented as a constituent. In this case, none of them make any claims about the \emph{categories} of the constituents (all the constituents are unlabelled). The trees differ from each other in terms of what \emph{additional} claims they embody about constituents within the sentence.  For example the trees in II and III both embody a claim that \emph{the dog a juicy bone} is also a constituent).\\
-\begin{quote}
-        \ex[I]{
+Here are three possible trees that all meet the requirements set out in the question concerning what must be represented as a constituent. In this case, none of them make any claims about the \emph{categories} of the constituents (all the constituents are unlabelled). The trees differ from each other in terms of what \emph{additional} claims they embody about constituents within the sentence. For example the tree in II embodies the claim that \emph{the dog a juicy bone} is also a constituent).\\
+\begin{exe}
+\exi{I}{
     \small \begin{forest}
 for tree={fit=band, parent anchor=north,},
 	[\phantom{}
  [\phantom{} [my] [cousin]][\phantom{}
  [gave] [\phantom{} [the] [dog]] [\phantom{}[a] [juicy] [bone] ]]]
     \end{forest}}
-    \ex[II]{
+    \exi{II}{
     \small \begin{forest}
 for tree={%calign=fixed edge angles,
 fit=band, parent anchor=north,},
 	[[[my] [cousin]][[ gave] [[[the] [dog]] [[a] [juicy] [bone] ]]]]
     \end{forest}}
-    \ex[III]{
+    \exi{III}{
     \small \begin{forest}
 for tree={%calign=fixed edge angles,
 fit=band, parent anchor=north,},
@@ -54,7 +54,7 @@ fit=band, parent anchor=north,},
  [[a]
  [[juicy] [bone]] ]]]
     \end{forest}}
-\end{quote}
+\end{exe}
 }
 \end{answer}
 

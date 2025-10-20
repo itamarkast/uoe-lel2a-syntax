@@ -1,6 +1,6 @@
 \documentclass{beamer}
 \input{header_beamer}
-\subtitle{Topic 7 Course Notes: Nonverbal XPs (DP), Part 2}
+\subtitle{Topic 7: Nonverbal XPs (DP)}
 
 \begin{document}
 \maketitle
@@ -32,35 +32,106 @@
     \end{itemize}
 }
 
+\frame{
+
+    So far:
+    \begin{enumerate}
+        \item Verbs are the lexical core of a clause.
+        \item But sometimes there are other morphemes around them them, like auxiliaries and agreement.
+        \item So we've hypothesised the head (projection) \obar{I}.
+    \end{enumerate}
+    
+    \begin{center}
+    \begin{forest}
+        [IP
+            [\phantom{a} ]
+            [\ibar{I}
+                [\obar{I} ]
+                [VP ]
+            ]
+        ]
+    \end{forest}
+    \end{center}
+    
+\bigskip
+    Today:
+    \begin{itemize}
+        \item The same for nouns. \hfill [7a]
+        \item And then we can make sense of the difference between arguments and adjuncts in the same way. \hfill [7b]
+    \end{itemize}
+}
+
 \frame{\frametitle{The DP hypothesis}
-\centering
+
+    \begin{center}
     \begin{forest}
         [DP
-            [{} ]
+            [\phantom{a} ]
             [\ibar{D}
                 [\obar{D} ]
                 [NP ]
             ]
         ]
     \end{forest}
+    \end{center}
+
+\bigskip
+    (We aren't going to motivate this too much --- see the course notes)
 }
+
+
+\frame{
+    \centering
+ \begin{forest}
+    [\iibar{I}
+        [\dots{} ]
+        [\ibar{I}
+            [\obar{I} ]
+            [VP
+                [\dots{} ]
+                [\ibar{V}
+                    [\obar{V} ]
+                    [{NP/PP/CP\\\dots{}} ]
+                ]
+            ]
+        ]
+    ]
+    \end{forest}
+    \begin{forest}
+    [\iibar{D}
+        [\dots{} ]
+        [\ibar{D}
+            [\obar{D} ]
+            [NP
+                [\dots{} ]
+                [\ibar{N}
+                    [\obar{N} ]
+                    [{NP/PP/CP\\\dots{}} ]
+                ]
+            ]
+        ]
+    ]
+    \end{forest}
+}
+
 
 \frame{
     Let's list some things worth pointing out about examples like the following:
 
     \ea
-        \ea[]{Taylor considered her options.}
-        \ex[]{Taylor considered that her fans would be upset.}
-        \ex[]{Taylor relied on her fans.}
-        \ex[*]{Taylor relied at her audience.}
+        \ea[]{Taylor \alert{considered} her options.}
+        \ex[]{Taylor \alert{considered that} her fans would be upset.}
+        \ex[]{Taylor \textcolor{blue}{relied on} her fans.}
+        \ex[*]{Taylor \textcolor{blue}{relied at} her audience.}
         \z
+\bigskip
     \ex
-        \ea[]{Taylor's consideration of her options.}
-        \ex[]{Taylor expected consideration of her options.}
-        \ex[?]{Taylor's consideration that her fans would be upset.}
-        \ex[]{The consideration of her options annoyed her.}
-        \ex[]{Taylor's reliance on her fans.}
-        \ex[*]{Taylor's reliance at her audience.}
+        \ea[]{Taylor's \alert{consideration} of her options.}
+        \ex[]{Taylor expected \alert{consideration} of her options.}
+        \ex[?]{Taylor's \alert{consideration that} her fans would be upset.}
+        \ex[]{The \alert{consideration} of her options annoyed her.}
+        \ex[]{Taylor's \textcolor{blue}{reliance on} her fans.}
+        \ex[*]{Taylor's \textcolor{blue}{reliance at} her audience.}
         \z
     \z
 }
@@ -74,11 +145,17 @@
 }
 
 \frame{
-    What's the difference between Taylor's reliance and Taylor's hat? (two structures)
+    What's the difference between Taylor's reliance and Taylor's hat?
 
     \ea Taylor's reliance on her fans.
     \ex Taylor's hat on the hanger.
     \z
+
+\bigskip
+    Which is the argument and which is the adjunct?
+
+\bigskip
+    How can we express this in our structures?
 }
 
 \frame{
@@ -243,14 +320,14 @@
 }
 
 \frame{
-    Constituency tests identify \emph{day before yesterday} as a constituent: we adjoin the modifier PP to the \ibar{N} level.
+    Constituency tests identify \emph{day before yesterday} as a constituent: we adjoin the modifier PP to the \ibar{N} level, then combine D with NP.
 
     \begin{columns}
         \begin{column}{0.5\textwidth}
         \begin{center}
             \begin{forest}
                 [\iibar{D}
-                    [\obar{D}\\the ]
+                    [\textcolor{teal}{\obar{D}}\\\textcolor{teal}{the} ]
                     [\textcolor{red}{\iibar{N}}
                         [\ibar{N}
                             [\ibar{N}
@@ -291,26 +368,28 @@
         \end{column}
     \end{columns}
 }
-\frame{
-    Argument vs adjunct again:
 
-    \ea 
-        \ea[]{The professor is proud.}
-        \ex[]{The professor is proud by nature.}
-        \ex[]{The professor is proud of her students.}
-        \z
-    \z
 
-\bigskip
-    What can and can't we co-ordinate?
-    \ea
-        \ea[]{The professor is proud by nature and \trace{}\trace{}\trace{}.}
-        \ex[*]{The professor is proud by nature and \trace{}\trace{}\trace{}.}
-        \ex[]{The professor is proud of her students and \trace{}\trace{}\trace{}.}
-        \ex[*]{The professor is proud of her students and \trace{}\trace{}\trace{}.}
-        \z
-    \z
-}
+% \frame{
+%     Argument vs adjunct again:
+
+%     \ea 
+%         \ea[]{The professor is proud.}
+%         \ex[]{The professor is proud by nature.}
+%         \ex[]{The professor is proud of her students.}
+%         \z
+%     \z
+
+% \bigskip
+%     What can and can't we co-ordinate?
+%     \ea
+%         \ea[]{The professor is proud by nature and \trace{}\trace{}\trace{}.}
+%         \ex[*]{The professor is proud by nature and \trace{}\trace{}\trace{}.}
+%         \ex[]{The professor is proud of her students and \trace{}\trace{}\trace{}.}
+%         \ex[*]{The professor is proud of her students and \trace{}\trace{}\trace{}.}
+%         \z
+%     \z
+% }
 
 \frame{\frametitle{Noun complement clauses}
 

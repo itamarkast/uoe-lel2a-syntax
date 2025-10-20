@@ -1,6 +1,8 @@
 \documentclass{article}
 \input{header}
-\begin{document}
+
+\usepackage[solution]{myProbSol}
+
 \forestset{
   nice nodes/.style={
     for tree={
@@ -10,19 +12,19 @@
   },
   default preamble=nice nodes,
 }
+\begin{document}
 \maketitle
-\subtitle{Tutorial Notes Week 7: Topics 7, 8 \& 9}
+\subtitle{Tutorial Notes Week 7: Topics 7 \& 8}
 
 \section*{Question 1}%Source: Intro Syntax Tutorial 5, Q1 \& LEL2A Week 5 Tutorial
 \hfill{} \ref{np_dp} $\Box$,
-\ref{np_structure} $\Box$,
-\ref{adjp_pp} $\Box$,
-\ref{xp_structure} $\Box$%,
+\ref{np_structure} $\Box$
+% \ref{adjp_pp} $\Box$,
+% \ref{xp_structure} $\Box$%,
 
 \paragraph{Q1A} In (\ref{good_wine_V}), the predicate \emph{appreciate}, has two arguments, \emph{he} \& \emph{good wine}.
 Is the argument \emph{good wine} a complement or adjunct of the verb?
 Provide a relevant test to justify your answer.
-\paragraph{Q1B} Represent this analysis schematically. You do not need to consider the external argument, \emph{he}, at this stage.
 
 \begin{exe}
     \ex{
@@ -38,19 +40,27 @@ Provide a relevant test to justify your answer.
     \label{good_wine}
 \end{exe}
 
-Questions Q1A--Q1B recapped material from previous Topics. If you need them to catch up on some Syntax Skills, note which ones you've just demonstrated.
-
-\textcolor{red}{We need to choose a suitable diagnostic for diagnosing adjunct-hood.
+\begin{answer}
+{
+We need to choose a suitable diagnostic for diagnosing adjunct-hood.
 Any of those discussed in the notes will suffice, but for example:
 \begin{exe}
-    \ex{
+    \sn{
     \begin{xlist}
         \ex[]{He appreciates good wine and she does so too}
         \ex[*]{He appreciates good wine and she does so good port}\label{good_port}
     \end{xlist}
     }
 \end{exe}
-This substitution test shows evidence that \emph{good wine} is an argument of \emph{appreciate}, so \emph{appreciate} is not a constituent on its own to the exclusion of \emph{appreciate good wine}. Then the tree below represents this structure:
+This substitution test shows evidence that \emph{good wine} is an argument of \emph{appreciate}, so \emph{appreciate} is not a constituent on its own to the exclusion of \emph{appreciate good wine}.
+}
+\end{answer}
+
+\paragraph{Q1B} Represent this analysis of~(\ref{good_wine_V}) schematically. You do not need to consider the external argument, \emph{he}, at this stage.
+
+\begin{answer}
+{
+The tree below represents this structure:
 \begin{center}
     \begin{forest}
         [IP, nice empty nodes
@@ -64,17 +74,23 @@ This substitution test shows evidence that \emph{good wine} is an argument of \e
 \end{center}
 Some of the relevant Skills are \ref{adjunct_complement} (adjunct vs complement), \ref{projection} (X-bar structure) and \ref{VPinternal_subjects} (VPish).
 }
+\end{answer}
+
+Questions Q1A--Q1B recapped material from previous Topics. If you need them to catch up on some Syntax Skills, note which ones you've just demonstrated.
+
 
 \hfill \ref{np_dp} $\Box$,
-\ref{np_structure} $\Box$,
+\ref{np_structure} $\Box$
 \paragraph{Q1C} If we assume the same structural relationship as in Q1B for (\ref{good_wine_N}), what changes would you need to make to represent the \emph{italicised} section schematically?
 
-\hfill
-\ref{adjp_pp} $\Box$,
-\ref{xp_structure} $\Box$%,
+% \hfill
+% \ref{adjp_pp} $\Box$,
+% \ref{xp_structure} $\Box$%,
 \paragraph{For discussion} If we assume the same structural relationship as in Q1B--Q1C for (\ref{good_wine_A}), what changes would you need to make to represent the \emph{italicised} section schematically?
 
-\textcolor{red}{In order to accommodate the two italicised structures under the assumption that their structures mirror that of the VP above, we need to make two changes:
+\begin{answer}
+{
+In order to accommodate the two italicised structures under the assumption that their structures mirror that of the VP above, we need to make two changes:
 \begin{xlisti}
     \ex The phrasal head is \obar{A} or \obar{N}
     \ex The complement of \obar{A} or \obar{N} is a PP, not DP
@@ -93,6 +109,7 @@ Some of the relevant Skills are \ref{adjunct_complement} (adjunct vs complement)
     \end{forest}
 \end{center}
 }
+\end{answer}
 
 \section*{Question 2}
 \hfill \ref{np_dp} $\Box$,
@@ -100,44 +117,75 @@ Some of the relevant Skills are \ref{adjunct_complement} (adjunct vs complement)
 
 \paragraph{Q2A} What structure would you assign to the phrases in (\ref{np_xbar})?
 Represent the full string given.
-Provide relevant tests to justify the choices you have made, such as between representing a string as an adjunct or as a complement. Get at least two out of these three sentences correct. We haven't talked about the structure of proper nouns like \emph{Ipanema} in~(\ref{np_xbar}a) is, so you can propose your own; some discussion can be found in the supplementary readings for chapter 5 of S\&K.
+Provide relevant tests to justify the choices you have made, such as between representing a string as an adjunct or as a complement. Get at least one of these two sentences correct.
+% We haven't talked about the structure of proper nouns like \emph{Ipanema} in~(\ref{np_xbar}a) is, so you can propose your own; some discussion can be found in the supplementary readings for chapter 5 of S\&K.
 \begin{exe}
     \ex{
     \begin{xlist}
-        \ex the girl from Ipanema
+        % \ex the girl from Ipanema
         %\ex that new book about the referendum
+        \ex our utter dependence on oil
         \ex the children's teacher's car 
-        \ex his utter dependence on alcohol
     \end{xlist} 
     }
   \label{np_xbar}
 \end{exe}
 
-\textcolor{red}{
+% \textcolor{red}{
+% \begin{center}
+%     \small\begin{forest}
+%         [DP, nice empty nodes
+%         [D$'$
+%         [D\\the][NP
+%         [N$'$
+%         [N$'$ [N\\girl]][PP
+%         [P$'$
+%         [P\\from][DP
+%         [D$'$
+%         [D\\$\emptyset{}$][NP
+%         [N$'$
+%         [N\\Ipanema]]]]]]]
+%         ]]]
+%         ]
+%     \end{forest}
+% \end{center}
+% I've represented the PP \emph{from Ipanema} as an adjunct (sister to N$'$), rather than a complement of \emph{girl} (sister to \obar{N}).
+% This is supported by the fact that you can do \keyword{one}-substitution of \emph{girl}, leaving the PP behind: \emph{She spoke to the girl from Ipanema, and I spoke to the one from Porto Alegre}.
+% So the N$'$ node is cloned, and the PP adjoined.
+% This is sticking to the hypothesis in S\&K that adjunction is always to the X$'$ level.
+% S\&K, in the supplementary material for chapter 5, gives reasons for treating proper names like \emph{Ipanema} as nouns that (in some cases) are the complement of a silent D.}
+
+\begin{answer}
+{
 \begin{center}
     \small\begin{forest}
-        [DP, nice empty nodes
+        [DP
         [D$'$
-        [D\\the][NP
+        [D\\our][NP
         [N$'$
-        [N$'$ [N\\girl]][PP
-        [P$'$
-        [P\\from][DP
-        [D$'$
-        [D\\$\emptyset{}$][NP
-        [N$'$
-        [N\\Ipanema]]]]]]]
-        ]]]
+        [AP [A$'$ [A\\utter]]][N$'$
+        [N\\dependence][PP [P$'$
+        [P\\on][DP [D$'$
+        [D\\$\emptyset{}$][NP [N$'$ [N\\oil]]]]]]]]]]]
         ]
     \end{forest}
 \end{center}
-I've represented the PP \emph{from Ipanema} as an adjunct (sister to N$'$), rather than a complement of \emph{girl} (sister to \obar{N}).
-This is supported by the fact that you can do \keyword{one}-substitution of \emph{girl}, leaving the PP behind: \emph{She spoke to the girl from Ipanema, and I spoke to the one from Porto Alegre}.
-So the N$'$ node is cloned, and the PP adjoined.
-This is sticking to the hypothesis in S\&K that adjunction is always to the X$'$ level.
-S\&K, in the supplementary material for chapter 5, gives reasons for treating proper names like \emph{Ipanema} as nouns that (in some cases) are the complement of a silent D.}
+The tree above represents the PP \emph{on oil} as a complement (sister of \obar{N}), rather than an adjunct (sister of N$'$).
+This is supported by the following diagnostics: 
+\begin{xlisti}
+    \ex is the nominal head a \keyword{nominalization} of a V? YES: \emph{depend-ence};
+    \ex does the PP contain an argument of that V? not a clear YES/NO because in \emph{he depends on oil}, we cannot decide whether the PP is a complement of the verb \emph{depend} without another test.
+    \ex If we use P-stranding as a test for complementhood, we get \emph{What does he depend on?} For me this question is grammatical, so \emph{on oil} is shown as complement; if you do not think it is grammatical, it would be shown as an adjunct.
+\end{xlisti}
+This analysis agrees with what we said about parallel structures in response to the questions above.
+This is however not the only possible test for adjuncts/complements, and it is possible to construct an argument that looks very different from this one.
+The exact analysis given matters less than the argument you make.
+What matters is if the judgements you gave are consistent with the analysis given.
+}
+\end{answer}
 
-\textcolor{red}{
+\begin{answer}
+{
 \begin{center}
     \small\begin{forest}
         [DP
@@ -159,140 +207,206 @@ It's worth thinking about the interpretation here, that is, who `owns' what.
 As represented, the interpretation that the structure suggests is that the car belongs to the children's teacher, and the teacher `belongs' to the children.
 And that corresponds to how the phrase is actually interpreted.
 }
+\end{answer}
 
-\textcolor{red}{
-\begin{center}
-    \small\begin{forest}
-        [DP
-        [D$'$
-        [D\\his][NP
-        [N$'$
-        [AP [A$'$ [A\\utter]]][N$'$
-        [N\\dependence][PP [P$'$
-        [P\\on][DP [D$'$
-        [D\\$\emptyset{}$][NP [N$'$ [N\\alcohol]]]]]]]]]]]
-        ]
-    \end{forest}
-\end{center}
-The tree above represents the PP \emph{on alcohol} as a complement (sister of \obar{N}), rather than an adjunct (sister of N$'$).
-This is supported by the following diagnostic: 
-\begin{xlisti}
-    \ex is the nominal head a \keyword{nominalization} of a V? YES: \emph{depend-ence};
-    \ex does the PP contain an argument of that V? not a clear YES/NO because in \emph{he depends on alcohol}, we cannot decide whether the PP is a complement of the verb \emph{depend} without another test.
-    \ex If we use P-stranding as a test for complementhood, we get \emph{What does he depend on?} For me this question is grammatical, so \emph{on alcohol} is shown as complement; if you do not think it is grammatical, it would be shown as an adjunct.
-\end{xlisti}
-This analysis agrees with what we said about parallel structures in response to the questions above.
-This is however not the only possible test for adjuncts/complements, and it is possible to construct an argument that looks very different from this one.
-The exact analysis given matters less than the argument you make.
-What matters is if the judgements you gave are consistent with the analysis given.}
+\section*{Question 3}
+\hfill{}
+\ref{np_dp} $\Box$,
+\ref{passives} $\Box$
 
+The following examples demonstrate the passive alternation:
+\ea \label{pass-clean}
+    \ea[]{The doctor cleaned her instruments.}
+    \ex[]{The instruments were cleaned.}
+    \ex[]{The instruments were cleaned by the doctor.}
+    \z
+\z
 
-\section*{Question 3}%IntroSyntax06-tutorial Q3
-\hfill{} 
-\ref{xp_structure} $\Box$,
-\ref{nonfin_to} $\Box$,
-\ref{raising_control} $\Box$%,
+\paragraph{Q3A} Draw a tree for~(\ref{pass-clean}a). 
 
-We have seen that different instances of \emph{to}, namely prepositional \emph{to} and infinitival \emph{to}, behave differently.
-Most of the examples looked at in the course notes were verbal, but we might ask if there are there ``raising adjectives" that would share properties with ``raising verbs" like \emph{seem}. 
-\begin{exe}
-    \ex[]{
-    \begin{xlist}
-        \ex[]{Jun is likely to go.}\label{junislikely}
-        \ex[]{Jun being the winner is likely to me.}
-        \ex[]{Jun is eager to go.}
-        \ex[]{Jun is easy to annoy.}\label{juniseasy1}
-        \ex[*]{Jun is easy to go.}\label{juniseasy2}
-        \ex[]{The range of difficulty is easy to hard.}
-        % \ex[]{Jun is fit to burst}
-    \end{xlist}
-    }
-\end{exe}
-
-\paragraph{Q3A} For each of the examples above, is the use of \emph{to} prepositional or infinitival?
-\textcolor{red}{
-\begin{exe}
-    \sn[]{
-    \begin{xlist}
-        \ex[]{I: Jun is likely to go.}\label{junislikely}
-        \ex[]{P: Jun being the winner is likely to me.}
-        \ex[]{I: Jun is eager to go.}
-        \ex[]{I: Jun is easy to annoy.}\label{juniseasy1}
-        \ex[*]{(I:) Jun is easy to go.}\label{juniseasy2}
-        \ex[]{P: The range of difficulty is easy to hard.}
-        % \ex[]{Jun is fit to burst}
-    \end{xlist}
-    }
-\end{exe}
+\begin{answer}
+{
+The possessive \emph{her} can be either in the \obar{D} head itself, or in its specifier.\\
+\begin{forest}
+    [IP
+        [DP [The doctor, roof, name=copy]]
+        [I'
+            [I ]
+            [VP
+                [DP [\sout{The doctor}, roof, name=trace]]
+                    [V'
+                        [V\\cleaned]
+                        [DP
+                            [D'
+                                [D\\her]
+                                [NP
+                                    [N'
+                                     [N\\instruments]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]            
+    ]
+        \draw[->,dotted] (trace) to[out=south west,in=south west] (copy);
+\end{forest}
 }
+\end{answer}
 
-We will now consider \emph{likely, eager} and \emph{easy} in turn.
-
-\paragraph{Q3B} Is \emph{likely} a control or a raising predicate? Use at least two diagnostics, and briefly discuss any uncertainties that arise.
-
-\textcolor{red}{\emph{likely} shares most of its properties with raising verbs like \emph{seem}: 
-\begin{itemize}
-\item It allows non-thematic subjects that are licensed in the infinitive clause, just as \emph{seem} does:
-    \begin{exe}
-    \sn{There is likely to be a snowstorm tonight.}
-    \end{exe}
-\item It maintains idiomatic readings:
-    \begin{exe}
-        \sn{Heads are likely to roll.}
-    \end{exe}
-\item It does not seem to be compatible with agent-oriented adverbs:
-    \begin{exe}
-        \sn[*]{Jun is deliberately/enthusiastically/slowly likely to go.}
-    \end{exe}
-\item Possibly worth noting: like \emph{seem} it alternatively selects for a \textbf{finite} complement, in which case it has expletive \emph{it} as a subject:
-\begin{exe}
-    \sn{
-    \begin{xlist}
-        \sn{It is likely that they will go.\hfill{}(\emph{Compare} (b))}
-        \sn{It seems that they will go.}
- \end{xlist}
-    }
-\end{exe}
-\end{itemize}
+\paragraph{Q3B} Now draw a tree for~(\ref{pass-clean}c).
+\begin{answer}
+{
+\begin{forest}
+    [IP
+        [DP [The instruments, roof, name=copy]]
+        [I'
+            [I\\were]
+            [VP
+                [\phantom{X} ]
+                [V'
+                    [V'
+                        [V\\cleaned][DP\\\sout{the instruments}, name=trace]
+                    ]
+                    [PP
+                        [\phantom{X} ]
+                        [P'
+                            [P\\by]
+                            [DP [{the doctor}, roof]]
+                        ]
+                    ]
+                ]
+            ]
+        ]            
+    ]
+        \draw[->,dotted] (trace) to[out=south west,in=south west] (copy);
+\end{forest}
 }
+\end{answer}
 
-\textcolor{red}{So taken together, this leads us to conclude that \emph{likely} is a \textbf{raising} predicate.}
+\paragraph{For discussion} In the following examples, why is~(\ref{pass-put}b) more acceptable than~(\ref{pass-put}c)? What does this tell us about the status of the agent in passives?
+\ea \label{pass-put}
+    \ea[]{Dr Ali put her instruments in the bag.}
+    \ex[]{The instruments were put in the bag by Dr Ali.}
+    \ex[*]{The instruments were put by Dr Ali in the bag.}
+    \z
+\z
+\begin{answer}
+{
+Even though the Agent \emph{Dr Ali} is more of a prototypical argument than the Location or Goal \emph{in the bag}, it cannot appear closer to the predicate. This is consistent with the idea that the Agent in a passive clause isn't a syntactic argument of the verb, so it doesn't need to be closer to it than the PP (which itself seems to be an argument here, not a modifier).
+}
+\end{answer}
 
-\paragraph{For discussion} What about \emph{eager} and \emph{easy}? What properties do they have that are different from both the ``control" and ``raising" predicates we've seen so far?
 
-\textcolor{red}{\emph{eager} is like a raising verb like \emph{appear} in that it does \emph{not} allow for expletive subjects:
-\begin{exe}
-    \sn[*]{There is eager to be a snowstorm tonight.}
-\end{exe}
-In contrast to \emph{likely} and \emph{seem}, when it appears with a finite complement, its subject is not an expletive:
-\begin{exe}
-    \sn{
-    \begin{xlist}
-        \sn[*]{It is eager that they should go.}
-        \sn[]{I am eager that they should go.}
-    \end{xlist}
-    }
-\end{exe} 
-So this leads us to think that it is a \keyword{control} predicate, assigning a $\theta$-role of some kind to its own subject, so that there will have to be a PRO subject in the embedded clause if it is not finite.}
 
-\textcolor{red}{However, whatever $\theta$-role it assigns to its subject, it is not that of \textsc{agent}:
-\begin{exe}
-    \sn They are (\#deliberately) eager to get there on time.
-\end{exe}}
+% \section*{Question 3}%IntroSyntax06-tutorial Q3
+% \hfill{} 
+% \ref{xp_structure} $\Box$,
+% \ref{nonfin_to} $\Box$,
+% \ref{raising_control} $\Box$%,
 
-\textcolor{red}{\emph{Easy} is likely (!) to be the trickiest case to think about, as it doesn't quite behave like either.
-And indeed, in the literature it is treated in a different way because of these peculiarites:  this is frequently referred to as the \emph{tough}-construction (because \emph{tough} has the same properties, as in \emph{Maggie is tough to please}.) }
+% We have seen that different instances of \emph{to}, namely prepositional \emph{to} and infinitival \emph{to}, behave differently.
+% Most of the examples looked at in the course notes were verbal, but we might ask if there are there ``raising adjectives" that would share properties with ``raising verbs" like \emph{seem}. 
+% \begin{exe}
+%     \ex[]{
+%     \begin{xlist}
+%         \ex[]{Jun is likely to go.}\label{junislikely}
+%         \ex[]{Jun being the winner is likely to me.}
+%         \ex[]{Jun is eager to go.}
+%         \ex[]{Jun is easy to annoy.}\label{juniseasy1}
+%         \ex[*]{Jun is easy to go.}\label{juniseasy2}
+%         \ex[]{The range of difficulty is easy to hard.}
+%         % \ex[]{Jun is fit to burst}
+%     \end{xlist}
+%     }
+% \end{exe}
 
-\textcolor{red}{Like \emph{eager}, it isn't possible to have an expletive subject that is licensed in the infinitive clause:
-\begin{exe}
-    \sn[*]{There is easy to be a problem.}
-\end{exe}
-But we can't just group it together with \emph{likely} because of the contrast between (\ref{junislikely}) and (\ref{juniseasy2}).}
+% \paragraph{Q3A} For each of the examples above, is the use of \emph{to} prepositional or infinitival?
+% \textcolor{red}{
+% \begin{exe}
+%     \sn[]{
+%     \begin{xlist}
+%         \ex[]{I: Jun is likely to go.}\label{junislikely}
+%         \ex[]{P: Jun being the winner is likely to me.}
+%         \ex[]{I: Jun is eager to go.}
+%         \ex[]{I: Jun is easy to annoy.}\label{juniseasy1}
+%         \ex[*]{(I:) Jun is easy to go.}\label{juniseasy2}
+%         \ex[]{P: The range of difficulty is easy to hard.}
+%         % \ex[]{Jun is fit to burst}
+%     \end{xlist}
+%     }
+% \end{exe}
+% }
 
-\textcolor{red}{Notably, with \emph{easy}, not only the subject but also some other argument of the lower clause is ``missing''.  In (\ref{juniseasy1}), the object of \emph{annoy} is ``missing'', and strikingly the matrix subject seems to correspond to this \textbf{object} argument, in the sense that here \emph{Jun} is interpreted as the person who will experience annoyance, not the person who will do the annoying.
-We won't be going into this type of construction here, the point is really just to notice the difference between this pattern and the others.}
+% We will now consider \emph{likely, eager} and \emph{easy} in turn.
 
-\end{document}
+% \paragraph{Q3B} Is \emph{likely} a control or a raising predicate? Use at least two diagnostics, and briefly discuss any uncertainties that arise.
+
+% \textcolor{red}{\emph{likely} shares most of its properties with raising verbs like \emph{seem}: 
+% \begin{itemize}
+% \item It allows non-thematic subjects that are licensed in the infinitive clause, just as \emph{seem} does:
+%     \begin{exe}
+%     \sn{There is likely to be a snowstorm tonight.}
+%     \end{exe}
+% \item It maintains idiomatic readings:
+%     \begin{exe}
+%         \sn{Heads are likely to roll.}
+%     \end{exe}
+% \item It does not seem to be compatible with agent-oriented adverbs:
+%     \begin{exe}
+%         \sn[*]{Jun is deliberately/enthusiastically/slowly likely to go.}
+%     \end{exe}
+% \item Possibly worth noting: like \emph{seem} it alternatively selects for a \textbf{finite} complement, in which case it has expletive \emph{it} as a subject:
+% \begin{exe}
+%     \sn{
+%     \begin{xlist}
+%         \sn{It is likely that they will go.\hfill{}(\emph{Compare} (b))}
+%         \sn{It seems that they will go.}
+%  \end{xlist}
+%     }
+% \end{exe}
+% \end{itemize}
+% }
+
+% \textcolor{red}{So taken together, this leads us to conclude that \emph{likely} is a \textbf{raising} predicate.}
+
+% \paragraph{For discussion} What about \emph{eager} and \emph{easy}? What properties do they have that are different from both the ``control" and ``raising" predicates we've seen so far?
+
+% \textcolor{red}{\emph{eager} is like a raising verb like \emph{appear} in that it does \emph{not} allow for expletive subjects:
+% \begin{exe}
+%     \sn[*]{There is eager to be a snowstorm tonight.}
+% \end{exe}
+% In contrast to \emph{likely} and \emph{seem}, when it appears with a finite complement, its subject is not an expletive:
+% \begin{exe}
+%     \sn{
+%     \begin{xlist}
+%         \sn[*]{It is eager that they should go.}
+%         \sn[]{I am eager that they should go.}
+%     \end{xlist}
+%     }
+% \end{exe} 
+% So this leads us to think that it is a \keyword{control} predicate, assigning a $\theta$-role of some kind to its own subject, so that there will have to be a PRO subject in the embedded clause if it is not finite.}
+
+% \textcolor{red}{However, whatever $\theta$-role it assigns to its subject, it is not that of \textsc{agent}:
+% \begin{exe}
+%     \sn They are (\#deliberately) eager to get there on time.
+% \end{exe}}
+
+% \textcolor{red}{\emph{Easy} is likely (!) to be the trickiest case to think about, as it doesn't quite behave like either.
+% And indeed, in the literature it is treated in a different way because of these peculiarites:  this is frequently referred to as the \emph{tough}-construction (because \emph{tough} has the same properties, as in \emph{Maggie is tough to please}.) }
+
+% \textcolor{red}{Like \emph{eager}, it isn't possible to have an expletive subject that is licensed in the infinitive clause:
+% \begin{exe}
+%     \sn[*]{There is easy to be a problem.}
+% \end{exe}
+% But we can't just group it together with \emph{likely} because of the contrast between (\ref{junislikely}) and (\ref{juniseasy2}).}
+
+% \textcolor{red}{Notably, with \emph{easy}, not only the subject but also some other argument of the lower clause is ``missing''.  In (\ref{juniseasy1}), the object of \emph{annoy} is ``missing'', and strikingly the matrix subject seems to correspond to this \textbf{object} argument, in the sense that here \emph{Jun} is interpreted as the person who will experience annoyance, not the person who will do the annoying.
+% We won't be going into this type of construction here, the point is really just to notice the difference between this pattern and the others.}
+
+% \end{document}
 
 \section*{Question 4 (For discussion)}%Source: Intro Syntax Tutorial 5, Q4
 \hfill{} \ref{np_dp} $\Box$,
@@ -323,11 +437,11 @@ What syntactic argument(s) can you give for your conclusion?\footnote{Hint: This
 For additional guidance, read the section on ``\emph{one}-substitution'' in S\&K Chapter 5.
 It begins after example (41).}
 
-\textcolor{red}{This exercise \textbf{RELIES} on judgments in English that are clear in my variety at least but this may not be the case in all of your varieties.
+\begin{answer}
+{This exercise relies on judgments in English that are clear in my variety at least but this may not be the case in all of your varieties.
 If you have read the section on \emph{one-substitution} in S\&K, however, you should be able to work out that what you need to do here is to see whether or not a speaker can use \emph{one} to replace \emph{idea/fact}, while not replacing the clause.
-If that is grammatical, then for that speaker the clause must be an adjunct (since \emph{one} does not replace a head, but a larger projection of \obar{N} (assumed in the S\&K text to be N$'$).}
-
-\textcolor{red}{In my variety of English, \emph{one}-replacement in the (\ref{NCC_sub}) cases is clearly unacceptable:
+If that is grammatical, then for that speaker the clause must be an adjunct (since \emph{one} does not replace a head, but a larger projection of \obar{N} (assumed in the S\&K text to be N$'$).\\
+In my variety of English, \emph{one}-replacement in the (\ref{NCC_sub}) cases is clearly unacceptable:
 \begin{exe}
     \ex{
     \begin{xlist}
@@ -335,8 +449,8 @@ If that is grammatical, then for that speaker the clause must be an adjunct (sin
         \ex[]{The fact that they hold a common opinion is obvious to them, but the \{fact/*one\} that they are wrong is lost on them.}
     \end{xlist}
     }\label{NCC_sub}
-\end{exe}}
-\textcolor{red}{And there is a clear contrast with the examples with relative clauses:
+\end{exe}
+And there is a clear contrast with the examples with relative clauses:
 \begin{exe}
     \ex{
     \begin{xlist}
@@ -344,6 +458,8 @@ If that is grammatical, then for that speaker the clause must be an adjunct (sin
         \ex[]{The fact that I had discovered was a bit trivial, but the \{fact/one\} that they have discovered is important.}
     \end{xlist}
     }\label{RC_sub}
-\end{exe}}
-\textcolor{red}{So this suggests that noun-complement clauses like the ones in the (\ref{NCC_sub}) examples are indeed complements of the head, while relative clauses (\ref{RC_sub}) are adjuncts.}
+\end{exe}
+So this suggests that noun-complement clauses like the ones in the (\ref{NCC_sub}) examples are indeed complements of the head, while relative clauses (\ref{RC_sub}) are adjuncts.
+}
+\end{answer}
 \end{document}

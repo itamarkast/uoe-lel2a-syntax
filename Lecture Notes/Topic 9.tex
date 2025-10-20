@@ -506,5 +506,181 @@ Lastly, remember that one of our original pieces of evidence for the VPISH was t
     \z
 \z
 
+\section{Extension: more on A-movement}
+The type of grammatical subject we see in sentences with a raising verb (and in passives, as discussed in the last set of notes) is called a \keyword{derived} subject. It starts its syntactic life as an object or as the subject of a lower clause and is then `promoted' to a higher subject position.
+
+The type of object-to-subject movement we see in passives must be distinguished from other types of movement, such as the movement process that puts questioned phrases in the first position of a clause in English, called \keyword{wh-movement}.
+In contrast to movement that makes a phrase the grammatical subject of a clause, Wh-movement does not change the grammatical function of the moved phrase: just like \emph{her parents} in (\ref{marya}), \emph{whose parents} is the direct object of \emph{invite} in (\ref{maryb}), not the subject.
+It is just in a different position than the usual one for objects, namely in the first position in the clause, in front of the subject position which is occupied by \emph{Mary} in both (\ref{marya}) and (\ref{maryb}).
+(You can see that \emph{Mary} is still the subject in (\ref{maryb}), not \emph{whose parents}, because it is the former rather than the latter that determines the agreement on the finite verb.)
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{Mary has invited her parents.}\label{marya}
+        \ex[]{Whose parents$_{i}$ has Mary invited \emph{t}$_i$?}\label{maryb}
+    \end{xlist}
+    }
+\end{exe}
+The type of movement we see in passives and in raising constructions, which moves a constituent to the subject position of the clause, is called \keyword{A-movement}.
+This term is used because the type of position to which this process moves a constituent is called an \keyword{A-position}, for historical reasons that need not concern us here.
+In contrast, the type of movement that does not change the grammatical function of the moving constituent, such as \keyword{Wh-movement}, is called \keyword{A$’$-movement} (pronounced `A-bar movement'), and the type of position that this movement targets is called an \keyword{A$'$-position} (pronounced `A-bar position').
+We will see in the next topic which position in the clause is the landing site for Wh-movement.
+
+In the examples of passive above, such as (\ref{passive-tree}), there was A-movement from direct object position to subject position.
+In some contexts, another constituent than the direct object is `promoted' to subject by this movement.
+This happens, for instance, in the passive of a \keyword{double object} construction.
+The double object construction is a sentence type containing a ditransitive verb, in which both the direct object and the indirect object are expressed by Noun Phrases, as in (\ref{igave}) for example.\footnote{Again this raises the question of the structure for a double object construction is, particularly since we have been assuming that all phrase structure trees are only binary branching.
+See the item for the tutorial exercises for Topic 2 in Learn for some notes about ditransitives and further reading about this, if you are interested. }
+In many varieties of English, it is the indirect object that is chosen to be promoted to the subject position in the passive counterpart of the double object construction, rather than the direct object, see (\ref{marywas}--\ref{thosebooks}):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{I gave Mary those books.}\label{igave}
+        \ex[]{Mary$_i$ was given \emph{t}$_i$ those books.}\label{marywas}
+        \ex[*]{Those books$_i$ were given Mary \emph{t}$_i$.}\label{thosebooks}
+    \end{xlist}
+    }
+\end{exe}
+
+\section{Extension: Locality}
+% \hfill{}\textbf{Skills:}~\ref{passives},
+% \ref{locality_constraints}
+
+As it turns out, it is not possible to move a constituent across arbitrarily long distances by A-movement.
+In particular, it turns out that:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{You cannot move a constituent to a subject position across another subject position.}\label{generalisation_A}
+        \ex[]{You cannot move a constituent to a subject position X if there is another constituent that could also move to X and that is closer to X.}\label{generalisation_B}
+    \end{xlist}
+    }
+\end{exe}
+The restriction in (\ref{generalisation_A}) is known as the impossibility of \keyword{superraising}.
+Its effect is shown by an example like (\ref{locality_D}), where movement of \emph{Sean} to the subject position in the highest clause skips the subject position of the intermediate clause, which is filled by \emph{it}.
+This can be compared to the grammatical examples in (\ref{locality_B}) and (\ref{locality_C}), where movement to a higher subject position does not skip another subject (in (\ref{locality_C}) this is because there first is A-movement to the subject position of the passive intermediate clause, and then to the subject position of the highest clause, which contains a raising verb).
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{It seems [that it was believed [that Sean plays the piano]].}\label{locality_A}
+        \ex[]{It seems [that Sean$_i$ was believed [\emph{t}$_i$ to play the piano]].}\label{locality_B}
+        \ex[]{Sean$_i$ seems [\emph{t}$_i$ to have been believed [\emph{t}$_i$ to play the piano]].}\label{locality_C}
+        \ex[*]{Sean$_i$ seems [that it was believed [\emph{t}$_i$ to play the piano]].}\label{locality_D}
+    \end{xlist}
+    }\label{locality}
+\end{exe}
+
+The restriction in (\ref{generalisation_B}) is known as \keyword{superiority}.
+Superiority is discussed most often in connection to A$'$-movement (on which more in a later lecture), but A-movement is subject to it, too.
+Consider (\ref{superiority_example}).
+There is evidence (that we cannot discuss here) that in a sentence like (\ref{superiority_example_A}) the direct object DP is in a higher position in the structure than the indirect object PP.
+It is therefore closer to the subject position.
+Superiority then demands that in the passive counterpart to (\ref{superiority_example_A}) it is the direct object argument that moves to subject position, rather than the indirect object argument.
+This is correct, as (\ref{superiority_example_B}--\ref{superiority_example_D}) show.
+Possibly, (\ref{superiority_example_C}) is ungrammatical for an independent reason, as English does not like PPs as subject very much in any case, but this does not hold for (\ref{superiority_example_D}) (note that the `preposition stranding' that occurs in (\ref{superiority_example_D}) is perfectly fine in other contexts in English, such as  \emph{Paula is never listened to}.
+Therefore, that cannot be the source of the ungrammaticality of this example). 
+\begin{exe}
+    \ex{
+    \begin{xlist}
+        \ex[]{Mary showed some books to Paula.}\label{superiority_example_A}
+        \ex[]{\lbrack{}Some books\rbrack{}$_i$ were shown \emph{t}$_i$ to Paula by Mary.}\label{superiority_example_B}
+        \ex[*]{\lbrack{}To Paula\rbrack{}$_i$ was shown some books \emph{t}$_i$ by Mary.}\label{superiority_example_C}
+        \ex[*]{\lbrack{}Paula\rbrack{}$_i$ was shown some books to \emph{t}$_i$ by Mary.}\label{superiority_example_D}
+    \end{xlist}
+    }\label{superiority_example}
+\end{exe}
+
+\section{Extension: Burzio’s generalization}
+% \hfill{}\textbf{Skill:}~\ref{passives}
+
+We have now seen a number of instances of A-movement in which a constituent is moved to the subject position of a finite clause, which we have assumed to be the spec-IP position.
+So far, however, we have been silent on the question why A-movement takes place.
+One area where people have a looked for an answer to this is \keyword{Case theory}. 
+
+In languages with visible case morphology, we see that the different arguments of a verb can carry different case endings.
+Typically, subjects show up in what is called a \keyword{nominative} case form, direct objects in an \keyword{accusative} case form, and indirect objects in a \keyword{dative} case form.\footnote{Notice, however, that in the course of its history English has lost the distinction between accusative and dative case, even on pronouns, which appear in the accusative case even when they are functioning as indirect objects.}
+Apparently, if some DP receives a thematic role of the verb, it carries a particular case.
+Case is therefore sometimes said to make the thematic role of an DP ‘visible’ for the interpretative component of the grammar (the semantic component):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{\keyword{Visibility condition}\\
+		A DP that receives a thematic role from a verb must be assigned case.}
+    \end{xlist}
+    }\label{visibility_condition}
+\end{exe}
+There is no reason to assume that in languages without overt case morphology (such as---with the exception of the pronominal system---modern English) the requirement in (\ref{visibility_condition}) is just void.
+The difference with languages showing morphological case is that the case-marking must involve abstract, nonvisible, case.
+To indicate the difference with morphological case, this abstract case usually gets the distinction of being written with a capital C, i.e.\ as `Case'.
+
+There is a tendency that languages without morphological case have a somewhat stricter word order than languages that have it (though it should be emphasised that this is, indeed, a tendency).
+This may indicate that there are conditions on the assignment of abstract Case, such that a particular Case can only be assigned in a particular structural configuration.
+The following restrictions on structural Case assignment have been proposed:
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{Verbs and prepositions can assign abstract structural Case, but nouns and adjectives cannot.}\label{generalisations_2A}
+        \ex[]{Verbs and prepositions can assign structural Accusative to a DP that they govern (where, roughly, V or P governs a DP if the DP is lower in the structure than V or P and there is no other Case-assigner intervening between the V or P and the DP)}\label{generalisations_2B}
+        \ex[]{The inflection I on finite verbs can assign structural Nominative to the element in the associated spec-IP position.}\label{generalisations_2C}
+        \end{xlist}
+    }
+\end{exe}
+Returning now to the question of why there is A-movement, let us first consider what passivization does to a verb.
+How does making a passive participle out of a verb affect the properties of this verb?
+For one, this process must involve suppression of the assignment of the regular external theta-role of the verb, as the subject that gets this role in the active clause does not appear as an argument in the passive (but at most inside an optional PP adjunct).
+Suppose now that another effect is that the Case-assigning capabilities of the verb are lost under passive participle formation.
+In that case, if the internal argument would remain in the complement position to the verb, it would remain Caseless---which would violate the Visibility condition in (\ref{visibility_condition}).
+Given that passive clauses do contain a verb that carries finite inflection (namely the finite auxiliary verb), Nominative Case is available in the spec-IP position.
+Therefore, the object moves to spec-IP to receive this Case and thereby satisfy (\ref{visibility_condition}).
+
+If so, we know what a defining characteristic of raising verbs must be.
+Despite being active verbs, they, too, must have deficient Case-properties: they are not able to assign Accusative to the subject of their non-finite complement clause.
+Nor can the subject of a non-finite clause get Nominative, because finite inflection is needed to assign that.
+Like the object in a passive, then, the subject in the complement to a verb like \emph{seem} raises to the spec-IP position of the finite main clause in order to get Case (namely Nominative) there.
+
+We see that, if this approach to the rationale of A-movement is correct, it must be the case in general that verbs that do not assign a thematic role to their subject position (such as passive participles and raising verbs) lack the capacity to assign Accusative Case to a constituent in (or inside) their complement position.
+This correlation is known as \keyword{Burzio’s Generalization}, after the Italian syntactician Luigi Burzio.
+\begin{exe}
+    \ex[]{\keyword{Burzio’s Generalization}\\
+		If a verb does not assign a thematic role to its subject position, it does not assign Accusative Case to its complement position, and vice versa.}\label{burzios_gen}
+\end{exe}
+It should be noted that the account outlined above is not wholly unproblematic, however.
+People, including Burzio himself, have pointed out that (\ref{burzios_gen}) is quite stipulative, as it is not so clear why a verb’s capacity to assign abstract Case to its complement position should be related to its assigning a thematic role to its subject position or not.
+Also, consider what happens with other elements that cannot assign abstract Case to their complements, namely adjectives and nouns (see (\ref{generalisations_2A})).
+That these don't assign abstract Case to their complement is shown by the ungrammaticality of examples like those in (\ref{n_a_dont_assign_case}), where an N and an A, respectively, take a DP complement.
+(Apparently, there is no abstract Case counterpart to the genitive case we typically see showing up on complements of N and A in languages that have morphological case.)
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[*]{the destruction the city}
+        \ex[*]{afraid dogs}
+    \end{xlist}
+    }\label{n_a_dont_assign_case}
+\end{exe}
+As and Ns also do not carry finite inflection, so any potential subject position in the NP or AP will not receive Nominative either.
+Does this mean that As and Ns cannot select for a DP argument in languages without morphological case at all? Clearly not.
+But what happens is that a meaningless preposition \emph{of} is plugged into the structure, as in (\ref{p_saves_the_day}).
+The only function of this P seems to be to assign abstract Case to the DP in the complement.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{the destruction of the city}
+        \ex[]{afraid of dogs}
+    \end{xlist}
+    }\label{p_saves_the_day}
+\end{exe}
+However, if this preposition is available to save DPs in the complement of an N or A from being without Case, and if lack of Case is the crucial property of complements to passive and raising verbs, we may wonder why it is not possible to use this preposition in passives and with raising verbs as well (rather than having the complement undergo A-movement).
+That this is indeed impossible is shown by the examples in (\ref{p_passives}):
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[*]{It has been invited of Mary.}
+        \ex[*]{It seems of John to have left.}
+    \end{xlist}
+    }\label{p_passives}
+\end{exe}
+Instead of appealing to Case, there are other accounts (including one by Burzio) which make use of the fact that, quite independently of A-movement, we already need a principle in English that states that every clause must have a subject, namely the Subject requirement we have encountered before.
+Perhaps that requirement is what triggers A-movement to subject position, too, but we will not pursue this here any further.
+
 \printbibliography
 \end{document}
