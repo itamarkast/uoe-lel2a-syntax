@@ -61,6 +61,38 @@
     \end{itemize}
 }
 
+
+\frame{\frametitle{The DP hypothesis}
+    We're about to develop this:
+    
+    \begin{center}
+    \begin{forest}
+        [DP
+            [\phantom{a} ]
+            [\ibar{D}
+                [\obar{D} ]
+                [NP ]
+            ]
+        ]
+    \end{forest}
+    \end{center}
+}
+
+\frame{
+    What can we say about the structure of the nominal phrase?
+
+    \ea[]{The book.}
+    \ex[]{Calum's book.}
+    \ex[]{Their book.}
+    \ex[*]{Calum book.}
+    \ex[*]{Calum's the book.}
+    \ex[*]{Their the book.}
+    \z
+
+    \bigskip
+    What phrases/heads are in complementary distribution?
+}
+
 \frame{\frametitle{The DP hypothesis}
 
     \begin{center}
@@ -74,13 +106,36 @@
         ]
     \end{forest}
     \end{center}
+}
 
-\bigskip
-    (We aren't going to motivate this too much --- see the course notes)
+\frame{\frametitle{The DP hypothesis}
+
+    \begin{itemize}
+        \item \emph{the book, a book, their book}
+        \item \uncover<2>{\textcolor{blue}{\emph{Calum's book}}}
+    \end{itemize}
+    
+    \begin{center}
+    \begin{forest}
+        [DP
+            [{(DP)\\\uncover<2>{\textcolor{blue}{\emph{Calum}}}} ]
+            [\ibar{D}
+                [{\obar{D}\\\emph{the}\\\emph{a}\\\emph{their}\\\uncover<2>{\textcolor{blue}{\emph{'s}}}} ]
+                [NP
+                    [\phantom{a} ]
+                    [\ibar{N}
+                        [N\\\emph{book} ]
+                    ]
+                ]
+            ]
+        ]
+    \end{forest}
+    \end{center}
+
 }
 
 
-\frame{
+\frame{\frametitle{The DP hypothesis}
     \centering
  \begin{forest}
     [\iibar{I}
@@ -136,15 +191,15 @@
     \z
 }
 
-\frame{
+\frame{\frametitle{Arguments and modifiers}
     \begin{itemize}
+        \item The definite article and the possessor are in complementary distribution.
         \item Parallels between verbal and nominal versions (c-selection).
         \item No subject requirement in nominals (no expletive subjects needed).
-        \item The definite article and the possessor are in complementary distribution.
     \end{itemize}
 }
 
-\frame{
+\frame{\frametitle{Arguments and modifiers}
     What's the difference between Taylor's reliance and Taylor's hat?
 
     \ea Taylor's reliance on her fans.
@@ -152,13 +207,13 @@
     \z
 
 \bigskip
-    Which is the argument and which is the adjunct?
-
+    Which is the argument and which is the adjunct (modifier)?
+    
 \bigskip
     How can we express this in our structures?
 }
 
-\frame{
+\frame{\frametitle{Arguments and modifiers}
     \begin{columns}
         \begin{column}{0.5\textwidth}
         \begin{center}
@@ -170,8 +225,8 @@
                         [\iibar{N}
                             [\iibar{D} [\sout{Taylor}, roof]]
                             [\ibar{N}
-                                [\obar{N}\\reliance ]
-                                [\iibar{P} [on her fans, roof]]
+                                [\alert{\obar{N}}\\\alert{reliance} ]
+                                [\alert{\iibar{P}} [\alert{on her fans}, roof]]
                             ]
                         ]
                     ]
@@ -188,10 +243,10 @@
                         [\obar{D}\\'s]
                         [\iibar{N}
                             [\ibar{N}
-                                [\ibar{N}
+                                [\alert{\ibar{N}}
                                     [N\\hat]
                                 ]
-                                [\iibar{P} [on the hanger, roof]]
+                                [\alert{\iibar{P}} [on the hanger, roof]]
                             ]
                         ]
                     ]
@@ -200,6 +255,28 @@
         \end{center}
         \end{column}
     \end{columns}
+}
+
+\frame{\frametitle{Interim summary}
+    Technical implementation:
+        \begin{enumerate}
+            \item Definite/indefinite article in \obar{D}.
+            \item Possessive pronouns in \obar{D}.
+            \item Possessor noun (DP) in Spec,DP.
+            \item Argument of the nominal: complement to \obar{N}.
+            \item Modifier of the nominal: adjoined to \ibar{N}.
+        \end{enumerate}
+
+    \bigskip 
+    \ding{228} The formalism conveys broader generalisations (e.g.~complementary distribution of \emph{the} and \emph{my}).
+
+    \bigskip
+     Argument or modifier of N?
+    \begin{enumerate}
+        \item Test 1: argument of the underlying verb.
+        \item Test 2: conjunction, etc (as with verbs).
+        \item Special case: complement vs relative clauses.
+    \end{enumerate}
 }
 
 \frame{
@@ -393,6 +470,9 @@
 
 \frame{\frametitle{Noun complement clauses}
 
+    Are the embedded clauses arguments or modifiers of the noun?
+    
+    \bigskip
     \ea
         \ea{I confessed [that I listen to K-pop].}
         \ex{My confession [that I listen to K-pop].}
@@ -410,7 +490,15 @@
     \end{center}
 }
 
-\frame{
+\frame{\frametitle{Noun complement clauses}
+    \ea
+        \ea{I confessed [that I listen to K-pop].}
+        \ex{My confession [that I listen to K-pop].}
+        \z
+    \ex{The hat [that you gave me \trace{} yesterday].}
+    \z
+
+    \bigskip
     \centering
     \begin{tabular}{l|c|c}
         & Noun complement clause & Relative clause\\\hline

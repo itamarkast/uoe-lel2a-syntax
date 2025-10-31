@@ -222,7 +222,7 @@ This makes sense if we have tense features on \obar{I}, because then \emph{to} s
 \section{Missing subjects of infinitival clauses}
 \hfill{}\textbf{Skill:}~\ref{raising_control}
 
-One other notable feature of most of the infinitival clauses exemplified above is that they appear to be missing one of the arguments of the infinitival verb:
+One other notable feature of most of the infinitival clauses exemplified above is that they appear to be ``missing'' one of the arguments of the infinitival verb:
 \begin{exe}
     \ex[]{
     \begin{xlist}
@@ -245,7 +245,7 @@ One other notable feature of most of the infinitival clauses exemplified above i
     }
 \end{exe}
 
-And it's not just that \emph{some} argument is missing: the missing argument is always the \textit{subject}.
+And it's not just that \emph{some} argument is missing: the missing argument in these examples is always the \textit{subject}.
 
 How can we deal with this?
 
@@ -277,11 +277,49 @@ So something along the lines of (\ref{null_subject}):
 
 But \emph{complete} is a transitive verb: it has two \textbf{$\theta$-roles} (abbreviation for `thematic roles') to assign---that is to say, it has two syntactic arguments, so selects for two DPs.
 So at the very least we will need additional assumptions in order to explain why in these cases it is OK for the selectional requirements of a head not to be met, while in others it is not.
-For this reason (among others), syntacticians have proposed two alternative solutions.
+For this reason (among others), syntacticians have proposed two alternative solutions, for two different kinds of predicates.
+
+\subsection{Raising: A-Movement of the subject}
+
+Here is one solution: We have already seen that DPs may \keyword{move} to a higher position in the structure.
+So far we've seen this in two cases. First, for subjects which originate in the Specifier of VP, as arguments of the verb, and then move to become the specifier of IP. And second, for the object of a passive verb, which gets \textsc{promoted} to subject.
+Similarly, we may hypothesize that in some cases a DP may move to the specifier of a \textit{higher IP}. 
+
+The structure for (\ref{seem_raising}) would then be something like (\ref{seem_raising_tree}). We're using a different matrix predicate for this example.
+\begin{exe}
+    \ex[]{
+    \begin{xlist}
+        \ex[]{You seem to enjoy those old movies.}
+        \label{seem_raising}
+        \ex[]{\small
+        \begin{forest}
+            [\iibar{I}
+            [\iibar{D} [\ibar{D} [\obar{D}\\you, name=copy]]][\ibar{I}
+            [\obar{I}\\\lbrack{}\textsc{pres}\rbrack{}][\iibar{V}
+            [\ibar{V}
+            [\obar{V}\\seem][\iibar{I}
+            [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{you}$\rangle$, roof, name=trace1]][\ibar{I}
+            [\obar{I}\\to][\iibar{V}
+            [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{you}$\rangle$, roof, name=trace]][\ibar{V}
+            [\obar{V}\\enjoy][\iibar{D} [old movies, roof]]]]]]]]]
+            ]
+            \draw[->,dotted] (trace) to[out=south west,in=south] (trace1);
+            \draw[->,dotted] (trace1) to[out=south west,in=south] (copy);
+        \end{forest}
+        }
+        \label{seem_raising_tree}
+    \end{xlist}
+    }
+\end{exe}
+
+Here the innovation is that after the subject \emph{you} moves from the embedded Spec,VP (where it did the enjoying) to the embedded Spec,IP (to satisfy the subject requirement), it then moves again to the specifier of the matrix IP (to satisfy the subject requirement of the matrix clause!).
+
+We can call this a (subject-to-subject) \keyword{raising} analysis (because the subject of the embedded clause `raises' into the matrix clause, to become its subject).
+Note that this is not very different to what we have proposed happens with modals like \emph{may}, \emph{might}, etc.
 
 \subsection{Control: Some infinitival clauses contain a phonetically null pronoun in subject position, ``\textsc{PRO}''}
 
-Here is one possible solution: We can hypothesize that there is a \keyword{null pronoun} that can function as the subject of an infinitive.
+Here is another possibility, for a different set of predicates: We can hypothesize that there is a \keyword{null pronoun} that can function as the subject of an infinitive.
 Just like any other pronoun, it can be the argument of a verb or adjective, and receive a $\theta$-role.  
 
 This null element has been called \textsc{pro}.\footnote{This is always written in \textsc{small caps} or CAPS.
@@ -315,44 +353,6 @@ Another term for this particular relation, specifically as it applies to \textsc
 In consequence, this kind of analysis has come to be called a \keyword{control} analysis. To summarise: in a control structure there are two separate DPs (the ``lexical'' DP and \textsc{pro} in the nonfinite clause), which are coreferential.\footnote{In the tree above I have represented \textsc{pro} as moving to the subject position in the infinitival clause.
 Since \textsc{pro} is silent, it is not a straightforward empirical matter to decide whether it is in [Spec,VP] or [Spec,IP].
 There is one theoretical argument which favours \textsc{pro} in [Spec,IP], though: it would allow us to claim that every clause (even nonfinite ones) has a subject.}
-
-\subsection{Raising: Movement of the subject}
-
-Here is another possible solution: We have already seen that DPs may \keyword{move} to a higher position in the structure.
-So far we've mainly seen this for subjects, which originate   in the VP, as arguments of the verb, and then move to become the specifier of the IP. 
-We may hypothesize that in some cases a DP may move to the specifier of a \textit{higher IP}. 
-
-So then the structure for (\ref{seem_raising}) would be something like (\ref{seem_raising_tree}). We're using a different matrix predicate for this example.
-\begin{exe}
-    \ex[]{
-    \begin{xlist}
-        \ex[]{You seem to enjoy those old movies.}
-        \label{seem_raising}
-        \ex[]{\small
-        \begin{forest}
-            [\iibar{I}
-            [\iibar{D} [\ibar{D} [\obar{D}\\you, name=copy]]][\ibar{I}
-            [\obar{I}\\\lbrack{}\textsc{pres}\rbrack{}][\iibar{V}
-            [\ibar{V}
-            [\obar{V}\\seem][\iibar{I}
-            [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{you}$\rangle$, roof, name=trace1]][\ibar{I}
-            [\obar{I}\\to][\iibar{V}
-            [$\langle$\sout{\iibar{D}}$\rangle$ [$\langle$\sout{you}$\rangle$, roof, name=trace]][\ibar{V}
-            [\obar{V}\\enjoy][\iibar{D} [old movies, roof]]]]]]]]]
-            ]
-            \draw[->,dotted] (trace) to[out=south west,in=south] (trace1);
-            \draw[->,dotted] (trace1) to[out=south west,in=south] (copy);
-        \end{forest}
-        }
-        \label{seem_raising_tree}
-    \end{xlist}
-    }
-\end{exe}
-
-Here the innovation is that after the subject \emph{you} moves from the embedded Spec,VP (where it did the enjoying) to the embedded Spec,IP (to satisfy the subject requirement), it then moves again to the specifier of the matrix IP (to satisfy the subject requirement of the matrix clause!).
-
-We can call this a (subject-to-subject) \keyword{raising} analysis (because the subject of the embedded clause `raises' into the matrix clause, to become its subject).
-Note that this is not very different to what we have proposed happens with modals like \emph{may}, \emph{might}, etc.
 
 \section{Distinguishing control from raising}
 

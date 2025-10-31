@@ -1,6 +1,6 @@
 \documentclass{beamer}
 \input{header_beamer}
-\subtitle{Topic 9 Course Notes: Nonfinite clauses}
+\subtitle{Topic 9: Nonfinite clauses}
 
 \begin{document}
 \maketitle
@@ -64,16 +64,16 @@ Infinitival vs preposition \emph{to}:
 \frame{
     What are the arguments of the different verbs?
 
-    \ea They wanted to analyse the sentence.
-    \ex We seem to have solved the problem.
+    \ea We seem to have solved the problem.
+    \ex They wanted to analyse the sentence.
     \z
 }
 
 \frame{
     What are the arguments of the different verbs?
 
-    \ea \uline{They} \alert{wanted} [to \textcolor{blue}{analyse} the sentence]. \hfill [Control]
-    \ex We \alert{seem} [to have \textcolor{blue}{solved} the problem]. \hfill [Raising]
+    \ea \uline{We} \fbox{\alert{seem}} \fbox{[to have \uline{\textcolor{blue}{solved}} the problem]}. \hfill [Raising]
+    \ex \uline{They} \uline{\alert{wanted}} [to \uline{\textcolor{blue}{analyse}} the sentence]. \hfill [Control]
     \z
 }
 
@@ -82,7 +82,8 @@ Infinitival vs preposition \emph{to}:
         &   Raising & Control\\\hline
     Expletive subjects & & \\
     Idiomatic meaning & & \\
-    Agent-oriented adverbs & & \\
+    Agent-oriented adverbs & & \\\hline
+    Matrix subject & Embedded subject & ``Double'' agent!\\
     \end{tabular}
 }
 
@@ -96,6 +97,43 @@ Infinitival vs preposition \emph{to}:
         \ex[*]{There tried many linguists to solve the problem.}
         \z
     \z
+}
+
+\frame{ \centering
+    \begin{tabular}{c|c|c}
+        &   Raising & Control\\\hline
+    Expletive subjects & \cmark{} & \xmark{} \\
+    Idiomatic meaning & & \\
+    Agent-oriented adverbs & & \\\hline
+    Matrix subject & Embedded subject & ``Double'' agent!\\
+    \end{tabular}
+}
+
+\frame{
+    \ea[]{The cat appears to be out of the bag.}
+    \ex[\#]{The cat tried to be out of the bag.}
+    \z
+}
+
+\frame{
+    Agent-modifying adverbs (\emph{excitedly, diligently}, etc.): what is the prediction? What are some examples?
+
+\bigskip
+    \ea[*]{\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}}
+    \ex[]{\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}}
+    \z
+}
+
+\frame{ \centering
+    \begin{tabular}{c|c|c}
+        &   Raising & Control\\
+        & \emph{seem, appear, \dots{}} & \emph{try, want, \dots{}} \\\hline
+    Expletive subjects & \cmark{} & \xmark{} \\
+    Idiomatic meaning & \cmark{} & \xmark{} \\
+    Agent-oriented adverbs & \xmark{} & \cmark{} \\\hline
+    Matrix subject & Embedded subject & ``Double'' agent!\\
+     & Derived subject & Controls PRO\\
+    \end{tabular}
 }
 
 \frame{ \tiny
@@ -135,41 +173,6 @@ baseline,
         \draw[->,dotted] (trace1) to[out=south west,in=south] (copy);
 \end{forest}
 \end{multicols}
-}
-
-\frame{ \centering
-    \begin{tabular}{c|c|c}
-        &   Raising & Control\\\hline
-    Expletive subjects & \cmark{} & \xmark{} \\
-    Idiomatic meaning & & \\
-    Agent-oriented adverbs & & \\
-    \end{tabular}
-}
-
-\frame{
-    \ea[]{The cat appears to be out of the bag.}
-    \ex[\#]{The cat tried to be out of the bag.}
-    \z
-}
-
-\frame{
-    Agent-modifying adverbs (\emph{excitedly, diligently}, etc.): what is the prediction? What are some examples?
-
-\bigskip
-    \ea[*]{\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}}
-    \ex[]{\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}\trace{}}
-    \z
-}
-
-\frame{ \centering
-    \begin{tabular}{c|c|c}
-        &   Raising & Control\\
-        & \emph{seem, appear, \dots{}} & \emph{try, want, \dots{}} \\\hline
-    Expletive subjects & \cmark{} & \xmark{} \\
-    Idiomatic meaning & \cmark{} & \xmark{} \\
-    Agent-oriented adverbs & \xmark{} & \cmark{} \\\hline
-    Matrix subject & Derived subject & PRO\\
-    \end{tabular}
 }
 
 \frame{\frametitle{Summary}
